@@ -1,0 +1,24 @@
+<dl class="portlet" id="portlet-simple-nav">
+
+  <dt class="portletHeader">
+    <span tal:content="view/getDescriptor">Divisions/Course Contents</span>
+  </dt>
+
+  <tal:items tal:repeat="item view/getNavObjects">
+
+    <dd tal:attributes="class python:view.isSelected(item)">
+      
+      <a href=""
+	 tal:attributes="title item/Title;
+			 href python:view.get_view_url(item);"
+	 ><span tal:replace="item/Title" /> <span tal:condition="python:item.Type == 'Course'" tal:replace="string:Home" /></a>
+    </dd>
+
+  </tal:items>
+
+  <dd class="portletFooter">
+    <span class="portletBottomLeft"></span>
+    <span class="portletBottomRight"></span>
+  </dd>
+			
+</dl>

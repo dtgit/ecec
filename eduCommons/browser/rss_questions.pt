@@ -1,0 +1,134 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+
+    <div metal:fill-slot="main">
+    <metal:main-macro define-macro="main"
+                      tal:define="kssClassesView context/@@kss_field_decorator_view;
+                                  getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                                  templateId template/getId">
+
+      <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+
+       <h1 tal:content="string:${portal_title} OCW RSS Feeds">
+            title or id
+        </h1>
+
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+        <p metal:use-macro="here/kss_generic_macros/macros/generic_description_view">
+            Description
+        </p>
+
+        <div tal:replace="structure provider:plone.abovecontentbody" />
+	
+	
+    <tal:block i18n:domain="eduCommons">
+      <p class="rss_info" 
+	 style="padding-top: 30px;"
+	 i18n:translate="section_rss_info">
+	Receive notification of new <span i18n:name="portal_title" tal:replace="portal_title"/> OCW courses on your desktop, or add them to your blog or website.
+      </p>
+
+      <h3 i18n:translate="header_rss_available">Available Feeds</h3>
+      <p class="documentByLine">
+	<a href="#"
+	   tal:attributes="href string:@@rss_feeds/#rss_faqs">RSS FAQs</a>
+      </p>
+      <p class="rss_info">
+        <a href=""
+           tal:attributes="href string:${portal_url}/rss;
+                           title string:${portal_title} RSS Feed">
+         <img alt="RSS" 
+              src="rss_icon.gif" />
+        </a>
+
+        <a href="#"
+           tal:attributes="href string:${portal_url}/rss;
+                           title string:${portal_title} RSS Feed"
+	   i18n:translate="link_rss_all_courses">			   
+	   Courses in all departments
+	 </a>
+
+     </p>
+    
+      <h5 i18n:translate="header_rss_dept_available">Department Feeds</h5>
+      <div tal:repeat="dept python:here.portal_catalog(portal_type='Division')">
+	<p tal:define="deptid python:dept.id">
+	  <a tal:attributes="href string:${portal_url}/${deptid}/@@rss"><img src="rss_icon.gif" /></a> 
+	  <a tal:attributes="href string:${portal_url}/${deptid}/@@rss"><span tal:replace="python:dept.Title" /></a>
+	</p>
+      </div>
+
+    <!-- div metal:use-macro="context/CoursesListingMacros/macros/RSSDepartmentFeeds"/ -->
+
+    <h3 id="rss_faqs" i18n:translate="header_whatis_rss">What is RSS?</h3>
+
+      <p i18n:translate="section_whatis_rss1">RSS stands for Really Simple Syndication. RSS is a time-saving way for you to receive news and information updates (often called "RSS feeds", "news feeds" or simply "feeds") from your favorite Web sites and blogs.</p>
+
+      <p i18n:translate="section_whatis_rss2">Typically RSS feeds consist of headlines and short summaries of new articles, blog entries or search results, though some Web sites and blogs offer the full text of articles or blog entrees as feeds.</p>
+
+      <h3 i18n:translate="header_why_rss">Why use RSS?</h3>
+
+      <p i18n:translate="section_why_rss1">By using RSS you can stay on top of the news and information you need without using your e-mail system and without repeatedly checking multiple Web sites to see if they have been updated. RSS simplifies the way you stay informed and helps you take control of overloaded email inboxes.</p>
+
+      <h3 i18n:translate="header_how_rss">How to I start using RSS feeds?</h3>
+  
+      <p i18n:translate="section_how_rss1">In general, the first thing you need is something called a news reader. This is a piece of software that checks RSS feeds and lets you read any new articles that have been added to them. There are many different versions, some of which are accessed using a browser, and some of which are downloadable applications. Browser-based news readers let you catch up with your RSS feed subscriptions from any computer, whereas downloadable applications let you store them on your main computer, in the same way that you either download your e-mail, or keep it on a web-based service.</p>
+
+      <p i18n:translate="section_how_rss2">Once you have chosen a news reader, all you have to do is to decide what content you want to receive in your news reader, by finding and subscribing to the relevant RSS feeds. For example, if you would like the latest courses added to <span i18n:name="portal_title" tal:replace="portal_title" /> OCW, simply visit the Course List page or this page and you will notice an orange RSS button.</p>
+
+      <img src="doc_actions.png" 
+	   style="border: solid 1px grey; margin-bottom: 1em"
+	   alt="Image of Document Actions"
+	   i18n:attributes="alt image_rss_sample"/>
+
+      <p i18n:translate="section_how_rss3">If you click on the button you can subscribe to the feed in various ways, including by dragging the URL of the RSS feed into your news reader or by cutting and pasting the same URL into a new feed in your news reader. Most sites that offer RSS feeds use a similar orange RSS button, but some may just have a normal web link to the feed.</p>
+      
+      <p i18n:translate="section_how_rss4">Some browsers, including Firefox and Safari, automatically check for RSS feeds for you when you visit a Web site, and display an icon when they find one. This can make subscribing to RSS feeds much easier. For more details on these, please check their Web sites.</p>
+
+      <h3 i18n:translate="header_reader_rss">How do I get a news reader?</h3>
+
+      <p i18n:translate="section_reader_rss1">There is a range of different news readers available and new versions are appearing all the time.</p>
+
+      <p i18n:translate="section_reader_rss2">Different news readers work on different operating systems, so you will need to choose one that will work with your computer.</p>
+
+      <p i18n:translate="section_reader_rss3">Here is one 
+	<a href="http://www.google.com/alpha/Top/Reference/Libraries/Library_and_Information_Science/Technical_Services/Cataloguing/Metadata/RDF/Applications/RSS/News_Readers/"
+	   i18n:translate="link_rss_list">
+          list
+	</a> 
+	of available readers from Google.</p>
+
+      <p class="link-top" >
+	<a href="rss_feeds#Top" 
+           i18n:attributes="title link_title_top;" 
+           i18n:translate="text_discussion_top" 
+           title="Return to Top">Return to Top</a>
+      </p>
+      
+
+    </tal:block>
+
+
+      <p>This material was created or adapted from material created by MIT OCW, Copyright &copy; 2007 MIT in accordance with the <a href="http://ocw.mit.edu/OcwWeb/Global/terms-of-use.htm">MIT OCW Terms of Use, http://ocw.mit.edu/OcwWeb/Global/terms-of-use.htm</a>.</p>
+
+
+      <div tal:replace="structure provider:plone.belowcontentbody" />
+
+      <div tal:replace="structure context/@@copyright_byline_view|nothing" />
+
+      <div tal:replace="structure context/@@citation_view|nothing" />
+
+    </metal:main-macro>
+    </div>
+    
+  </body>
+</html>

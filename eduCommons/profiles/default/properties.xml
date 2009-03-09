@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<site>
+ <property name="validate_email" type="boolean">False</property>
+</site>
+
+
+

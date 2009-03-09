@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ContentLicensing 1.0\n"
+"POT-Creation-Date: 2006-12-09 00:34+0000\n"
+"PO-Revision-Date: 2007-05-18 00:00 +0000\n"
+"Last-Translator: Arturo Formariz <arturo.formariz@upm.es>\n"
+"Language-Team: Oficina OCW-UPM <ocw-upm@upm.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: ContentLicensing\n"
+
+#: ContentLicensing/skins/ContentLicensing/validate_license.vpy:22
+msgid "Please correct the indicated errors."
+msgstr "Por favor, corrija los errores indicados."
+
+#: ContentLicensing/browser/__init__.py:5
+msgid "The citation for this resource is presented in APA format. Copy the citation to your clipboard for reuse."
+msgstr "La referencia a este recurso está presentada en formato APA. Copie la referencia en el portapapeles para reutilizarla."
+
+#: ContentLicensing/skins/ContentLicensing/validate_license.vpy:14
+msgid "This field is required, please provide some information."
+msgstr "Este campo es obligatorio, por favor introduzca la información."
+
+#. Default: "The citation for this resource is presented in APA format.  Copy the citation to your clipboard for reuse."
+#: ../browser/copyright_byline.pt
+msgid "alert_cite_resource"
+msgstr "La referencia a este recurso está presentada en formato APA. Copie la referencia en el portapapeles para reutilizarla."
+
+#. Default: "Configure site wide settings for copyright licensing of content within this portal."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "description_configure_contentlicensing"
+msgstr "Configure las preferencias generales del sitio para el tratamiento de licencias sobre el contenido del portal."
+
+#. Default: "Configure Content Licensing"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "heading_configure_contentlicensing"
+msgstr "Configurar licencias"
+
+#. Default: "Add a license to the list of supported licenses."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "help_add_license"
+msgstr "Añadir una licencia a la lista de licencias disponibles."
+
+#. Default: "The name of the person or organization owning or managing rights over the resource."
+#: ContentLicensing/skins/ContentLicensing/dc_metadata.pt
+msgid "help_copyright_holder_name"
+msgstr "El nombre de la persona u organización poseedora o gestora de los derechos del recurso."
+
+#. Default: "The license on this item."
+#: ContentLicensing/skins/ContentLicensing/dc_metadata.pt
+msgid "help_copyright_license"
+msgstr "La licencia de este elemento."
+
+#. Default: "The default copyright to be used with content in this portal."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "help_default_copyright"
+msgstr "El copyright por defecto usado para el contenido de este portal."
+
+#. Default: "The default copyright owner for content in this portal."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "help_default_copyright_holder"
+msgstr "El titular del copyright por defecto para el contenido de este portal."
+
+#. Default: "The default license to used with content in this portal."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "help_default_site_license"
+msgstr "La licencia por defecto para el contenido de este portal."
+
+#. Default: "Specify the jurisdiction in which the content license is valid. (Any Jurisdiction changes must be saved before choosing a new Creative Commons license.)"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "help_jurisdiction"
+msgstr "Especifique el ámbito en el que la licencia es válida. (Cualquier cambio en este ámbito debe ser guardado antes de elegir una nueva licencia Creative Commons)"
+
+#. Default: "The title of the license that will appear on the licensed object."
+#: ContentLicensing/skins/ContentLicensing/create_license.cpt
+msgid "help_license_name"
+msgstr "El título de la licencia que aparecerá en el objeto al que se le asigna licencia."
+
+#. Default: "The external URL of the license, this usually contains the actual content of the license."
+#: ContentLicensing/skins/ContentLicensing/create_license.cpt
+msgid "help_license_url"
+msgstr "Enlace externo a la licencia, éste generalmente tiene los contenidos de la licencia."
+
+#. Default: "The institution or individual responsible for publishing content in this portal."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "help_publisher"
+msgstr "La institución o individuo responsable de la publicación del contenido en el portal."
+
+#. Default: "Click here to apply this license to all contained objects."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "help_recurse"
+msgstr "Pulse aquí para aplicar esta licencia a todos los objetos que contenga."
+
+#. Default: "Choose the copyright licenses which can be selected for individual objects."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "help_supported_licenses"
+msgstr "Elija el copyright que será elegido para objetos individuales."
+
+#. Default: "Add New Supported License"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_add_license"
+msgstr "Añadir nuevas licencias disponibles"
+
+#. Default: "Copyright Holder"
+#: ContentLicensing/skins/ContentLicensing/dc_metadata.pt
+msgid "label_copyright_holder_name"
+msgstr "Titular del copyright"
+
+#. Default: "Copyright License"
+#: ContentLicensing/skins/ContentLicensing/dc_metadata.pt
+msgid "label_copyright_license"
+msgstr "Copyright"
+
+#. Default: "Default Copyright"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_default_copyright"
+msgstr "Copyright por defecto"
+
+#. Default: "Default Copyright Holder"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_default_copyright_holder"
+msgstr "Titular del copyright por defecto"
+
+#. Default: "Default Site License"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_default_site_license"
+msgstr "Licencia del sitio por defecto"
+
+#. Default: "Creative Commons Jurisdiction"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_jurisdiction"
+msgstr "Ámbito de Creative Commons"
+
+#. Default: "The URL pointer to an image associated with the license."
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_license_image"
+msgstr "Enlace a la imagen asociada a la licencia."
+
+#. Default: "License Name"
+#: ContentLicensing/skins/ContentLicensing/create_license.cpt
+msgid "label_license_name"
+msgstr "Nombre de la licencia"
+
+#. Default: "License URL"
+#: ContentLicensing/skins/ContentLicensing/create_license.cpt
+msgid "label_license_url"
+msgstr "URL de la licencia"
+
+#. Default: "Publisher"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_publisher"
+msgstr "Editor"
+
+#. Default: "Apply License To Contained Objects"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_recurse"
+msgstr "Aplicar licencia a los objetos contenidos"
+
+#. Default: "Supported Licenses"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "label_supported_licenses"
+msgstr "Licencias disponibles"
+
+#. Default: "Content Licensing Settings"
+#: ../skins/ContentLicensing/prefs_content_licensing.cpt
+msgid "legend_configure_contentlicensing"
+msgstr "Ajustes de licencia"
+
+#. Default: "Create License"
+#: ContentLicensing/skins/ContentLicensing/create_license.cpt
+msgid "legend_create_license"
+msgstr "Crear licencia"
+
+#. Default: "This work is licensed under a"
+#: ../browser/copyright_byline.pt
+msgid "license_text"
+msgstr "Esta obra se publica bajo una licencia"
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<portlets>
+ <portlet 
+   addview="eduCommons.portlet.SimpleNavPortlet"
+   title="Simple Navigation Portlet"
+   description="A portlet which provides simple navigation."
+   />
+ <portlet
+    addview="eduCommons.portlet.CourseInfoPortlet"
+    title="Course Info Portlet"
+    description="A portlet which provides course summary info."
+    />
+ <portlet
+    addview="eduCommons.portlet.CourseBuilder"
+    title="Course Builder Portlet"
+    description="A portlet which allows quick building of courses."
+    />
+ <portlet
+    addview="eduCommons.portlet.OerRecommenderPortlet"
+    title="OER Recommender Portlet"
+    description="A portlet which provides OER Recommendations"
+    />
+</portlets>

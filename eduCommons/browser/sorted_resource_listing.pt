@@ -1,0 +1,54 @@
+<metal:listingmacro define-macro="listing">
+        <tal:foldercontents define="
+                            limit_display limit_display|request/limit_display|nothing;
+                            more_url more_url|request/more_url|string:folder_contents;
+                            folderContents view/getSortedResources;
+                            use_view_action site_properties/typesUseViewActionInListings|python:();
+                            over_limit python: limit_display and len(folderContents) > limit_display;
+                            folderContents python: (over_limit and folderContents[:limit_display]) or folderContents;">
+
+        <tal:listing condition="folderContents">
+
+
+            <div class="division-listing">
+	      <p class="division-title">Other Resources</p>
+
+
+                <tal:entry tal:repeat="item folderContents">
+
+                <tal:block tal:define="item_url item/getURL|item/absolute_url;
+                                       item_id item/getId|item/id;
+				       item_term item/getTerm;
+				       item_course_id item/getCourseId;
+                                       item_title_or_id item/pretty_title_or_id;
+                                       item_description item/Description;
+                                       item_type item/portal_type;
+                                       item_type_title item/Type;
+                                   ">
+
+			<p tal:define="oddrow repeat/item/odd;"
+			   tal:attributes="class python:oddrow and 'course-listing even' or 'course-listing odd'" >
+
+
+                            <a href="#"
+                               tal:attributes="href item_url;
+                                               class string:url">
+			        <span tal:condition="item_course_id" tal:replace="string:${item_course_id} -" />
+				<span tal:replace="item_title_or_id" />
+			        <span tal:condition="item_term" tal:replace="string:, ${item_term}" />
+
+				</a>
+                        </p>
+
+
+
+
+                </tal:block>
+                </tal:entry>
+
+          </div>
+        </tal:listing>
+
+
+        </tal:foldercontents>
+</metal:listingmacro>

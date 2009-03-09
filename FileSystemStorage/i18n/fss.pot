@@ -1,0 +1,105 @@
+# Gettext Message File for FileSystemStorage.
+#  <team@language.com>, 2003
+msgid ""
+msgstr ""
+"Project-Id-Version: FileSystemStorage\n"
+"POT-Creation-Date: 2005-04-06 09:05+Westeurop�ische Normalzeit\n"
+"PO-Revision-Date: 2005-04-06 09:05+Westeurop�ische Normalzeit\n"
+"Last-Translator:  <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-code: en\n"
+"Language-name: English\n"
+"Preferred-encodings: latin1 utf-8\n"
+"Domain: fss\n"
+"X-Is-Fallback-For:\n"
+
+msgid "heading_fss_maintenance"
+msgstr "FSS Maintenance"
+
+msgid "legend_fss_stats"
+msgstr "FSS Stats"
+
+msgid "label_valid_files_count"
+msgstr "Valid files"
+
+msgid "label_valid_backups_count"
+msgstr "Valid backups"
+
+msgid "label_not_valid_files_count"
+msgstr "Not Valid files"
+
+msgid "label_not_valid_backups_count"
+msgstr "Not Valid backups"
+
+msgid "label_total_size"
+msgstr "Total size"
+
+msgid "label_largest_size"
+msgstr "Largest size"
+
+msgid "label_smallest_size"
+msgstr "Smallest size"
+
+msgid "label_average_size"
+msgstr "Average size"
+
+msgid "legend_fss_update"
+msgstr "FSS Update"
+
+msgid "description_fss_maintenance_update"
+msgstr "Updating FileSystem storage, move not valid files to backup and move not valid backups in file storage."
+
+msgid "legend_fss_backup"
+msgstr "FSS Backup"
+
+msgid "description_fss_maintenance_remove_backup"
+msgstr "All backups, older than the number of days, will be removed."
+
+msgid "Update"
+msgstr "Update"
+
+msgid "Remove Backup"
+msgstr "Remove Backup"
+
+msgid "heading_fss_management"
+msgstr "FSS Management"
+
+msgid "legend_fss_management"
+msgstr "FSS Management"
+
+msgid "legend_fss_configuration"
+msgstr "Configuration file:"
+
+msgid "label_storage_path"
+msgstr "Storage path"
+
+msgid "label_storage_strategy"
+msgstr "Storage strategy"
+
+msgid "label_backup_path"
+msgstr "Backup path"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Management"
+msgstr "Management"
+
+msgid "Maintenance"
+msgstr "Maintenance"
+
+msgid "legend_rdf"
+msgstr "RDF"
+
+msgid "description_rdf_update"
+msgstr "Check all FSS files and link them to RDF files."
+
+msgid "label_rdf_enabled"
+msgstr "RDF enabled"
+
+msgid "label_rdf_script"
+msgstr "RDF script"

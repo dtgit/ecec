@@ -1,0 +1,26 @@
+<dl class="portlet portletCourseBuilder"
+    i18n:domain="eduCommons">
+
+  <dt class="portletHeader"
+      i18n:translate="box_course_builder">
+    Course Builder
+  </dt>
+
+  <dd class="portletItem even">
+    <a href=""
+         i18n:translate="text_build_course"
+	 tal:attributes="href string:${here/portal_url}/@@coursebuilderform">Build a Course</a>
+  </dd>
+
+<!--
+  <dd class="portletItem odd">
+    Build a course from Zip File
+  </dd>
+
+  <dd class="portletItem even">
+    Build a course from IMS Package
+  </dd>
+-->
+
+</dl>
+

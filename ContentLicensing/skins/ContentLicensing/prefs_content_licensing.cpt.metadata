@@ -1,0 +1,16 @@
+[default]
+title=Configure Content Licensing
+
+[security]
+View=0:Authenticated
+
+[validators]
+validators..=
+validators..Save=
+validators..Cancel=
+
+[actions]
+action.success=traverse_to:string:prefs_content_licensing 
+action.success..Save=traverse_to:string:prefs_content_licensing_set
+action.success..Cancel=redirect_to:string:plone_control_panel
+action.failure=traverse_to:string:prefs_content_licensing

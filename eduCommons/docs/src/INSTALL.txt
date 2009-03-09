@@ -1,0 +1,481 @@
+===================================
+eduCommons $$version$$ Installation
+===================================
+
+-------------------------
+Installation Instructions
+-------------------------
+
+Installation
+============
+
+This section describes how to install a server based instance of eduCommons on 
+a UNIX based platform (linux, OSX). 
+
+Installation involves the following packages:
+
+   * Python-2.4.4.tar.gz (http://python.org/2.4.4/) 
+   * Zope-2.10.5-final.tar.gz (http://www.zope.org/Products/Zope/2.10.5)
+
+Python library packages:
+
+   * Imaging-1.1.6.tar.gz (http://www.pythonware.com/products/pil/)
+   * PyXML-0.8.4.tar.gz (http://sourceforge.net/project/showfiles.php?group_id=6473)
+   * elementtree-1.2.6.tar.gz (http://effbot.org/downloads/#elementtree)
+   * libxml2-python-2.6.15.tar.gz (ftp://xmlsoft.org/libxml2/python/)
+   * Beautiful Soup 3.0.4 (http://www.crummy.com/software/BeautifulSoup/download/)
+
+Plone package:
+
+   * Plone-3.0.6.tar.gz (http://plone.org/products/plone/releases/3.0.6)
+
+eduCommons-related Packages:
+
+(Correct versions of these products are shipped in the eduCommons archive unless ohterwise noted)
+
+   * eduCommons (3.1.0-final)
+   * leftskin (1.0.2-final)
+   * ContentLicensing (2.0.0)
+   * ZipFileTransport (2.0.1)
+   * IMSTransport (2.0.1)
+   * PloneBookmarklets (2.0.0)
+   * ProxyIndex (1.2.1)
+   * FileSystemStorage (2.6.2)
+   * LinguaPlone (2.0)
+   * easy_install (download here: http://peak.telecommunity.com/dist/ez_setup.py)
+   * collective.captcha (installed via easy_install)
+
+I. Installation Steps
+---------------------
+
+1. Installing Python:
+
+   It is likely that the Python programming language is already installed on 
+   your server. Try typing:
+   ::
+
+      $ python
+
+   on the command line to see what version you have installed (Ctrl-D will exit). 
+   You should see something like the following:
+   ::
+
+      Python 2.4.4 (#1, Oct  7 2006, 21:17:24) 
+      [GCC 3.4.6 20060404 (Red Hat 3.4.6-3)] on linux2
+      Type "help", "copyright", "credits" or "license" for more information.
+      >>>
+
+   eduCommons and its supporting software requires version 2.4.4. If your server 
+   does not have Python, or if the version of Python installed is not 2.4.4, you 
+   will have to install a new version.
+
+   Some platforms may have an updated version of Python available through their
+   package managers (yum, apt, fink). If you can not find a suitable version, or 
+   if you prefer to build Python from source, simply download the source package
+   and use a command line interface to type in the following instructions:
+   ::
+
+      tar -zxvf Python-2.4.4.tar.gz
+      cd Python-2.4.4
+      ./configure
+      make
+      sudo make install
+
+   By default this will install a new version of Python in the /usr/local directory
+   on your server.
+
+2. Installing Python library packages
+
+   Once you have Python installed it will be necessary to include a number of
+   libraries that extend the functionality of your Python installation. If you 
+   have installed Python using a package manager, it may be likely that some
+   (or all) of these packages may also be available for installation. As long
+   as suitable library versions can be found, it should be fine to use them. In
+   cases where it is not possible to load prebuilt packages, use the following
+   instructions below:
+
+   a. Installing Python Imaging Libary (PIL)
+
+      PIL is now a required package for the latest version of Plone.
+
+      Unpack and install Imaging-1.1.6:
+      ::
+
+         tar -zxvf Imaging-1.1.6.tar.gz
+         cd Imaging
+         /usr/local/bin/python setup.py build
+         sudo /usr/local/bin/python setup.py install
+
+      You may require additional packages to build the imaging library. See
+      the PIL website for additional installation instructions.
+
+   b. Installing PyXML
+
+      Unpack and install PyXML:
+      ::
+
+         tar -zxvf PyXML-0.8.4.tar.gz
+         cd PyXML-0.8.4
+         /usr/local/bin/python setup.py build
+         sudo /usr/local/bin/python setup.py install
+
+   c. Installing elementtree
+
+      elementtree is now a required dependency for the latest version of Plone.
+
+      Unpack and install elementtree:
+      ::
+
+         tar -zxvf elementtree-1.2.6.tar.gz
+         cd elementtree-1.2.6
+         /usr/local/bin/python setup.py build
+         sudo /usr/local/bin/python setup.py install
+
+   d. Installing libxml2-python
+
+      If your target platform includes binary only distributions of libxml2 and
+      libxslt, you may need to also include the development packages in order for
+      the following to work. 
+
+      Unpack and install libxml2-python:
+      ::
+
+         tar -zxvf libxml2-python-2.6.15.tar.gz
+         cd libxml2-python-2.6.15
+         /usr/local/bin/python setup.py build
+         sudo /usr/local/bin/python setup.py install
+
+   e. Install Beautiful Soup
+
+      Unpack and install Beautiful Soup 3.0.4 into your python library.
+      ::
+
+         tar -zxvf BeautifulSoup-3.0.4.tar.gz
+         cd BeautifulSoup-3.0.4
+         /usr/local/bin/python setup.py build
+         sudo /usr/local/bin/python setup.py install
+
+  f. Install Easy Install
+
+      Easy Install (easy_install) is a python module bundled with setuptools
+      that lets you automatically download, build, install, and manage Python packages.
+
+      Download http://peak.telecommunity.com/dist/ez_setup.py and install it using the 
+      correct version of python:
+      ::
+
+         /usr/local/bin/python ez_setup.py
+
+   g. Install collective.captcha
+
+      collective.captcha is a Python package that is installable via Easy Install
+      ::
+
+         /usr/local/bin/easy_install collective.captcha
+
+3. Installing Zope
+
+   Unpack, build and install Zope:
+   ::
+
+      tar -zxvf Zope-2.10.5-final.tar.gz 
+      cd Zope-2.10.5-final
+      ./configure --with-python=/usr/local/bin/python --prefix /opt/Zope-2.10.5
+      make
+      sudo make install
+
+4. Create a Zope instance
+
+   Create an instance in your Zope install:
+   ::
+
+      sudo /opt/Zope-2.10.5/bin/mkzopeinstance.py
+
+   When prompted for a directory enter in the following:
+   ::
+ 
+      /opt/Zope-2.10.5/web
+
+   You can substitute the *web* directory for a name that better describes your site. 
+   The documentation will assume that you have chosen web as your instance directory.
+
+   When prompted for a username and password, enter in the username/password you will 
+   use for managing your Zope instance.
+
+5. Install Zope Products
+
+   eduCommons relies on several Zope products in order to run. You will need to install
+   the following packages in the following order. The commands listed below assume that
+   you have the source tarballs in the root of your home account:
+
+   a. Plone-3.0.6
+
+      Install Plone into your Zope instance Products folder.lib/python directory 
+      ::
+
+         cd /opt/Zope-2.10.5/web/Products
+         sudo tar -zxvf ~/Plone-3.0.6.tar.gz
+
+      Once you have unpacked Plone you need to move the products back up to the Products 
+      directory as follows:
+      ::
+
+         cd /opt/Zope-2.10.5/web/Products
+         sudo su
+         cd Plone-3.0.6
+         mv * ..
+         cd ..
+         sudo rm -rf Plone-3.0.6
+      
+      The Plone tarball came with a lib/python directory. The contents of it need to go 
+      up one level, into the lib/python of your Zope install.
+      ::
+
+         cd /opt/Zope-2.10.5/web/Products
+         cp -r lib/* ../lib/
+         sudo rm -rf /opt/Zope-2.10.5/web/Products/lib
+
+      The Plone tarball also contains a Products directory. The contents of it need to go
+      up one level, into the web/Products directory of your Zope install.
+      ::
+
+         cd /opt/Zope-2.10.5/web/Products
+         cp -r Products/* ../Products/
+         sudo rm -rf /opt/Zope-2.10.5/web/Products/Products
+
+   b. eduCommons
+
+      This is the eduCommons product source package. To install use the following:
+      ::
+
+         cd /opt/Zope-2.10.5/web/Products
+         sudo tar -zxvf ~/eduCommons-$$version$$.tar.gz
+
+      eduCommons includes a number of products which need to be put in the root
+      of the Products folder. To do this use the following:
+      ::
+         
+         cd /opt/Zope-2.10.5/web/Products
+	 sudo mv eduCommons-$$version$$/* .
+         sudo rm -rf eduCommons-$$version$$
+
+      The products that now ship with eduCommons are as follows:
+         
+      1. eduCommons
+
+         A Plone product which implements the core functionality of eduCommons.
+
+      2. leftskin
+
+         A Plone product which customizes the Plone layout.
+
+      3. ContentLicensing
+
+         A Plone product that adds the ability to set copyright licenses on content
+         objects. Auto installed with the eduCommons product.
+
+      4. ZipFileTransport
+
+         A Plone product that adds the ability to import and export content via
+         ZIP archives. Auto installed with the eduCommons product.
+
+      5. IMSTransport
+
+         A Plone product that imports and exports contents in IMS content packages. 
+         Auto installed with the eduCommons product.
+
+      6. PloneBookmarklets
+
+         A Plone product that adds the ability to integrate documents with popular social
+         bookmarking sites.
+
+      7. ProxyIndex
+
+         ProxyIndex is a plugin to zope catalog index.
+
+      8. FileSystemStorage
+
+         FileSystemStorage is a product that provides the framework for content types to store data
+         directly on the filesystem, rather than in the ZODB.  
+
+      9. LinguaPlone
+
+         A tool to manage and maintain multilingual Plone content.
+
+6. Configure your Zope site
+
+   Now that all the necessary Zope products are installed it is time to clean up and
+   configure the site. The first task is to create a zope user and group in which 
+   zope can run under. This can be done via the following:
+   ::
+
+      sudo /usr/sbin/groupadd zope
+      sudo /usr/sbin/adduser -g zope -s /bin/false -d /opt/Zope-2.10.5 zope
+
+   Once that is done we can now set the proper permissions needed for Zope to run
+   securely. This can be done via the following:
+   ::
+
+      cd /opt/Zope-2.10.5/web/Products
+      sudo chgrp -R zope *
+      sudo chmod go-w *
+
+   FileSystemStorage comes with its own documentation and we recommend you read it 
+   (/opt/Zope-2.10.5/web/Products/FileSystemStorage/README.txt). Create folders for
+   storage and backup. We suggest setting things up in the following way:
+   ::
+
+      cd /opt/Zope-2.10.5/web/var
+      mkdir fss_storage
+      mkdir fss_backup
+
+   Now edit the filesystemstorage.conf.in configuration file for FileSystemStorage located 
+   in /opt/Zope-2.10.5/web/Products/FileSystemStorage/etc. There are several configuration 
+   options here (see README.txt), but most can be left at the default. We suggest a 
+   hierarchical file structure, which can be set up by uncommenting and editing this line:
+   ::
+
+      # storage-strategy flat
+      change to:
+      storage-strategy site1
+
+   Zope needs to be able to write to the log directory, and its database files. To
+   enable this enter the following:
+   ::
+
+      cd /opt/Zope-2.10.5/web
+      sudo chgrp -R zope log var
+      sudo chmod -R g+w log var
+
+   The last bit of configuration that needs to be done is to edit the zope.conf file.
+   found in the *etc/* directory of your Zope Instance. Uncomment and edit the 
+   following settings:
+   ::
+
+      effective-user zope
+
+   And set the default port you want the Zope server to run on:
+   ::
+
+      <http-server>
+        # valid keys are "address and "force-connection-close"
+        address 8080
+        # force-connection-close on
+      </http-server>
+
+7. Apply Security Patch
+
+   Plone's Security Panel is broken for Products that add Roles that come alphabetically
+   before 'Anonymous'. eduCommons adds the Administrator Role, which breaks the Security 
+   Panel.  This is a documented bug (http://dev.plone.org/plone/ticket/7690).
+
+   In order to remedy this problem, apply the patch found in the eduCommons/extras folder.
+   Copy the patch to /opt/Zope-2.10.5/web/lib/python/plone/app/controlpanel. 
+   ::
+
+      cd /opt/Zope-2.10.5/web/lib/python/plone/app/controlpanel
+      cp /opt/Zope-2.10.5/web/Products/eduCommons/extras/plone.app.controlpanel.security.py.patch .
+
+   Apply the patch by running the following command:
+   ::
+
+      patch -p0 < plone.app.controlpanel.security.py.patch
+
+   You may get this message: "can't find file to patch at input line 1 Perhaps you used 
+   the wrong -p or --strip option? File to patch:" Enter the following:
+   ::
+
+      security.py
+
+8. Overwrite Kupu's html2captioned transform
+
+   Kupu allows for dynamically generated captions on inserted images. eduCommons utilizes
+   this feature to provide license and copyright holder information for embedded images 
+   in documents.  In order for this functionality to occur, the default transformation 
+   must be customized
+   ::
+
+      cp /opt/Zope-2.10.5/web/Products/eduCommons/extras/html2captioned.py /opt/Zope-2.10.5/web/Products/kupu/plone
+
+
+II. Configuration Steps
+-----------------------
+
+1. Launch Zope
+
+   Once Zope has been properly configured it can then be launched via the following
+   commands:
+   ::
+
+      cd /opt/Zope-2.10.5/web
+      sudo bin/zopectl start
+
+   You should now be able to open a browser and go to the ZMI with the following URL
+   (assuming that you configured Zope to run on port 8080)
+   ::
+
+      http://<server name>:8080/manage
+
+   You should then get a dialog prompt asking for your Zope admin username and password.
+
+2. Install eduCommons Product
+
+   Once you have logged into the ZMI via the management interface, you are now ready 
+   to create the site. Start by creating a plone site with the pull down menu in the 
+   top right corner. Give the plone site an ID and title. The ID will be used in the 
+   URL to access the site, so name it appropriately. The title will appear several 
+   places within the eduCommons install, and should be based on your group or institution.
+
+   Under "Extension Profiles" you need to do a multi-select (hold down the CTRL or the 
+   Apple key). Select Working Copy Support (Iterate), ContentLicensing, IMSTransport, LinguaPlone,
+   PloneBookmarklets, Zip File Transport, eduCommons, and Left Skin so they are all highlighted.
+   Then click "Add Plone Site."
+
+   Once the eduCommons instance has been created, you will need to QuickInstall the FileSystemStorage Product.
+   In the ZMI:
+   ::
+
+       1. Navigate to your eduCommons instance
+       2. Navigate to portal_quickinstaller
+       3. Select the checkbox to the left of FileSystemStorage
+       4. Click Install
+
+   If you wish to localize content in other languages you will need to QuickInstall install LinguaPlone.
+   This can be done either now from the ZMI or later, via Site Setup --> Add-on Products.
+   In the ZMI:
+   ::
+
+       1. Navigate to your eduCommons instance
+       2. Navigate to portal_quickinstaller
+       3. Select the checkbox to the left of LinguPlone
+       4. Click Install
+
+   If you have installed LinguaPlone you will also need to select your supported languages.
+   In the ZMI:
+   ::
+
+       1. Navigate to your eduCommons instance
+       2. Navigate to portal_languages
+       3. Select one or more Allowed languages (use the control or apple key to multi-select)
+       4. Click Save 
+
+   Additional instructions for localizing content using LinguaPlone are available in LOCALIZATION.txt.
+
+   Finally, you need to reorder the Layers in your eduCommons Skins Selections.
+   In the ZMI:
+   ::
+
+       1. Navigate to your eduCommons instance
+       2. Navigate to portal_skins
+       3. Click on the Properties tab
+       4. Under the Skins Selections, in the Layers textbox for LeftSkin, cut the LinguaPlone entry 
+          and paste it one a new line below the eduCommons entry 
+       5. Click Save (be sure to click the Save button for the Skins selection section)
+
+3. Configure eduCommons
+
+   Additional configuration information is provided in SETUP.txt (or online at
+   http://cosl.usu.edu/projects/educommons/documentation/how-to/educommons-setup-instructions).
+   This will help you to further customize eduCommons.
+
+

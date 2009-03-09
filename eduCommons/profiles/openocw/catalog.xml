@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+  <index name="getCourseId" meta_type="FieldIndex">
+    <indexed_attr value="getCourseId"/>
+  </index>
+  <index name="getTerm" meta_type="FieldIndex">
+    <indexed_attr value="getTerm"/>
+  </index>
+  <index name="getInstructorName" meta_type="FieldIndex">
+    <indexed_attr value="getInstructorName"/>
+  </index>
+  
+
+  <column value="getCourseId" />
+  <column value="getTerm" />  
+  <column value="getInstructorName" />
+</object>

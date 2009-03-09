@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="leftskin-final" version="10070913-01"
+	       handler="Products.leftskin.setupHandlers.importFinalSteps"
+	       title="Left Skin Final Steps Setup">
+    <dependency step="plone-final" />
+  </import-step>
+</import-steps>

@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: IMSTransportTool\n"
+"POT-Creation-Date: 2006-08-28 20:21+0000\n"
+"PO-Revision-Date: 2007-03-20 10:11+0100\n"
+"Last-Translator: olivier Turlier <o.turlier@gmail.com>\n"
+"Language-Team: FRENCH <o.turlier@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: IMS\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+
+#. Default: "Export"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "Export"
+msgstr "Exportez"
+
+#. Default: "Upload"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "Upload"
+msgstr "Uploadez"
+
+#. Default: "You can export the course as an IMS content package in order to transfer it to a different eduCommons installation or other IMS compliant systems."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "description_export_course"
+msgstr "Vous pouvez exporter ce cours sous un format d'archive IMS,  afin de pouvoir le transférer sur une installation eduCommons différente ou un autre système compatible avec la norme IMS."
+
+#. Default: "select the IMS Content Package.zip file with the 'Browse' button, and press 'Upload'."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "description_import_file"
+msgstr "Sélectionnez l'archive  *.zip au format IMS avec le bouton 'Parcourir', et appuyez sur 'Upload'."
+
+#. Default: "Export IMS Content Package"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "heading_IMSExportContent"
+msgstr "Exportez l'archive de contenu IMS"
+
+#. Default: "Import IMS Content Package"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "heading_IMSImportContent"
+msgstr "Importez l'archive de contenu IMS"
+
+#. Default: "Select the ZIP archive file to be uploaded by clicking the 'Browse' button."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "help__zip_file"
+msgstr "Sélectionnez l'archive *.zip à 'uploader' en cliquant sur le bouton 'Parcourir'."
+
+#. Default: "The name of the file downloaded to your local machine."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "help_exportfilename"
+msgstr "Le nom du fichier téléchargé sur votre poste local."
+
+#. Default: "Zip File"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "label__zip_file"
+msgstr "Archive *.zip"
+
+#. Default: "Export Filename (zipfile)"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "label_exporttitle"
+msgstr "Exportez le nom de fichier (archive *.zip)"
+

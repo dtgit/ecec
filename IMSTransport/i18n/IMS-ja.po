@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: IMS\n"
+"POT-Creation-Date: 2007-04-11 22:13+0000\n"
+"PO-Revision-Date: 2007-05-06 00:06+0900\n"
+"Last-Translator: Haruo Takemura <h-tak@ga2.so-net.ne.jp>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: ja\n"
+"Language-Name: Japanese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: IMS\n"
+
+#. Default: "Export"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "Export"
+msgstr "エクスポート"
+
+#. Default: "Upload"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "Upload"
+msgstr "アップロード"
+
+#. Default: "You can export the course as an IMS content package in order to transfer it to a different eduCommons installation or other IMS compliant systems."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "description_export_course"
+msgstr "コースをIMSコンテンツパッケージとしてエクスポートできます。これにより他のeduCommonsを用いているシステムやIMS準拠のシステムにコンテンツを移動できます。"
+
+#. Default: "select the IMS Content Package.zip file with the 'Browse' button, and press 'Upload'."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "description_import_file"
+msgstr "参照ボタンをおして、IMSコンテントパッケージのzipファイルを選択し、アップロードボタンを押します。"
+
+#. Default: "Export IMS Content Package"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "heading_IMSExportContent"
+msgstr "IMSコンテントパッケージのエクスポート"
+
+#. Default: "Import IMS Content Package"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "heading_IMSImportContent"
+msgstr "IMSコンテントパッケージのインポート"
+
+#. Default: "Select the ZIP archive file to be uploaded by clicking the 'Browse' button."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "help__zip_file"
+msgstr "参照ボタンをおして、アップロードするZIPアーカイブファイルを選択します。"
+
+#. Default: "The name of the file downloaded to your local machine."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "help_exportfilename"
+msgstr "ローカルなコンピュータにダウンロードされるファイルの名前。"
+
+#. Default: "Zip File"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "label__zip_file"
+msgstr "Zipファイル"
+
+#. Default: "Export Filename (zipfile)"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "label_exporttitle"
+msgstr "エクスポートファイル名(zipファイル)"
+

@@ -1,0 +1,100 @@
+# Gettext Message File for FileSystemStorage.
+#  <team@language.com>, 2003
+msgid ""
+msgstr ""
+"Project-Id-Version: FileSystemStorage\n"
+"POT-Creation-Date: 2005-04-06 09:05\n"
+"PO-Revision-Date: 2006-07-01 15:35+0100\n"
+"Last-Translator: Radim Novotny <novotny.radim@gmail.com>\n"
+"Language-Team: CoreNet <info@corenet.cz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-code: cs\n"
+"Language-name: Czech\n"
+"Preferred-encodings: utf-8\n"
+"Domain: fss\n"
+"X-Is-Fallback-For: \n"
+
+msgid "heading_fss_maintenance"
+msgstr "Údržba uložiště souborů"
+
+msgid "legend_fss_stats"
+msgstr "Statistiky statistiky uložiště souborů"
+
+msgid "label_valid_files_count"
+msgstr "Platných souborů"
+
+msgid "label_valid_backups_count"
+msgstr "Platných záložních souborů"
+
+msgid "label_not_valid_files_count"
+msgstr "Neplatných souborů"
+
+msgid "label_not_valid_backups_count"
+msgstr "Neplatných záložních souborů"
+
+msgid "label_total_size"
+msgstr "Celková velikost"
+
+msgid "label_largest_size"
+msgstr "Velikost největšího souboru"
+
+msgid "label_smallest_size"
+msgstr "Velikost nejmenšího souboru"
+
+msgid "label_average_size"
+msgstr "Průměrná velikost souborů"
+
+msgid "legend_fss_update"
+msgstr "Aktualizace uložiště souborů"
+
+msgid "description_fss_maintenance_update"
+msgstr "Provede aktualizaci uložiště souborů. Dojde k přesunu neplatných souborů do zálohy a přesunu neplatných záložních souborů do úložiště."
+
+msgid "legend_fss_backup"
+msgstr "Zálohování uložiště souborů"
+
+msgid "description_fss_maintenance_remove_backup"
+msgstr "Záložní soubory starší než uvedený počet dní budou vymazány."
+
+msgid "Update"
+msgstr "Aktualizace"
+
+msgid "Remove Backup"
+msgstr "Odstranit záložní soubory"
+
+msgid "heading_fss_management"
+msgstr "Správa uložiště souborů"
+
+msgid "legend_fss_management"
+msgstr "Správa uložiště souborů"
+
+msgid "label_storage_path"
+msgstr "Cesta k úložišti"
+
+msgid "label_backup_path"
+msgstr "Cesta k záložním souborům"
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "Management"
+msgstr "Správa"
+
+msgid "Maintenance"
+msgstr "Údržba"
+
+msgid "legend_rdf"
+msgstr "RDF"
+
+msgid "description_rdf_update"
+msgstr "Ověřit všechny soubory v uložišti a napojit je na příslušné RDF soubory."
+
+msgid "label_rdf_enabled"
+msgstr "Povolit RDF"
+
+msgid "label_rdf_script"
+msgstr "RDF skript"
+

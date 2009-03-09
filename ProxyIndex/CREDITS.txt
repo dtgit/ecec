@@ -1,0 +1,21 @@
+Copyright (c) 2003 Infrae. All rights reserved.
+See also LICENSE.txt
+
+Meta::
+
+  Valid for:  ProxyIndex 1.2
+  Author:     Martijn Faassen
+  Email:      faassen@infrae.com
+  CVS:        $Revision: 1.2 $
+
+Annotations are developed by Infrae (http://www.infrae.com).
+
+Developer:
+
+  kapil thangavelu <k_vertigo@objectrealms.net>
+
+Note:
+
+  The modified Expression.py is taken from the CMFCore and is licensed
+  under the ZPL2.0. The rest is licensed under the BSD license.
+

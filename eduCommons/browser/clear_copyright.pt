@@ -1,0 +1,31 @@
+<div metal:define-macro="clear_copyright_fields" tal:omit-tag="">
+
+
+  <div class="field"
+       tal:define="clearedCopyright view/getClearedCopyright;">
+
+    <input type="checkbox"
+	   id="clearedCopyright"
+	   name="clearedCopyright:boolean"
+	   tal:attributes="checked clearedCopyright" />
+
+    <input value="False" name="clearedCopyright:boolean:default" type="hidden" />
+
+    <label for="cleared_copyright"
+	   i18n:domain="eduCommons"
+	   i18n:translate="label_clear_copyright">Cleared Copyright</label>
+
+
+    <div class="formHelp" id="cleared_copyright_help"
+	 i18n:domain="eduCommons"
+	 i18n:translate="help_cleared_copyright">
+      Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violations.
+    </div>
+    <div>
+    </div>
+
+
+  </div>
+
+
+</div>

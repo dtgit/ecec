@@ -1,0 +1,81 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+           xmlns:five="http://namespaces.zope.org/five"
+	   i18n_domain="IMSTransport">
+
+  <include package=".browser" />
+  <include package=".utilities" />
+
+  <adapter
+      for="Products.ATContentTypes.interface.folder.IATFolder"
+      provides=".interfaces.IIMSManifestWriter"
+      factory=".Manifest.IMSManifestWriter" />
+
+  <adapter
+      for="Products.ATContentTypes.interface.folder.IATFolder"
+      provides=".interfaces.IIMSManifestReader"
+      factory=".Manifest.IMSManifestReader" />
+
+  <subscriber
+      for=".interfaces.ISetNameSpaces"
+      handler=".ManifestHandlers.setNameSpaces" />
+
+  <subscriber
+      for=".interfaces.IObjectWriteMetadata"
+      handler=".ManifestHandlers.WriteLOMMetadataHandler" />
+
+  <subscriber
+      for=".interfaces.IObjectReadMetadata"
+      handler=".ManifestHandlers.ReadLOMMetadataHandler" />
+
+  <subscriber
+      for=".interfaces.IObjectWriteOrganizations"
+      handler=".ManifestHandlers.WriteOrganizationsHandler" />
+
+  <subscriber
+      for=".interfaces.IObjectReadOrganizations"
+      handler=".ManifestHandlers.ReadOrganizationsHandler" />
+
+  <subscriber
+      for=".interfaces.IObjectWriteContributeNode"
+      handler=".ManifestHandlers.writeContributeNode" />
+
+  <subscriber
+      for=".interfaces.IObjectReadContributeNode"
+      handler=".ManifestHandlers.readContributeNode" />
+
+  <subscriber
+      for=".interfaces.IObjectCreateObject"
+      handler=".ManifestHandlers.DefaultCreateObjects" />
+      
+  <subscriber
+      for=".interfaces.IObjectTransformPackage"
+      handler=".TransformHandlers.WebCTTransformHandler" />
+
+  <subscriber
+      for=".interfaces.IObjectTransformPackage"
+      handler=".TransformHandlers.BlackboardTransformHandler" />
+
+  <subscriber
+      for=".interfaces.IObjectTransformPackage"
+      handler=".TransformHandlers.MITTransformHandler" />
+
+  <genericsetup:registerProfile
+     name="default"
+     title="IMSTransport"
+     directory="profiles/default"
+     description="Extension Profile for IMS Transport Product."
+     provides="Products.GenericSetup.interfaces.EXTENSION"
+     />
+
+
+  <five:implements
+      class="Products.CMFCore.PortalObject.PortalObjectBase"
+      interface="Products.ContentLicensing.interfaces.IPortalObject"
+      />
+
+  <five:traversable class="OFS.Application.Application" />
+
+  <five:traversable class="Products.CMFCore.PortalObject.PortalObjectBase" />
+
+</configure>

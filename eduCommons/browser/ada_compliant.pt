@@ -1,0 +1,31 @@
+<div metal:define-macro="ada_compliant_fields" tal:omit-tag="">
+
+
+  <div class="field"
+       tal:define="adacompliant view/getADACompliant;">
+
+    <input type="checkbox"
+	   id="adacompliant"
+	   name="adacompliant:boolean"
+	   tal:attributes="checked adacompliant" />
+
+    <input value="False" name="adacompliant:boolean:default" type="hidden">
+
+    <label for="adacompiant"
+	   i18n:domain="eduCommons"
+	   i18n:translate="label_adacompliant">Accessible</label>
+
+
+    <div class="formHelp" id="adacompliant_help"
+	 i18n:domain="eduCommons"
+	 i18n:translate="help_adacompliant">
+      Set the accessibility flag if your content meets the criteria outlined *LINK HERE*
+    </div>
+    <div>
+    </div>
+
+
+  </div>
+
+
+</div>

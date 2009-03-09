@@ -1,0 +1,30 @@
+<div id="about">
+  <table cellspacing="0" 
+         cellpadding="0" 
+         border="0"
+         summary="Information about Department"
+         id="aboutTable"
+         i18n:attributes="summary table_dept_summary;">
+    <tbody>
+      <tr>
+        <td id="aboutPhoto">
+          <!-- Use eduCommons insert link functionality to create this link -->        
+          <img width="275" height="275" border="0" title="Department Image" alt="Department Image" 
+               src=""
+               tal:attributes="src string:${here/portal_url}/eduCommonsDivision.gif" />
+        </td>
+        <td id="aboutDeptInfo">
+          <h3>Department Name</h3>
+	  
+          <p tal:condition="not: view/isOpenOCW" id="deptMetadata">Institution Name</p>
+          <p>ABOUT THE DEPARTMENT</p>
+          <p>
+            <a href="#" tal:condition="not: view/isOpenOCW">Link to Department</a>...Tu es Petrus, et super hanc petram aedificabo Ecclesiam meam, 
+            et portae inferi non praevalebunt adversum eam. Et tibi dabo claves regni coelorum. 
+          </p>       
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>

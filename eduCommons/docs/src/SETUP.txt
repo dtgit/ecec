@@ -1,0 +1,149 @@
+Table of Contents
+=================
+
+
+`How To Setup eduCommons`_
+
+`Add/Remove Products`_
+
+`Customizing eduCommons Skin`_
+
+`Mail Settings`_
+
+`Site Settings`_
+
+`Setting the Default Language for your Site`_
+
+`Search Settings`_
+
+`Adding Users/Assigning Roles`_
+
+`Customizing Default Pages`_
+
+`Setting a Default Site-Wide Copyright License`_
+
+`Other Customizations`_
+
+
+This documentation assumes that you have already successfully installed eduCommons and are now ready to set it up for use. If you have not yet have a running instance of eduCommons, you may want to refer back to the installation instructions first. They can be found here_, or in a file titled "INSTALL.txt" in the root of the eduCommons software tarball. Check to make sure that the version of the documentation matches the version of software you are attempting to install.
+
+.. _here: ./installation-instructions
+
+How To Setup eduCommons
+=======================
+
+Most of the settings described below can be found by clicking on the *Site Setup* link found in the upper right corner of every page. If you do not see this link, it is most likely because you are not logged in as an administrator, or a manager. Also some of the links described below are only available to managers, and will not appear when logged in as an administrator. If you have not yet done any configuration on the site, use the username and password you used to create your Zope instance during installation. This account should automatically assume a manager role. More information about users and roles can be found below in the section titled `Adding Users/Assigning Roles`_.
+
+
+Add/Remove Products
+===================
+
+By default when you install eduCommons all additional addons and products will be installed at the same time. It may be necessary to integrate additional Plone packages into eduCommons. If this is the case for you, use the *Add/Remove Products* link to do so. You should note that this is definitely within the realm of advanced functionality, and it is likely that more work will need to be done to make any additional packages work correctly with eduCommons. The good news is that for the majority of users, there is no need to add any additional products in order for your instance of eduCommons to function correctly.
+
+
+Customizing eduCommons Skin
+===========================
+
+You can customize the look and feel of your eduCommons site by selecting the *Left Skin* link from within Site Setup. This is a great place to add any institutional branding that may be required for your site. From here you can adjust the colors and images of your eduCommons instance, as well as provide replacement banners and images. Details as to what can be set, and how to set it are included in the form. Any changes made to these settings must be done after having checked the Development Mode box. In order to change the background color in the top nav color, a 1px x 1px transparent gif needs to be loaded first to hide the top nav background image. Be sure to uncheck the Development Mode box after Left Skin changes have been saved to improve site performance.*Remember: you may need to clear your browser's cache in order to see updates made using this form*.
+
+
+Mail Settings
+=============
+
+eduCommons has a couple of ways to record and verify user email addresses. It also uses email as a primary mechanism for providing you with feedback from users of your site. In order to take advantage of this functionality, it is necessary configure eduCommons to be able to use an email server, and to provide a username/email address which can receive email. 
+
+Registration
+------------
+
+By default, eduCommons provides a Log in link, but not a Register link. To enable registration on the site, you much login as a manager or administrator. A Site Setup link will appear in the top right corner of the screen. Click on the Security settings link and check the box next to "Enable self-registration." Be sure to set the Mail Settings in the section below. 
+
+Mailhost Settings
+-----------------
+
+eduCommons provides email settings via the *Site Setup* link found in the upper right corner. You must be logged in as a manager or administrator in order for the appropriate settings to appear. Once you have clicked on the *Site Setup* link, there should be a list of configuration options available. In the list should be a link titled *Mail*. 
+
+When you click on this link, eduCommons will give you the opportunity to specify an email server to use to send mail through. By default it is set to connect to a mailserver over the localhost network interface. It also contains extra fields to allow eduCommons to authenticate with a mail server not running locally. Care should be taken not to connect to mail servers over hostile networks (e.g. the internet) as authentication details may be passed in the clear. Currently there is not yet support for encrypted connection to mail servers. This should not be a huge limitation as long as you have access to a local mail server.
+
+If you have additional needs you can consider using sendmail or an equivalent mail server package which could run on the same server as eduCommons, which could be configured to forward mail to a trusted mail server using whatever forms of encryption that are appropriate to your situation. Much information on how to configure advanced setups such as these can easily be found on the Internet. Unfortunately further discussion on email server network topologies is beyond the scope of this documentation.
+
+Feedback
+--------
+
+eduCommons now uses a feedback form to collect feedback from users. A name and a corresponding email address can be specified in the Site Setup --> Mail, under the Mail Sender tab. Simply fill in the fields marked *Site 'From' Name* and *Site 'From' address*. 
+
+
+Site Settings
+=============
+
+The *Site Title* and *Site Description* fields should contain values that were initially set during the installation process. If you want to change these fields, you can do so here. The *Site Title* field is referred to throughout the site. It is important to remember that eduCommons will only change the portal title on a page when a template is applied. If you change this setting here, it will be necessary to also change it throughout the site, or to reapply templates that refer to it.
+
+eduCommons provides a number of settings that can be used with your site. The *Site 'From" Name* and *Site 'From' Address* are already discussed in the section titled `Mail Settings`_. 
+
+*JavaScript for web statistics support* is an area for enabling web statistics support from external providers (for e.g. Google Analytics). Paste the code snippets provided. It will be included in the rendered HTML as entered near the end of the page.
+
+The *Default Language* setting is discussed in the next section.
+
+Setting the Default Language for your Site
+==========================================
+
+Using the *Language* link you can set a default language for your site. This will have the effect of localizing all menu links, navigation and general eduCommons features into the language of your choice. 
+
+What If Only Part of the eduCommons Site Appears to be Localized?
+-----------------------------------------------------------------
+
+The software that eduCommons is built upon (Plone) supports a large number of localizations out of the box. eduCommons is a customization of this software, and has a much more limited support for additional languages. The net result of this is that if you select a language that is supported by Plone but not eduCommons, you may find that some of the items on a page are translated and some are not. If you require localization in a language we do not yet support we would be happy to work with you to help provide this functionality for your site and also to others who may need it. We are always looking for volunteers to help localize eduCommons into new languages. Please visit: http://cosl.usu.edu/projects/educommons/documentation/how-to/educommons-localization-team for more information.
+
+Search Settings
+===============
+
+eduCommons uses live AJAX enabled search functionality to display search results as you type. If you prefer to use non AJAX enabled search behavior, you can disable the live search feature by unchecking the *Enable LiveSearch* checkbox from Site Setup --> Search. All other settings should be left at their default setting.
+
+Adding Users/Assigning Roles
+============================
+
+You must be logged in as a manager or administrator to add users and assign user roles. This can be done from the *Users and Groups* link within Site Setup.
+
+After clicking *Add New User*, fill out the registration form and register the user. (If you chose to send an email to the new member, be sure you have set up eduCommons to use an email server as described in the `Mail Settings`_ section above.) Once you have set up the desired user accounts, click *Show All* from the User Overview page to display all users. From this view you can assign roles to each user using the check boxes. You may assign multiple roles to a single user if this meets your needs. 
+
+For sites with large numbers of users, you may want to use the search feature to search for the name of a user.
+
+There are also check boxes for resetting user passwords and removing users. (Please note that resetting passwords also requires eduCommons to be set up with an email server.) Once you are finished be sure to click *Apply changes*.
+
+Another way to add users is to allow self-registration via a "Join" link in the upper right-hand corner of the page. To enable this, login to the site as manager and click Site Setup --> Security. Then check the "Enable self-registration" box and click save.
+
+Customizing Default Pages
+=========================
+
+A default install of eduCommons provides a number of informational pages, namely a front page, and pages in the help and about sections. These pages are typically only meant to be place holders. You should edit these pages accordingly to fit within your institutional guidelines. The front page is meant to be a showcase for your OpenCourseware collection. You can edit and update it as often as you like. You may choose to stick with the default template, or you may change it to suit whatever need you may have.
+
+The help tab points to a page containing frequently asked questions about eduCommons. This document will need to be edited to reflect your specific institution. Also you may want to add or remove questions according to your circumstances.
+
+The about link is a place where you can add any other information about your eduCommons site. The default page links to two other important pages you will want to customize to your site. These are the *Terms of Use* and *Privacy Policy* pages. 
+
+The terms of use page contains default template text. You will probably want to either edit this text, or provide completely new text that describes your terms of use policy.
+
+The privacy policy page by default simply states that your site has not yet posted a privacy policy, and to use the feedback link to request privacy policy information. Once you have a privacy policy in place you will most likely want to replace the default text on this page.
+
+The number of pages you can have in each of these locations is not limited to the default pages provided by eduCommons. As an administrator, you can create new pages, and link to them from existing pages as much as you like. Feel free to include other pages that provide additional information to your users (or potential users) in any of these sections.
+
+Setting a Default Site-Wide Copyright License
+=============================================
+
+eduCommons contains a very powerful copyright licensing engine that can be used both to set default licenses, and to override these licenses on a per object basis. The site-wide content licensing settings can be accessed through Site Setup --> Content Licensing. The form provided can be used to change any existing settings. (Individual licensing settings can be set from the metadata of each content object.) By default, the content licensing engine is set to use a Creative Commons `Attribution-NonCommercial-ShareAlike 3.0`_ license.
+
+.. _`Attribution-NonCommercial-ShareAlike 3.0`: http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+Other Customizations
+====================
+
+If you have a need for further customizations in your eduCommons site, it is possible to change things at a number of levels. This flexibility comes at a cost. The more a site is customized, the harder it is to upgrade when new versions become available. It is important to consider carefully the cost of additional functionality before you make any decisions on customizations.
+
+There are other options that are available if you find yourself needing extra functionality. The `development site`_ for eduCommons can be used to check to see if your bug is being or has been fixed, or to see what features have been scheduled for development on the `roadmap`_. There are also `forums`_ where you can post issues and get responses from the development team and/or other eduCommons users.
+
+.. _development site: http://cosl.usu.edu/trac
+.. _roadmap: http://cosl.usu.edu/trac/roadmap
+.. _forums: http://cosl.usu.edu/forums
+
+eduCommons depends on community support, and participation in the user community/development process is both appreciated and welcome.
+
+For additional documentation, including updates to these setup instructions, please visit: http://cosl.usu.edu/projects/educommons/documentation, specifically http://cosl.usu.edu/projects/educommons/documentation/how-to

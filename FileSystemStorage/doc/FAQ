@@ -1,0 +1,79 @@
+###
+FAQ
+###
+
+
+What are the differences between FileSystemStorage and ExternalStorage?
+#######################################################################
+
+On copy/cut actions, FileSystemStorage doesn't use memory : External
+storage stores files in a volatile var for copy/cut actions.
+
+Is it easy to use FileSystemStorage?
+####################################
+
+Just add in your Field definition ::
+
+  storage = FileSystemStorage()
+
+Just take a look at FSSItem example.
+
+**Warning**: Never use::
+
+  myschema['myfield'].storage = FileSystemStorage()
+
+This example never initializes storage layers, thus won't work.
+
+Does large file use StreamIterator?
+###################################
+
+Yes of course. We save memory at file download.
+
+Can I use the same storage path for many Plone instances?
+#########################################################
+
+Don't do this. FileSystemStorage maintenance doesn't work if many
+Plone instances use the same storage path. See README.txt and the
+configuration file to configure a couple of storage/backup paths per
+Plone site.
+
+Which AT Fields can I use with FileSystemStorage?
+#################################################
+
+FileSystemStorage works for:
+
+* FileField
+* AttachmentField
+* ImageField
+* TextField
+* StringField
+
+Using FileSystemStorage with other fields is useless.
+
+Can I modify content directly on FileSystem?
+############################################
+
+No it's dangerous, contents using FileSystemStorage are not notified
+about filesystem modifications. Anyway, you may give a read-only
+access to the storage path when unsing "Site 1" or "Site 2" strategy,
+through Samba for example.
+
+Does undo action works ?
+########################
+
+Yes, only for deletion. If you delete a content and undo its deletion
+you can recover data.
+
+Does it works with multiple ZEO clients?
+########################################
+
+Yes, you need to set storage and backup paths in config file to
+NFS/Samba/Windows shares.
+
+I have a problem under Plone 2.0.x while copying/pasting a folder containing objects using FSS
+##############################################################################################
+
+Why folder items are not copied ?
+
+PloneFolder copy/paste action doesn't work correctly with AT
+objects. Use ATCT folders to avoid copy/paste bugs.

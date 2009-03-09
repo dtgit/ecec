@@ -1,0 +1,14 @@
+[default]
+title=Accessibility Status
+
+[security]
+View=0:Authenticated
+
+[validators]
+validators..Cancel=
+
+[actions]
+action.success=traverse_to:string:accessibility_flag
+action.success..Copyright=traverse_to:string:accessibility_flag
+action.success..Cancel=redirect_to_action:string:folder_contents
+action.failure=traverse_to:string:folder_contents

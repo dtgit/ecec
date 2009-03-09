@@ -1,0 +1,84 @@
+<h2>Checklist for Accessibility</h2>
+<p>Creating accessible Web-based resources is a necessary step towards a classroom environment that supports the learning needs of all students.  This checklist identifies several of the basic steps relevant to creating accessible Web-based resources in an educational setting; it is not a complete list to creating accessible Web content.</p>
+<table class="documentTable">
+<thead>
+<tr>
+<th>Accessibility Issue</th>
+<th>Yes</th>
+<th>No</th>
+<th>N/A</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Appropriate text descriptions for images.</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="even">
+<td>Transcript or alternative provided for audio content.</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="odd">
+<td>Captioning provided for video/media content.</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="even">
+<td>At least one video is opened on the user's computer (i.e., video is not embedded on the Web page).</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="odd">
+<td>Hyperlinks provide clear information as to end location or function.</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="even">
+<td>Other elements beside color are used to convey information (e.g., asterisk, etc.).</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="odd">
+<td>Sufficient color contrast is present to differentiate between the foreground and background.</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="even">
+<td>Tables with data have appropriate row and column headers identified.</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="odd">
+<td>MS PowerPoint presentations accessible or are available in an accessible format</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="even">
+<td>Adobe PDF documents are accessible or available in an accessible format</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+<tr class="odd">
+<td>Interactive experiences are accessible or alternate available that conveys the same educational objectives.</td>
+<td><br /></td>
+<td><br /></td>
+<td><br /></td>
+</tr>
+</tbody>
+</table>
+<div class="discreet">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License</a>.<br />
+  2008, High Tech Center Training Unit of the California Community Colleges</div>
+

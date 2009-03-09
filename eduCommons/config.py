@@ -1,0 +1,2 @@
+PROJECTNAME = 'eduCommons'
+GLOBALS = globals()

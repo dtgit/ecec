@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<kupu-settings>
+  <config captioning="True" userefbrowser="False"
+          linkbyuid="True" filtersourceedit="True">
+    <table>plain|Subdued grid</table>
+    <table>invisible|Invisible grid</table>
+    <table>listing|Fancy listing</table>
+    <table>grid listing|Fancy grid listing</table>
+    <table>vertical listing|Fancy vertical listing</table>
+    <table>documentTable|eduCommons Content</table>
+    <style>Heading|h2</style>
+    <style>Subheading|h3</style>
+    <style>Literal|pre</style>
+    <style>Discreet|p|discreet</style>
+    <style>Pull-quote|div|pullquote</style>
+    <style>Call-out|p|callout</style>
+    <style>Highlight|span|visualHighlight</style>
+    <style>Odd row|tr|odd</style>
+    <style>Even row|tr|even</style>
+    <style>Heading cell|th|</style>
+    <style>Page break (print only)|div|pageBreak</style>
+    <style>Clear floats|div|visualClear</style>
+    <filter attributes=""
+            tags="center tt big small basefont font"/>
+    <filter attributes="lang valign halign border frame rules"
+            tags=""/>
+    <filterstyle>text-align</filterstyle>
+    <filterstyle>list-style-type</filterstyle>
+    <filterstyle>float</filterstyle>
+  </config>
+  <library src="string:${portal_url}/kupucollection.xml"
+           uri="string:${portal_url}" id="root"
+           icon="string:${portal_url}/misc_/CMFPlone/plone_icon"
+           title="string:Home">
+  </library>
+  <library src="string:${folder_url}/kupucollection.xml"
+           uri="string:${folder_url}" id="current"
+           icon="string:${folder/getIcon}"
+           title="string:Current folder">
+  </library>
+  <library src="string:${portal_url}/kupumyitems.xml"
+           uri="string:${portal_url}/kupumyitems.xml"
+           id="myitems"
+           icon="string:${portal_url}/kupuimages/kupusearch_icon.gif"
+           title="string:My recent items">
+  </library>
+  <library src="string:${portal_url}/kupurecentitems.xml"
+           uri="string:${portal_url}/kupurecentitems.xml"
+           id="recentitems"
+           icon="string:${portal_url}/kupuimages/kupusearch_icon.gif"
+           title="string:Recent items">
+  </library>
+  <defaultlibrary>current</defaultlibrary>
+  <resource id="collection" mode="whitelist">
+    <type>Plone Site</type>
+    <type>Large Plone Folder</type>
+    <type>Folder</type>
+  </resource>
+  <resource id="containsanchors" mode="blacklist">
+    <type>ATBooleanCriterion</type>
+    <type>ATCurrentAuthorCriterion</type>
+    <type>ATDateCriteria</type>
+    <type>ATDateRangeCriterion</type>
+    <type>ATListCriterion</type>
+    <type>ATPathCriterion</type>
+    <type>ATPortalTypeCriterion</type>
+    <type>ATReferenceCriterion</type>
+    <type>ATSelectionCriterion</type>
+    <type>ATSimpleIntCriterion</type>
+    <type>ATSimpleStringCriterion</type>
+    <type>ATSortCriterion</type>
+    <type>CMF Document</type>
+    <type>CMF Event</type>
+    <type>CMF Favorite</type>
+    <type>CMF File</type>
+    <type>CMF Folder</type>
+    <type>CMF Image</type>
+    <type>CMF Large Plone Folder</type>
+    <type>CMF Link</type>
+    <type>CMF News Item</type>
+    <type>CMF Topic</type>
+    <type>Discussion Item</type>
+    <type>Favorite</type>
+    <type>File</type>
+    <type>Folder</type>
+    <type>Image</type>
+    <type>Large Plone Folder</type>
+    <type>Link</type>
+    <type>TempFolder</type>
+    <type>Topic</type>
+  </resource>
+  <resource id="linkable" mode="blacklist">
+    <type>ATBooleanCriterion</type>
+    <type>ATCurrentAuthorCriterion</type>
+    <type>ATDateCriteria</type>
+    <type>ATDateRangeCriterion</type>
+    <type>ATListCriterion</type>
+    <type>ATPathCriterion</type>
+    <type>ATPortalTypeCriterion</type>
+    <type>ATReferenceCriterion</type>
+    <type>ATRelativePathCriterion</type>
+    <type>ATSelectionCriterion</type>
+    <type>ATSimpleIntCriterion</type>
+    <type>ATSimpleStringCriterion</type>
+    <type>ATSortCriterion</type>
+    <type>ChangeSet</type>
+    <type>CMF Document</type>
+    <type>CMF Event</type>
+    <type>CMF Favorite</type>
+    <type>CMF File</type>
+    <type>CMF Image</type>
+    <type>CMF Link</type>
+    <type>CMF News Item</type>
+    <type>Discussion Item</type>
+    <type>Favorite</type>
+    <type>Link</type>
+    <type>Plone Site</type>
+    <type>TempFolder</type>
+  </resource>
+  <resource mode="whitelist" id="mediaobject">
+    <type>Image</type>
+  </resource>
+  <defaultresource>linkable</defaultresource>
+  <generatepreviews />
+  <toolbar>
+    <element visible="True" id="bg-basicmarkup"/>
+    <element visible="True" id="bold-button"/>
+    <element visible="True" id="italic-button"/>
+    <element visible="False" id="bg-subsuper"/>
+    <element visible="False" id="subscript-button"/>
+    <element visible="False" id="superscript-button"/>
+    <element visible="False" id="bg-colorchooser"/>
+    <element visible="False" id="forecolor-button"/>
+    <element visible="False" id="hilitecolor-button"/>
+    <element visible="True" id="bg-justify"/>
+    <element visible="True" id="justifyleft-button"/>
+    <element visible="True" id="justifycenter-button"/>
+    <element visible="True" id="justifyright-button"/>
+    <element visible="True" id="bg-list"/>
+    <element visible="True" id="list-ol-addbutton"/>
+    <element visible="True" id="list-ul-addbutton"/>
+    <element visible="True" id="definitionlist"/>
+    <element visible="True" id="bg-indent"/>
+    <element visible="True" id="outdent-button"/>
+    <element visible="True" id="indent-button"/>
+    <element visible="True" id="bg-drawers"/>
+    <element visible="True" id="imagelibdrawer-button"/>
+    <element visible="True" id="linklibdrawer-button"/>
+    <element visible="True" id="linkdrawer-button"/>
+    <element visible="True" id="anchors-button"/>
+    <element visible="True" id="tabledrawer-button"/>
+    <element visible="True" id="bg-remove"/>
+    <element visible="True" id="removeimage-button"/>
+    <element visible="True" id="removelink-button"/>
+    <element visible="True" id="bg-undo"/>
+    <element visible="True" id="undo-button"/>
+    <element visible="True" id="redo-button"/>
+    <element visible="False" id="spellchecker"/>
+    <element visible="True" id="source"/>
+    <element visible="True" id="styles"/>
+    <element visible="False" id="ulstyles"/>
+    <element visible="True" id="olstyles"/>
+    <element visible="True" id="zoom"/>
+    <element visible="True" id="embed-tab"/>
+  </toolbar>
+</kupu-settings>

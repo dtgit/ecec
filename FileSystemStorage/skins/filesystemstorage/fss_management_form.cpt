@@ -1,0 +1,152 @@
+<metal:page define-macro="master"
+            i18n:domain="fss">
+
+  <tal:comment replace="nothing">
+    ##########################################
+    FileSystemStorage main configuration panel
+    ##########################################
+    $Id: fss_management_form.cpt 45387 2007-07-10 17:10:32Z glenfant $
+  </tal:comment>
+
+  <metal:master use-macro="here/prefs_main_template/macros/master">
+
+    <metal:block metal:fill-slot="top_slot" define-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+  
+    <body>
+      <div metal:fill-slot="prefs_configlet_main"
+           metal:define-slot="prefs_configlet_main"
+           tal:define="errors python:request.get('errors', {});"
+           i18n:domain="fss">
+    
+	<div class="configlet">
+    
+          <div id="content" class="documentEditable">
+        
+            <!-- simulating views -->
+            <ul class="contentViews"
+               tal:define="tabs python:(('Management', 'fss_management_form'),('Maintenance','fss_maintenance_form'));
+                           tabs python:[ {'label':label, 'name':name} for (label,name) in tabs ];"
+            >
+                <li tal:repeat="tab tabs"
+                    class="selected"
+                    tal:attributes="class python:test(tab['name'] == template_id, 'selected', None)">
+                  <a href=""
+                     tal:attributes="href string:${here/absolute_url}/${tab/name}"
+                     i18n:translate="" 
+                     tal:content="tab/label">Config</a>
+                </li>
+            </ul>
+        
+            <div class="contentActions">
+            &nbsp;
+            </div>
+            <!-- End of tabs -->
+            
+            <div class="documentContent" 
+                 metal:define-slot="fss_prefs"
+                tal:define="fss_tool python:container.portal_fss;
+                            errors python:request.get('errors', {});">
+        
+              <h3 i18n:translate="heading_fss_management">FSS Management</h3>
+              <fieldset tal:define="fss_info fss_tool/siteConfigInfo">
+                <legend>
+                  <span i18n:translate="legend_fss_configuration">
+                    Configuration file:
+                  </span>
+                  <span tal:content="fss_info/config_file">
+                    /path/to/plone-filesystemstorage.conf
+                  </span>
+                </legend>
+
+                <div class="field">
+                  <label for="label_storage_path" 
+                         i18n:translate="label_storage_path">Storage path</label> :
+                  <span tal:content="fss_info/storage_path">/foo/bar</span>
+                </div>
+
+                <div class="field">
+                  <label for="label_storage_path" 
+                         i18n:translate="label_storage_strategy">Storage strategy</label> :
+                  <span tal:content="fss_info/strategy">flat</span>
+                </div>
+                
+                <div class="field">
+                  <label for="label_backup_path" 
+                         i18n:translate="label_backup_path">Backup path</label> :
+                  <span tal:content="fss_info/backup_path">/spam/egg</span>
+                </div>
+              </fieldset>
+              
+              <form action="fss_management"
+                    method="post"
+                    enctype="multipart/form-data"
+                    tal:attributes="action template/getId">
+        
+                <fieldset>
+                  <legend i18n:translate="legend_fss_management">
+                  FSS Management
+                  </legend>
+                  
+                  
+                  <div class="field"
+                       tal:define="error errors/rdf_enabled | nothing;
+                                   rdf_enabled request/rdf_enabled | fss_tool/isRDFEnabled;"
+                       tal:attributes="class python:test(error, 'field error', 'field')">
+          
+                    <label for="label_rdf_enabled" 
+                           i18n:translate="label_rdf_enabled">RDF enabled</label>
+          
+                    <div tal:content="error">Validation error output</div>
+          
+                    <input type="checkbox"
+                           id="rdf_enabled"
+                           name="rdf_enabled"
+                           value="1"
+                           tabindex=""
+                           tal:attributes="checked python:test(rdf_enabled, 'checked', None);
+                                           tabindex tabindex/next;" />
+          
+                  </div>
+                  <div class="field"
+                       tal:define="error errors/rdf_script | nothing;
+                                   rdf_script request/rdf_script | fss_tool/getRDFScript;"
+                       tal:attributes="class python:test(error, 'field error', 'field')">
+          
+                    <label for="label_rdf_script" 
+                           i18n:translate="label_rdf_script">RDF script</label>
+          
+                    <div tal:content="error">Validation error output</div>
+          
+                    <input type="text"
+                           id="rdf_script"
+                           name="rdf_script"
+                           value=""
+                           size="60"
+                           tabindex=""
+                           tal:attributes="value rdf_script;
+                                           tabindex tabindex/next;" />
+          
+                  </div>
+                  <div class="formControls">
+                    <input class="context"
+                           tabindex=""
+                           type="submit"
+                           value="Save"
+                           name="form.button.Save"
+                           i18n:attributes="value"
+                           tal:attributes="tabindex tabindex/next;" />
+                  </div>
+      
+                  <input type="hidden" name="form.submitted" value="1" />
+                  
+                </fieldset>
+              </form>
+            </div>
+	  </div>
+        </div>
+      </div>
+
+    </body>
+  </metal:master>
+</metal:page>

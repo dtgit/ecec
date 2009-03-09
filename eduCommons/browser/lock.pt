@@ -1,0 +1,2 @@
+<span tal:condition="view/show" 
+      id="lock-icon"><img tal:replace="structure view/locked_icon" /></span>

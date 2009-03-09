@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<action-icons xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+	      i18n:domain="PloneBookmarklets">
+
+  <action-icon category="plone" action_id="bookmarklets"
+               title="Bookmarklets" priority="0"
+               icon_expr="bookmarklets.gif" />
+
+  <action-icon category="controlpanel"
+               action_id="bookmarklets"
+               title="PloneBookmarklets"
+               priority="0" icon_expr="bookmarklets.gif"
+               i18n:attributes="title"/>
+</action-icons>

@@ -1,0 +1,84 @@
+<tal:block tal:define="portal_title python:here.portal_url.getProperty('title')">
+<p class="discreet">
+This document provides the terms of use for the <tal:block tal:replace="portal_title">eduCommons</tal:block> Open
+Courseware site. If you have any questions please use the <a href="../feedback" title="Feedback">feedback</a> form.</p>
+
+<h2>Intellectual Property</h2>
+
+<h2>Course Materials</h2>
+<p>Course materials made available through <tal:block tal:replace="portal_title">eduCommons
+</tal:block> OCW are the property of their respective rights holders. Unless otherwise specified 
+the course materials are Copyright <tal:block tal:replace="portal_title">eduCommons
+</tal:block> and are licensed under <a href="http://creativecommons.org/licenses/by/2.5/" title="Creative Commons License">Creative 
+Commons Attribution license 2.5</a>.<p>
+
+<h2>Comments</h2>
+<p>All comments posted in <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW 
+are the property of their authors and are licensed for display, copying, reuse, and distribution 
+according to the terms of the <a href="http://creativecommons.org/licenses/by/2.5/" title="Creative Commons License">Creative 
+Commons Attribution license 2.5</a>.
+</p>
+
+<p>
+Representing material posted in <span tal:replace="portal_title">eduCommons</span> by another individual as your own work in online or
+offline settings is strictly prohibited and constitutes grounds for
+immediate termination of your <span tal:replace="portal_title">eduCommons</span> account and may lead to civil
+and/or criminal charges.
+</p>
+
+<h2>Liability Disclaimer</h2>
+
+<p>
+Information, advice, opinions, and other expressions in <span tal:replace="portal_title">eduCommons</span> 
+are provided "as is" without warranty of any kind, express or implied, 
+including, but not limited to, the implied warranties of merchantability, 
+fitness for a particular purpose, or non-infringement. The entire liability 
+for any use of any materials available through <span tal:replace="portal_title">eduCommons</span> lies with 
+the user of the materials.
+</p>
+
+<h2>Abuse of the <span tal:replace="portal_title">eduCommons</span> OCW Site</h2>
+
+<p>
+The following list describes
+activities that are strictly prohibited within <span tal:replace="portal_title">eduCommons</span>. 
+Attempting or succeeding to allow or commit any of the acts prohibited
+below constitutes grounds for immediate termination of your <span tal:replace="portal_title">eduCommons</span>
+account and may lead to civil and/or criminal charges. Prohibited
+activities include, but are not limited to, the following:
+</p>
+
+<div class="tos">
+  <ul>
+    <li>Users shall not do anything
+        to intentionally degrade the performance of <span tal:replace="portal_title">eduCommons</span> 
+        hardware, software, or network resources.</li>
+    <li>Users shall not attempt to
+        gain unauthorized access to any portion of <span tal:replace="portal_title">eduCommons</span>.</li>
+    <li>Users shall not post
+        commercial solicitations or "spam" comments in <span tal:replace="portal_title">eduCommons</span>.</li>
+    <li>Users shall not attempt to
+        spread viruses, worms, or other files harmful to computer systems
+        and/or networks via <span tal:replace="portal_title">eduCommons</span>.</li>
+    <li>Users shall not gather
+        personal information about other users (including, but not limited to,
+        harvesting email addresses) via <span tal:replace="portal_title">eduCommons</span>.</li>
+    <li>Users shall not share their
+        password or account with other individuals.</li>
+    <li>Users shall refrain from
+        making harassing, intimidating, or libelous statements or other
+        expressions in <span tal:replace="portal_title">eduCommons</span>.</li>
+    <li>Users shall refrain from
+        offensive/inflammatory statements or other expressions (for example,
+        offensive images) in <span tal:replace="portal_title">eduCommons</span>.</li>
+    <li>Users shall not engage in
+        impersonation or other behavior designed to deceive <span tal:replace="portal_title">eduCommons</span> 
+        users and/or community leaders.</li>
+    <li>Users shall respect the
+        intellectual freedom of others&rsquo; expression of their opinions
+        and ideas.</li>
+  </ul>
+</div>
+</tal:block>
+
+

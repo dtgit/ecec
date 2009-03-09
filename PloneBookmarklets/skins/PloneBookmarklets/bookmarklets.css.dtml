@@ -1,0 +1,12 @@
+/* Stylesheet for Bookmarklets */
+/* <dtml-with base_properties> */
+
+#bookmarklet-link {
+   color: &dtml-linkColor;;
+}
+
+#bookmarklet {
+    margin-top: 10px;
+}
+
+/* </dtml-with> */

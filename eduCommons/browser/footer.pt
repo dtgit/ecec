@@ -1,0 +1,17 @@
+<div id="portal-footer" 
+     metal:define-macro="portal_footer" 
+     i18n:domain="eduCommons">
+  <p id="portal-footer-items">
+    <a href=""
+       tal:attributes="href string:${view/context/portal_url}/feedback">feedback</a> ::
+    <a href=""
+       tal:attributes="href string:${view/context/portal_url}/sitemap">site map</a> ::
+    <a href=""
+       tal:attributes="href string:${view/context/portal_url}/accessibility-info">accessibility</a> ::
+    <a href=""
+       tal:attributes="href string:${view/context/portal_url}/about/terms-of-use">terms of use</a> ::
+    <a href=""
+       tal:attributes="href string:${view/context/portal_url}/about/privacy-policy">privacy policy</a> ::
+    <a href="http://cosl.usu.edu/projects/educommons">powered by eduCommons</a>
+  </p>
+</div>

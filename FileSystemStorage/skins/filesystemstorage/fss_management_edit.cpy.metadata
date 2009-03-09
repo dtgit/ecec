@@ -1,0 +1,9 @@
+[default]
+title = Manage FileSystem storage
+
+[validators]
+validators = 
+
+[actions]
+action.success = redirect_to:string:fss_management_form
+action.failure = traverse_to:string:fss_management_form

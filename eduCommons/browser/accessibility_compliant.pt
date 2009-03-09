@@ -1,0 +1,37 @@
+<div metal:define-macro="accessibility_compliant_fields" tal:omit-tag="">
+
+
+  <div class="field"
+       tal:define="accessibilitycompliant view/getAccessibilityCompliant;">
+
+    <input type="checkbox"
+	   id="accessibilitycompliant"
+	   name="accessibilitycompliant:boolean"
+	   tal:attributes="checked accessibilitycompliant" />
+
+    <input value="False" name="accessibilitycompliant:boolean:default" type="hidden" />
+
+    <label for="accessibilitycompliant"
+	   i18n:domain="eduCommons"
+	   i18n:translate="label_accessibilitycompliant">Accessible</label>
+
+
+    <div class="formHelp" id="accessibilitycompliant_help"
+	 i18n:domain="eduCommons"
+	 i18n:translate="help_accessibilitycompliant">
+      Set the accessibility flag if your content meets the criteria outlined 
+      <span i18n:name="link_accessibility">
+	<a href="" 
+	   tal:attributes="href string:./help/accessibility-guidelines" 
+	   i18n:translate="link_accessibilitycompliant"
+	   target="blank">here</a>
+      </span>.
+    </div>
+    <div>
+    </div>
+
+
+  </div>
+
+
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_skins" meta_type="Plone Skins Tool" allow_any="False"
+   cookie_persistence="False" default_skin="Plone Default"
+   request_varname="plone_skin">
+ <object name="eduCommons" meta_type="Filesystem Directory View"
+    directory="eduCommons/skins/eduCommons"/>
+ <skin-path name="*">
+  <layer name="eduCommons" insert-after="custom"/>
+ </skin-path>
+ <object name="openocw" meta_type="Filesystem Directory View"
+    directory="eduCommons/skins/openocw"/>
+ <skin-path name="*">
+  <layer name="openocw" insert-after="custom"/>
+ </skin-path>
+</object>

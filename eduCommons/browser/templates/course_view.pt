@@ -1,0 +1,36 @@
+<div id="about">
+  <table id="aboutTable" 
+         border="0" 
+         cellspacing="0"
+         cellpadding="0" 
+         summary="Information about Course"
+         i18n:attributes="summary table_course_summary;">
+    <tbody>
+      <tr>
+        <td id="aboutPhoto">
+          <!-- Use eduCommons insert link functionality to create this link -->           
+          <img alt="Course Image" title="Course Image" width="275" height="275" border="0" 
+               src=""
+               tal:attributes="src string:${here/portal_url}/eduCommonsDivision.gif"/>
+        </td>
+        <td id="aboutInfo">
+          <h3>COURSE TITLE</h3>
+          <p><strong>Professor X, Ph.D.</strong></p>
+          <p>Department Name<br />
+             Institution Name</p>
+          <p><strong i18n:translate="label_course_structure">Course Structure:</strong> Hour long classes - four times a week</p>
+                <!-- For Course Structure: Follow Editorial Guidelines, (UPDATE) such as "hour long classes - twice weekly" or "2 hour seminar 
+                once weekly and 1 hour lab once weekly" -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4>Course Description</h4>
+  
+  <p>
+    Put any additional information about the course not in the right hand side of the box here.
+  </p>
+
+</div>

@@ -1,0 +1,40 @@
+===========
+Preferences
+===========
+
+Test the prefs control panel for eduCommons.
+
+Get some imports.
+
+    >>> from Products.eduCommons.browser.controlpanel import IeduCommonsSchema
+    >>> from Products.CMFPlone.interfaces import IPloneSiteRoot
+    >>> from Products.CMFCore.interfaces import IPropertiesTool
+    >>> from zope.component import getAdapter, getUtility
+
+Now lets get the adapter, and test that it sets values correctly:
+
+    >>> ad = getAdapter(self.portal, IeduCommonsSchema)
+    >>> props = getUtility(IPropertiesTool)
+    >>> ecprops = props.educommons_properties
+
+Test Default values in eduCommons properties sheet:
+
+    >>> ecprops.getProperty('division_descriptor')
+    'Divisions'
+
+    >>> ecprops.getProperty('course_descriptor')
+    'Course'
+
+Test adapter methods:
+
+    >>> ad.division_descriptor = 'blarmey'
+    >>> ecprops.getProperty('division_descriptor')
+    'blarmey'
+    >>> ad.division_descriptor
+    'blarmey'
+
+    >>> ad.course_descriptor = 'stroof'
+    >>> ecprops.getProperty('course_descriptor')
+    'stroof'
+    >>> ad.get_course_descriptor()
+    'stroof'

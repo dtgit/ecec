@@ -1,0 +1,274 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/prefs_main_template/macros/master"
+      i18n:domain="ContentLicensing">
+
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1)" />
+
+<body>
+
+<div metal:fill-slot="prefs_configlet_main"
+     tal:define="license_tool python:portal.portal_contentlicensing;
+                 md_tool python:portal.portal_metadata;      
+                 def_site_license python:license_tool.DefaultSiteLicense[0]">
+
+    <h1 i18n:translate="heading_configure_contentlicensing">Configure Content Licensing</h1>
+
+    <a class="link-parent"
+       tal:attributes="href string: $portal_url/plone_control_panel"
+       i18n:domain="plone"
+       i18n:translate="label_up_to_plone_setup">
+    Up to Site Setup
+    </a>
+
+    <p i18n:translate="description_configure_contentlicensing">
+      Configure site wide settings for copyright licensing of content within this portal.
+
+    </p>
+    
+    <form action="."
+          name="contentlicensing"
+          method="post"
+          enctype="multipart/form-data"
+          tal:attributes="action string:${template/getId}">
+        
+        <fieldset>
+            <legend i18n:translate="legend_configure_contentlicensing">Content Licensing Settings</legend>
+
+            <div class="field"> 
+    
+                <label i18n:translate="label_jurisdiction">Creative Commons License Jurisdiction</label>
+   
+                <div class="formHelp" i18n:translate="help_jurisdiction">
+                  Specify the jurisdiction in which the content license is valid. (Any Jurisdiction changes must be saved before choosing a new Creative Commons license.) 
+                </div>
+
+                  <select name="jurisdiction" id="jurisdiction">
+                    <option value=""
+                            tal:repeat="juris license_tool/listSupportedJurisdictions"
+                            tal:attributes="value python:juris[1];
+                                            selected python:juris[1]==license_tool.Jurisdiction"
+                            tal:content="python:juris[1]" />
+                  </select>
+            </div>
+   
+            <div class="field"> 
+    
+                <label i18n:translate="label_publisher">Publisher</label>
+   
+                <div class="formHelp" i18n:translate="help_publisher">
+                  The institution or individual responsible for publishing content in this portal.
+                </div>
+    
+                  <input type="text"
+                         id="newpub"
+                         name="newpub"
+                         size="20"
+                         tal:attributes="tabindex tabindex/next;
+                                         value    md_tool/Publisher"
+                         value=""
+                         />
+    
+            </div>
+ 
+            <div class="field"> 
+    
+                <label i18n:translate="label_default_copyright">Default Copyright</label>
+   
+                <div class="formHelp" i18n:translate="help_default_copyright">
+                  The default copyright to be used with content in this portal.
+                </div>
+    
+                  <input type="text"
+                         id="site_copyright"
+                         name="site_copyright"
+                         size="30"
+                         tal:attributes="tabindex tabindex/next;
+                                         value    license_tool/DefaultSiteCopyright"
+                         value=""
+                         />
+    
+            </div>
+
+
+            <div class="field"> 
+    
+                <label i18n:translate="label_default_copyright_holder">Default Copyright Holder</label>
+   
+                <div class="formHelp" i18n:translate="help_default_copyright_holder">
+                  The default copyright owner for content in this portal.
+                </div>
+    
+                  <input type="text"
+                         id="rights_holder"
+                         name="rights_holder"
+                         size="30"
+                         tal:attributes="tabindex tabindex/next;
+                                         value license_tool/DefaultSiteCopyrightHolder"
+                         value="test"
+                         />
+    
+            </div>
+
+
+            <div class="field" tal:define="def_site_license python:here.portal_contentlicensing.DefaultSiteLicense"> 
+    
+                <label i18n:translate="label_default_site_license">Default Site License</label>
+   
+                <div class="formHelp" i18n:translate="help_default_site_license">
+                  The default license applied to newly created content in this portal.
+                </div>
+
+                
+                <tal:licenses tal:repeat="license license_tool/getSupportedLicenses">
+                
+                   <tal:block define="my_license python:here.portal_contentlicensing.getLicense(license[1]);">
+                                
+                                <input class="noborder"
+                                       tabindex=""
+                                       type="radio"
+                                       tal:define="tabindex tabindex/next"
+                                       tal:attributes="name string:license;
+                                                       id string:default_${repeat/license/number};
+                                                       value python:license[1];
+                                                       tabindex tabindex;
+                                                       checked python:def_site_license[0]==license[1]"
+                                       />                
+                                       
+                                <label tal:content="python:license[1]"
+                                   />
+
+                                <tal:block tal:condition="python:'Creative Commons License' == license[1]"
+                                   tal:define="jsd python:here.portal_contentlicensing.getJurisdictionCode();
+                                               itemId python:license[1];">
+                                   
+                                <span class="link-external"
+                                      style="color: #436976;
+                                             text-decoration: underline;"
+                                      tal:attributes="onClick string:window.open('http://creativecommons.org/license/?partner=Plone&jurisdiction=${jsd}&exit_url=${portal_url}/insert_license?license_url=[license_url]%26license_name=[license_name]%26license_button=[license_button]%26license_radio_id=default_${repeat/license/number}%26license_id=${itemId}',
+                                                                                 null, 
+                                                                                 'height=525, width=750, scrollbars=yes, resizeable=yes');">(Choose)</span>
+                                <div style="margin: 5px 0 0 25px;"
+                                     tal:define="cc_license python:test('Creative Commons License' == def_site_license[0], def_site_license,my_license);
+                                                 license_name python:cc_license[1];
+                                                 license_url python:cc_license[2];
+                                                 license_button python:cc_license[3]">
+                                  <img id="license_button1" tal:attributes="src license_button" />
+                                  <a id="license_name1"
+                                     target="_blank"
+                                     href="http://creativecommons.org"
+                                     tal:content="license_name"
+                                     tal:attributes="href license_url">Attribution 2.0</a>
+                                  <input type="hidden" id="license_name" name="license_cc_name" value=""
+                                         tal:attributes="value license_name" />
+                                  <input type="hidden" id="license_url" name="license_cc_url"
+                                         tal:attributes="value license_url" />
+                                  <input type="hidden" id="license_button" name="license_cc_button" value=""
+                                         tal:attributes="value license_button" />
+                                </div>
+                                </tal:block>
+                        
+                                
+                                <br />
+                    </tal:block>
+                </tal:licenses>
+            
+            </div>
+
+            <div class="field"> 
+    
+                <label i18n:translate="label_supported_licenses">Supported Licenses</label>
+   
+                <div class="formHelp" i18n:translate="help_supported_licenses">
+                  Choose the licenses which can be selected for individual objects. The Creative Commons License Picker provides an
+                  interactive form to choose an appropriate Creative Commons license. 
+                </div>
+
+                <tal:licenses tal:repeat="license license_tool/getSupportedLicenses">
+                  <input type="checkbox"
+                         tal:define="item_num repeat/license/number"
+                         tal:attributes="name python:'supported_'+license[0];
+                                                id python:license[0];
+                                                checked python:license[0] in license_tool.getAvailableLicenses()" />
+                   <label tal:content="python:test(license[1] == 'Creative Commons License', '%s Picker' %(license[1]), license[1])"></label><br />
+                </tal:licenses>
+     
+            </div>
+
+            <div class="field"> 
+    
+                <label i18n:translate="label_add_license">Add New Supported License</label>
+   
+                <div class="formHelp" i18n:translate="help_add_license">
+                  Add a license to the list of supported licenses. 
+                </div>
+    
+                <input type="text"
+                         id="add_license"
+                         name="add_license:lines"
+                         size="20"
+                         tal:attributes="tabindex tabindex/next;"
+                         value=""
+                         />
+                         
+                <label i18n:translate="label_license_name">The name of the license.</label><br />
+
+                         
+                 <input type="hidden"
+                         id=""
+                         name="add_license"
+                         value=""
+                         />
+                         
+                <input type="text"
+                         id=""
+                         name="add_license"
+                         size="20"
+                         tal:attributes="tabindex tabindex/next;"
+                         value=""
+                         />
+                         
+                <label i18n:translate="label_license_url">The URL pointer to information about the license.</label><br />
+                
+                <input type="text"
+                         id=""
+                         name="add_license"
+                         size="20"
+                         tal:attributes="tabindex tabindex/next;"
+                         value=""
+                         />
+                         
+                <label i18n:translate="label_license_image">The URL pointer to an image associated with the license.</label><br />
+            </div>
+
+
+            <div class="formControls">
+                <input class="context"
+                       type="submit"
+                       name="form.button.Save"
+                       value="Save"
+                       i18n:domain="plone"                       
+                       i18n:attributes="value"
+                       tal:attributes="tabindex tabindex/next;"
+                       />
+                <input class="standalone"
+                       type="submit"
+                       name="form.button.Cancel"
+                       value="Cancel"
+                       i18n:domain="plone"                                              
+                       i18n:attributes="value"
+                       tal:attributes="tabindex tabindex/next;"
+                       />
+            </div>
+        
+        </fieldset>
+        
+        <input type="hidden" name="form.submitted" value="1" />
+
+    </form>
+
+</div>
+
+</body>
+</html>

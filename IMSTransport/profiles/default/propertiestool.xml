@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+  <object name="ims_transport_properties" meta_type="Plone Property Sheet">
+    <property name="title">IMS Licensing properties</property>
+    <property name="import_xforms" type="lines" >
+      <element value="mitdspace_import_xform" />
+      <element value="WebCT_import_xform" />
+      <element value="Blackboard_import_xform" />
+    </property>
+    <property name="mitdspace_import_xform" type="lines">
+      <element value="MIT OCW" />
+      <element value="MITDspace_import_xform.xsl" />
+    </property>
+    <property name="WebCT_import_xform" type="lines">
+      <element value="WebCT CE 6.0" />
+      <element value="WebCT_import_xform.xsl" />
+    </property>
+    <property name="Blackboard_import_xform" type="lines">
+      <element value="Blackboard 6.1/7.0" />
+      <element value="Blackboard_import_xform.xsl" />
+    </property>
+    <property name="Blackboard_content_import_transform" type="lines">
+      <element value="Blackboard Content" />
+      <element value="Blackboard_content_import_xform.xsl" />
+    </property>
+    <property name="WebCT_image_xform" type="lines">
+      <element value="WebCT Images" />
+      <element value="WebCT_image_xform.xsl" />
+    </property>
+    <property name="WebCT_glossary_xform" type="lines">
+      <element value="WebCT Glossary" />
+      <element value="WebCT_glossary_xform.xsl" />
+    </property>
+  </object>
+</object>

@@ -1,0 +1,16 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+   i18n_domain="leftskin">
+
+  <genericsetup:registerProfile
+     name="default"
+     title="Left Skin"
+     directory="profiles/default"
+     description="Extension profile for Left Skin Product"
+     provides="Products.GenericSetup.interfaces.EXTENSION"
+     />
+
+  <include package=".browser" />
+
+</configure>

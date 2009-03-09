@@ -1,0 +1,814 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+
+body {
+   font-family: Arial,Verdana,Lucida,Helvetica,sans-serif
+} 
+
+/* Old Style of Portal Logo */
+#portal-logo img {
+    padding: 0 0 0 0;
+    margin: -1px 0 0 -11px;
+}
+
+/*
+  This screws up IE 6!
+
+#portal-globalnav {
+    margin-top: -6px;
+}
+*/
+
+
+/* Hide siteactions that are expressed in footer */
+
+#siteaction-sitemap,
+#siteaction-accessibility,
+#siteaction-contact { 
+    visibility: hidden;
+}
+
+/* Adjust marging for documentActions  */
+
+.documentActions ul li {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+p		
+#rss_info {
+  float: right;
+}
+
+/* Right Portlet Titles */
+
+#portal-column-two .portletHeader, #portal-column-two dt.portletHeader a {
+    color: <dtml-var portalHeaderBackgroundColor missing="transparent">;
+}
+
+#portal-column-one .portletFooter {
+    border-width: 0px;
+}
+
+/* OER Recommender Portlet */
+
+
+
+div.oer_recommender_title{
+    padding-left: 5px;
+    color: <dtml-var portalHeaderBackgroundColor missing="transparent">;
+    font-size: 1.25em; 
+    font-weight: bold;
+    padding: 0.5em 0em;
+    margin: 0pt 0pt 0.75em;
+ }
+
+div.oer_recommender_container {
+    margin: 0;
+    padding: 0;
+}
+
+p.oer_recommender_item {
+    padding-left: 7px;
+}
+
+
+
+/* CSS for Documents */
+
+.documentContent {
+    padding: 1em 1em 2em 1em !important;
+    background: transparent;
+}
+
+.documentContent ul li {
+    color: &dtml-fontColor;;
+}
+
+.documentContent dl dt {
+    color: &dtml-fontColor;;
+}
+
+.documentContent dl dd {
+    color: &dtml-fontColor;;
+}
+
+.documentContent ol li {
+    color: &dtml-fontColor;;
+}
+
+
+dl.captioned {
+    padding: 0px;
+}
+
+dl.image-inline {
+    border: 0px solid black;
+}
+
+img.image-inline {
+    border: 0px solid black;
+}
+
+
+
+/* Links with differently colored link underlines - only for content */
+
+.documentContent p a {
+    border-bottom: none; /*fixes Plone Bug */
+}
+
+.documentContent li a {
+    border-bottom: none; /*fixes Plone Bug */
+}
+
+.documentContent dd a {
+    border-bottom: none; /*fixes Plone Bug */
+}
+
+/* readd border to bottom of fieldsets */
+
+ul.formTabs li.formTab a {
+    border-bottom: 1px solid &dtml-globalBorderColor;
+}
+
+.documentActions {
+    border-top: none;
+    margin: 0em 0pt;
+}
+
+.documentActions ul {
+    margin: 0em 0pt 0pt;
+}
+
+.documentActions li { 
+    margin: 0pt 0em; 
+}
+
+
+/* End links */
+
+
+.documentDescription {
+    /* The summary text describing the document */
+    font-weight: normal;
+    display: none;
+    margin: 1em 0em;
+    line-height: 1em;
+}
+
+ol.alpha {
+    list-style-type: lower-alpha;
+}
+
+ol.roman {
+    list-style-type: lower-roman;
+}
+
+.portalMessage  dd {
+    line-height: 1em;
+    padding: 2px 0;
+    margin:0 10px;
+}
+
+h1, h2 {
+    color: <dtml-var portalHeaderBackgroundColor missing="transparent">;
+    border-color: &dtml-globalBorderColor;;
+    border-style: underline;
+    padding-top: 0em;
+    margin: 1em 0 0 0;
+    font-size: 150%;
+    font-weight: bold;    
+}
+
+h2 {
+    border-style: none;
+    font-size: 130%;
+    margin-bottom: 0.5em;
+}
+
+
+h3{
+    margin-top: 15px;
+    color: <dtml-var portalHeaderBackgroundColor missing="transparent">;
+    font-weight: bold;
+}
+
+h4{
+    margin-top: 10px;
+    color: <dtml-var portalHeaderBackgroundColor missing="transparent">;
+    font-weight: bold;
+}
+
+.alert {
+   padding: 0 2px;
+   color: #B00;
+   border: 1px dashed #B00;
+   background: #FBFBDB;
+}
+
+
+
+.note{
+   padding: 0 2px;
+   border: 1px solid #002F5B;
+   background: #E3E7F6;
+   color: #002F5B;
+
+}
+
+.instruction{
+   font-size: 95%;
+   color: #666;
+   font-style: italic;
+}
+
+.quote{
+    font-family: Times, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 120%;
+}
+
+blockquote {
+    font-family: Times, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 120%;
+    border-left: 0px solid &dtml-globalBorderColor;;
+}
+
+
+
+.code {
+    display: block;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 105%;
+    color: #000;
+    background-color: &dtml-globalBackgroundColor;;
+    border: &dtml-borderWidth; &dtml-borderStyleAnnotations; &dtml-globalBorderColor;;
+    padding: 0.1em;
+}
+
+.pageControl {
+  padding: 5px 2px;
+}
+
+.pageControl a {
+   display: inline;
+   border: 1px solid #333;
+   padding: 2px;
+   margin-right: 3px;
+}
+
+
+a:link.pageLink, a:visited.pageLink { 
+   background: #797979;
+   color: #FFF;
+}
+
+a:hover.pageLink, a:active.pageLink { 
+   background: #8DA2C4;
+   color: #FFF;
+}
+
+.pageNoLink {
+   background: #FFF;
+   color: #A8A8A8;
+}
+
+table.documentTable {
+    border-top: 1px solid #333433;
+    border-bottom: 1px solid #333433;
+    border-left: 1px solid #333433;
+    border-collapse:collapse !important;
+}
+
+table.documentTable td {
+    padding: 5px;
+    border-right: 1px solid #333433;
+    border-collapse:collapse !important;
+}
+
+table.documentTable thead {  
+    background: #606467;
+    color: white;
+    font-weight: bold;
+}
+
+table.documentTable tfoot {  
+    background: #606467;
+    color: white;
+}
+
+table.documentTable .odd {
+    background: &dtml-oddRowBackgroundColor;;
+}
+
+table.documentTable .even {
+    background: &dtml-evenRowBackgroundColor;;
+}
+
+/*End CSS for ECDocuments */
+
+
+/* Faculty Profile Pages */
+
+#faculty h4{
+  color: #666;
+}
+
+.email {
+  font-size: 80%;
+}
+
+.email a {
+  color: #8da2c4;
+ }
+
+#faculty p{
+  color: #666;
+}
+
+#facultyTable {
+  color: #FFF;
+  font-size: 95%;
+  position: relative;
+  min-height:275px !important;float:none;
+  margin-bottom: 15px;
+}
+
+#facultyTable a {
+  color: #FFF;
+}
+
+#facultyPhoto {
+ padding: 0;
+ margin: 0;
+ background: #A8A8A8;
+}
+
+#facultyPhoto p {
+  color: #888888;
+  margin-top: -1px;
+  font-size: 80%;
+  padding: 0 3px 0 3px;
+  text-align: right;
+}
+
+
+
+#facultyInfo {
+  background: <dtml-var templateBackground missing="transparent">;
+  padding: 10px 10px 10px 20px;
+  width: 300px;
+  border-left: 1px solid #FFF;
+}
+
+#facultyInfo h2 {
+  color: #FFF;
+  margin-bottom: -6px;
+}
+
+#facultyInfo p {
+  color: #FFF;
+}
+
+
+#facultyCourses {
+  text-align: right;
+}
+
+#facultyCourses ul {
+  list-style-type: none;
+  list-style-image: none;
+  margin-top: -5px;
+}
+
+#facultyCourses li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#setHeight {
+  height: 10px;
+}
+
+#aboutHomepageVita a {
+  color: #666;
+  font-weight: bold;
+}
+
+/* END Faculty Profile Pages */
+
+
+/* Division/Course Home Pages */
+
+#about {
+  clear: both;
+}
+
+#about h4 {
+  color: #666;
+}
+
+#about p, #about ul, #about ol, #about dl{
+  color: #666;
+  font-size: 95%;
+}
+
+#aboutTable {
+  color: #FFF;
+  position: relative;
+  min-height:275px !important;float:none;
+}
+
+
+#aboutTable a {
+  color: #FFF;
+}
+
+#aboutPhoto {
+  width: 275px;
+  background: <dtml-var templateBackground missing="transparent">;
+}
+
+
+#aboutPhoto img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutPhoto dl {
+  margin:0px;
+}
+
+#aboutPhoto dl.captioned {
+  padding: 0px;
+}
+
+#aboutPhoto dl.image-inline {
+  border: 0px solid black;
+}
+
+#aboutPhoto dl dd.image-caption span.discreet {
+  color: #FFF;
+}
+
+
+
+
+#aboutInfo {
+  background: <dtml-var templateBackground missing="transparent">;
+  padding: 10px 10px 0 20px;
+  width: 300px;
+  border-left: 1px solid #FFF;
+  vertical-align: top;
+}
+
+#aboutDeptInfo {
+    background-color: <dtml-var portalHeaderBackgroundColor missing="transparent">;
+    padding: 10px 10px 0 20px;
+    width: 300px;
+    border-left: 1px solid #FFF;
+    vertical-align: top;
+}
+
+
+#aboutDeptInfo h3{
+  text-transform:uppercase;
+  position: relative;
+}
+
+
+#deptMetadata {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+#aboutDeptInfo p, #aboutDeptInfo h3 {
+  color: #FFF;
+}
+
+#aboutInfo p, #aboutInfo h3 {
+  color: #FFF;
+}
+
+#aboutInfo h5 {
+  color: #FFF;
+  margin-bottom: -6px;
+  font-weight: bold;
+}
+
+#aboutInfo p {
+  color: #FFF;
+  text-align: left;
+  padding-right: 5px;
+}
+
+p#caption {
+   color: #999;
+   font-size: .8em;
+}
+
+/* END Division/Course Home Pages */
+
+.selectedLetter {
+   color: #000;
+   font-weight: bold;
+}
+
+.alphaNav {
+   font-size: 90%;
+   text-align: center;
+   margin-top: -25px;
+   width: 620px;
+}
+
+
+/* Courses Listing Page */
+
+#departmentsListing {
+  line-height: .5em;
+}
+
+#departmentsListing a:link, a:visited {
+  text-decoration: none;
+}
+
+#departmentsListing a:hover, a:active {
+  text-decoration: underline;
+}
+
+.departmentListingContainer {
+   padding: 0;
+   margin-top: 45px;
+   border: 1px solid &dtml-globalBorderColor;;  
+}
+
+.departmentTitle {
+   background: <dtml-var templateBackground missing="transparent">;    
+   font-weight: bold;   
+   margin-top: 0px;
+   padding: 2px 0 2px 5px;
+   border-bottom: 1px solid &dtml-globalBorderColor;;  
+   color: #FFF; 
+}
+
+.departmentTitle a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.departmentTitle a:visited, a:active{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.courseListing p {
+  padding-left: 5px;
+}
+
+a:link {
+   text-decoration: none;
+}
+
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: &dtml-linkActiveColor;;
+    text-decoration: underline;
+}
+
+.documentContent a:link {
+   text-decoration: underline;
+}
+
+.documentContent a:visited {
+   text-decoration: underline;
+}
+
+.documentContent a:hover {
+    text-decoration: underline;
+}
+
+.documentContent a:active {
+    text-decoration: underline;
+}
+
+
+.discussionSummaryTable {
+   padding: 0;
+   margin-top: 30px;
+   border: 1px solid #000;  
+}
+
+.discussionSummaryTable td{
+   padding-right: 10px;
+}
+
+.discussionSummmaryHeader {
+   background: <dtml-var templateBackground missing="transparent">;
+   margin-top: 0px;
+   padding: 2px 0 2px 5px;
+   border-bottom: 1px solid &dtml-globalBorderColor;;  
+   color: #FFF;
+}
+
+.coursesummary td {
+   text-transform: capitalize;
+   padding: 0;
+   margin: 0;
+}
+
+.statecolumn { 
+   border: 1px solid black;
+    width: 80px;     
+}
+
+img.statecolumnimage { 
+    background-image: bargraphic.gif;
+    background-repeat: repeat;
+    height: 1.25em; 
+ }
+
+
+
+.courseSummaryTable {
+   width: 607px;
+   padding: 0;
+   margin-top: 30px;
+   border: 1px solid #000;  
+}
+
+.courseSummaryTable td{
+   padding-right: 10px;
+}
+
+.courseSummmaryHeader {
+   background: <dtml-var templateBackground missing="transparent">;
+   margin-top: 0px;
+   padding: 2px 0 2px 5px;
+   border-bottom: 1px solid &dtml-globalBorderColor;;  
+   color: #FFF;
+}
+
+/* End Courses Listing Page */
+
+
+
+/* Testimonials */
+
+#testimonial td {
+    color: <dtml-var testimonialtextcolor missing="transparent">;
+    width: 209px;
+    padding: 10px;
+    border-left: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    line-height: 1.5em;
+    vertical-align: top;
+}
+
+#testimonial td h2 {
+   color: <dtml-var testimonialtextcolor missing="transparent">;
+}
+
+#testimonial td a:link, 
+#testimonial td a:visited { 
+    color: &dtml-portalColumnOneLinkColor;;
+}
+
+#testimonial td dl.portlet a:active, 
+#testimonial td dl.portlet a:hover {  
+    color: &dtml-portalColumnOneActiveColor;;
+}
+
+
+#testimonial td ul li {
+    color: <dtml-var testimonialtextcolor missing="transparent">;
+}
+
+
+#testimonial-a {
+    background: <dtml-var testimonial1 missing="transparent">;
+}
+
+#testimonial-b {
+    background: <dtml-var testimonial2 missing="transparent">;
+}
+
+#testimonial-c {
+    background: <dtml-var testimonial3 missing="transparent">;
+    border-right: 1px solid #FFF;
+}
+
+/* END Testimonials */
+
+
+/* Default Plone utilizes display:table-row and table-cell, both of which don't work in IE7   */
+#portal-colophon ul {
+    display: inline;
+}
+
+#portal-colophon ul li {
+    display: inline;
+}
+
+#portal-footer #portal-footer-items li {
+    display: inline;
+}
+
+#portal-footer-items li:after { 
+    content: " :: ";
+}
+
+#portal-footer-items li:last-child:after { 
+    content: "";
+}
+
+
+/* Courses Listing Page */
+
+.division-listing {
+    margin-top: 10px;	
+    border: 1px solid &dtml-globalBorderColor;;
+}
+
+.division-listing p {
+    margin:0px;
+}
+
+.division-listing p.even {
+    background: &dtml-evenRowBackgroundColor;;
+}
+
+.division-listing p.odd {
+ 
+}
+
+.division-title {
+    background-color: <dtml-var portalTopNavBackgroundColor missing="transparent">;
+    font-weight: bold;
+    border: 1px solid &dtml-globalBorderColor;;
+    padding-left: 5px;
+    color: <dtml-var portalTopNavActiveColor missing="transparent">;
+}
+
+p.division-title a:link, p.division-title a:visited {
+    color: <dtml-var portalHeaderActiveColor missing="transparent">;
+    text-decoration: none;
+}
+
+p.division-title a:hover, p.division-title a:active {
+    color: <dtml-var portalTopNavFontColor missing="transparent">;
+    text-decoration: none;
+}
+
+.course-listing {
+    margin: 0;		
+    padding: 3px 15px;
+}
+
+.link-top {
+  font-size: .80em;
+  text-align: right;
+}
+
+.oer-obj{
+  padding-top: 10px;
+}
+
+/* Hidden class; allows objects to display outside of eduCommons (Zip/IMS Exports) */
+.eduCommons-hidden {
+  display: none;
+}
+
+/* Hack to hide Allow Comments archetypes field until global flag is created */
+#archetypes-fieldname-allowDiscussion {
+  display:none;
+}
+
+/* Deprecated front page styles, needed for migrated sites  */
+#opentext #opentext-a {
+    padding-right: 5px;
+}
+
+#opentext #opentext-b {
+    padding-left: 5px;
+}
+
+#content a[href^="http:"], #content a.link-external {
+	 background:none;
+	 padding:1px 0px 1px 0px;
+}
+
+#fssfile {
+  display: none;
+}
+
+/* </dtml-with> */

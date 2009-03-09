@@ -1,0 +1,31 @@
+Changelog for Plone Bookmarklets
+
+
+    (name of developer listed in brackets)
+
+Plone Bookmarklets 0.5
+
+    Refactored code to allow for ZMI configuration of product.
+
+    Moved display to a document_action
+
+    Removed existing display mechanisms (portlet, template)
+
+    [davidray, sgraber]
+
+Plone Bookmarklets 0.2
+    Fixed css hover problem: Mousing over a bookmarklet was not creating a border around
+    said bookmarklet.  Fixed css to implement this.
+
+    Added second template for adding a bookmarklet bar within a content template.
+    [sgraber]
+
+Plone Bookmarklets 0.1 
+
+    - used TagCloud 0.2 product as a base for this product:
+    http://www.plone.org/products/tagcloud
+    - customized as needed
+    - published on plone.org 08/24/2006
+    - imported to collective 08/25/2006
+    [sgraber]
+    

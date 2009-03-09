@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="IMSTransport">
+
+
+<metal:block fill-slot="top_slot" />
+           
+
+<div metal:fill-slot="main">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="heading_ims">IMS Import/Export</h1>
+
+    <p><strong i18n:translate="description_ims">Import and Export objects using IMS standards.</strong></p>
+
+    <ul><li>
+
+    <a href="@@imsimport_form" i18n:domain="IMSTransport" i18n:translate="imsimportform_heading">Import IMS Package</a><br />
+            <span class="discreet" i18n:domain="IMSTransport" i18n:translate="imsimportform_description">Import an IMS content package.</span></li>
+
+      <li>
+        <a href="@@imsexport_form" i18n:domain="IMSTransport" i18n:translate="imsexportform_heading">Export IMS Package</a><br />
+            <span class="discreet" i18n:domain="IMSTransport" i18n:translate="imsexportform_description">Export an IMS content package.</span></li>
+
+
+</div>
+
+
+</html>
+

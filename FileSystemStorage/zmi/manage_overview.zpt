@@ -1,0 +1,50 @@
+<h1 tal:replace="structure here/manage_page_header|nothing">Header</h1>
+<h2 tal:define="manage_tabs_message options/manage_tabs_message | nothing"
+  tal:replace="structure here/manage_tabs">Tabs</h2>
+
+<tal:comment replace="nothing">
+  ################
+  FSS overview tab
+  ################
+  $Id: manage_overview.zpt 43824 2007-06-15 17:08:16Z glenfant $
+</tal:comment>
+
+<h2>This is the FileSystemStorage tool.</h2>
+
+<h3>Overview</h3>
+
+<p>
+  FileSystemStorage is an Archetypes storage that stores fields
+  contents in files. See
+  the <a href="manage_documentation">README.txt</a> for more
+  information.
+</p>
+
+<h3>Actions</h3>
+
+<p>You may add your own actions in this tool. Please read Plone doc
+about actions.</p>
+
+<h3>Properties</h3>
+
+<p>The properties are commented out in the FileSystemStorage
+configuation panel of your Plone site.</p>
+
+<h3>Global configuration</h3>
+
+<tal:block define="instance_info here/globalConfigInfo">
+  <p><strong>Configuration file:</strong> <span tal:content="instance_info/config_file" /></p>
+  <p><strong>Storage path:</strong> <span tal:content="instance_info/storage_path" /></p>
+  <p><strong>Storage strategy:</strong> <span tal:content="instance_info/strategy" /></p>
+  <p><strong>Backup path:</strong> <span tal:content="instance_info/backup_path" /></p>
+</tal:block>
+
+<h3>Configuration for this site</h3>
+
+<tal:block define="site_info here/siteConfigInfo">
+  <p><strong>Storage path:</strong> <span tal:content="site_info/storage_path" /></p>
+  <p><strong>Storage strategy:</strong> <span tal:content="site_info/strategy" /></p>
+  <p><strong>Backup path:</strong> <span tal:content="site_info/backup_path" /></p>
+</tal:block>
+
+<tal:footer tal:replace="structure here/manage_page_footer|nothing">footer</tal:footer>

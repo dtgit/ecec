@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+	xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+  <object name="template_buttons" meta_type="CMF Action Category">
+    <property name="title"></property>
+    <object name="syllabus_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">Syllabus</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=Syllabus&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">object/search_view/isPageInEduCourse</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="schedule_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">Course Schedule</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=Course Schedule&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">object/search_view/isPageInEduCourse</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="aboutprof_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">About Professor</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=About Professor&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">object/search_view/isPageInEduCourse</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="frontpage_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">Front Page</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=Front Page&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">object/search_view/isPageInEduSite</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="abouttext_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">About Page</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=About Page&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">object/search_view/isPageInEduSite</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="tou_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">Terms of Use</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=Terms of Use&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">object/search_view/isPageInEduSite</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="faq_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">FAQ</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=FAQ&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">object/search_view/isPageInEduSite</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="privacypolicy_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">Privacy Policy</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=Privacy Policy&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">object/search_view/isPageInEduSite</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="division_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">Division</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=Division&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">python:object.Type() == 'Division'</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="course_view" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">Course</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+	 name="url_expr">string:${object_url}/template_view?form.template=Course&amp;form.actions.Submit=Submit</property>
+      <property name="icon_expr"></property>
+      <property
+	 name="available_expr">python:object.Type() == 'Course'</property>
+      <property name="permissions">
+	<element value="Modify portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
+
+  <object name="object" meta_type="CMF Action Category">
+    <property name="title"></property>
+    <object name="import" meta_type="CMF Action" i18n:domain="imstransport">
+      <property name="available_expr">python: object.Type() == 'Course'</property>
+    </object>
+    <object name="syndication">
+      <property name="available_expr">object/search_view/isEduContainer</property>
+      <property name="visible">True</property>
+    </object>
+    <object name="order" meta_type="CMF Action" i18n:domain="eduCommons">
+      <property name="title" i18n:translate="">Order</property>
+      <property name="description" i18n:translate="">Ordering tab</property>
+      <property name="url_expr">string:$object_url/order_courseobjs</property>
+      <property name="available_expr">python: object.Type() == 'Course'</property>
+      <property name="permissions">
+	<element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
+
+  <object name="document_actions" meta_type="CMF Action">
+    <object name="rss" meta_type="CMF Action" i18n:domain="plone">
+      <property name="icon_expr">string:rss_icon.gif</property>
+      <property name="url_expr">string:$object_url/rss</property>
+    </object>
+    <object name="rss_front" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">RSS Feed</property>
+      <property name="description" i18n:translate="">RSS Feed</property>
+      <property name="url_expr">string:courselist/by-div/rss</property>
+      <property name="icon_expr">string:rss_icon.gif</property>
+      <property name="available_expr">python:object.id == 'front-page' and object.aq_parent.Type() == 'Plone Site'</property>
+      <property name="permissions">
+	<element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="sendto" meta_type="CMF Action" i18n:domain="plone">
+      <property name="icon_expr">string:mail_icon.gif</property>
+    </object>
+    <object name="print" meta_type="CMF Action" i18n:domain="plone">
+      <property name="icon_expr">string:print_icon.gif</property>
+    </object>
+    <object name="addtofavorites" meta_type="CMF Action" i18n:domain="plone">
+      <property name="icon_expr">string:favorite_icon.gif</property>
+    </object>
+    <object name="full_screen" meta_type="CMF Action" i18n:domain="plone">
+      <property name="icon_expr">string:fullscreenexpand_icon.gif</property>
+    </object>
+    <object name="extedit" meta_type="CMF Action" i18n:domain="plone">
+      <property name="icon_expr">string:extedit_icon.gif</property>
+    </object>
+
+    <object name="skinless" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Content View</property>
+      <property name="description" i18n:translate=""></property>
+      <property name="url_expr">string:$object_url/skinless_view</property>
+      <property name="icon_expr">string:document_icon.gif</property>
+      <property name="available_expr">python:here.Type() in ['Page', 'Division', 'Course']</property>
+      <property name="permissions">
+	<element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="s5" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">S5 Presentation</property>
+      <property name="description" i18n:translate=""></property>
+      <property name="url_expr">string:$object_url/presentation_view</property>
+      <property name="icon_expr">string:s5_icon.jpg</property>
+      <property name="available_expr">python:getattr(object, 'getPresentation', None) and object.getPresentation()</property>
+      <property name="permissions">
+	<element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="report_content" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Report Content</property>
+      <property name="description" i18n:translate="">Use this action to report inappropriate content to the site administrator.</property>
+      <property name="url_expr">string:$object_url/report_content</property>
+      <property name="icon_expr">string:report_content_icon.gif</property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+	<element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
+
+  <object name="folder_buttons" meta_type="CMF Action Category">
+
+  <object name="package_course" meta_type="CMF Action" i18n:domain="eduCommons">
+   <property name="title" i18n:translate="">Package Course</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:@@package_course_view:method</property>
+   <property name="available_expr">python:object.Type() == 'Course' and object.portal_workflow.getInfoFor(object, 'review_state') == 'Published'</property>
+   <property name="icon_expr"></property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="change_copyright" meta_type="CMF Action" i18n:domain="eduCommons">
+   <property name="title" i18n:translate="">Change Copyright</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:change_copyright:method</property>
+   <property name="icon_expr"></property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="chance_accessible_flag" meta_type="CMF Action" i18n:domain="eduCommons">
+   <property name="title" i18n:translate="">Accessibility</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:change_accessibility:method</property>
+   <property name="icon_expr"></property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="show_nav" meta_type="CMF Action" i18n:domain="eduCommons">
+   <property name="title" i18n:translate="">Show in navigation</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:navigation_show:method</property>
+   <property name="available_expr">python:object.Type() not in  ['Division', 'Plone Site']</property>
+   <property name="icon_expr"></property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="remove_nav" meta_type="CMF Action" i18n:domain="eduCommons">
+   <property name="title" i18n:translate="">Remove from navigation</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:navigation_remove:method</property>
+   <property name="available_expr">python:object.Type() not in  ['Division', 'Plone Site']</property>
+   <property name="icon_expr"></property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+    
+  </object>
+
+
+</object>
+
+
+

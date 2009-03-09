@@ -1,0 +1,1372 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eduCommons\n"
+"POT-Creation-Date: 2008-02-22 23:27+0000\n"
+"PO-Revision-Date: 2007-03-07 16:50+0100\n"
+"Last-Translator: olivier Turlier <o.turlier@gmail.com>\n"
+"Language-Team: French <o.turlier@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: eduCommons\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. Default: "Accessible"
+#: change_accessibility.cpt
+msgid "Accessible"
+msgstr ""
+
+#. Default: "Apply Template"
+#: ../skins/eduCommons/TemplateMacros.pt
+msgid "Apply Template"
+msgstr "Appliquer le modèle"
+
+#: eduCommons/skins/eduCommons/portlet_navigation.pt
+msgid "Available Departments"
+msgstr "Départements disponibles"
+
+#. Default: "Cancel"
+#: ../skins/eduCommons/Export_form.cpt
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Cancel"
+msgstr "Annuler"
+
+#. Default: "Choose"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Choose"
+msgstr "Choisir"
+
+#. Default: "Close"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Close"
+msgstr "Fermer"
+
+#. Default: "Confirm"
+#: ../skins/eduCommons/content_status_confirm.cpt
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: eduCommons/skins/eduCommons/portlet_navigation.pt
+msgid "Course Contents"
+msgstr "Contenu de cours"
+
+#. Default: "Course Discussion Summary"
+#: ../skins/eduCommons/Department_listing.pt
+msgid "Course Discussion Summary"
+msgstr "Résumé de la discussion du cours"
+
+#. Default: "Courses Listing"
+#: eduCommons/skins/eduCommons/Department_listing.pt
+msgid "Courses Listing"
+msgstr "Liste des cours"
+
+#. Default: "Export"
+#: ../skins/eduCommons/Export_form.cpt
+msgid "Export"
+msgstr "Exporter"
+
+#. Default: "Fix Course Html"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Fix Course Html"
+msgstr "Corrigez le code HTML du cours"
+
+#. Default: "Fix HTML"
+#: ../skins/eduCommons/TemplateMacros.pt
+msgid "Fix HTML"
+msgstr "Corrigez le HTML"
+
+#. Default: "Image of Document Actions"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "Image of Document Actions"
+msgstr ""
+
+#. Default: Import and Export objects using IMS standards.
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "ImportExport_standards"
+msgstr "Importe et exporte des objets en utilisant les standards IMS."
+
+#. Default: "InProgress"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "InProgress"
+msgstr "EnProgrès"
+
+#. Default: "Insert"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "Insert"
+msgstr "Insérez"
+
+#. Default: "Insert Link"
+#: ../skins/eduCommons/JavascriptMacros.pt
+msgid "Insert Link"
+msgstr "Insérez le lien"
+
+#: eduCommons/skins/eduCommons/folder_delete.cpy:42
+msgid "Item(s) deleted."
+msgstr "Item(s) supprimé(s)"
+
+#. Default: "Not Accessible"
+#: change_accessibility.cpt
+msgid "Not Accessible"
+msgstr ""
+
+#. Default: "Published"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "Published"
+msgstr "Publié"
+
+#. Default: "QA"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "QA"
+msgstr "AQ"
+
+#. Default: "Released"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "Released"
+msgstr "Délivré"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Search Again"
+msgstr "Recherchez encore"
+
+#. Default: "Upload"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "Upload"
+msgstr "Uploadez"
+
+#. Default: "Validate"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Validate"
+msgstr "Validez"
+
+#. Default: "Are your sure that you want to enable LinguaPlone?"
+#: ..skins/ECLinguaPlone/prefs_language.pt
+msgid "alert_enable_linguaplone"
+msgstr "Êtes-vous sûr de vouloir activer LinguaPlone?"
+
+#. Default: "barchart"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "barchart"
+msgstr "diagramme barre"
+
+#. <h5 i18n:translate="box_summary" tal:content="summaryName">
+#. Course Summary
+#. </h5>
+#. Default: "Course Summary"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "box_summary"
+msgstr "Sommaire du cours"
+
+#. Default: Course Tools
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "course_tools"
+msgstr "Outils cours"
+
+#. Default: "Items should meet minimum accessibility requirements before publication. Please evaluate the content against the ${descr-accessibility-link}, and set the flag accordingly."
+#: change_accessibility.cpt
+msgid "description_accessibility_process"
+msgstr ""
+
+#. Default: "Items should be copyright cleared before publication.  This form allows for bulk copyright clearance, as well as bulk copyright revocation.To recursively change the copyright status, be sure to check the include folder items checkbox on the form below."
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "description_copyright_process"
+msgstr ""
+
+#. Default: "Adjust the colors and images of your eduCommons instance. You will need to <strong>clear your browser's cache</strong> in order to see the updated changes."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_custom_skinning"
+msgstr "Ajuster les couleurs et les images de votre instance eduCommons. Vous devrez <strong>vider le cache de votre navigateur</strong> afin de pouvoir visualiser les changements."
+
+#. Default: "eduCommons-wide settings."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "description_eduCommons_setup"
+msgstr "Configuration globale eduCommons."
+
+#. Default: "Warning: this feature is in an experimental state. As such, this feature should not be enabled for and has not been tested in production sites."
+#: ../skins/ECLinguaPlone/prefs_languages.pt
+msgid "description_experimental_linguaplone"
+msgstr "Avertissement : cette possiblilité est à caractère expérimental. En tant que telle, elle ne doit pas être activée sur des sites en 'production' et n'a pas été testée dans ce cadre."
+
+#. Default: "The zip file will contain only the content of each object in eduCommons. To export the entire course including metadata, use the IMS tool found in the tools tab above."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_IMS"
+msgstr "Le fichier zippé contiendra uniquement le contenu de chaque objet dans eduCommons. Pour exporter le cours entier, utilisez l'outil IMS à chercher dans l'onglet outils, en haut."
+
+#. Default: "All files in the course will be exported in .zip file format."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_allContent"
+msgstr "Tous les fichiers dans le cours seront exportés au format .zip."
+
+#. Default: "The following files will be exported in .zip file format."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_followingFiles"
+msgstr "Les fichiers suivants seront exportés au format .zip."
+
+#. Default: "To leave feedback, please ${mailto_link}."
+#: ../skins/eduCommons/feedback_form.cpt
+msgid "description_feedback"
+msgstr "Pour partager votre opinion, veuillez ${mailto_link}."
+
+#. Default: "This form will import content from files contained in a .zip file, and will either create new objects, or overwrite objects that contain the same original filename and path. You must have editing rights for objects in order for them to be updated."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file"
+msgstr "Ce formulaire va importer des fichiers contenus dans une archive .zip, et va soit créer de nouveaux objets, soit écraser des objets qui possèdent le même nom et le même chemin. Vous devez avoir des droits en écriture sur ces objets pour que ceux-ci soient mis à jour."
+
+#. Default: "Add the relevant details of the file to be added in the form below, select the file with the 'Browse' button, and press 'Upload'."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file1"
+msgstr "Ajoutez les détails correspondants du fichier à ajouter dans le formulaire ci-dessous, sélectionnez le fichier avec le bouton 'Parcourir' et pressez sur le bouton 'uploader'."
+
+#. Default: "If you want to import a full course with metadata using an IMS content package, please use the IMS tool found in the tools tab of the course."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file2"
+msgstr "Si vous voulez importer un cours complet incluant des métadonnées par le biais d'un paquet IMS, utilisez svp l'outil IMS fourni dans l'onglet outils du cours."
+
+#. Default: "Add the relevant details of the file to be added in the form below, select the file with the 'Browse' button, and press 'Upload'."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file3"
+msgstr "Ajoutez les détails importants du fichier à ajouter dans le formulaire ci-dessous, sélectionnez le fichier avec le bouton 'parcourir', "
+
+#. Default: "The url will be placed in the current document as a hyperlink."
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "description_insert_ext_link"
+msgstr "Le URL sera placé dans le document courant en tant qu'hyperlien."
+
+#. Default: "Selected items will be placed in the current document as hyperlinks."
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "description_insert_link"
+msgstr "Les items seront placés dans le document courant en tant qu'hyperliens."
+
+#. <span class="discreet" i18n:domain="eduCommons" i18n:translate="description_last_updated">
+#. Last Updated
+#. </span>
+#. Default: "Last Updated"
+#: ../skins/eduCommons/search.pt
+msgid "description_last_updated"
+msgstr "Dernière mise à jour"
+
+#. Default: "Currently there are no items available to display."
+#: ../skins/eduCommons/Department_listing.pt
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "description_no_items"
+msgstr "Il n'y a pas d'items à afficher."
+
+#. <em i18n:translate="description_no_items_in_department">
+#. Currently there are no available courses in this department.
+#. </em>
+#. Default: "Currently there are no available courses in this department."
+#: ../skins/eduCommons/Department_listing.pt
+msgid "description_no_items_in_department"
+msgstr "Il n'y a pas de cours disponibles dans ce département."
+
+#. <p i18n:translate="description_no_items_in_nav">
+#. You have not selected any items to be displayed in the left hand navigation for this course.
+#. </p>
+#. Default: "You have not selected any items to be displayed in the left hand navigation for this course."
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "description_no_items_in_nav"
+msgstr "Vous n'avez pas sélectionné d'items à afficher pour ce cours, dans le menu de gauche."
+
+#. Default: "Currently there are no Log Files for this Course."
+#: ../skins/eduCommons/Logfile_contents.pt
+msgid "description_no_logs_in_course"
+msgstr "Il n'y a pas de fichiers de log pour ce cours."
+
+#. <td colspan="6" i18n:domain="eduCommons" i18n:translate="description_no_permissions_contents">
+#. <strong>
+#. *
+#. </strong>
+#. You do not have permission to perform actions on multiple objects.  To Change State or Add a Comment individually, click on an object.
+#. </td>
+#. Default: "<strong>*</strong> You do not have permission to perform actions on multiple objects. To Change State or Add a Comment individually, click on an object."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "description_no_permissions_contents"
+msgstr "<strong>*<strong> Vous n'avez pas la permission d'effectuer des actions sur des objets multiples. Pour changer l'état ou ajouter un commentaire individuellement, cliquez sur un objet."
+
+#. Default: In order to translate the content your were viewing, you must first translate the parent object
+msgid "description_parent_not_translated"
+msgstr "Afin de traduire le contenu que vous regardez, vous devez traduire l'objet parent au préalable."
+
+#. Default: "An item's state (also called its review state) determines at what point in the publication process the item is in."
+#: eduCommons/skins/eduCommons/content_status_history.cpt
+msgid "description_publishing_process"
+msgstr "L'état d'un item (aussi appelé état de révision) détermine à quel point cet item est dans le processus de publication."
+
+#. Default: "Use the following image maps to facilitate the customization process. Mousing over a customizable area on the image map will change the cursor to a hand. Hover the mouse over an area for a tool tip. Click the area to move you to the customizable field below."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_skinning_maps"
+msgstr "Utilisez les images cliquables suivantes pour faciliter le processus de personalisation. Déplacez le curseur de la souris sur une zone  personalisable changera l'aspect de celui-ci en main. Survolez une zone affichera un conseil. Cliquer sur la zone vous amènera sur le champ personalisable correspondant en dessous."
+
+#. Default: "Web safe colors should be utilized in order to ensure that the broadest audience views your site as you intend. Click to view a ${link}"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_web_safe"
+msgstr "Les couleurs garanties sur le Web devraient être utilisées pour s'assurer que la plus large audience voie votre site comme vous l'avez conçu. Cliquez pour voir un ${lien} ."
+
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "external_link_required"
+msgstr "Lien"
+
+#. Default: "Unless otherwise stated, content on this site is licensed under a"
+#: ../browser/frontpage_copyright_byline.pt
+msgid "front_license_text"
+msgstr ""
+
+#. Default: "Up one level"
+#: ../skins/eduCommons/Logfile_contents.pt
+msgid "go_to_parent_url"
+msgstr "Un niveau au-dessus"
+
+#. Default: "Courses Listing"
+#: ../skins/eduCommons/Courses_listing.pt
+msgid "header_courses"
+msgstr "Enumération de cours"
+
+#. Default: "How to I start using RSS feeds?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_how_rss"
+msgstr ""
+
+#. Default: "How do I get a news reader?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_reader_rss"
+msgstr ""
+
+#. Default: "<span tal:replace=\"portal_title\"/> OCW RSS Feeds"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_rss"
+msgstr ""
+
+#. Default: "Available Feeds"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_rss_available"
+msgstr ""
+
+#. Default: "What is RSS?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_whatis_rss"
+msgstr ""
+
+#. Default: "Why use RSS?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_why_rss"
+msgstr ""
+
+#. Default: Export Content
+#. ../skins/eduCommons/Export_form.cpt
+msgid "heading_ExportContent"
+msgstr "Export du contenu"
+
+#. Default: Import Content
+#. ../skins/eduCommons/Import_form.cpt
+msgid "heading_ImportContent"
+msgstr "Import du contenu"
+
+#. Default: "Items should meet minimum accessibility requirements before publication. Please evaluate the content against the ${descr-accessibility-link}, and set the flag accordingly"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "heading_accessibility_process"
+msgstr ""
+
+#. Default: "Copyright process"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "heading_copyright_process"
+msgstr ""
+
+#. <span i18n:domain="eduCommons" i18n:translate="heading_course_summary">
+#. Course Summary
+#. </span>
+#. Default: "Course Summary"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "heading_course_summary"
+msgstr "Résumé du cours"
+
+#. Default: "eduCommons Skin Settings"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+#, fuzzy
+msgid "heading_custom_skinning"
+msgstr "Personnalisez le skin eduCommons."
+
+#. <h2 i18n:domain="eduCommons" i18n:translate="heading_eduCommons_prefs">
+#. eduCommons Member Preferences
+#. </h2>
+#. Default: "eduCommons Member Preferences"
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "heading_eduCommons_prefs"
+msgstr "Préférences des membres eduCommons"
+
+#. Default: "Feedback"
+#: ../skins/eduCommons/feedback_form.cpt
+msgid "heading_feedback"
+msgstr "Opinion"
+
+#. Default: "Insert External Link"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "heading_insert_ext_link"
+msgstr "Insertion du lien externe"
+
+#. Default: "Insert Link"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "heading_insert_link"
+msgstr "Insertion du lien"
+
+#. Default: "Select Content"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "heading_select_content"
+msgstr "Sélection du contenu"
+
+#. Default: "Site Settings"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "heading_site_settings"
+msgstr "Configurations du site"
+
+#. Default: Selecting 'Validate Only' will check documents for XHTML errors and list the errors in the log file.  Selecting 'Validate and Repair' will validate documents, attempt to fix errors, and report the results in the log file.
+#. ../skins/eduCommons/IMSImportExportForm.cpt, ../skins/eduCommons/Import_form.cpt
+#. ../skins/eduCommons/Import_form.cpt
+msgid "help_XHTML"
+msgstr "Sélectionner 'valider uniquement' contrôlera les erreurs XHTML du document et listera ces erreurs dans le fichier de log. Sélectionner 'Valider et réparer' validera les documents, essaiera de réparer les erreurs et reportera les résultats dans le fichier de log."
+
+#. Default: "A description which will be given to each file in the ZIP Archive."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "help__import_description"
+msgstr "Une description sera donnée à chaque fichier dans l'archive .zip"
+
+#. Default: "Select the ZIP archive file to be uploaded by clicking the 'Browse' button."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "help__zip_file"
+msgstr "Sélectionnez l'archive .zip à uploader en cliquant sur le bouton 'Parcourir'."
+
+#. Default: "If checked, eduCommons will attempt to change the accessibility status of all content in any selected folders and their subfolders."
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "help_accessibility_include_contained_objects"
+msgstr ""
+
+#. Default: "Choose to set the accessibility flag, or revoke accessibility"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "help_accessibility_status"
+msgstr ""
+
+#. Default: "Set the accessibility flag if your content meets the criteria outlined ${link_accessibilty}."
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "help_accessibilitycompliant"
+msgstr ""
+
+#. Default: "Users with one of the roles selected here are allowed to add keywords to the site."
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_allowRolesToAddKeywords"
+msgstr ""
+
+#. Default: "Enter the text displayed below."
+#. ../skins/eduCommons/join_form.cpt
+msgid "help_captcha"
+msgstr ""
+
+#. widget=BooleanWidget(label='Cleared Copyright',
+#. label_msgid='label_clearedCopyright',
+#. description_msgid='help_clearedCopyright',
+#. description="Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violations.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violation."
+#: ../content/ec_object.py
+msgid "help_clearedCopyright"
+msgstr "Établit un copyright 'évident' si le contenu a reçu un licence correcte par l'auteur, et ne contient pas de violations de copyright."
+
+#. Default: "The color of the links in the 'content' window. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_content_link"
+msgstr "la couleur des liens dans la fenêtre 'contenu' doit être un code hexadécimal (#777777, par exemple)."
+
+#. Default: "Copyright notice which appears in the bottom footer of every page."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_copyright_notice"
+msgstr "La notification de copyright apparaîtra dans le pied de page de chaque page."
+
+#. Default: "Choose to clear copyright, or revoke copyright for the item(s) selected above."
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "help_copyright_status"
+msgstr ""
+
+#. widget=StringWidget(label='Course ID',
+#. label_msgid='label_courseID',
+#. description='Enter the Course ID.',
+#. description_msgid='help_courseid',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter the Course ID"
+#. ../content/ec_object.py
+msgid "help_courseid"
+msgstr "Entrez le numéro d'identification du cours"
+
+#. Default: "Specify the default language setting for newly created items."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_default_language"
+msgstr "Spécifiez le langage par défaut pour les nouveaux items créés."
+
+#. Default: "The name of the file downloaded to your local machine."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "help_exportfilename"
+msgstr "Le nom du fichier téléchargé dans votre ordinateur local."
+
+#. Default: "If checked, eduCommons will attempt to change the copyright status of all content in any selected folders and their subfolders. <br/>"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "help_include_contained_objects"
+msgstr ""
+
+#. Default: "The label for the primary folderish object. In a default instance, this will be 'Available Departments'."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_inst_obj"
+msgstr "L'étiquette pour un objet 'dossier' primaire. Dans une instance par défaut, ce sera 'Départements disponibles'. "
+
+#. Default: "The label for the sub-object. In a default instance, this will be 'Course Contents'."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_inst_subobj"
+msgstr "L'étiquette pour un sous-objet. Dans une instance par défaut, ce sera 'Contenus du cours'."
+
+#. Default: "eduCommmons utilizes the Institution Name in the Portal entry page."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_institution_name"
+msgstr "eduCommons utilise le nom de l'institution dans la page d'accueil."
+
+#. Default: "The abbreviated Institution Name."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_institution_short_name"
+msgstr "Le nom abrégé de l'institution."
+
+#. Default: "The background image for the Left Hand Column. Select the file to be added by clicking the 'Browse' button. This image should be 150px wide by 10px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_leftnav_bg"
+msgstr "L'image d'arrière plan pour la colonne située à gauche. Sélectionnez le fichier à ajouter en cliquant sur le bouton 'Parcourir'. La taille de l'image doit correspondre à 150 pixels de large par 10 pixels en hauteur pour s'adapter à la mise en page par défaut."
+
+#. Default: "The color of the links and text in the left hand navigation. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_leftnavcolor"
+msgstr "La couleur des liens et du texte dans le panneau de navigation de gauche devrai être en code hexadécimal (#777777, par example)."
+
+#. Default: "The default number of items that will be produced from an RSS feed. Individual object feeds can be modified via the syndication tab on the object."
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_max_items"
+msgstr ""
+
+#. widget=BooleanWidget(label='Metadata Entered',
+#. label_msgid='label_metadataEntered',
+#. description_msgid='help_metadataEntered',
+#. description="Set metadata entered if all metadata for this content object has been entered.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set metadata entered if all metadata for this content object has been entered."
+#: ../content/ec_object.py
+msgid "help_metadataEntered"
+msgstr "Établit les métadonnées entrées si toutes les métadonnées de cet objet de contenu ont été entrées."
+
+#. Default: "Controls the font color of normal text and all headers. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_opentext_color"
+msgstr "Contrôle la couleur de la police des textes normaux de tous les en-têtes.Cela devrait être un code hexadécimal (#777777, par exemple). "
+
+#. Default: "The top banner of your eduCommons instance. Select the file to be added by clicking the 'Browse' button. This image should be 2000px wide by 63px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+#, fuzzy
+msgid "help_portal_banner"
+msgstr "Le bandeau supérieur de votre instance eduCommons. Sélectionnez le fichier à ajouter en cliquant sur le bouton 'Parcourir'. La taille de l'image doit correspondre à 2000 pixels de large par 65 pixels en hauteur pour s'adapter à la mise en forme par défaut."
+
+#. Default: "The portal description is available in syndicated content and elsewhere. Keep it brief."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_description"
+msgstr "La description du portail est disponible dans le contenu syndiqué (RSS) et un peu partout. Maintenez-la concise."
+
+#. Default: "The favicon for your portal. There are many ${link} for creating favicons. Save your image as favicon.ico."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_favicon"
+msgstr "L'icône (favicon) pour votre portail. Il y a beaucoup de ${liens}  pour la création de favicons. Sauvegardez votre image en favicon.ico, dimensions : 16x16 px"
+
+#. Default: "eduCommons generates e-mail using this address as the e-mail return address."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_from_address"
+msgstr "eduCommons crée un mail en y ajoutant comme adresse de retour celle-ci."
+
+#. Default: "eduCommmons generates e-mail using this name as the e-mail sender."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_from_name"
+msgstr "eduCommons crée un mail en y ajoutant comme expéditeur ce nom."
+
+#. Default: "The top banner of your eduCommons instance portal entrance. Select the file to be added by clicking the 'Browse' button. This image should be 781px wide by 203px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_indexbanner"
+msgstr "La bannière supérieure de la page d'accueil de votre instance eduCommons. Sélectionnez le fichier à ajouter en cliquant sur le bouton 'Parcourir'. Cette image devrait être de 781 pixels de largeur par 203 pixels de hauteur pour s'intégrer correctement dans la mise en forme par défaut."
+
+#. Default: "The background color of the Index page. This will automatically adjust the background colors of the testimonial blocks as well."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_indexbgcolor"
+msgstr "La couleur de fond de la page index. Cela va aussi ajuster automatiquement les couleurs de fond des blocs de témoignage."
+
+#. Default: "The clickable logo in the top banner. Select the file to be added by clicking the 'Browse' button. This image should be 360px wide by 65px high to fit within the default layout. The logo will be rendered 'on top of' the Portal Banner."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_logo"
+msgstr "Le logo cliquable dans la bannière supérieure. Sélectionnez le fichier à ajouter en cliquant sur le bouton 'Parcourir'. Cette image devrait avoir 360 pixels de large sur 65 pixels de haut pour s'insérer correctement dans la mise en fore par défaut. Le logo sera placé \"par dessus\" la bannière du portail."
+
+#. Default: "The title of your eduCommons portal."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_title"
+msgstr "Le titre de votre portail eduCommons."
+
+#. <div class="formHelp" i18n:translate="help_search_creator">
+#. Return items created by a particular person.
+#. </div>
+#. Default: "Return items created by a particular person."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_creator"
+msgstr "Les items retournés crées par un individu particulier."
+
+#. Default: "Controls the 'selected' top navigation element and portlet title backgrounds. This should be the same color as your Left Navigation Background. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_secondary_color"
+msgstr "Contrôle la couleur des éléments sélectionnés de la navigation haute et des arrières-plans des titres des portlets. Cela devrait être de la même couleur que votre panneau de navigation de gauche, et être un code hexadécimal (\"777777, par exemple). "
+
+#. Default: "Controls the 'selected' top navigation element and portlet title backgrounds. This should be the same color as your Left Navigation Background. This should be a hexadecimal code (#666666, for example)"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_secondary_logo"
+msgstr "Contrôle l'élément de navigation \"sélectionné\" et la couleur de fond du portlet. Ce devrait être la même couleur que celle du panneau de navigation situé à gauche. Cette couleur doit être exprimée en code hexadécimal (#555555, par exemple)."
+
+#. widget=StringWidget(label='Semester',
+#. label_msgid='label_semester',
+#. description='Enter the semester in which the course was taught, i.e. Fall 2005',
+#. description_msgid='help_semester',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter the semester in which the course was taught, i.e. Fall 2005"
+#. ../content/ec_object.py
+msgid "help_semester"
+msgstr "Entrez le semestre dans lequel le cours a été enseigné."
+
+#. widget=BooleanWidget(label='Show in Navigation',
+#. label_msgid='label_showInNavigation',
+#. description_msgid='help_showInNavigation',
+#. description="Set show in navigation to make content object visible in the left hand navigation.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set show in navigation to make content object visible in the left hand navigation."
+#: ../content/ec_object.py
+msgid "help_showInNavigation"
+msgstr "Spécifiez \"montrer dans la navigation\" pour rendre le contenu des objets visible dans le panneau de navigation situé à gauche."
+
+#. Default: "Controls the font color of the front page testimonials. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_testimonial_color"
+msgstr "Contrôle la couleur des polices de la page d'acceuil des témoignages. Cela devrait être "
+
+#. widget=RichWidget(macro='rich_extended',
+#. label='Home Page HTML',
+#. label_msgid='label_text',
+#. description='Enter HTML to be displayed for this object.',
+#. description_msgid='help_text',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter HTML to be displayed for this object."
+#. ../content/ec_object.py
+msgid "help_text"
+msgstr "Entrez le code HTML qui sera affiché pour cet objet."
+
+#. Default: "You may customize the background of the top navigation elements (home, courses, help, about OCW) by uploading a background image. Alternately, you may change the color instead, via the Top Navigation Color option below. For non-tiling images, the size should be 2000px wide by 28px high."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_top_navigation_background_image"
+msgstr "Vous pouvez personnaliser l'aspect de fond des éléments du panneau de navigation supérieur (accueil, cours, aide, à propos d'OCW) en \"uploadant\" une image de fond. Vous pouvez de plus changer la couleur, via l'option \"couleur de navigation panneau supérieur\" ci-dessous; Pour les images ne se recouvrant pas par tuilage, la taille devra être de 2000 pixels de large par 28 pixels de haut."
+
+#. Default: "The background color of the Top Navigation. If both a Top Navigation Background Color and Top Navigation Background Image are set, the Top Navigation Background will display. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_topnav_color"
+msgstr ""
+
+#. Default: "The color of the links in the Top Navigation. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_topnav_link_color"
+msgstr ""
+
+#. Default: HTML Validation
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "html_validation_link"
+msgstr "Validation HTML"
+
+#. Default: "XHTML Validation"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_XHTMLHeader"
+msgstr "Validation XHTML"
+
+#. Default: "Zip File"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label__zip_file"
+msgstr "Fichier .zip"
+
+#. Default: "Accessibility Status"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_accessibility_status"
+msgstr ""
+
+#. Default: "Accessible"
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "label_accessibilitycompliant"
+msgstr ""
+
+#. Default: "Accessible"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_accessible"
+msgstr ""
+
+#. Default: "Roles allowed to add keywords"
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_allowRolesToAddKeywords"
+msgstr ""
+
+#. <option i18n:translate="label_any_creator" value="">
+#. Any Creator
+#. </option>
+#. Default: "Any Creator"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_any_creator"
+msgstr "Créateur quelconque"
+
+#. Default: "Captcha"
+#. ../skins/eduCommons/join_form.cpt
+msgid "label_captcha"
+msgstr ""
+
+#. Default: "Validate and Repair"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_checkAndCleanHtml"
+msgstr "Valider et réparer"
+
+#. Default: "Validate Only"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_checkHtml"
+msgstr "Valider uniquement"
+
+#. Default: "Choose Language"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_choose_language"
+msgstr "Choisir une langue"
+
+#. Default: "Clear Copyright"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_clear_copyright"
+msgstr ""
+
+#. widget=BooleanWidget(label='Cleared Copyright',
+#. label_msgid='label_clearedCopyright',
+#. description_msgid='help_clearedCopyright',
+#. description="Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violations.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Cleared Copyright."
+#: ../content/ec_object.py
+msgid "label_clearedCopyright"
+msgstr "Copyright \"clair\""
+
+#. Default: "Content Type"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_content_type"
+msgstr "Type de contenu"
+
+#. Default: "Copyright Notice"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_copyright_notice"
+msgstr "Notice de copyright"
+
+#. Default: "Copyright Status"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_copyright_status"
+msgstr ""
+
+#. widget=StringWidget(label='Course ID',
+#. label_msgid='label_courseID',
+#. description='Enter the Course ID.',
+#. description_msgid='help_courseid',
+#. i18n_domain='eduCommons')),
+#. Default: "Course ID"
+#. ../content/ec_object.py
+msgid "label_courseID"
+msgstr "Code du cours"
+
+#. <label for="title" i18n:translate="label_creator">
+#. Creator
+#. </label>
+#. Default: "Creator"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_creator"
+msgstr "Créateur"
+
+#. Default: "Default Language"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_default_language"
+msgstr "Langue par défaut"
+
+#. Default: "Export Filename (zipfile)"
+#: ../skins/eduCommons/Export_form.cpt
+msgid "label_exporttitle"
+msgstr "Export du nom de fichier (fichier .zip)"
+
+#. Default: "Open in new window?"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_external_link_new_window"
+msgstr "Ouvrir dans une nouvelle fenêtre?"
+
+#. Default: "Link URL"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_external_link_url"
+msgstr "URL du lien"
+
+#. Default: "Institution Object Label"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_inst_obj"
+msgstr ""
+
+#. Default: "Institution Sub Object Label"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_inst_subobj"
+msgstr ""
+
+#. Default: "Institution Name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_institution_name"
+msgstr "Nom de l'institution"
+
+#. Default: "Institution Short Name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_institution_short_name"
+msgstr "Nom abrégé de l'institution"
+
+#. Default: "Left Navigation Background"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_leftnav_bg"
+msgstr "Fond du panneau de navigation de gauche"
+
+#. Default: "Left Navigation Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_leftnavcolor"
+msgstr "Couleur des liens du panneau de navigation de gauche"
+
+#. Default: "Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_link_color"
+msgstr "Couleur du lien"
+
+#. Default: "Link Title"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_link_title"
+msgstr "Titre du lien"
+
+#. Default: "Default RSS Feeds"
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_max_items"
+msgstr ""
+
+#. widget=BooleanWidget(label='Metadata Entered',
+#. label_msgid='label_metadataEntered',
+#. description_msgid='help_metadataEntered',
+#. description="Set metadata entered if all metadata for this content object has been entered.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Metadata Entered"
+#: ../content/ec_object.py
+msgid "label_metadataEntered"
+msgstr "Métadonée entrée"
+
+#. Default: "None"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_noXHTML"
+msgstr "Rien"
+
+#. Default: "Not Accessible"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_not_accessible"
+msgstr ""
+
+#. Default: "Page Text and Header Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_opentext_color"
+msgstr ""
+
+#. Default: "Portal Banner"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+#, fuzzy
+msgid "label_portal_banner"
+msgstr "Bannière du site"
+
+#. Default: "Portal description"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_description"
+msgstr "Description du site"
+
+#. Default: "Portal Favicon"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_favicon"
+msgstr "Favicon du site"
+
+#. Default: "Portal 'From' address"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_from_address"
+msgstr "Adresse 'de' du site"
+
+#. Default: "Portal 'From' name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_from_name"
+msgstr "Nom 'de' du site"
+
+#. Default: "Portal Front Page banner"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_indexbanner"
+msgstr "Bandeau de la page d'accueil du site"
+
+#. Default: "Portal Front Page Background Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_indexbgcolor"
+msgstr "Couleur de fond de la page d'accueil du site"
+
+#. Default: "Portal Logo"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+#, fuzzy
+msgid "label_portal_logo"
+msgstr "Logo du site"
+
+#. Default: "Portal title"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_title"
+msgstr "Titre du site"
+
+#. Default: "(Required)"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_required"
+msgstr "(Requis)"
+
+#. Default: "Revoke Copyright"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_revoke_copyright"
+msgstr ""
+
+#. Default: "Save"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_save"
+msgstr "Sauvegardez"
+
+#. Default: "Search Text"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_search_text"
+msgstr "Texte de recherche"
+
+#. Default: "Secondary Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_secondary_color"
+msgstr "Couleur secondaire"
+
+#. widget=StringWidget(label='Semester',
+#. label_msgid='label_semester',
+#. description='Enter the semester in which the course was taught, i.e. Fall 2005',
+#. description_msgid='help_semester',
+#. i18n_domain='eduCommons')),
+#. Default: "Semester"
+#. ../content/ec_object.py
+msgid "label_semester"
+msgstr "Semestre"
+
+#. widget=BooleanWidget(label='Show in Navigation',
+#. label_msgid='label_showInNavigation',
+#. description_msgid='help_showInNavigation',
+#. description="Set show in navigation to make content object visible in the left hand navigation.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set show in navigation to make content object visible in the left hand navigation."
+#: ../content/ec_object.py
+msgid "label_showInNavigation"
+msgstr "Définit la visibilité des objets de contenu dans la navigation du panneau de gauche."
+
+#. Default: "Portal Front Page Testimonial Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_testimonial_color"
+msgstr ""
+
+#. widget=RichWidget(macro='rich_extended',
+#. label='Home Page HTML',
+#. label_msgid='label_text',
+#. description='Enter HTML to be displayed for this object.',
+#. description_msgid='help_text',
+#. i18n_domain='eduCommons')),
+#. Default: "Home Page HTML"
+#. ../content/ec_object.py
+msgid "label_text"
+msgstr "Page d'accueil HTML"
+
+#. Default: "Top Navigation Background Image"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_top_navigation_background_image"
+msgstr "Image de fond du panneau supérieur de navigation"
+
+#. Default: "Top Navigation Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_topnav_color"
+msgstr "Couleur du panneau supérieur de navigation"
+
+#. Default: "Top Navigation Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_topnav_link_color"
+msgstr "Couleur des liens du panneau supérieur de navigation"
+
+#. Default: "Up to Site Setup"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_up_to_eduCommons_setup"
+msgstr "En haut vers la configuration du site"
+
+#. Default: Upload Contents (optional)
+#. ../skins/eduCommons/rich_extended.pt
+msgid "label_upload_contents_optional"
+msgstr "Uploader les contenus"
+
+#. Default: "eduCommons Details"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "legend_eduCommons_details"
+msgstr "Détails eduCommons"
+
+#. Default: "Html Validation"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "legend_html_validation"
+msgstr "Validation HTML"
+
+#. Default: "Search"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "legend_insert_link"
+msgstr "Recherche"
+
+#. Default: "Basic Skin Settings"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "legend_skin_settings"
+msgstr "Configuration de base du modèle"
+
+#. ../skins/eduCommons/Course_Tools.pt
+#. Default: "IMS Import/Export"
+#: ../skins/eduCommons/Course_Tools.pt
+#, fuzzy
+msgid "link_IMSImportExport"
+msgstr "Import/export IMS"
+
+#. Default: "accessibility guidelines"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "link_accessibility_guidelines"
+msgstr ""
+
+#. Default: "here"
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "link_accessibilitycompliant"
+msgstr ""
+
+#. Default: "[audio]"
+#. ../skins/eduCommons/join_form.cpt
+msgid "link_captcha_audio"
+msgstr ""
+
+#. Default: "Courses in all departments"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "link_rss_all_courses"
+msgstr ""
+
+#. Default: "RSS Feeds"
+#: ../skins/eduCommons/Courses_listing.pt
+msgid "link_rss_feeds"
+msgstr ""
+
+#. Default: "list"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "link_rss_list"
+msgstr ""
+
+#. <a href="" i18n:attributes="title link_title_advanced_search;" i18n:translate="text_advanced_search" tal:attributes="href string:${here/absolute_url}/olssearch" title="Advanced Search">
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/global_searchbox.pt
+msgid "link_title_advanced_search"
+msgstr "Recherche avancée"
+
+#. <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" i18n:attributes="title link_title_cc_license" i18n:translate="text_cc_license" title="Creative Commons License">
+#. Default: "Creative Commons License"
+#: ../skins/eduCommons/footer.pt
+#: ../skins/eduCommons/index_template.pt
+msgid "link_title_cc_license"
+msgstr "Licence Creative Commons"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "link_title_search_again"
+msgstr "Recherchez encore"
+
+#. <a href="#top" i18n:attributes="title link_title_top;" i18n:translate="text_discussion_top" title="Return to Top">
+#. Default: "Return to Top"
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "link_title_top"
+msgstr "Retournez en haut"
+
+#. Default: "Favicon Tutorials"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_title_tutorial"
+msgstr "Tutoriels favicon"
+
+#. Default: "Web Safe Color Palette"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_title_web_safe"
+msgstr "Palette de couleurs sûres pour le web"
+
+#. Default: "tutorials"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_tutorial"
+msgstr "Tutoriels"
+
+#. Default: "web safe color palette"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_web_safe"
+msgstr "Palette de couleurs sûres pour le web"
+
+#. Default: "Creator"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "listingheader_creator"
+msgstr "Créateur"
+
+#. Default: "All"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "option_all"
+msgstr "Tout"
+
+#. Default: "In general, the first thing you need is something called a news reader. This is a piece of software that checks RSS feeds and lets you read any new articles that have been added to them. There are many different versions, some of which are accessed using a browser, and some of which are downloadable applications. Browser-based news readers let you catch up with your RSS feed subscriptions from any computer, whereas downloadable applications let you store them on your main computer, in the same way that you either download your e-mail, or keep it on a web-based service."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss1"
+msgstr ""
+
+#. Default: "Once you have chosen a news reader, all you have to do is to decide what content you want to receive in your news reader, by finding and subscribing to the relevant RSS feeds. For example, if you would like the latest courses added to ${portal_title} OCW, simply visit the Course List page or this page and you will notice an orange RSS button."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss2"
+msgstr ""
+
+#. Default: "If you click on the button you can subscribe to the feed in various ways, including by dragging the URL of the RSS feed into your news reader or by cutting and pasting the same URL into a new feed in your news reader. Most sites that offer RSS feeds use a similar orange RSS button, but some may just have a normal web link to the feed."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss3"
+msgstr ""
+
+#. Default: "Some browsers, including Firefox and Safari, automatically check for RSS feeds for you when you visit a Web site, and display an icon when they find one. This can make subscribing to RSS feeds much easier. For more details on these, please check their Web sites."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss4"
+msgstr ""
+
+#. Default: "There is a range of different news readers available and new versions are appearing all the time."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss1"
+msgstr ""
+
+#. Default: "Different news readers work on different operating systems, so you will need to choose one that will work with your computer."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss2"
+msgstr ""
+
+#. Default: "Here is one ${rss_list} of available readers from Google."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss3"
+msgstr ""
+
+#. Default: "Receive notification of new ${portal_title} OCW courses on your desktop, or add them to your blog or website."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_rss_info"
+msgstr ""
+
+#. Default: "RSS stands for Really Simple Syndication. RSS is a time-saving way for you to receive news and information updates (often called \"RSS feeds\", \"news feeds\" or simply \"feeds\") from your favorite Web sites and blogs."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_whatis_rss1"
+msgstr ""
+
+#. Default: "Typically RSS feeds consist of headlines and short summaries of new articles, blog entries or search results, though some Web sites and blogs offer the full text of articles or blog entrees as feeds."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_whatis_rss2"
+msgstr ""
+
+#. Default: "By using RSS you can stay on top of the news and information you need without using your e-mail system and without repeatedly checking multiple Web sites to see if they have been updated. RSS simplifies the way you stay informed and helps you take control of overloaded email inboxes."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_why_rss1"
+msgstr ""
+
+#. Default: "InProg:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_InProg"
+msgstr "EnProgr :"
+
+#. Default: "Pub:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_Pub"
+msgstr "Pub :"
+
+#. Default: "QA:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_QA"
+msgstr "AQ :"
+
+#. Default: "Rel:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_Rel"
+msgstr "Rel :"
+
+#. <p i18n:translate="text_add_nav_item">
+#. To allow an item within a Course to display in the left hand navigation:
+#. </p>
+#. Default: "To allow an item within a Course to display in the left hand navigation:"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_add_nav_item"
+msgstr "Pour permettre un item dans un cours d'apparaître dans le panneau de navigation de gauche :"
+
+#. <a href="" i18n:attributes="title link_title_advanced_search;" i18n:translate="text_advanced_search" tal:attributes="href string:${here/absolute_url}/olssearch" title="Advanced Search">
+#. Advanced Search
+#. </a>
+#. Default: "Advanced"
+#: ../skins/eduCommons/global_searchbox.pt
+msgid "text_advanced_search"
+msgstr "Avancé"
+
+#. <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" i18n:attributes="title link_title_cc_license" i18n:translate="text_cc_license" title="Creative Commons License">
+#. Creative Commons License
+#. </a>
+#. Default: "Creative Commons License"
+#: ../skins/eduCommons/footer.pt
+#: ../skins/eduCommons/index_template.pt
+msgid "text_cc_license"
+msgstr "Licence Creative Commons"
+
+#. <li i18n:translate="text_check_showinnav">
+#. Check the
+#. <strong>
+#. Show In Navigation
+#. </strong>
+#. checkbox for the item, and save your changes
+#. </li>
+#. Default: "Check the <strong>Show In Navigation</strong> checkbox for the item, and save your changes"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_check_showinnav"
+msgstr "Vérifiez la croix <strong>Montrer dans la navigation</strong> pour l'item, et sauvegardez vos changements"
+
+#. <li i18n:translate="text_click_title">
+#. Click the
+#. <strong>
+#. title
+#. </strong>
+#. of the object you would like to be displayed in the left hand navigation
+#. </li>
+#. Default: "Click the <strong>title</strong> of the object you would like to be displayed in the left hand navigation"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_click_title"
+msgstr "Cliquez sur le <strong>titre</strong> de l'objet que vous voudriez voir apparaître dans le panneau de navigation de gauche"
+
+#. Default: "Moving content through the workflow without first clearing the copyright <strong>may subject you or your organization to legal risk</strong> ! Are you sure you want to continue?"
+#: ../skins/eduCommons/content_status_confirm.cpt
+msgid "text_confirm_without_copyright"
+msgstr "Faire progresser du contenu au travers du processus de validation sans s'occuper du copyright <strong>peut générer des riques légaux pour vous ou votre organisation</strong>! Êtes-vous sûr de vouloir continuer ?"
+
+#. <a href="#top" i18n:attributes="title link_title_top;" i18n:translate="text_discussion_top" title="Return to Top">
+#. Return to Top
+#. </a>
+#. Default: "Return to Top"
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_discussion_top"
+msgstr "Retourner en haut"
+
+#. Default: "Navigate to that item within the course"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav1"
+msgstr "Naviguez vers cet item dans ce cours"
+
+#. Default: "Select the metadata tab from the management toolbar"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav2"
+msgstr "Sélectionnez l'onglet métadonnées depuis la barre d'outil management"
+
+#. Default: "Uncheck the <em>Exclude from navigation</em> checkbox and save your changes"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav3"
+msgstr "Décochez la croix <em>Exclure de la navigation</em> et sauvegardez vos changements"
+
+#. Default: "Validate all html within the current course."
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "text_html_validation"
+msgstr "Validez tous les codes HTML présents dans ce cours"
+
+#. Default: "Your search did not return any results."
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "text_insert_link_noresults"
+msgstr "Votre recherche n'a pas retourné de résultats"
+
+#. <p i18n:translate="text_no_departments" tal:condition="not: coursesContents">
+#. No departments are currently online.
+#. </p>
+#. Default: "No departments are currently online."
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_no_departments"
+msgstr "Aucun départements ne sont en ligne"
+
+#. i18n:translate="text_no_published_courses">
+#. Default: "No Courses have been published for this department."
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_no_published_courses"
+msgstr "Aucun cours n'ont été publiés pour ce département"
+
+#. <p i18n:domain="eduCommons" i18n:translate="text_no_visible_items_course_summary" style="font-style: italic;" tal:condition="python:not batch">
+#. There are currently no items in the state you have selected.
+#. </p>
+#. Default: "There are currently no items in the state you have selected."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "text_no_visible_items_course_summary"
+msgstr "Il n'y a actuellement aucun items dans l'état que vous avez sélectionné"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "text_search_again"
+msgstr "Recherchez encore"
+
+#. <li i18n:translate="text_select_edit">
+#. Select the
+#. <strong>
+#. edit
+#. </strong>
+#. tab from the management toolbar
+#. </li>
+#. Default: "Select the <strong>edit</strong> tab from the management toolbar"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_select_edit"
+msgstr "Sélectionnez l'onglet <strong>édition</strong> depuis la barre d'outils management"
+
+#. <li i18n:translate="text_select_item">
+#. Select the
+#. <strong>
+#. contents
+#. </strong>
+#. tab from the management toolbar
+#. </li>
+#. Default: "Select the <strong>contents</strong> tab from the management toolbar"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_select_item"
+msgstr "Sélectionnez l'onglet <strong>contenu</strong> depuis la barre d'outils management"
+
+#. Default: "Send us"
+#: eduCommons/skins/eduCommons/footer.pt
+#: eduCommons/skins/eduCommons/index_template.pt
+msgid "text_send_us"
+msgstr "Envoyer nous"
+
+#. <td colspan="3" i18n:translate="text_total_obj">
+#. Total Objects:
+#. ${total}
+#. </td>
+#. Default: "Total Objects: ${total}"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_total_obj"
+msgstr "Total objets : ${total}"
+
+#. Default: "Required"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "title_required"
+msgstr "Requis"
+
+#. Default: This tool validates your HTML markup to ensure that it adheres to XHTML standards.
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "validates_html_markup"
+msgstr "Cet outil valide le code HTML pour s'assurer qu'il adhère aux standards XHTML."
+

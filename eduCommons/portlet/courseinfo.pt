@@ -1,0 +1,46 @@
+<div class="portlet" id="portlet-courseinfo"
+     i18n:domain="eduCommons">
+
+  <tal:block>
+    <p class="portletHeader" i18n:translate="box_summary">Course Summary</p>
+
+    <div class="portletBody">
+      <table class="coursesummary" summary="Statiscal information" align="center" cellpadding="0" cellspacing="3">
+        <tbody>
+	  
+          <tal:items define="path here/getPhysicalPath;
+	      		     url  python:'/'.join(path);
+			     portal_url here/portal_url;
+			     prefix string:${url}/summary_contents"
+	      	     repeat="item view/contentStates">
+            <tr>
+              <td>
+                <a tal:attributes="title item;
+				   href string:${prefix}?sort_on=getObjPositionInCourse&state=${item}"
+		   tal:content="item">InProgress</a>
+              </td>
+              <td class="statecolumn">
+                <a tal:attributes="href string:${prefix}?sort_on=getObjPositionInCourse&state=${item}">
+		  <img alt="barchart" class="statecolumnimage"
+		       tal:attributes="width python:view.statePercent(item);
+				       src string:bargraphic.gif" />
+                </a>                               
+                </td>
+              <td class="coursetotals">
+                <a tal:attributes="title item;
+				   href string:${prefix}?state=${item}"
+		   tal:content="python:view.stateCount(item)">0</a>
+              </td>
+              </tr>
+	    
+          </tal:items>
+	  
+          <tr>
+            <td id="total" colspan="3" i18n:translate="text_total_obj">Total Objects: <tal:total i18n:name="total" replace="view/total">5</tal:total></td>
+          </tr>
+        </tbody>
+          </table>
+    </div>
+    
+  </tal:block>
+</div>	

@@ -1,0 +1,744 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plone\n"
+"POT-Creation-Date: 2006-12-11 21:57+0000\n"
+"PO-Revision-Date: 2007-09-18 02:56-0700\n"
+"Last-Translator: Chenyong(Jessie) Zhu <jessie0587@hotmail.com>\n"
+"Language-Team: PKUGSE <yzhuang@gse.pku.edu.cn>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-cn\n"
+"Language-Name: Simplified Chinese\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: plone\n"
+
+msgid "About OCW"
+msgstr "关于OCW"
+
+## Translations for worflow state
+msgid "Add a Comment Only"
+msgstr "仅添加评注"
+
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/search.pt
+msgid "Advanced Search"
+msgstr "高级检索"
+
+msgid "All XHTML issues have been resolved. Press &#39;save&#39; to keep the changes."
+msgstr "全部HTML问题都已得到解决。请按&#39;save&#39;按钮保存所作的更改。"
+
+msgid "An eduCommons course."
+msgstr "一门课程"
+
+msgid "An eduCommons department."
+msgstr "一个院系"
+
+msgid "An eduCommons file."
+msgstr "一个文件"
+
+msgid "An eduCommons folder."
+msgstr "一个文件夹"
+
+# eduCommons object type information
+msgid "An eduCommons image."
+msgstr "一幅图片"
+
+msgid "An eduCommons link."
+msgstr "一个链接"
+
+msgid "An eduCommons page."
+msgstr "一张网页"
+
+msgid "Are you sure you want to delete the selected items?"
+msgstr "您确定要删除所选内容？"
+
+## Translation for eduCommons buttons
+msgid "Clear Copyright"
+msgstr "版权声明"
+
+msgid "Copyright revoked"
+msgstr "撤销版权"
+
+msgid "Course"
+msgstr "课程"
+
+msgid "Courses"
+msgstr "目录"
+
+msgid "Department"
+msgstr "院系"
+
+msgid "Document"
+msgstr "文档"
+
+msgid "Error contacting server.  Please try again."
+msgstr "连接服务器失败。请再试一次。"
+
+msgid "Export"
+msgstr "导出"
+
+msgid "External Link"
+msgstr "外部链接"
+
+msgid "FCKeditor configuration"
+msgstr "网页编辑器设置"
+
+msgid "Feedback"
+msgstr "反馈"
+
+msgid "File"
+msgstr "文件"
+
+msgid "HTML has been updated, but may still contain errors. Press &#39;save&#39; to keep the changes."
+msgstr "HTML已经更新，但仍然有错。点击&#39;保存&#39;按钮保存变更。"
+
+msgid "HTML has been updated. Press &#39;save&#39; to keep the changes."
+msgstr "HTML已经更新。点击&#39;保存&#39;按钮保存变更。"
+
+msgid "Help"
+msgstr "帮助"
+
+msgid "Image"
+msgstr "图像"
+
+msgid "Import"
+msgstr "导入"
+
+msgid "Import/Export"
+msgstr "导入/导出"
+
+msgid "InProgress"
+msgstr "创建"
+
+msgid "Item(s) added to navigation."
+msgstr "添加到导航栏中的内容"
+
+msgid "Item(s) copyright revoked."
+msgstr "内容的版权已撤销。"
+
+msgid "Item(s) removed from navigation."
+msgstr "内容已从导航栏移除。"
+
+msgid "Logs"
+msgstr "日志"
+
+msgid "Metadata"
+msgstr "元数据"
+
+msgid "Navigation Added"
+msgstr "加入导航"
+
+msgid "Navigation Removed"
+msgstr "移出导航"
+
+msgid "OLS Discussion Group Administration"
+msgstr "讨论组管理"
+
+msgid "Order"
+msgstr "顺序"
+
+msgid "Personal Preferences"
+msgstr "个人偏好"
+
+msgid "Please correct the following messages:"
+msgstr "请更正以下信息："
+
+msgid "Please select one or more items to clear copyright."
+msgstr "请选择一项或多项要版权声明的内容。"
+
+msgid "Please select one or more items to remove from navigation."
+msgstr "请选择一项或多项要从导航栏中移除的内容。"
+
+msgid "Please select one or more items to revoke copyright."
+msgstr "请选择一项或多项要撤销版权的内容。"
+
+#. Default: "Plone Powered"
+#: ../skins/eduCommons/index_template.pt
+msgid "Plone Powered"
+msgstr "Plone制作"
+
+msgid "Privacy Policy"
+msgstr "隐私权"
+
+msgid "Publish Content"
+msgstr "发布内容"
+
+msgid "Publish Course"
+msgstr "发布课程"
+
+msgid "Publish Department"
+msgstr "发布院系"
+
+msgid "Published Content"
+msgstr "已发布内容"
+
+msgid "Quality Assurance"
+msgstr "质量保证"
+
+msgid "Release Content for Publication"
+msgstr "批准内容"
+
+msgid "Release Course for Publication"
+msgstr "批准课程"
+
+msgid "Release Department for Publication"
+msgstr "批准院系"
+
+msgid "Released"
+msgstr "已批准"
+
+msgid "Released for Publication"
+msgstr "已批准，准备发布"
+
+#. Default: "Relevance"
+#: ../skins/eduCommons/search.pt
+msgid "Relevance"
+msgstr "相关"
+
+msgid "Remove From Navigation"
+msgstr "从导航栏中移除"
+
+msgid "Retest Content"
+msgstr "重新测试内容"
+
+msgid "Retest Department"
+msgstr "重新测试院系"
+
+msgid "Retest Released Course"
+msgstr "重新测试已批准课程"
+
+msgid "Revoke Copyright"
+msgstr "撤销版权"
+
+msgid "Rework Content"
+msgstr "修订内容"
+
+msgid "Rework Course"
+msgstr "修订课程"
+
+msgid "Rework Department"
+msgstr "修订院系"
+
+msgid "Rework Published Content"
+msgstr "修订已发布的内容"
+
+msgid "Rework Published Course"
+msgstr "修订已发布课程"
+
+msgid "Rework Published Department"
+msgstr "修订已发布院系"
+
+msgid "Rework Released Content"
+msgstr "修订正式发布的内容"
+
+msgid "Rework Released Course"
+msgstr "修订正式发布的课程"
+
+msgid "Rework Released Department"
+msgstr "修订正式发布的院系"
+
+msgid "Show In Navigation"
+msgstr "在导航栏中显示"
+
+msgid "Site Settings"
+msgstr "站点设置"
+
+msgid "Submit Content to QA"
+msgstr "提交内容进行检查"
+
+msgid "Submit Course for QA"
+msgstr "提交课程进行检查"
+
+msgid "Submit Department to QA"
+msgstr "提交院系进行检查"
+
+msgid "Terms of Use"
+msgstr "使用条款"
+
+msgid "Tools"
+msgstr "工具"
+
+msgid "Unable to fix XHTML errors.  Please update html and try again."
+msgstr "无法修复XHTML错误。请更新HTML并再试一次。"
+
+msgid "Warning: The following objects have not cleared copyright:"
+msgstr "注意：以下对象没有版权声明。"
+
+msgid "Work in progress"
+msgstr "创建中...."
+
+#. Default: "${number} items matching your criteria."
+#: ../skins/eduCommons/search.pt
+msgid "batch_x_items_matching_your_criteria"
+msgstr "与您的标准${number} 相匹配的内容"
+
+msgid "could not be added to navigation"
+msgstr "不能加入导航栏"
+
+msgid "could not be copyright revoked."
+msgstr "不能撤销版权。"
+
+msgid "could not be removed from navigation."
+msgstr "无法从导航栏中移除。"
+
+#. Default: "This search form enables you to find content on the site by specifying one or more search terms. <br/> Remember that you can use the quick search anytime, it's normally good enough, this search form is just if you want to be more specific."
+#: ../skins/eduCommons/search_form.pt
+msgid "description_advanced_search"
+msgstr "此检索表可使您发现本站点的与一个或多个检索词相关联的内容。请记住：您在任何时间都可以使用快速检索。通常情况下，它已经能够满足一般的使用要求。本检索表只用于更详细的检索要求。"
+
+#. Default: "Configuration area for eduCommons and add-on Products."
+#: ../skins/eduCommons/plone_control_panel.pt
+msgid "description_control_panel"
+msgstr "为eduCommons和插件产品的设置区域"
+
+#. Default: "No results were found."
+#: ../skins/eduCommons/search.pt
+msgid "description_no_results_found"
+msgstr "未发现结果"
+
+#. Default: "This folder has no visible items. To add content, press the add button, or paste content from another location."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "description_no_visible_items_add_paste"
+msgstr "此文件夹无可用之内容，若想添加内容，请点击”添加“按钮，或者从其它位置粘贴内容至此。"
+
+#. Default: "Note: Some or all of your PAS user source plugins do not allow listing of users, so you may not see the users defined by those plugins unless doing a specific search."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "description_pas_users_listing"
+msgstr "提示：您的PAS用户资源手持不允许显示一些或全部用户列表，因此，您可能无法看到那些被此类插件所定义的用户，除非您使用详细检索功能。"
+
+#. Default: "Click the user's name to see and change the details of a specific user. Click the envelope icon to send a mail to the user. You can also edit the e-mail addresses, and add/remove users."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "description_user_management"
+msgstr "点击用户名来查看和修改其内容，点击信封图标可向用户发信。您也可以编辑电子邮件地址，添加或删除用户。"
+
+#. Default: "This area allows you to set your preferences."
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "description_user_panel"
+msgstr "此区域允许您设置自己的偏好。"
+
+msgid "eduCommons Setup"
+msgstr "设置"
+
+msgid "eduCommons Skin Settings"
+msgstr "eduCommons界面设置"
+
+#. Default: "Up one level"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "go_to_parent_url"
+msgstr "返回至第一层"
+
+msgid "have already been added to navigation."
+msgstr "已加入导航栏。"
+
+msgid "have already been removed from navigation."
+msgstr "已从导航栏移除"
+
+msgid "have already revoked copyright."
+msgstr "已撤销版权。"
+
+#. Default: "Actions"
+#: ../skins/eduCommons/global_contentviews.pt
+msgid "heading_actions"
+msgstr "动作"
+
+#. Default: "Advanced search for content"
+#: ../skins/eduCommons/search_form.pt
+msgid "heading_advanced_search"
+msgstr "内容的高级检索"
+
+#. Default: "eduCommons Setup"
+#: ../skins/eduCommons/plone_control_panel.pt
+msgid "heading_control_panel"
+msgstr "eduCommons设置"
+
+#. Default: "Search results"
+#: ../skins/eduCommons/search.pt
+msgid "heading_search_results"
+msgstr "检索结果"
+
+#. Default: "My Preferences"
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "heading_user_panel"
+msgstr "我的偏好"
+
+#. Default: "Users Overview"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "heading_users_overview"
+msgstr "用户概览"
+
+#. Default: "Views"
+#: ../skins/eduCommons/global_contentviews.pt
+msgid "heading_views"
+msgstr "查看"
+
+#. Default: "Return items matching this description. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_description"
+msgstr "与此描述相匹配的返回内容，多个词可使用AND和OR来连接"
+
+#. Default: "Return items taught be a particular instructor."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_instructor"
+msgstr "一位特定老师返回的内容"
+
+#. Default: "Return items of a specific type."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_item_type"
+msgstr "一个特定类型的返回内容"
+
+#. Default: "Return items added since you were last logged on, the last week, etc."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_new_items_since"
+msgstr "查看自从您上次登录或上个星期后所添加的内容"
+
+#. Default: "As a reviewer, you may search for items based on their review state. If you wish to constrain results to items in certain states, select them from this list."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_review_status"
+msgstr "作为一名查看者，您可以在查看状态下检索内容。如果您希望限制在特定状态下的结果，请从此列表中选择。"
+
+#. Default: "For a simple text search, enter your search term here. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>. The text in this field will be matched with items' contents, title and description."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_text"
+msgstr "要想检索文字内容，请在此输入检索词。多个检索词可用AND和OR来连接。此栏内的文字将与项目的内容、标题或简介相匹配来进行检索。"
+
+#. Default: "Return items matching this title."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_title"
+msgstr "返回与此标题相匹配的内容"
+
+#. Default: "Add Item"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "label_add_new_item"
+msgstr "添加内容"
+
+#. Default: "Add New User"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_add_new_user"
+msgstr "添加新用户"
+
+#. Default: "Any Instructor"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_any_instructor"
+msgstr "任何指导者"
+
+#. Default: "Apply Changes"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_apply_changes"
+msgstr "确定修改"
+
+#. Default: "Valid CSS"
+#: ../skins/eduCommons/footer.pt
+msgid "label_css"
+msgstr "有效的CSS"
+
+#. Default: "Description"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_description"
+msgstr "简介"
+
+#. Default: "Flags: - Cleared Copyright"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "label_flags"
+msgstr "标记：清除的版权"
+
+#. Default: "Get Email List"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_get_email_list"
+msgstr "获得电子邮件列表"
+
+#. Default: "History"
+#: ../skins/eduCommons/review_history.pt
+msgid "label_history"
+msgstr "历史"
+
+#. Default: "Instructor"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_instructor"
+msgstr "指导者"
+
+#. Default: "Item Type"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_item_type"
+msgstr "内容类型"
+
+#. Default: "New Items Since"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_new_items_since"
+msgstr "新内容原自于"
+
+#. Default: "No Preference Panels available."
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "label_no_panels_available"
+msgstr "无可用的偏好面板"
+
+#. Default: "effective"
+#: ../skins/eduCommons/review_history.pt
+msgid "label_publishing_effective"
+msgstr "有效"
+
+#. Default: "Review Status"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_review_status"
+msgstr "查看状态"
+
+#. Default: "RSS feed of these search results"
+#: ../skins/eduCommons/search.pt
+msgid "label_rss_feed"
+msgstr "RSS的检索结果"
+
+#. Default: "Search"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_search"
+msgstr "检索"
+
+#. Default: "Search Text"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_search_text"
+msgstr "检索文本"
+
+#. Default: "Section 508"
+#: ../skins/eduCommons/footer.pt
+msgid "label_section_508"
+msgstr "508规则"
+
+#. Default: "Select all items"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "label_select_all_items"
+msgstr "选择全部项目"
+
+#. Default: "Show all"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_showall"
+msgstr "显示全部"
+
+#. Default: "Skip to content."
+#: ../skins/eduCommons/index_template.pt
+msgid "label_skiptocontent"
+msgstr "跳至内容"
+
+#. Default: "State"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "label_state"
+msgstr "状态"
+
+#. Default: "Title"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_title"
+msgstr "标题"
+
+#. Default: "Select All/None"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_toggle"
+msgstr "选择全部/无"
+
+#. Default: "Up to Site Setup"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_up_to_plone_setup"
+msgstr "上至站点设置"
+
+#. Default: "User Search"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_user_search"
+msgstr "用户检索"
+
+#. Default: "Users"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_users"
+msgstr "用户"
+
+#. Default: "WCAG"
+#: ../skins/eduCommons/footer.pt
+msgid "label_wcag"
+msgstr "使用WCAG标签"
+
+#. Default: "Valid XHTML"
+#: ../skins/eduCommons/footer.pt
+msgid "label_xhtml"
+msgstr "有效的XHTML"
+
+#. Default: "Last log-in"
+#: ../skins/eduCommons/search_form.pt
+msgid "last_login"
+msgstr "最后一次登录"
+
+#. Default: "Search Terms"
+#: ../skins/eduCommons/search_form.pt
+msgid "legend_search_terms"
+msgstr "检索术语"
+
+#. Default: "Action"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_action"
+msgstr "动作"
+
+#. Default: "Comment"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_comment"
+msgstr "评论"
+
+#. Default: "Date and Time"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_date_and_time"
+msgstr "日期和时间"
+
+#. Default: "E-mail Address"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_email_address"
+msgstr "电子邮件"
+
+#. Default: "Flags"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_flags"
+msgstr "标记"
+
+#. Default: "Modified"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_modified"
+msgstr "修改"
+
+#. Default: "Performed by"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_performed_by"
+msgstr "执行于"
+
+#. Default: "Remove user"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_remove_user"
+msgstr "删除用户"
+
+#. Default: "Reset Password"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_reset_password"
+msgstr "重新设置密码"
+
+#. Default: "Roles"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_roles"
+msgstr "角色"
+
+#. Default: "Size"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_size"
+msgstr "大小"
+
+#. Default: "State"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_status"
+msgstr "状态"
+
+#. Default: "Title"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_title"
+msgstr "标题"
+
+#. Default: "Type"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_type"
+msgstr "类型"
+
+#. Default: "User name"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_user_name"
+msgstr "用户名"
+
+#. Default: "No comments."
+#: ../skins/eduCommons/review_history.pt
+msgid "no_comments"
+msgstr "无评论"
+
+#. Default: "Did you not find what you were looking for? Try the ${advanced_search} for more precise search options."
+#: ../skins/eduCommons/search.pt
+msgid "search_results_advanced"
+msgstr "您没有检索到想找的内容吗？请尝试 ${advanced_search}来进行精确检索。"
+
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/search.pt
+msgid "search_results_advanced_link"
+msgstr "高级检索"
+
+#. Default: "Review History"
+#: ../skins/eduCommons/review_history.pt
+msgid "summary_review_history"
+msgstr "查看历史"
+
+#. Default: "Enter a username to search for"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_no_user_searchstring"
+msgstr "输入一个用户名来检索"
+
+#. Default: "Enter a username to search for, or click 'Show All'"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_no_user_searchstring_largesite"
+msgstr "输入一个用户名来检索，或者点击”显示全部“"
+
+#. Default: "No matches"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_nomatches"
+msgstr "无相关内容"
+
+#. Default: "Ever"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_ever"
+msgstr "曾经"
+
+#. Default: "Last month"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_last_month"
+msgstr "上月"
+
+#. Default: "Last week"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_last_week"
+msgstr "上周"
+
+#. Default: "Yesterday"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_yesterday"
+msgstr "昨天"
+
+#. Default: "Add new items inside this item"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "title_add_new_items_inside_item"
+msgstr "在此内容中添加新内容"
+
+#. Default: "This Plone site was built with valid CSS."
+#: ../skins/eduCommons/footer.pt
+msgid "title_built_with_css"
+msgstr "此Plone站点是使用有效的CSS创建"
+
+#: ../skins/eduCommons/footer.pt
+msgid "title_built_with_plone"
+msgstr "此站点是使用有效的plone创建"
+
+#. Default: "RSS feed of these search results"
+#: ../skins/eduCommons/search.pt
+msgid "title_rss_feed"
+msgstr "RSS检索结果"
+
+#. Default: "This Plone site conforms to the US Government Section 508 Accessibility Guidelines."
+#: ../skins/eduCommons/footer.pt
+msgid "title_section_508"
+msgstr "此Plone网站符合美国政府的508标准"
+
+#. Default: "Send a mail to this user"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "title_send_mail_to_user"
+msgstr "给此用户发一封信"
+
+#. Default: "This Plone site is valid XHTML."
+#: ../skins/eduCommons/footer.pt
+msgid "title_valid_xhtml"
+msgstr "此Plone站点是有效的XHTML"
+
+#. Default: "This Plone site conforms to the W3C-WAI Web Content Accessibility Guidelines."
+#: ../skins/eduCommons/footer.pt
+msgid "title_wcag_conformance"
+msgstr "此Plone站点符合W3C-WAI网页内容应用标准"
+
+#. Default: "Note that roles listed here apply directly to a user. They do not reflect additional roles users may have due to group memberships."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "user_role_note"
+msgstr "提示：此处列出的角色适用于一名用户。他们并不反映其它的由于组员而形成的角色。"
+

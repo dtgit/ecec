@@ -1,0 +1,24 @@
+<dl class="portlet portletReuseCourse"
+    i18n:domain="eduCommons"
+    tal:define="export here/portal_properties/educommons_properties/reusecourse_enabled|nothing">
+
+  <dt class="portletHeader"
+      i18n:translate="box_reuse_course">
+    Reuse Course
+  </dt>
+
+  <dd class="portletItem odd">
+    <a href=""
+         i18n:translate="text_reuse_ims"
+	 tal:attributes="href string:${here/absolute_url}/${view/ims_id}">Download this course</a>
+  </dd>
+
+
+  <dd class="portletItem even" tal:condition="export">
+    <a href=""
+         i18n:translate="text_reuse_import"
+	 tal:attributes="href string:${here/absolute_url}/@@courseexportform">Export into OpenOCW</a>
+  </dd>
+
+</dl>
+

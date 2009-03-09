@@ -1,0 +1,322 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="eduCommons">
+
+    <five:registerPackage package="." initialize=".initialize" />
+
+    <genericsetup:registerProfile
+       name="default"
+       title="eduCommons"
+       directory="profiles/default"
+       description="Extension profile for eduCommons Product"
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+
+    <genericsetup:registerProfile
+       name="openocw"
+       title="eduCommons OpenOCW"
+       directory="profiles/openocw"
+       description="Extension profile for eduCommons OpenOCW"
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+
+
+    <genericsetup:upgradeStep
+       title="Migration :: 3.0.2 to 3.1.0"
+       description="Migrates eduCommons from version 3.0.2 to 3.1.0"
+       source="3.0.2"
+       destination="3.1.0"
+       handler=".upgrades.v3_0_2_to_3_1_0.migrate"
+       sortkey="1"
+       profile="Products.eduCommons:default" />
+
+    <genericsetup:upgradeStep
+       title="Migration :: 3.0.2 to 3.1.0"
+       description="Migrates eduCommons from version 3.0.2 to 3.1.0"
+       source="3.0.2"
+       destination="3.1.0"
+       handler=".upgrades.openocw.v3_0_2_to_3_1_0.migrate"
+       sortkey="1"
+       profile="Products.eduCommons:openocw" />
+
+    <include package=".browser" />
+    <include package=".content" />
+    <include package=".portlet" />
+    <include package=".utilities" />
+    <include package="collective.captcha" />
+
+
+  <class class=".content.division.Division">
+    <implements interface=".interfaces.IClearCopyrightable
+			   .interfaces.IAccessibilityCompliantable
+			   .interfaces.ICourseOrderable
+                           zope.annotation.interfaces.IAttributeAnnotatable"
+      />
+  </class>
+
+  <class class=".content.course.Course">
+    <implements interface=".interfaces.IClearCopyrightable
+			   .interfaces.IAccessibilityCompliantable
+			   .interfaces.ICourseOrderable
+                           zope.annotation.interfaces.IAttributeAnnotatable"
+      />
+  </class>
+
+  <class class=".content.fssfile.FSSFile">
+    <implements interface=".interfaces.IClearCopyrightable
+			   .interfaces.IAccessibilityCompliantable
+			   .interfaces.ICourseOrderable
+                           zope.annotation.interfaces.IAttributeAnnotatable"
+      />
+  </class>
+  
+
+  <class class="Products.ATContentTypes.content.document.ATDocument">
+    <implements interface=".interfaces.IClearCopyrightable
+			   .interfaces.IAccessibilityCompliantable
+			   .interfaces.ICourseOrderable
+                           zope.annotation.interfaces.IAttributeAnnotatable"
+      />
+  </class>
+
+  <class class="Products.ATContentTypes.content.folder.ATFolder">
+    <implements interface=".interfaces.IClearCopyrightable
+			   .interfaces.IAccessibilityCompliantable
+			   .interfaces.ICourseOrderable
+                           zope.annotation.interfaces.IAttributeAnnotatable"
+      />
+  </class>
+
+  <class class="Products.ATContentTypes.content.image.ATImage">
+    <implements interface=".interfaces.IClearCopyrightable
+			   .interfaces.IAccessibilityCompliantable
+			   .interfaces.ICourseOrderable
+                           zope.annotation.interfaces.IAttributeAnnotatable"
+      />
+  </class>
+
+  <class class="Products.ATContentTypes.content.file.ATFile">
+    <implements interface=".interfaces.IClearCopyrightable
+			   .interfaces.IAccessibilityCompliantable
+			   .interfaces.ICourseOrderable
+                           zope.annotation.interfaces.IAttributeAnnotatable"
+      />
+  </class>
+
+  <class class="Products.ATContentTypes.content.link.ATLink">
+    <implements interface=".interfaces.IClearCopyrightable
+			   .interfaces.IAccessibilityCompliantable
+			   .interfaces.ICourseOrderable
+                           zope.annotation.interfaces.IAttributeAnnotatable"
+      />
+  </class>
+
+
+
+  <adapter
+     for=".interfaces.IClearCopyrightable"
+     provides=".interfaces.IClearCopyright"
+     factory=".fields.ClearCopyright"
+     trusted="true"
+  />
+
+  <class class=".fields.ClearCopyright">
+    <require
+       permission="zope2.View"
+       interface=".interfaces.IClearCopyright"
+    />
+  </class>
+
+
+  <subscriber
+     for=".interfaces.IClearCopyrightable
+	  zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+     handler=".events.update_clear_copyright"
+  />
+
+  <adapter
+     for=".interfaces.IAccessibilityCompliantable"
+     provides=".interfaces.IAccessibilityCompliant"
+     factory=".fields.AccessibilityCompliant"
+     trusted="true"
+  />
+
+  <class class=".fields.AccessibilityCompliant">
+    <require
+       permission="zope2.View"
+       interface=".interfaces.IAccessibilityCompliant"
+    />
+  </class>
+
+
+  <subscriber
+     for=".interfaces.IAccessibilityCompliantable
+	  zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+     handler=".events.update_accessibility_compliant"
+  />
+
+
+  <subscriber
+      for="Products.IMSTransport.interfaces.ISetNameSpaces"
+      handler=".eventHandlers.setNameSpaces" />
+
+  <subscriber
+      for="Products.IMSTransport.interfaces.IObjectWriteMetadata"
+      handler=".eventHandlers.writeECMetadata" />
+
+  <subscriber
+      for="Products.IMSTransport.interfaces.IObjectReadMetadata"
+      handler=".eventHandlers.readECMetadata" />
+
+  <subscriber
+      for="Products.IMSTransport.interfaces.IObjectWriteOrganizations"
+      handler=".eventHandlers.writeOrganizations" />
+
+  <subscriber
+      for="Products.IMSTransport.interfaces.IObjectReadOrganizations"
+      handler=".eventHandlers.readOrganizations" />
+
+  <subscriber
+      for="Products.IMSTransport.interfaces.IObjectWriteContributeNode"
+      handler=".eventHandlers.writeContributeNode" />
+ 
+  <subscriber
+      for="Products.IMSTransport.interfaces.IObjectReadContributeNode"
+      handler=".eventHandlers.readContributeNode" />
+ 
+  <subscriber
+      for="Products.IMSTransport.interfaces.IObjectCreateObject"
+      handler=".eventHandlers.eduCommonsCreateObject" />
+
+  <subscriber
+     for=".content.course.Course
+	  zope.app.container.interfaces.IObjectAddedEvent"
+     handler=".events.add_course_portlets"
+   />
+
+  <subscriber
+     for="Products.ATContentTypes.content.image.ATImage
+	  zope.component.interfaces.IObjectEvent"
+     handler=".events.set_default_creators"
+     />
+
+  <subscriber
+     for="Products.ATContentTypes.content.file.ATFile
+	  zope.component.interfaces.IObjectEvent"
+     handler=".events.set_default_creators"
+     />
+
+  <subscriber
+     for="Products.ATContentTypes.content.folder.ATFolder
+	  zope.component.interfaces.IObjectEvent"
+     handler=".events.set_default_creators"
+     />
+
+  <subscriber
+     for="Products.ATContentTypes.content.document.ATDocument
+	  zope.component.interfaces.IObjectEvent"
+     handler=".events.set_default_creators"
+     />
+    
+  <subscriber
+     for="Products.eduCommons.interfaces.IDivision
+          zope.app.container.interfaces.IObjectAddedEvent"
+     handler=".eventHandlers.syndicateFolderishObject"
+  />
+
+  <subscriber
+     for="Products.eduCommons.interfaces.ICourse
+          zope.app.container.interfaces.IObjectAddedEvent"
+     handler=".eventHandlers.syndicateFolderishObject"
+  />  
+
+<!--
+  <subscriber
+     for="Products.eduCommons.interfaces.ICourse
+	  zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+     handler=".eventHandlers.updateZipDownload"
+  />
+
+  <subscriber
+     for="Products.ATContentTypes.content.document.ATDocument
+	  zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+     handler=".eventHandlers.updateZipDownload"
+  />
+ 
+  <subscriber
+     for="Products.ATContentTypes.content.file.ATFile
+	  zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+     handler=".eventHandlers.updateZipDownload"
+  /> 
+
+  <subscriber
+     for="Products.ATContentTypes.content.image.ATImage
+	  zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+     handler=".eventHandlers.updateZipDownload"
+  />
+ 
+  <subscriber
+     for="Products.ATContentTypes.content.folder.ATFolder
+	  zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+     handler=".eventHandlers.updateZipDownload"
+  />
+
+  <subscriber
+     for="Products.ATContentTypes.content.link.ATLink
+	  zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+     handler=".eventHandlers.updateZipDownload"
+  />
+
+
+  <subscriber
+      for=".interfaces.ICourseUpdateEvent"
+      handler=".eventHandlers.ZipFileMaker"
+    />
+
+  <subscriber
+      for=".interfaces.IDeleteCourseObjectEvent"
+      handler=".eventHandlers.deleteObjectHandler"
+  />
+-->
+
+  <subscriber
+     for=".interfaces.ICourseOrderable
+          zope.app.container.interfaces.IObjectAddedEvent"
+     handler=".eventHandlers.addObjPosition"
+  />
+
+  <subscriber
+     for=".interfaces.ICourseOrderable
+          zope.app.container.interfaces.IObjectModifiedEvent"
+     handler=".events.reindexOnReorder"
+  />
+
+
+  <subscriber
+     for="Products.ATContentTypes.content.image.ATImage
+	  zope.component.interfaces.IObjectEvent"
+     handler=".events.set_default_excludefromnav"
+     />
+
+  <subscriber
+     for="Products.ATContentTypes.content.file.ATFile
+	  zope.component.interfaces.IObjectEvent"
+     handler=".events.set_default_excludefromnav"
+     />
+
+  <subscriber
+     for="Products.ATContentTypes.content.folder.ATFolder
+	  zope.component.interfaces.IObjectEvent"
+     handler=".events.set_default_excludefromnav"
+     />
+
+  <subscriber
+     for="Products.ATContentTypes.content.document.ATDocument
+	  zope.component.interfaces.IObjectEvent"
+     handler=".events.set_default_excludefromnav"
+     />
+
+ 
+</configure>

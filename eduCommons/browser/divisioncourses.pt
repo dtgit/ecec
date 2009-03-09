@@ -1,0 +1,28 @@
+<style>
+
+</style>
+
+<div class="division-listing">
+    <p class="division-title">
+    <a href=""
+       tal:attributes="href context/absolute_url"
+       tal:content="context/Title">Division Title</a>
+    </p>
+
+  <tal:block tal:repeat="item view/getCourses">
+    <p tal:define="oddrow repeat/item/odd;
+		   full_title python:view.getFullCourseTitle(item);"
+       tal:attributes="class python:oddrow and 'course-listing even' or 'course-listing odd'">
+      <a href=""
+	 tal:attributes="href item/getURL"
+	 tal:content="full_title">Full Course Title</a> 
+    </p>
+  </tal:block>
+  <tal:block tal:condition="python:not view.getCourses()">
+    <p class="course-listing">There are no published courses in this department.</p>
+  </tal:block>
+
+</div>
+<p class="link-top">
+  <a href="#top" title="Return to Top">Return to Top</a>
+</p>

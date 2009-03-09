@@ -1,0 +1,17 @@
+[security]
+View=0:Manager
+
+[default]
+title=FSS Maintenance
+
+[validators]
+validators=
+validators..cancel=
+
+[actions]
+action.success..UpdateRDF=traverse_to:string:fss_maintenance_update_rdf
+action.success..Update=traverse_to:string:fss_maintenance_update
+action.success..RemoveBackup=traverse_to:string:fss_maintenance_remove_backup
+action.success.=traverse_to:string:fss_maintenance_form
+action.failure=traverse_to:string:fss_maintenance_form
+

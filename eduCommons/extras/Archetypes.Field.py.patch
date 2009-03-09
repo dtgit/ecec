@@ -1,0 +1,13 @@
+--- Field.py	2008-03-04 12:43:18.000000000 -0700
++++ Field.py.PATCHED	2008-03-04 12:42:16.000000000 -0700
+@@ -1320,6 +1320,10 @@
+                                 filename.rfind(':'),
+                                 )+1:]
+ 
++        # temporary hack until http://dev.plone.org/plone/ticket/7893 is resolved:
++        if type(mimetype) is list:
++            mimetype = mimetype[0]
++        # end hack
+ 
+         if mimetype is None or mimetype == 'text/x-unknown-content-type':
+             if body is None:

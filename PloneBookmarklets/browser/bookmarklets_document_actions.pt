@@ -1,0 +1,57 @@
+<div class="visualClear"><!-- --></div>
+<div i18n:domain="plone"
+     class="documentActions">
+    <tal:docactions tal:condition="view/actions">
+
+    <h5 class="hiddenStructure" i18n:translate="heading_document_actions">Document Actions</h5>
+
+    <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
+    <tal:actions repeat="daction view/actions">
+        <tal:condition tal:condition="python:daction['id'] != 'bookmarklets'">
+        <li tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
+            <a href=""
+               tal:attributes="href daction/url;
+	                       title daction/description"
+	       tal:content="daction/title">
+            </a>
+        </li>
+	</tal:condition>
+        <tal:condition tal:condition="python:daction['id'] == 'bookmarklets'">
+          <script language="javascript">
+            function showBookmarklets()
+            {
+               bm = document.getElementById('bookmarklet');
+               if (bm.style['display'] == 'none') {
+                   bm.style['display'] = 'block';
+               } else {
+                   bm.style['display'] = 'none';
+               }
+
+            }
+          </script>
+
+
+         <li i18n:domain="PloneBookmarklets">
+            <span id="bookmarklet-link" style="cursor:pointer;"
+               onclick="showBookmarklets()"
+	       tal:content="daction/title">
+            </span>
+
+            <span id="bookmarklet" style="display:none;"> 
+              <div tal:replace="structure here/@@bookmarklets" />
+            </span>
+        </li>
+
+	</tal:condition>
+    </tal:actions>
+
+
+    </ul>
+    </tal:docactions>
+
+    <div tal:replace="structure provider:plone.documentactions" />
+
+</div>
+
+
+<style>

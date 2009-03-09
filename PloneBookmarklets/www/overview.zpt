@@ -1,0 +1,45 @@
+<tal:header tal:replace="structure here/manage_page_header|nothing">Header</tal:header>
+<tal:message tal:define="manage_tabs_message options/manage_tabs_message | request/manage_tabs_message | nothing"
+    tal:replace="structure here/manage_tabs">Tabs</tal:message>
+<tal:body>
+
+  <h3>Overview</h3>
+  
+  <p>
+  The bookmarklets tool is used to interact with various social bookmarking websites.
+  </p>
+  
+  <p>
+  The bookmarklets tool also supports custom tailoring of available social bookmarking websites, and the 
+  ability to add new sites through the properties tab. To add a new site, add a site
+  property with the following:
+   </p>
+      
+   <blockquote>
+     <ul>
+       <li>Site Name, Common name of the bookmarking site (required)</li>
+       <li>Site URL, a url which points to the login/front page of the social bookmarking site, and includes any supported parameters. Use the following strings in your url, when adding parameters: (required)
+         <ul>
+           <li>URL :: the current page url<li>
+           <li>ENCODED_TITLE :: the current page title<li>
+           <li>DESCR :: the current page description<li>
+           <li>Example :: http://del.icio.us/post?url=URL&amp;title=ENCODED_TITLE<li>
+         </ul>
+       </li>
+       <li>Site Button, an image representing the social bookmarking site (required)
+         <ul>
+           <li>Either a URL pointer to an offsite image, or upload the image via the portal_skins/custom folder, and include the image filename here.
+         </ul>
+       </li>            
+     </ul>   
+   </blockquote>   
+   
+   
+   <p>
+   Once the site is added, the id of the site property must be added to the AvailableSites
+   property. This property determines which sites are presented in the properties tab
+   and in what order.
+   </p>
+
+</tal:body>
+<tal:footer tal:replace="structure here/manage_page_footer|nothing">footer</tal:footer>

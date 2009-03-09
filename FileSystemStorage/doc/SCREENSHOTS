@@ -1,0 +1,14 @@
+Here comes a few screenshots of FileSystemStorage.
+
+.. image:: doc/fss_item_view.png
+
+*View of content using FileSystemStorage with ImageField, TextField and FileField*
+
+.. image:: doc/fss_management_configlet.png
+
+*Manage your storage paths in configlet*
+
+.. image:: doc/fss_maintenance_configlet.png
+
+*View of maintenance screen. It will help to use FileSystemStorage*
+

@@ -1,0 +1,175 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    lang="en"
+    metal:use-macro="here/fss_management_form/macros/master"
+    i18n:domain="fss">
+
+  <tal:comment replace="nothing">
+    #################################################
+    FileSystemStorage maintenance configuration panel
+    #################################################
+    $Id: fss_maintenance_form.cpt 43824 2007-06-15 17:08:16Z glenfant $
+  </tal:comment>
+    
+  <div class="documentContent" 
+       metal:fill-slot="fss_prefs"
+       tal:define="fss_tool python:container.portal_fss;
+                   errors python:request.get('errors', {});">
+       
+    <h3 i18n:translate="heading_fss_maintenance">FSS Maintenance</h3>
+              
+    <fieldset tal:define="stats fss_tool/getFSStats">
+      <legend i18n:translate="legend_fss_stats">
+      FSS Stats
+      </legend>
+    
+      <table class="listing"
+             style="width: 70%">
+        <thead>
+          <tr>
+            <th style="width: 20%"
+                i18n:translate="label_valid_files_count">Valid files</th>
+            <th style="width: 20%"
+                i18n:translate="label_valid_backups_count">Valid backups</th>
+            <th style="width: 20%"
+                i18n:translate="label_not_valid_files_count">Not Valid files</th>
+            <th style="width: 20%"
+                i18n:translate="label_not_valid_backups_count">Not Valid backups</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td tal:content="stats/valid_files_count" />
+            <td tal:content="stats/valid_backups_count" />
+            <td tal:content="stats/not_valid_files_count" />
+            <td tal:content="stats/not_valid_backups_count" />
+          </tr>
+        </tbody>
+      </table>
+      
+      <table class="listing"
+             style="width: 70%">
+        <thead>
+          <tr>
+            <th style="width: 20%"
+                i18n:translate="label_total_size">Total size</th>
+            <th style="width: 20%"
+                i18n:translate="label_largest_size">Largest size</th>
+            <th style="width: 20%"
+                i18n:translate="label_smallest_size">Smallest size</th>
+            <th style="width: 20%"
+                i18n:translate="label_average_size">Average size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td tal:define="size stats/total_size;
+                            size python: round(size/1000);"
+                tal:content="string: $size Ko" />
+            <td tal:define="size stats/largest_size;
+                            size python: round(size/1000);"
+                tal:content="string: $size Ko" />
+            <td tal:define="size stats/smallest_size;
+                            size python: round(size/1000);"
+                tal:content="string: $size Ko" />
+            <td tal:define="size stats/average_size;
+                            size python: round(size/1000);"
+                tal:content="string: $size Ko" />
+          </tr>
+        </tbody>
+      </table>
+      
+    </fieldset>
+      
+    <form action="fss_update"
+        method="post"
+        enctype="multipart/form-data"
+        tal:attributes="action template/getId">
+      
+      <fieldset>
+        <legend i18n:translate="legend_fss_update">
+        FSS Update
+        </legend>
+        
+        <p i18n:translate="description_fss_maintenance_update">
+        Updating FileSystem storage, move not valid files to backup and 
+        move not valid backups in file storage.
+        </p>
+        
+        <div class="formControls">
+          <input class="context"
+                 tabindex=""
+                 type="submit"
+                 value="Update"
+                 name="form.button.Update"
+                 i18n:attributes="value"
+                 tal:attributes="tabindex tabindex/next;" />
+        </div>
+  
+        <input type="hidden" name="form.submitted" value="1" />
+      
+    </form>
+    
+    <form action="fss_backup"
+        method="post"
+        enctype="multipart/form-data"
+        tal:attributes="action template/getId">
+      
+      <fieldset>
+        <legend i18n:translate="legend_fss_backup">
+        FSS Backup
+        </legend>
+        
+        <p i18n:translate="description_fss_maintenance_remove_backup">
+        All backups, older than the number of days, will be removed.
+        </p>
+        
+        <input type="text"
+               id="days"
+               name="days:int"
+               value="0"
+               size="4"
+               tal:attributes="tabindex tabindex/next;" />
+        
+        <div class="formControls">
+          <input class="context"
+                 tabindex=""
+                 type="submit"
+                 value="Remove Backup"
+                 name="form.button.RemoveBackup"
+                 i18n:attributes="value"
+                 tal:attributes="tabindex tabindex/next;" />
+        </div>
+  
+        <input type="hidden" name="form.submitted" value="1" />
+      
+    </form>
+    
+    <form action="fss_rdf"
+        method="post"
+        enctype="multipart/form-data"
+        tal:attributes="action template/getId">
+      
+      <fieldset>
+        <legend i18n:translate="legend_rdf">
+        RDF
+        </legend>
+        
+        <p i18n:translate="description_rdf_update">
+        Check all FSS files and link them to RDF files.
+        </p>
+        
+        <div class="formControls">
+          <input class="context"
+                 tabindex=""
+                 type="submit"
+                 value="Update"
+                 name="form.button.UpdateRDF"
+                 i18n:attributes="value"
+                 tal:attributes="tabindex tabindex/next;" />
+        </div>
+  
+        <input type="hidden" name="form.submitted" value="1" />
+      
+    </form>
+  </div>
+</html>

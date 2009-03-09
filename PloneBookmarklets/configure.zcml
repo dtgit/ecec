@@ -1,0 +1,37 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:five="http://namespaces.zope.org/five"
+           xmlns:i18n="http://namespaces.zope.org/i18n"
+           xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+           i18n_domain="PloneBookmarklets">
+
+  <include package=".browser" />
+  <include package=".utilities"/>
+
+  <five:implements
+        class="Products.CMFCore.PortalObject.PortalObjectBase"
+        interface=".interfaces.IPortalObject"
+  />
+
+  <five:implements
+        class="Products.Archetypes.public.BaseObject"
+        interface=".interfaces.IPortalObject"
+  />
+
+  <genericsetup:registerProfile
+    name="default"
+    title="PloneBookmarklets"
+    directory="profiles/default"
+    description="Extension Profile for PloneBookmarklets Products"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+  <five:implements
+      class="Products.CMFCore.PortalObject.PortalObjectBase"
+      interface="Products.PloneBookmarklets.interfaces.IPortalObject"
+      />
+
+  <five:traversable class="OFS.Application.Application" /> 
+  
+  <five:traversable class="Products.CMFCore.PortalObject.PortalObjectBase" />
+</configure>
+

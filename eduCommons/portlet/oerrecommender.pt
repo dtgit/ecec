@@ -1,0 +1,8 @@
+<div id="recommendations">
+  <script language="JavaScript" 
+	  tal:define="url here/absolute_url"
+	  tal:attributes="src string:http://www.oerrecommender.org/recommendations.pjs?educommons=true&u=${url}&title=true;" 
+	  type="text/javascript">
+  </script>    
+</div>
+   

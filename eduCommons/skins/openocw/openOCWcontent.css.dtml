@@ -1,0 +1,9 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+
+/* Hack to hide Allow Comments archetypes field until global flag is created */
+#fieldname-recurse-license {
+  display:none;
+}
+/* </dtml-with> */

@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: IMSTransportTool\n"
+"POT-Creation-Date: 2006-08-28 20:21+0000\n"
+"PO-Revision-Date: 2007-04-12 15:02+0800\n"
+"Last-Translator: mrkzhao <mark@163.net>\n"
+"Language-Team: Mark <PKUGSE@gse.pku.edu.cn>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-cn\n"
+"Language-Name: Simplified Chinese\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: IMS\n"
+
+#. Default: "Export"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "Export"
+msgstr "导出"
+
+#. Default: "Upload"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "Upload"
+msgstr "上传"
+
+#. Default: "You can export the course as an IMS content package in order to transfer it to a different eduCommons installation or other IMS compliant systems."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "description_export_course"
+msgstr "为了将之转换为一个不同的eduCommons安装或其它IMS相兼容的系统，你可以将课程导出为IMS内容包。"
+
+#. Default: "select the IMS Content Package.zip file with the 'Browse' button, and press 'Upload'."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "description_import_file"
+msgstr "点击”浏览“按钮，选择欲上传的IMS内容包，然后点击”上传“。"
+
+#. Default: "Export IMS Content Package"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "heading_IMSExportContent"
+msgstr "导出IMS内容包"
+
+#. Default: "Import IMS Content Package"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "heading_IMSImportContent"
+msgstr "导入IMS内容包"
+
+#. Default: "Select the ZIP archive file to be uploaded by clicking the 'Browse' button."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "help__zip_file"
+msgstr "点击“浏览”按钮，然后选择欲上传的Zip文件"
+
+#. Default: "The name of the file downloaded to your local machine."
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "help_exportfilename"
+msgstr "下载至您本地计算机的文件名称"
+
+#. Default: "Zip File"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "label__zip_file"
+msgstr "Zip文件"
+
+#. Default: "Export Filename (zipfile)"
+#: IMSTransport/skins/IMSTransport/IMSImportExportForm.cpt
+msgid "label_exporttitle"
+msgstr "导出文件名（Zip文件）"
+

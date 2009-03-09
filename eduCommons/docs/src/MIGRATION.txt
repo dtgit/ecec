@@ -1,0 +1,82 @@
+===================================
+Migrating to eduCommons $$version$$
+===================================
+
+
+Preparation
+-----------
+A few things you should do before beginning the migration:
+
+  1. VERY IMPORTANT: SAVE A BACKUP OF YOUR Data.fs FILE, which is located in the [old instance home]/var directory of your eduCommons site. This file contains all of the content for your site. (This way you will able to restore your file from this Data.fs file if anything goes wrong.)
+
+  2. Using the Zope Management Interface (ZMI), export any customizations you have made in your [old site] --> portal_skins --> custom folder and then delete all files in the custom folder. You can re-import these customizations once you have migrated the site.
+
+  3. Verify that your current instance is eduCommons-3.0.2-final.
+
+
+Migration of eduCommons 3.0.2-final to $$version$$
+--------------------------------------------------
+
+The migration eduCommons from version 3.0.2-final to version $$version$$
+includes the following:
+
+  1. Movement of Data.fs file to a new $$version$$ instance
+
+  2. Migration to Plone 3.0.6
+
+  3. Migration to the eduCommons $$version$$ instance
+
+  4. Final steps
+
+Movement of Data.fs file to a new $$version$$ instance
+------------------------------------------------------
+
+For the first step, you will move the Data.fs file from the old instance to
+the new instance. First of all, install an eduCommons-$$version$$
+instance using the installations instructions found in [new instance home]/eduCommons/docs/. Stop both sites. Then
+copy the Data.fs file from the var directory of the old site to the
+var directory of the new site:
+::
+
+  sudo cp -rvfp [old instance home]/var/Data.fs [new instance home]/var/
+
+
+Migration of Plone
+------------------
+The following steps need to be performed in the ZMI, as eduCommons-$$version$$ utlizes Plone 3.0.6, instead of 3.0.4:
+
+  1. Open your $$version$$ eduCommons site in the ZMI. (click educommons setup, then click Zope Management Interface.)
+
+  2. Run portal_migration migration (click the upgrade button on the migrate tab)
+
+
+Installation of FileSystemStorage Product
+-----------------------------------------
+At this point in time, we need to ensure that the FileSystemStorage AddOn Product is installed:
+
+  1. Open your $$version$$ eduCommons site in the ZMI. (click educommons setup, then click Zope Management Interface.)
+
+  2. Navigate to portal_quickinstaller
+ 
+  3. Select FileSystemStorage
+
+  4. Press Install
+
+Migration of the eduCommons $$version$$ instance
+------------------------------------------------
+eduCommons $$version$$ uses the portal_setup tool to perform the necessary upgrade from 3.0.2 to $$version$$:
+
+  1. Open your $$version$$ eduCommons site in the ZMI. (click educommons Setup, then click Zope Management Interface.)
+  2. Navigate to portal_setup
+  3. Press the 'Upgrades' tab
+  4. From the drop down menu, select 'Products.eduCommons:default' and click Choose Profile button.
+  5. Choose the 'Migration :: 3.0.2 to 3.1.0' option
+  6. Press Upgrade
+
+
+Final Steps
+-----------
+
+  Your site should now be migrated. Navigate to your site in the browser and ensure it has migrated.
+
+

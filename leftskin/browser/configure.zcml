@@ -1,0 +1,52 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="leftskin">
+  
+  <interface
+     interface=".interfaces.ILeftSkinTheme"
+     type="zope.publisher.interfaces.browser.IBrowserSkinType"
+     name="Left Skin"
+     />
+
+  <browser:viewletManager
+     name="leftskin.contenttop"
+     provides=".interfaces.IContentTop"
+     permission="zope2.View"
+     class="plone.app.viewletmanager.manager.OrderedViewletManager"
+     />
+
+  <browser:viewlet
+     name="leftskin.personal_bar"
+     manager=".interfaces.IContentTop"
+     class=".viewlets.PersonalBarViewlet"
+     permission="zope2.View"
+     layer=".interfaces.ILeftSkinTheme"
+     />
+
+  <browser:viewlet
+     name="plone.app.i18n.locales.languageselector"
+     manager=".interfaces.IContentTop"
+     class="plone.app.i18n.locales.browser.selector.LanguageSelector"
+     permission="zope2.View"
+     layer=".interfaces.ILeftSkinTheme"
+     />
+
+  <browser:viewlet
+     name="plone.path_bar"
+     manager=".interfaces.IContentTop"
+     class="plone.app.layout.viewlets.common.PathBarViewlet"
+     permission="zope2.View"
+     layer=".interfaces.ILeftSkinTheme"
+     />
+
+  <adapter factory=".controlpanel.LeftSkinControlPanelAdapter" />
+
+  <browser:page
+     name="leftskin-controlpanel"
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     class=".controlpanel.LeftSkinControlPanel"
+     permission="cmf.ManagePortal"
+     />
+
+</configure>

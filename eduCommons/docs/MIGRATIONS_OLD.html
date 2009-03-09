@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.5: http://docutils.sourceforge.net/" />
+<title>Migrating to eduCommons 3.0.2</title>
+<link rel="stylesheet" href="./default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="migrating-to-educommons-3-0-2">
+<h1 class="title">Migrating to eduCommons 3.0.2</h1>
+
+<div class="section" id="preparation">
+<h1>Preparation</h1>
+<p>A few things you should do before beginning the migration:</p>
+<blockquote>
+<ol class="arabic simple">
+<li>VERY IMPORTANT: SAVE A BACKUP OF YOUR Data.fs FILE, which is located in the [old instance home]/var directory of your eduCommons site. This file contains all of the content for your site. (This way you will able to restore your file from this Data.fs file if anything goes wrong.)</li>
+<li>Using the Zope Management Interface (ZMI), export any customizations you have made in your [old site] --&gt; portal_skins --&gt; custom folder and then delete all files in the custom folder. You can re-import these customizations once you have migrated the site.</li>
+<li>Verify that your current instance is eduCommons-2.3.1-final.</li>
+</ol>
+</blockquote>
+</div>
+<div class="section" id="migration-of-educommons-2-3-1-final-to-3-0-2">
+<h1>Migration of eduCommons 2.3.1-final to 3.0.2</h1>
+<p>The migration eduCommons from version 2.3.1-final to version 3.1.1-final
+includes the following:</p>
+<blockquote>
+<ol class="arabic simple">
+<li>Pre-migration of Data.fs in version 2.3.1-final</li>
+<li>Movement of Data.fs file to a new 3.0.2 instance</li>
+<li>Migration of Plone 3.0.4</li>
+<li>Migration of the eduCommons 3.1.1-final instance</li>
+<li>Final steps</li>
+</ol>
+</blockquote>
+</div>
+<div class="section" id="pre-migration-of-data-fs-in-version-2-3-1-final">
+<h1>Pre-migration of Data.fs in version 2.3.1-final</h1>
+<p>For this step, you will need to copy the migration source code found in version 3.1.1-final.  The file is located at eduCommons/extras/PreMigrate.py .
+Copy this into [old instance]/Products/eduCommons/Extensions.</p>
+<p>Run the migration script by following these steps:</p>
+<blockquote>
+<ol class="arabic simple">
+<li>Open your 2.3.1-final eduCommons site in the ZMI. (click educommons Setup, then click Zope Management Interface.)</li>
+<li>From the drop down menu, select &quot;External method&quot; and click the Add button.</li>
+<li>Enter the following parameters:<ul>
+<li>Id: Pre_Migrate_eduCommons3.0.2</li>
+<li>Title: Pre_Migrate_eduCommons3.0.2</li>
+<li>Module Name: eduCommons.Migrate</li>
+<li>Function Name: pre_migrate_2_3_1_to_3_0_2</li>
+</ul>
+</li>
+<li>Click Add</li>
+<li>Click on the Pre_Migrate_eduCommons3.0.2 script you just added</li>
+<li>Click the test tab.</li>
+<li>Verify that the method ran successfully. (It should give you feedback.)</li>
+</ol>
+</blockquote>
+</div>
+<div class="section" id="movement-of-data-fs-file-to-a-new-3-0-2-instance">
+<h1>Movement of Data.fs file to a new 3.0.2 instance</h1>
+<p>For the next step you will move the Data.fs file from the old instance to
+the new instance. First of all, install an eduCommons-3.0.2
+instance using the installations instructions found in [new instance home]/eduCommons/docs/. Stop both sites. Then
+copy the Data.fs file from the var directory of the old site to the
+var directory of the new site:</p>
+<pre class="literal-block">
+sudo cp -rvfp [old instance home]/var/Data.fs [new instance home]/var/
+</pre>
+</div>
+<div class="section" id="migration-of-plone">
+<h1>Migration of Plone</h1>
+<p>The following steps need to be performed in the ZMI, as eduCommons-3.1.1-final utlizes Plone 3.0.4, instead of 2.5.x:</p>
+<blockquote>
+<ol class="arabic simple">
+<li>Open your 3.0.2 eduCommons site in the ZMI. (click educommons setup, then click Zope Management Interface.)</li>
+</ol>
+<ol class="arabic simple" start="3">
+<li>Run portal_migration migration (click the upgrade button on the migrate tab)</li>
+</ol>
+</blockquote>
+</div>
+<div class="section" id="migration-of-the-educommons-3-0-2-instance">
+<h1>Migration of the eduCommons 3.0.2 instance</h1>
+<p>Run the migration script included with the 3.1.1-final instance by following these steps:</p>
+<blockquote>
+<ol class="arabic simple">
+<li>Copy the migration script found in Products/eduCommons/extras/Migrate.py to [new_instance]/Extensions/</li>
+<li>Open your 3.1.1-final eduCommons site in the ZMI. (click educommons Setup, then click Zope Management Interface.)</li>
+<li>Navigate to the root of the ZMI (click the Root Folder link located in the upper left portion of the page)</li>
+<li>From the drop down menu, select &quot;External method&quot; and click the Add button.</li>
+<li>Enter the following parameters:<ul>
+<li>Id: Migrate_eduCommons3.0.2</li>
+<li>Title: Migrate_eduCommons2.0.2</li>
+<li>Module Name: Migrate</li>
+<li>Function Name: migrate_2_3_1_to_3_0_2</li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li>Click Add</li>
+<li>Click on the Migrate_eduCommons3.0.2 script you just added</li>
+<li>Click the test tab.</li>
+<li>Verify that the method ran successfully. (It should give you feedback.)</li>
+</ol>
+</blockquote>
+</div>
+<div class="section" id="final-steps">
+<h1>Final Steps</h1>
+<blockquote>
+<p>Your site should now be migrated. Navigate to your site in the browser and ensure it has migrated.
+Based on the nature of the changes from Plone 2.5.x to Plone 3.0.4, if you performed major customizations, you may or may not need to refactor those changes to work properly in a Plone 3 environment.</p>
+<p>Here are some additional steps you may need to follow after migration, depending on how you have customized your site:</p>
+<ol class="arabic simple">
+<li>Check Course Homepage and About the Professor pages to see if the images render. In past versions of eduCommons, some of these image links may be broken, but rendered due to acquisition. The course folder appears twice in the link (i.e. department/course/course/page).</li>
+<li>The Site homepage links to the Courses List, Frequently Asked Questions, and Help will need to be modified as follows:<ul>
+<li>OLD: &lt;a title=&quot;List of Courses&quot; href=&quot;/Courses_listing/&quot;&gt;list of courses&lt;/a&gt;.</li>
+<li>NEW: &lt;a title=&quot;List of Courses&quot; href=&quot;/courselist/&quot;&gt;list of courses&lt;/a&gt;.</li>
+<li>OLD: &lt;a title=&quot;Frequently Asked Questions&quot; href=&quot;/Help/&quot;&gt;Frequently Asked Questions&lt;/a&gt;</li>
+<li>NEW: &lt;a title=&quot;Frequently Asked Questions&quot; href=&quot;/help/&quot;&gt;Frequently Asked Questions&lt;/a&gt;</li>
+<li>OLD: &lt;a title=&quot;Feedback&quot; href=&quot;/Feedback/&quot;&gt;feedback&lt;/a&gt;</li>
+<li>NEW: &lt;a title=&quot;Feedback&quot; href=&quot;/feedback/&quot;&gt;feedback&lt;/a&gt;</li>
+</ul>
+</li>
+<li>The Site's About page links to the Terms of Use and Privacy Policy will need to be modified as follows:<ul>
+<li>OLD: &lt;a title=&quot;Terms of Use&quot; href=&quot;../About/terms_of_use&quot;&gt;Terms of Use&lt;/a&gt;</li>
+<li>NEW: &lt;a title=&quot;Terms of Use&quot; href=&quot;../about/terms_of_use&quot;&gt;Terms of Use&lt;/a&gt;</li>
+<li>OLD: &lt;a title=&quot;Privacy Policy&quot; href=&quot;../About/privacy_policy&quot;&gt;Privacy Policy&lt;/a&gt;</li>
+<li>NEW: &lt;a title=&quot;Privacy Policy&quot; href=&quot;../about/privacy_policy&quot;&gt;Privacy Policy&lt;/a&gt;</li>
+</ul>
+</li>
+<li>The top banner, portal logo, and top nav color setting can be checked and adjusted by managers and administrators via Site Setup --&gt; Left Skin Settings. Any changes made to these settings must be done after having checked the Development Mode box. In order to change the background color in the top nav color, a 1px x 1px transparent gif needs to be loaded first to hide the top nav background image. Be sure to uncheck the Development Mode box after Left Skin changes have been saved to improve site performance.</li>
+<li>In order to restore the &quot;Join&quot; link, login to the site as manager and click Site Setup --&gt; Security. Then check the &quot;Enable self-registration&quot; box and click save.</li>
+</ol>
+</blockquote>
+</div>
+</div>
+<div class="footer">
+<hr class="footer" />
+<a class="reference external" href="MIGRATIONS_OLD.txt">View document source</a>.
+Generated on: 2008-04-09 18:43 UTC.
+Generated by <a class="reference external" href="http://docutils.sourceforge.net/">Docutils</a> from <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> source.
+
+</div>
+</body>
+</html>

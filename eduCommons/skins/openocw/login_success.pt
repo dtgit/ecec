@@ -1,0 +1,118 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+</head>
+
+<body>
+
+<tal:block tal:condition="exists: here/portal_skins | nothing"
+           tal:replace="nothing">
+    <tal:block tal:condition="here/portal_skins/updateSkinCookie | nothing"
+               tal:define="dummy here/setupCurrentSkin" />
+</tal:block>
+
+<div metal:fill-slot="main">
+  <div tal:condition="not:isAnon">
+    <div tal:define="came_from request/came_from|nothing;
+                     initial_login request/initial_login|nothing;
+                     js_enabled python:request.get('js_enabled','1')!='0';">
+
+      <h1 class="documentFirstHeading"
+          i18n:translate="heading_you_are_now_logged_in">You are now logged in</h1>
+
+        <p tal:condition="initial_login"
+           i18n:translate="description_logged_in_explain">
+           Notice that the top right bar has changed. It now
+           contains several personalized items. Use these items
+           to control your settings and your personal area.
+           They will remain as long as you are logged in.
+        </p>
+
+      <div tal:condition="not:initial_login">
+        <br />
+      </div>
+
+      <p tal:condition="came_from">
+        <a href=""
+           tal:attributes="href came_from"
+           i18n:translate="label_login_continue">
+          Continue</a>
+      </p>
+
+      <p tal:condition="python:not came_from">
+        <a href=""
+           tal:attributes="href context/@@plone_portal_state/navigation_root_url"
+           i18n:translate="label_login_continue_to_home_page">
+          Continue to the
+          <span tal:content="portal/title" i18n:name="portal_title">
+              portal title
+          </span>
+          home page
+          </a>
+      </p>
+
+      <tal:block i18n:domain="eduCommons">
+	<h2 i18n:translate="login_openocw_title">Welcome to OpenOCW</h2>
+	<p i18n:translate="login_welcome1">
+	  Welcome to OpenOCW! Here are some things you may want to do:
+	</p>
+
+	<ul>
+	  <li i18n:translate="login_openocw_item1">
+	    If this is your first time logging into OpenOCW, please be sure to read the 
+	    <a href=""
+	       tal:attributes="href string:${portal_url}/about/terms-of-use" title="Terms of Use">Terms of Use</a>
+	    page before you start using your account.
+	  </li>
+	  <li i18n:translate="login_openocw_item2">
+	    Click on the <a tal:attributes="href string:${portal_url}/courselist">courses</a> link
+	    to see what courses others are building.
+          </li>
+	  <li i18n:translate="login_openocw_item3">
+	    To start building a new course, use the <a href=""
+						       tal:attributes="href string:${portal_url}/@@coursebuilderform"
+						       title="Course Builder">Build a Course</a> link
+	    that appears to the right of any page.
+          </li>
+	  <li i18n:translate="login_openocw_item4">
+	    Read <a href="http://cosl.usu.edu/projects/educommons/documentation/tutorial/educommons-a-guide-to-getting-started">documentation</a> 
+	    on how to build a course.
+	  </li>
+	</ul>
+
+	<h2 i18n:translate="login_openocw_build_course">Building a Course</h2>
+
+	<p i18n:translate="login_openocw_build_course_description">
+	  Once you are ready to build your course, it is recommended that you use the 
+	  Course Builder. You can get there by using the above link, or by clicking on 
+	  the link on the right-hand side of the page. This link will take you to a form 
+	  which will help you set up the basic structure of the course. The course will 
+	  remain hidden from public view until the course, and all objects in it, are 
+	  set to "published" status.
+	</p>
+      </tal:block>
+      <div tal:condition="not:js_enabled">
+         <p i18n:translate="description_enable_cookies_to_stay_logged_in">
+            Note: If you do not remain logged in after leaving this page,
+            it is because you need to enable cookies in your browser.
+         </p>
+      </div>
+
+    </div>
+  </div>
+  <div tal:condition="isAnon">
+    <div metal:use-macro="here/login_failed/macros/login_failed" />
+  </div>
+</div>
+
+</body>
+</html>
+

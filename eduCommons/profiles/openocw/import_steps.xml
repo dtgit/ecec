@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="openOCW-final" version="20070514-01"
+	       handler="Products.eduCommons.setupHandlersOpenOCW.importFinalSteps"
+	       title="eduCommons Final Steps Setup">
+    <dependency step="plone-final"/>
+  </import-step>
+  <import-step id="openOCW-content" version="20070514-01"
+	       handler="Products.eduCommons.setupHandlersOpenOCW.importContent"
+	       title="eduCommons Content Setup">
+    <dependency step="openOCW-final"/>
+  </import-step>
+</import-steps>

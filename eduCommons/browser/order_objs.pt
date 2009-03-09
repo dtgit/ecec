@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      i18n:domain="plone"
+      metal:use-macro="here/main_template/macros/master">
+
+  <head>
+      <metal:block fill-slot="top_slot">
+        <tal:insert tal:replace="nothing"
+              tal:define="dummy python:request.set('enable_border', 1)" />
+      </metal:block>
+  </head>
+
+  <body>
+
+    <div metal:fill-slot="main">
+      <h1 class="documentFirstHeading">
+        <tal:block replace="structure view/icon" />
+        <span tal:content="view/title" tal:omit-tag="">Directory Id</span>
+      </h1>
+
+      <a href=""
+         class="link-parent"
+         tal:define="parent_url view/parent_url"
+         tal:condition="parent_url"
+         tal:attributes="href string:${parent_url}/folder_contents"
+         i18n:translate="go_to_parent_url">
+          Up one level
+      </a>
+
+      <p class="documentDescription"
+         tal:content="context/Description"
+         tal:condition="context/Description">
+          Description
+      </p>
+
+      <form name="folderContentsForm"
+            method="post"
+            action="folder_object"
+            tal:attributes="action context/absolute_url">
+        <div tal:replace="structure view/contents_table"></div>
+      </form>
+    </div>
+
+
+  </body>
+</html>

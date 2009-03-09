@@ -1,0 +1,4 @@
+
+  * configlet to allow the portal admin to decide what bookmarklets to display
+
+  * configlet to add new bookmarklets

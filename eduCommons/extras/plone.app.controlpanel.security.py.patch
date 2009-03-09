@@ -1,0 +1,9 @@
+68,69c68,72
+<             else:
+<                 return False
+---
+>             #This is bad...doesn't allow for roles that alpha order before Anonymous
+>             #else:
+>             #    return False
+>         #Fix for above
+>         return False

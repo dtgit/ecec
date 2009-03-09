@@ -1,0 +1,22 @@
+<p>
+We welcome your feedback on <tal:block tal:replace="here/title">eduCommons</tal:block> OpenCourseWare.
+</p>
+<p>
+Before sending us your feedback, you may want to view <a href="../help" title="Help: Frequently Asked Questions">Help &raquo; Frequently Asked Questions</a>.
+</p>
+<br />
+<form>
+<input class="standalone" value="Leave Feedback" type="button"
+       tal:define="email python:here.portal_properties.email_from_address;"
+       tal:attributes="onClick string:javascript:window.location='mailto:${email}';" />
+</form>
+<br />
+Possible feedback topics include:
+<ul>
+   <li>stories and experience with using <tal:block tal:replace="here/title">eduCommons</tal:block> OCW
+   <li>issues with content within a course</li>
+   <li>request a course that hasn't been posted yet</li>
+   <li>problems using the site</li>
+   <li>suggestions on improving the site</li>
+</ul>
+

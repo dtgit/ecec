@@ -1,0 +1,140 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="eduCommons">
+
+  <metal:block fill-slot="top_slot">
+    <metal:block tal:define="dummy python:request.RESPONSE.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate, post-check=0, pre-check=0');
+                             dummy python:request.set('enable_border', 1);" />
+  </metal:block>
+
+  <body>
+
+    <div metal:fill-slot="main"
+         tal:define="errors nothing;
+                     review_state wf_state;
+                     paths python:request.get('paths', ['/'.join(here.getPhysicalPath())]);
+                     batch python:here.getObjectsFromPathList(paths,batch=True);
+                     folders_in_publishing python:[o.getId for o in batch if o.isPrincipiaFolderish];
+                     came_from python:request.get('HTTP_REFERER', here.absolute_url()).split('?')[0];
+                     dummy python:request.set('orig_template', came_from);
+                     is_publish_folder python:0;">
+
+      <metal:block tal:condition="python: paths and not batch"
+                   tal:replace="python:here.redirectToReferrer('The item(s) you selected are no longer available.')"/>
+
+      <h1 i18n:translate="heading_copyright_process">Copyright process</h1>
+
+      <p i18n:domain="eduCommons" i18n:translate="description_copyright_process">
+	Items should be copyright cleared before publication.  This form allows for bulk copyright clearance, as well as bulk copyright revocation.
+	To recursively change the copyright status, be sure to check the include folder items checkbox on the form below.
+      </p>
+
+      <form id="edit_form"
+            name="edit_form"
+            method="post"
+            action="copyright_clearance"
+            tal:attributes="action string:$here_url/$template_id"
+            tal:condition="not:python:paths and not batch">
+
+        <fieldset i18n:domain="plone">
+
+          <legend i18n:translate="legend_publishing_details">Publishing Details</legend>
+
+          <div class="field" tal:condition="batch">
+            <label for="" i18n:translate="label_affected_content">Affected content</label>
+            <div tal:define="dummy python:request.set('ids_checked', 1);">
+              <table summary="Affected content" i18n:attributes="summary summary_affected_content;"
+                     metal:use-macro="here/old_folder_contents/macros/folder_listing">
+              </table>
+            </div>
+          </div>
+
+          <div class="field formSingleCheckbox"
+               tal:condition="folders_in_publishing|nothing">
+
+            <label for="include_contained_objects" i18n:translate="label_include_contained_objects">
+              Include folder items
+            </label>
+
+            <div class="formHelp" i18n:domain="eduCommons"
+                 i18n:translate="help_include_contained_objects">
+              If checked, eduCommons will attempt to change the copyright status of all content in any selected folders and their subfolders.<br /> 
+            </div>
+
+            <input type="checkbox"
+                   class="formElement"
+                   id="include_children"
+                   name="include_children"
+                   tabindex=""
+                   tal:attributes="tabindex tabindex/next;"
+                   />
+          </div>
+          <div class="field" i18n:domain="eduCommons">
+            <label i18n:translate="label_copyright_status">Copyright Status</label>
+            <div class="formHelp"
+                 i18n:translate="help_copyright_status">
+	      Choose to clear copyright, or revoke copyright for the item(s) selected above.
+            </div>
+
+                <input class="noborder"
+                       id="copyright_clear"
+                       type="radio"
+                       name="copyright_action"
+                       title="Clear Copyright"
+                       value="True"
+		       checked="checked"
+                       />
+                <label for="copyright_clear"
+                       i18n:translate="label_clear_copyright">
+                       Clear Copyright</label>
+                       <br />
+                <input class="noborder"
+                       id="copyright_revoke"
+                       type="radio"
+                       name="copyright_action"
+                       title="Revoke Copyright"
+                       value="False"
+		       />
+                <label for="copyright_revoke"
+                       i18n:translate="label_revoke_copyright">
+                       Revoke Copyright</label>
+                       <br />
+
+          </div>
+
+          <div class="formControls">
+            <input class="context"
+                   type="submit"
+                   name="form.button.Copyright"
+                   value="Save"
+                   i18n:attributes="value label_save;"
+                   tal:attributes="tabindex tabindex/next;"
+		   />
+            <input class="standalone"
+                   type="submit"
+                   name="form.button.Cancel"
+                   value="Cancel"
+                   i18n:attributes="value label_cancel;"
+                   tal:attributes="tabindex tabindex/next;"/>
+          </div>
+
+
+          <span tal:replace="nothing">
+            ##### HIDDEN VARIABLES FOR THE FORM_TOOL -- CUT AND PASTE
+            THESE INTO YOUR FORM ####
+          </span>
+          <input type="hidden" name="form.submitted" value="1" />
+          <input type="hidden" name="orig_template"
+                 tal:condition="request/orig_template|nothing"
+                 tal:attributes="value request/orig_template" />
+          <input type="hidden" name="folder_publish" value="1"
+                 tal:condition="python:is_publish_folder" />
+                 
+        </fieldset>
+
+      </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,1362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eduCommons 3.0.0\n"
+"POT-Creation-Date: 2008-02-22 23:27+0000\n"
+"PO-Revision-Date: 2008-03-31 19:29-0700\n"
+"Last-Translator: Chenyong(Jessie) Zhu <jessie0587@hotmail.com>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: eduCommons\n"
+
+#. Default: "Accessible"
+#: change_accessibility.cpt
+msgid "Accessible"
+msgstr "訪問"
+
+#. Default: "Apply Template"
+#: ../skins/eduCommons/TemplateMacros.pt
+msgid "Apply Template"
+msgstr "應用模板"
+
+#: eduCommons/skins/eduCommons/portlet_navigation.pt
+msgid "Available Departments"
+msgstr "有效院系"
+
+#. Default: "Cancel"
+#: ../skins/eduCommons/Export_form.cpt
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Cancel"
+msgstr "取消"
+
+#. Default: "Choose"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Choose"
+msgstr "選擇"
+
+#. Default: "Close"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Close"
+msgstr "關閉"
+
+#. Default: "Confirm"
+#: ../skins/eduCommons/content_status_confirm.cpt
+msgid "Confirm"
+msgstr "確定"
+
+#: eduCommons/skins/eduCommons/portlet_navigation.pt
+msgid "Course Contents"
+msgstr "課程內容"
+
+#. Default: "Course Discussion Summary"
+#: ../skins/eduCommons/Department_listing.pt
+msgid "Course Discussion Summary"
+msgstr "課程討論概要"
+
+#. Default: "Courses Listing"
+#: eduCommons/skins/eduCommons/Department_listing.pt
+msgid "Courses Listing"
+msgstr "課程列表"
+
+#. Default: "Export"
+#: ../skins/eduCommons/Export_form.cpt
+msgid "Export"
+msgstr "導出"
+
+#. Default: "Fix Course Html"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Fix Course Html"
+msgstr "修正課程HTML"
+
+#. Default: "Fix HTML"
+#: ../skins/eduCommons/TemplateMacros.pt
+msgid "Fix HTML"
+msgstr "修正HTML"
+
+#. Default: "Image of Document Actions"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "Image of Document Actions"
+msgstr "文件鏡像效果"
+
+#. Default: Import and Export objects using IMS standards.
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "ImportExport_standards"
+msgstr "導入導出標準"
+
+#. Default: "InProgress"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "InProgress"
+msgstr "正在處理過程中"
+
+#. Default: "Insert"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "Insert"
+msgstr "插入"
+
+#. Default: "Insert Link"
+#: ../skins/eduCommons/JavascriptMacros.pt
+msgid "Insert Link"
+msgstr "插入鏈接"
+
+#: eduCommons/skins/eduCommons/folder_delete.cpy:42
+msgid "Item(s) deleted."
+msgstr "已删除的項目"
+
+#. Default: "Not Accessible"
+#: change_accessibility.cpt
+msgid "Not Accessible"
+msgstr "不可訪問"
+
+#. Default: "Published"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "Published"
+msgstr "已發布"
+
+#. Default: "QA"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "QA"
+msgstr "常見問題"
+
+#. Default: "Released"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "Released"
+msgstr "已發布"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Search Again"
+msgstr "繼續搜索"
+
+#. Default: "Upload"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "Upload"
+msgstr "上傳"
+
+#. Default: "Validate"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Validate"
+msgstr "驗證"
+
+#. Default: "Are your sure that you want to enable LinguaPlone?"
+#: ..skins/ECLinguaPlone/prefs_language.pt
+msgid "alert_enable_linguaplone"
+msgstr "您確認想打開linguaPlone嗎？"
+
+#. Default: "barchart"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "barchart"
+msgstr "柱狀圖"
+
+#. <h5 i18n:translate="box_summary" tal:content="summaryName">
+#. Course Summary
+#. </h5>
+#. Default: "Course Summary"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "box_summary"
+msgstr "課程建設環節"
+
+#. Default: Course Tools
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "course_tools"
+msgstr "課程工具"
+
+#. Default: "Items should meet minimum accessibility requirements before publication. Please evaluate the content against the ${descr-accessibility-link}, and set the flag accordingly."
+#: change_accessibility.cpt
+msgid "description_accessibility_process"
+msgstr "Items應該在發布前滿足最小的訪問要求。請評價against ${descr-accessibility-link}內容，并相應設置標記"
+
+#. Default: "Items should be copyright cleared before publication.  This form allows for bulk copyright clearance, as well as bulk copyright revocation.To recursively change the copyright status, be sure to check the include folder items checkbox on the form below."
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "description_copyright_process"
+msgstr "發表之前必須清除版權。下麵這個表格就是讓你群版權清除何群版權回收用的，如果要循環的改變版權狀况，在下表中勾上\"include folder items\"這個選擇框"
+
+#. Default: "Adjust the colors and images of your eduCommons instance. You will need to <strong>clear your browser's cache</strong> in order to see the updated changes."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_custom_skinning"
+msgstr "如果要調整系統的顔色和圖像，你需要<strong>清除瀏覽器的緩存</strong>來查找更新。"
+
+#. Default: "eduCommons-wide settings."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "description_eduCommons_setup"
+msgstr "eduCommons設置"
+
+#. Default: "Warning: this feature is in an experimental state. As such, this feature should not be enabled for and has not been tested in production sites."
+#: ../skins/ECLinguaPlone/prefs_languages.pt
+msgid "description_experimental_linguaplone"
+msgstr "警告：此功能尚處于實驗狀態，還沒有經過充分測試，因此請不要使用。"
+
+#. Default: "The zip file will contain only the content of each object in eduCommons. To export the entire course including metadata, use the IMS tool found in the tools tab above."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_IMS"
+msgstr "要導出整門課程（包括元數據），請使用上面工具選項欄中的IMS工具。"
+
+#. Default: "All files in the course will be exported in .zip file format."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_allContent"
+msgstr "以.zip格式導出全部內容"
+
+#. Default: "The following files will be exported in .zip file format."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_followingFiles"
+msgstr "以下文件將以.zip格式導出"
+
+#. Default: "To leave feedback, please ${mailto_link}."
+#: ../skins/eduCommons/feedback_form.cpt
+msgid "description_feedback"
+msgstr "要想離開反饋，請${mailto_link}"
+
+#. Default: "This form will import content from files contained in a .zip file, and will either create new objects, or overwrite objects that contain the same original filename and path. You must have editing rights for objects in order for them to be updated."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file"
+msgstr "此表格將從一個.zip文件中導入內容，或者創建一個新對象，或能覆蓋同名和同路徑的對象。想要更新內容，您必須必備編輯對象內容的權限。"
+
+#. Default: "Add the relevant details of the file to be added in the form below, select the file with the 'Browse' button, and press 'Upload'."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file1"
+msgstr "想要在下表中添加相關的內容，請點擊“瀏覽”並選擇文件，然後點擊“上傳”按鈕。"
+
+#. Default: "If you want to import a full course with metadata using an IMS content package, please use the IMS tool found in the tools tab of the course."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file2"
+msgstr "如果您想使用IMS內容來導出整個課程的元數據，請使用課程工具標簽中的IMS工具。"
+
+#. Default: "Add the relevant details of the file to be added in the form below, select the file with the 'Browse' button, and press 'Upload'."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file3"
+msgstr "要想在下表中添加相關的內容，請點擊“瀏覽”並選擇“上傳”按鈕。"
+
+#. Default: "The url will be placed in the current document as a hyperlink."
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "description_insert_ext_link"
+msgstr "此URL將被作爲當前文件的鏈接。"
+
+#. Default: "Selected items will be placed in the current document as hyperlinks."
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "description_insert_link"
+msgstr "選定的項將以超鏈接的形式顯示在當前文件中。"
+
+#. <span class="discreet" i18n:domain="eduCommons" i18n:translate="description_last_updated">
+#. Last Updated
+#. </span>
+#. Default: "Last Updated"
+#: ../skins/eduCommons/search.pt
+msgid "description_last_updated"
+msgstr "最近更新"
+
+#. Default: "Currently there are no items available to display."
+#: ../skins/eduCommons/Department_listing.pt
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "description_no_items"
+msgstr "目前無內容可顯示"
+
+#. <em i18n:translate="description_no_items_in_department">
+#. Currently there are no available courses in this department.
+#. </em>
+#. Default: "Currently there are no available courses in this department."
+#: ../skins/eduCommons/Department_listing.pt
+msgid "description_no_items_in_department"
+msgstr "目前這個繫還沒有課程發布。"
+
+#. <p i18n:translate="description_no_items_in_nav">
+#. You have not selected any items to be displayed in the left hand navigation for this course.
+#. </p>
+#. Default: "You have not selected any items to be displayed in the left hand navigation for this course."
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "description_no_items_in_nav"
+msgstr "這門課你沒有選擇任何條目在左邊的導航欄顯示。"
+
+#. Default: "Currently there are no Log Files for this Course."
+#: ../skins/eduCommons/Logfile_contents.pt
+msgid "description_no_logs_in_course"
+msgstr "目前此課程還沒有日志文件"
+
+#. <td colspan="6" i18n:domain="eduCommons" i18n:translate="description_no_permissions_contents">
+#. <strong>
+#. *
+#. </strong>
+#. You do not have permission to perform actions on multiple objects.  To Change State or Add a Comment individually, click on an object.
+#. </td>
+#. Default: "<strong>*</strong> You do not have permission to perform actions on multiple objects. To Change State or Add a Comment individually, click on an object."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "description_no_permissions_contents"
+msgstr "<strong>*</strong>你沒有權限同時操作多個對象，改變個別對象狀態或添加評論注解，請點擊該對象。"
+
+#. Default: In order to translate the content your were viewing, you must first translate the parent object
+msgid "description_parent_not_translated"
+msgstr "要想翻譯您正在瀏覽的內容，您必須首先翻譯其根源對象。"
+
+#. Default: "An item's state (also called its review state) determines at what point in the publication process the item is in."
+#: eduCommons/skins/eduCommons/content_status_history.cpt
+msgid "description_publishing_process"
+msgstr "一項內容的狀態（或稱為其查看狀態），取决於此內容在整個發布過程中所處的位置。"
+
+#. Default: "Use the following image maps to facilitate the customization process. Mousing over a customizable area on the image map will change the cursor to a hand. Hover the mouse over an area for a tool tip. Click the area to move you to the customizable field below."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_skinning_maps"
+msgstr "使用以下圖片地圖有助於制定過程。當鼠標移過圖片地圖的定制化區域時，光標會自動變爲手行。懸停於區域將會顯示出工具提示。單擊該區域將會鏈接至您在下列制定的相應位置。"
+
+#. Default: "Web safe colors should be utilized in order to ensure that the broadest audience views your site as you intend. Click to view a ${link}"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_web_safe"
+msgstr "爲了確保多數瀏覽者都能夠正常地看到您設置的站點顔色，應使用網頁安全色。請點擊查看${link}。"
+
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "external_link_required"
+msgstr "外部鏈接"
+
+#. Default: "Unless otherwise stated, content on this site is licensed under a"
+#: ../browser/frontpage_copyright_byline.pt
+msgid "front_license_text"
+msgstr "除非另作說明，此站點內容是得到許可的"
+
+#. Default: "Up one level"
+#: ../skins/eduCommons/Logfile_contents.pt
+msgid "go_to_parent_url"
+msgstr "轉到上一層"
+
+#. Default: "Courses Listing"
+#: ../skins/eduCommons/Courses_listing.pt
+msgid "header_courses"
+msgstr "課程列表"
+
+#. Default: "How to I start using RSS feeds?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_how_rss"
+msgstr "如何開始使用RSS閱讀器"
+
+#. Default: "How do I get a news reader?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_reader_rss"
+msgstr "如何獲得一個新的讀本"
+
+#. Default: "<span tal:replace=\"portal_title\"/> OCW RSS Feeds"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_rss"
+msgstr "<span tal:replace=\"portal_title\"/> OCW RSS閱讀器"
+
+#. Default: "Available Feeds"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_rss_available"
+msgstr "可用的閱讀器"
+
+#. Default: "What is RSS?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_whatis_rss"
+msgstr "什麽是RSS？"
+
+#. Default: "Why use RSS?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_why_rss"
+msgstr "爲什麽使用RSS？"
+
+#. Default: Export Content
+#. ../skins/eduCommons/Export_form.cpt
+msgid "heading_ExportContent"
+msgstr "導出內容"
+
+#. Default: Import Content
+#. ../skins/eduCommons/Import_form.cpt
+msgid "heading_ImportContent"
+msgstr "導入內容"
+
+#. Default: "Items should meet minimum accessibility requirements before publication. Please evaluate the content against the ${descr-accessibility-link}, and set the flag accordingly"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "heading_accessibility_process"
+msgstr "Items應該在發布前滿足最小的訪問要求。請評價against ${descr-accessibility-link}內容，并相應設置標記 ../skins/eduCommons/change_accessibility.cpt"
+
+#. Default: "Copyright process"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "heading_copyright_process"
+msgstr "版權認證"
+
+#. <span i18n:domain="eduCommons" i18n:translate="heading_course_summary">
+#. Course Summary
+#. </span>
+#. Default: "Course Summary"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "heading_course_summary"
+msgstr "課程摘要"
+
+#. Default: "eduCommons Skin Settings"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "heading_custom_skinning"
+msgstr "eduCommons系統界面"
+
+#. <h2 i18n:domain="eduCommons" i18n:translate="heading_eduCommons_prefs">
+#. eduCommons Member Preferences
+#. </h2>
+#. Default: "eduCommons Member Preferences"
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "heading_eduCommons_prefs"
+msgstr "參數選擇"
+
+#. Default: "Feedback"
+#: ../skins/eduCommons/feedback_form.cpt
+msgid "heading_feedback"
+msgstr "反饋"
+
+#. Default: "Insert External Link"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "heading_insert_ext_link"
+msgstr "插入外部鏈接"
+
+#. Default: "Insert Link"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "heading_insert_link"
+msgstr "插入鏈接"
+
+#. Default: "Select Content"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "heading_select_content"
+msgstr "選擇內容"
+
+#. Default: "Site Settings"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "heading_site_settings"
+msgstr "站點設置"
+
+#. Default: Selecting 'Validate Only' will check documents for XHTML errors and list the errors in the log file.  Selecting 'Validate and Repair' will validate documents, attempt to fix errors, and report the results in the log file.
+#. ../skins/eduCommons/Import_form.cpt
+msgid "help_XHTML"
+msgstr "選擇“僅驗證”將只檢查文件中的XHTML錯誤，並在一個日誌文件中列出相應的錯誤；選擇“驗證並修復”則不僅檢驗文件中內容，同時還嘗試修改其中的錯誤，然後將結果保存在一個日誌文件中。"
+
+#. Default: "A description which will be given to each file in the ZIP Archive."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "help__import_description"
+msgstr "zip壓縮包中每個文件的描述。"
+
+#. Default: "Select the ZIP archive file to be uploaded by clicking the 'Browse' button."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "help__zip_file"
+msgstr "點擊“瀏覽”選擇要上傳的zip壓縮包文件。"
+
+#. Default: "If checked, eduCommons will attempt to change the accessibility status of all content in any selected folders and their subfolders."
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "help_accessibility_include_contained_objects"
+msgstr "如果被選中，eduCommons將試圖改變在任何選中文件夾和其子文件夾里所有內容的訪問狀態 ../skins/eduCommons/change_accessibility.cpt"
+
+#. Default: "Choose to set the accessibility flag, or revoke accessibility"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "help_accessibility_status"
+msgstr "選擇設置訪問標記，或者撤銷訪問  ../skins/eduCommons/change_accessibility.cpt"
+
+#. Default: "Set the accessibility flag if your content meets the criteria outlined ${link_accessibilty}."
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "help_accessibilitycompliant"
+msgstr "設置訪問標記如果你的內容滿足大綱${link_accessibilty}標準 ../skins/eduCommons/accessibility_compliant.cpt"
+
+#. Default: "Users with one of the roles selected here are allowed to add keywords to the site."
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_allowRolesToAddKeywords"
+msgstr "具有這個列出的角色之一的用戶被允許對這個網頁添加關鍵字"
+
+#. Default: "Enter the text displayed below."
+#. ../skins/eduCommons/join_form.cpt
+msgid "help_captcha"
+msgstr "鍵入下面所顯示的文字 ../skins/eduCommons/join_form.cpt"
+
+#. widget=BooleanWidget(label='Cleared Copyright',
+#. label_msgid='label_clearedCopyright',
+#. description_msgid='help_clearedCopyright',
+#. description="Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violations.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violation."
+#: ../content/ec_object.py
+msgid "help_clearedCopyright"
+msgstr "版權聲明"
+
+#. Default: "The color of the links in the 'content' window. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_content_link"
+msgstr "“內容”窗口鏈接的顔色，應是16進制的代碼（例如#666666）。"
+
+#. Default: "Copyright notice which appears in the bottom footer of every page."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_copyright_notice"
+msgstr "版權聲明（每頁頁腳都有顯示）"
+
+#. Default: "Choose to clear copyright, or revoke copyright for the item(s) selected above."
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "help_copyright_status"
+msgstr "選擇清除版權，或者為上面所選的項目廢除版權"
+
+#. widget=StringWidget(label='Course ID',
+#. label_msgid='label_courseID',
+#. description='Enter the Course ID.',
+#. description_msgid='help_courseid',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter the Course ID"
+#. ../content/ec_object.py
+msgid "help_courseid"
+msgstr "課程ID"
+
+#. Default: "Specify the default language setting for newly created items."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_default_language"
+msgstr "請指定新創建內容的缺省語言。"
+
+#. Default: "The name of the file downloaded to your local machine."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "help_exportfilename"
+msgstr "下載到本地計算機的文件名"
+
+#. Default: "If checked, eduCommons will attempt to change the copyright status of all content in any selected folders and their subfolders. <br/>"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "help_include_contained_objects"
+msgstr "如果選中，eduCommons將試圖改變在任何選中文件以及子文件所有內容的版權狀態"
+
+#. Default: "The label for the primary folderish object. In a default instance, this will be 'Available Departments'."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_inst_obj"
+msgstr "初級折叠對象的標簽，在缺省狀態下應爲“院系名稱”。"
+
+#. Default: "The label for the sub-object. In a default instance, this will be 'Course Contents'."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_inst_subobj"
+msgstr "下一級對象中的標簽，在缺省狀態下，應是“課程內容”。"
+
+#. Default: "eduCommmons utilizes the Institution Name in the Portal entry page."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_institution_name"
+msgstr "在入口頁面中使用eduCommons的機構名稱"
+
+#. Default: "The abbreviated Institution Name."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_institution_short_name"
+msgstr "機構的簡稱"
+
+#. Default: "The background image for the Left Hand Column. Select the file to be added by clicking the 'Browse' button. This image should be 150px wide by 10px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_leftnav_bg"
+msgstr "左欄的背景圖片。點擊瀏覽選擇要添加的文件。默認圖片寬高150px*10px。"
+
+#. Default: "The color of the links and text in the left hand navigation. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_leftnavcolor"
+msgstr "左側導航條中鏈接和文本的顔色，應使用16進制的代碼（例如#666666）"
+
+#. Default: "The default number of items that will be produced from an RSS feed. Individual object feeds can be modified via the syndication tab on the object."
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_max_items"
+msgstr "項目默認編碼將從RSS閱讀器裏産生"
+
+#. widget=BooleanWidget(label='Metadata Entered',
+#. label_msgid='label_metadataEntered',
+#. description_msgid='help_metadataEntered',
+#. description="Set metadata entered if all metadata for this content object has been entered.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set metadata entered if all metadata for this content object has been entered."
+#: ../content/ec_object.py
+msgid "help_metadataEntered"
+msgstr "元數據已錄入"
+
+#. Default: "Controls the font color of normal text and all headers. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_opentext_color"
+msgstr "修改普通文本和題頭字體的顔色，應使用16進制的代碼（例如#666666）。"
+
+#. Default: "The top banner of your eduCommons instance. Select the file to be added by clicking the 'Browse' button. This image should be 2000px wide by 63px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_banner"
+msgstr "系統的頂部橫幅。點擊“瀏覽”，選擇要添加的文件。該圖像的默認寬高應設爲2000px*63px。"
+
+#. Default: "The portal description is available in syndicated content and elsewhere. Keep it brief."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_description"
+msgstr "請用簡潔的文字來介紹入口"
+
+#. Default: "The favicon for your portal. There are many ${link} for creating favicons. Save your image as favicon.ico."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_favicon"
+msgstr "入口的網站圖標。有許多生成網站圖標的${link}。把圖像另存為favicon.ico。"
+
+#. Default: "eduCommons generates e-mail using this address as the e-mail return address."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_from_address"
+msgstr "eduCommons將把此地址作爲E-mail的回復信箱"
+
+#. Default: "eduCommmons generates e-mail using this name as the e-mail sender."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_from_name"
+msgstr "eduCommons將使用此電子郵件發送者的姓名來發送電子郵件"
+
+#. Default: "The top banner of your eduCommons instance portal entrance. Select the file to be added by clicking the 'Browse' button. This image should be 781px wide by 203px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_indexbanner"
+msgstr "系統入口的頂幅。點擊“瀏覽”，選擇要添加的文件。圖像寬高應設爲781px*203px。"
+
+#. Default: "The background color of the Index page. This will automatically adjust the background colors of the testimonial blocks as well."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_indexbgcolor"
+msgstr "索引頁的背景色。這也會自動調整鑒定書塊的背景色。"
+
+#. Default: "The clickable logo in the top banner. Select the file to be added by clicking the 'Browse' button. This image should be 360px wide by 65px high to fit within the default layout. The logo will be rendered 'on top of' the Portal Banner."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_logo"
+msgstr "頂橫幅的標志。點擊“瀏覽\"按鈕,選擇欲添加的文件。該圖片的缺省大小應為360*65。該標誌將顯示在入口横幅凡頂部。"
+
+#. Default: "The title of your eduCommons portal."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_title"
+msgstr "eduCommons入口的標題"
+
+#. <div class="formHelp" i18n:translate="help_search_creator">
+#. Return items created by a particular person.
+#. </div>
+#. Default: "Return items created by a particular person."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_creator"
+msgstr "返回由某人創建凡條目"
+
+#. Default: "Controls the 'selected' top navigation element and portlet title backgrounds. This should be the same color as your Left Navigation Background. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_secondary_color"
+msgstr "控制“已選擇”的頂部導航元素和插件標題的背景。這將與你左側導航欄的背景色相同。這應是一個16進制的代碼(例如#666666)。"
+
+#. Default: "Controls the 'selected' top navigation element and portlet title backgrounds. This should be the same color as your Left Navigation Background. This should be a hexadecimal code (#666666, for example)"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_secondary_logo"
+msgstr "控制被選頁portlet標題背景。顏色應與左側導航欄背景相同。要求是十六進碼(例如:#666666)"
+
+#. widget=StringWidget(label='Semester',
+#. label_msgid='label_semester',
+#. description='Enter the semester in which the course was taught, i.e. Fall 2005',
+#. description_msgid='help_semester',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter the semester in which the course was taught, i.e. Fall 2005"
+#. ../content/ec_object.py
+msgid "help_semester"
+msgstr "學期"
+
+#. widget=BooleanWidget(label='Show in Navigation',
+#. label_msgid='label_showInNavigation',
+#. description_msgid='help_showInNavigation',
+#. description="Set show in navigation to make content object visible in the left hand navigation.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set show in navigation to make content object visible in the left hand navigation."
+#: ../content/ec_object.py
+msgid "help_showInNavigation"
+msgstr "在導航欄中顯示"
+
+#. Default: "Controls the font color of the front page testimonials. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_testimonial_color"
+msgstr "更改主頁中的字體顏色,這是一種16進制的代碼(例如:#666666)"
+
+#. widget=RichWidget(macro='rich_extended',
+#. label='Home Page HTML',
+#. label_msgid='label_text',
+#. description='Enter HTML to be displayed for this object.',
+#. description_msgid='help_text',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter HTML to be displayed for this object."
+#. ../content/ec_object.py
+msgid "help_text"
+msgstr "網頁"
+
+#. Default: "You may customize the background of the top navigation elements (home, courses, help, about OCW) by uploading a background image. Alternately, you may change the color instead, via the Top Navigation Color option below. For non-tiling images, the size should be 2000px wide by 28px high."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_top_navigation_background_image"
+msgstr "你可以通過上傳背景圖像來制定導航欄條目背景(主頁、課程、幫助、關於)。此外,你也可以通過下面頁首導航欄顏色選項改變背景色。用於非tiling圖像,尺寸應為2000px寛x28px高。"
+
+#. Default: "The background color of the Top Navigation. If both a Top Navigation Background Color and Top Navigation Background Image are set, the Top Navigation Background will display. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_topnav_color"
+msgstr "最終栛商的背景顏色"
+
+#. Default: "The color of the links in the Top Navigation. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_topnav_link_color"
+msgstr "頂部導航欄中凡0鏈接顏色,這應是一個16進制的代碼例如:#666666)"
+
+#. Default: HTML Validation
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "html_validation_link"
+msgstr "檢驗HTML"
+
+#. Default: "XHTML Validation"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_XHTMLHeader"
+msgstr "檢驗XHTML"
+
+#. Default: "Zip File"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label__zip_file"
+msgstr "Zip文件"
+
+#. Default: "Accessibility Status"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_accessibility_status"
+msgstr "訪問狀態  ../skins/eduCommons/change_accessibility.cpt"
+
+#. Default: "Accessible"
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "label_accessibilitycompliant"
+msgstr "訪問 ../skins/eduCommons/accessibility_compliant.cpt"
+
+#. Default: "Accessible"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_accessible"
+msgstr "訪問 ../skins/eduCommons/change_accessibility.cpt"
+
+#. Default: "Roles allowed to add keywords"
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_allowRolesToAddKeywords"
+msgstr "允許加關鍵字的"
+
+#. <option i18n:translate="label_any_creator" value="">
+#. Any Creator
+#. </option>
+#. Default: "Any Creator"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_any_creator"
+msgstr "任何創建者"
+
+#. Default: "Captcha"
+#. ../skins/eduCommons/join_form.cpt
+msgid "label_captcha"
+msgstr "Captcha ../skins/eduCommons/join_form.cpt"
+
+#. Default: "Validate and Repair"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_checkAndCleanHtml"
+msgstr "檢驗並修正"
+
+#. Default: "Validate Only"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_checkHtml"
+msgstr "僅檢驗"
+
+#. Default: "Choose Language"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_choose_language"
+msgstr "選擇語言"
+
+#. Default: "Clear Copyright"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_clear_copyright"
+msgstr "清除的版權"
+
+#. widget=BooleanWidget(label='Cleared Copyright',
+#. label_msgid='label_clearedCopyright',
+#. description_msgid='help_clearedCopyright',
+#. description="Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violations.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Cleared Copyright."
+#: ../content/ec_object.py
+msgid "label_clearedCopyright"
+msgstr "已清除的版權"
+
+#. Default: "Content Type"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_content_type"
+msgstr "內容類型"
+
+#. Default: "Copyright Notice"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_copyright_notice"
+msgstr "版權聲明"
+
+#. Default: "Copyright Status"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_copyright_status"
+msgstr "版權狀態"
+
+#. widget=StringWidget(label='Course ID',
+#. label_msgid='label_courseID',
+#. description='Enter the Course ID.',
+#. description_msgid='help_courseid',
+#. i18n_domain='eduCommons')),
+#. Default: "Course ID"
+#. ../content/ec_object.py
+msgid "label_courseID"
+msgstr "課程ID"
+
+#. <label for="title" i18n:translate="label_creator">
+#. Creator
+#. </label>
+#. Default: "Creator"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_creator"
+msgstr "創建者"
+
+#. Default: "Default Language"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_default_language"
+msgstr "缺省語言"
+
+#. Default: "Export Filename (zipfile)"
+#: ../skins/eduCommons/Export_form.cpt
+msgid "label_exporttitle"
+msgstr "輸出文件名(zip文件)"
+
+#. Default: "Open in new window?"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_external_link_new_window"
+msgstr "在新視窗中打開"
+
+#. Default: "Link URL"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_external_link_url"
+msgstr "鏈接URL"
+
+#. Default: "Institution Object Label"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_inst_obj"
+msgstr "機構對象標籤"
+
+#. Default: "Institution Sub Object Label"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_inst_subobj"
+msgstr "機構下一級標籤"
+
+#. Default: "Institution Name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_institution_name"
+msgstr "機構名稱"
+
+#. Default: "Institution Short Name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_institution_short_name"
+msgstr "機構名稱縮寫"
+
+#. Default: "Left Navigation Background"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_leftnav_bg"
+msgstr "左側導航背景"
+
+#. Default: "Left Navigation Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_leftnavcolor"
+msgstr "左側導航鏈接顏色"
+
+#. Default: "Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_link_color"
+msgstr "鏈接顏色"
+
+#. Default: "Link Title"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_link_title"
+msgstr "鏈接標題"
+
+#. Default: "Default RSS Feeds"
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_max_items"
+msgstr "默認RSS閱讀器"
+
+#. widget=BooleanWidget(label='Metadata Entered',
+#. label_msgid='label_metadataEntered',
+#. description_msgid='help_metadataEntered',
+#. description="Set metadata entered if all metadata for this content object has been entered.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Metadata Entered"
+#: ../content/ec_object.py
+msgid "label_metadataEntered"
+msgstr "元數據已錄入"
+
+#. Default: "None"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_noXHTML"
+msgstr "無XHTML"
+
+#. Default: "Not Accessible"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_not_accessible"
+msgstr "不可訪問  ../skins/eduCommons/change_accessibility.cpt"
+
+#. Default: "Page Text and Header Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_opentext_color"
+msgstr "主頁文本及題頭顏色"
+
+#. Default: "Portal Banner"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_banner"
+msgstr "入口橫幅"
+
+#. Default: "Portal description"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_description"
+msgstr "入口簡介"
+
+#. Default: "Portal Favicon"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_favicon"
+msgstr "入口圖標"
+
+#. Default: "Portal 'From' address"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_from_address"
+msgstr "入口來源地址"
+
+#. Default: "Portal 'From' name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_from_name"
+msgstr "入口來源名稱"
+
+#. Default: "Portal Front Page banner"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_indexbanner"
+msgstr "入口主頁橫幅"
+
+#. Default: "Portal Front Page Background Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_indexbgcolor"
+msgstr "入口主頁背景顏色"
+
+#. Default: "Portal Logo"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_logo"
+msgstr "入口標誌"
+
+#. Default: "Portal title"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_title"
+msgstr "入口標題"
+
+#. Default: "(Required)"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_required"
+msgstr "（要求必填）"
+
+#. Default: "Revoke Copyright"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_revoke_copyright"
+msgstr "廢除版權"
+
+#. Default: "Save"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_save"
+msgstr "保存"
+
+#. Default: "Search Text"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_search_text"
+msgstr "搜索文本"
+
+#. Default: "Secondary Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_secondary_color"
+msgstr "合成色"
+
+#. widget=StringWidget(label='Semester',
+#. label_msgid='label_semester',
+#. description='Enter the semester in which the course was taught, i.e. Fall 2005',
+#. description_msgid='help_semester',
+#. i18n_domain='eduCommons')),
+#. Default: "Semester"
+#. ../content/ec_object.py
+msgid "label_semester"
+msgstr "學期"
+
+#. widget=BooleanWidget(label='Show in Navigation',
+#. label_msgid='label_showInNavigation',
+#. description_msgid='help_showInNavigation',
+#. description="Set show in navigation to make content object visible in the left hand navigation.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set show in navigation to make content object visible in the left hand navigation."
+#: ../content/ec_object.py
+msgid "label_showInNavigation"
+msgstr "在導航欄中顯示"
+
+#. Default: "Portal Front Page Testimonial Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_testimonial_color"
+msgstr "主頁入口的顏色"
+
+#. widget=RichWidget(macro='rich_extended',
+#. label='Home Page HTML',
+#. label_msgid='label_text',
+#. description='Enter HTML to be displayed for this object.',
+#. description_msgid='help_text',
+#. i18n_domain='eduCommons')),
+#. Default: "Home Page HTML"
+#. ../content/ec_object.py
+msgid "label_text"
+msgstr "主頁HTML"
+
+#. Default: "Top Navigation Background Image"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_top_navigation_background_image"
+msgstr "頁首導航欄背景圖案"
+
+#. Default: "Top Navigation Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_topnav_color"
+msgstr "頁首導航欄顏色"
+
+#. Default: "Top Navigation Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_topnav_link_color"
+msgstr "頂部導航鏈接顏色"
+
+#. Default: "Up to Site Setup"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_up_to_eduCommons_setup"
+msgstr "至站點設置"
+
+#. Default: Upload Contents (optional)
+#. ../skins/eduCommons/rich_extended.pt
+msgid "label_upload_contents_optional"
+msgstr "上傳內容(可選)../skins/enuCommons/rich_extended.pt"
+
+#. Default: "eduCommons Details"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "legend_eduCommons_details"
+msgstr "eduCommons詳細信息"
+
+#. Default: "Html Validation"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "legend_html_validation"
+msgstr "Html確認"
+
+#. Default: "Search"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "legend_insert_link"
+msgstr "搜索"
+
+#. Default: "Basic Skin Settings"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "legend_skin_settings"
+msgstr "基本外觀設置"
+
+#. Default: "IMS Import/Export"
+#: ../skins/eduCommons/Course_Tools.pt
+msgid "link_IMSImportExport"
+msgstr "導入/導出IMS"
+
+#. Default: "accessibility guidelines"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "link_accessibility_guidelines"
+msgstr "訪問指導 ../skins/eduCommons/change_accessibility.cpt"
+
+#. Default: "here"
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "link_accessibilitycompliant"
+msgstr "這裏 ../skins/eduCommons/accessibility_compliant.cpt"
+
+#. Default: "[audio]"
+#. ../skins/eduCommons/join_form.cpt
+msgid "link_captcha_audio"
+msgstr "音頻  ../skins/eduCommons/join_form.cpt"
+
+#. Default: "Courses in all departments"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "link_rss_all_courses"
+msgstr "所以院糸的課程"
+
+#. Default: "RSS Feeds"
+#: ../skins/eduCommons/Courses_listing.pt
+msgid "link_rss_feeds"
+msgstr "RSS閱讀器"
+
+#. Default: "list"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "link_rss_list"
+msgstr "目錄"
+
+#. <a href="" i18n:attributes="title link_title_advanced_search;" i18n:translate="text_advanced_search" tal:attributes="href string:${here/absolute_url}/olssearch" title="Advanced Search">
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/global_searchbox.pt
+msgid "link_title_advanced_search"
+msgstr "高級檢索"
+
+#. <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" i18n:attributes="title link_title_cc_license" i18n:translate="text_cc_license" title="Creative Commons License">
+#. Default: "Creative Commons License"
+#: ../skins/eduCommons/footer.pt
+#: ../skins/eduCommons/index_template.pt
+msgid "link_title_cc_license"
+msgstr "創作共用許可"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "link_title_search_again"
+msgstr "重新搜索"
+
+#. <a href="#top" i18n:attributes="title link_title_top;" i18n:translate="text_discussion_top" title="Return to Top">
+#. Default: "Return to Top"
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "link_title_top"
+msgstr "返回頁首"
+
+#. Default: "Favicon Tutorials"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_title_tutorial"
+msgstr "鏈接指南"
+
+#. Default: "Web Safe Color Palette"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_title_web_safe"
+msgstr "網絡安全色板"
+
+#. Default: "tutorials"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_tutorial"
+msgstr "輔導材料"
+
+#. Default: "web safe color palette"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_web_safe"
+msgstr "網絡安全色板"
+
+#. Default: "Creator"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "listingheader_creator"
+msgstr "創建者"
+
+#. Default: "All"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "option_all"
+msgstr "全部"
+
+#. Default: "In general, the first thing you need is something called a news reader. This is a piece of software that checks RSS feeds and lets you read any new articles that have been added to them. There are many different versions, some of which are accessed using a browser, and some of which are downloadable applications. Browser-based news readers let you catch up with your RSS feed subscriptions from any computer, whereas downloadable applications let you store them on your main computer, in the same way that you either download your e-mail, or keep it on a web-based service."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss1"
+msgstr "選擇一個新聞閱讀器"
+
+#. Default: "Once you have chosen a news reader, all you have to do is to decide what content you want to receive in your news reader, by finding and subscribing to the relevant RSS feeds. For example, if you would like the latest courses added to ${portal_title} OCW, simply visit the Course List page or this page and you will notice an orange RSS button."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss2"
+msgstr "選擇後,由你決定想從讀物中獲得的內容"
+
+#. Default: "If you click on the button you can subscribe to the feed in various ways, including by dragging the URL of the RSS feed into your news reader or by cutting and pasting the same URL into a new feed in your news reader. Most sites that offer RSS feeds use a similar orange RSS button, but some may just have a normal web link to the feed."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss3"
+msgstr "如果您點擊此按鈕,您可以以不同的方式訂閱閱讀器"
+
+#. Default: "Some browsers, including Firefox and Safari, automatically check for RSS feeds for you when you visit a Web site, and display an icon when they find one. This can make subscribing to RSS feeds much easier. For more details on these, please check their Web sites."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss4"
+msgstr "當您瀏覽一個網站時,一些瀏覽器自動為您選擇RSS閱讀器。當它們找不到時會顯示一個圖標"
+
+#. Default: "There is a range of different news readers available and new versions are appearing all the time."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss1"
+msgstr "這裏有不同新聞閱讀器的一個排列,並且新的版本一直會發表"
+
+#. Default: "Different news readers work on different operating systems, so you will need to choose one that will work with your computer."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss2"
+msgstr "不同的新聞閱讀器在不同的操作系統中運行,選擇一個適合您電腦的"
+
+#. Default: "Here is one ${rss_list} of available readers from Google."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss3"
+msgstr "Google裏有一個可用的閱讀器${rss_list}"
+
+#. Default: "Receive notification of new ${portal_title} OCW courses on your desktop, or add them to your blog or website."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_rss_info"
+msgstr "在您的桌面收到新的OCW課程${portal_title}的通知，或者把它們加入你的博客或者網頁裏"
+
+#. Default: "RSS stands for Really Simple Syndication. RSS is a time-saving way for you to receive news and information updates (often called \"RSS feeds\", \"news feeds\" or simply \"feeds\") from your favorite Web sites and blogs."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_whatis_rss1"
+msgstr "RSS代表非常簡單的企業聯合組織"
+
+#. Default: "Typically RSS feeds consist of headlines and short summaries of new articles, blog entries or search results, though some Web sites and blogs offer the full text of articles or blog entrees as feeds."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_whatis_rss2"
+msgstr "代表性的RSS信息包括大標題，新文章簡單的總結，博客條目，搜索結果。"
+
+#. Default: "By using RSS you can stay on top of the news and information you need without using your e-mail system and without repeatedly checking multiple Web sites to see if they have been updated. RSS simplifies the way you stay informed and helps you take control of overloaded email inboxes."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_why_rss1"
+msgstr "使用RSS，可以不用郵件系統或者反復進入若干網站查看是否已更新，您就可以最快地獲得最新的新聞和信息"
+
+#. Default: "InProg:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_InProg"
+msgstr "創建："
+
+#. Default: "Pub:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_Pub"
+msgstr "發布："
+
+#. Default: "QA:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_QA"
+msgstr "檢查："
+
+#. Default: "Rel:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_Rel"
+msgstr "批准："
+
+#. <p i18n:translate="text_add_nav_item">
+#. To allow an item within a Course to display in the left hand navigation:
+#. </p>
+#. Default: "To allow an item within a Course to display in the left hand navigation:"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_add_nav_item"
+msgstr "在左側導航欄允許某項內容顯示在指定課程下："
+
+#. <a href="" i18n:attributes="title link_title_advanced_search;" i18n:translate="text_advanced_search" tal:attributes="href string:${here/absolute_url}/olssearch" title="Advanced Search">
+#. Advanced Search
+#. </a>
+#. Default: "Advanced"
+#: ../skins/eduCommons/global_searchbox.pt
+msgid "text_advanced_search"
+msgstr "高級"
+
+#. <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" i18n:attributes="title link_title_cc_license" i18n:translate="text_cc_license" title="Creative Commons License">
+#. Creative Commons License
+#. </a>
+#. Default: "Creative Commons License"
+#: ../skins/eduCommons/footer.pt
+#: ../skins/eduCommons/index_template.pt
+msgid "text_cc_license"
+msgstr "創作共用許可"
+
+#. <li i18n:translate="text_check_showinnav">
+#. Check the
+#. <strong>
+#. Show In Navigation
+#. </strong>
+#. checkbox for the item, and save your changes
+#. </li>
+#. Default: "Check the <strong>Show In Navigation</strong> checkbox for the item, and save your changes"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_check_showinnav"
+msgstr "選擇”顯示導航“中的內容，然後保存更改"
+
+#. <li i18n:translate="text_click_title">
+#. Click the
+#. <strong>
+#. title
+#. </strong>
+#. of the object you would like to be displayed in the left hand navigation
+#. </li>
+#. Default: "Click the <strong>title</strong> of the object you would like to be displayed in the left hand navigation"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_click_title"
+msgstr "點擊你想在左側導航欄顯示對象的<strong>復選框</strong>。"
+
+#. Default: "Moving content through the workflow without first clearing the copyright <strong>may subject you or your organization to legal risk</strong> ! Are you sure you want to continue?"
+#: ../skins/eduCommons/content_status_confirm.cpt
+msgid "text_confirm_without_copyright"
+msgstr "在版權不明的情况下通過工作流移動內容<strong>可能會給您或您的組織帶來法律問題</strong>！確定要繼續嗎？"
+
+#. <a href="#top" i18n:attributes="title link_title_top;" i18n:translate="text_discussion_top" title="Return to Top">
+#. Return to Top
+#. </a>
+#. Default: "Return to Top"
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_discussion_top"
+msgstr "返回首頁"
+
+#. Default: "Navigate to that item within the course"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav1"
+msgstr "導航到課程的內容"
+
+#. Default: "Select the metadata tab from the management toolbar"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav2"
+msgstr "請在管理工具欄中選擇元數據標簽"
+
+#. Default: "Uncheck the <em>Exclude from navigation</em> checkbox and save your changes"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav3"
+msgstr "取消“關閉導航”，然後保存更改"
+
+#. Default: "Validate all html within the current course."
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "text_html_validation"
+msgstr "在當前課程裏檢驗HTML"
+
+#. Default: "Your search did not return any results."
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "text_insert_link_noresults"
+msgstr "您的檢索未查到任何結果"
+
+#. <p i18n:translate="text_no_departments" tal:condition="not: coursesContents">
+#. No departments are currently online.
+#. </p>
+#. Default: "No departments are currently online."
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_no_departments"
+msgstr "當前沒有系部在綫"
+
+#. i18n:translate="text_no_published_courses">
+#. Default: "No Courses have been published for this department."
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_no_published_courses"
+msgstr "該系尚未發布課程。"
+
+#. <p i18n:domain="eduCommons" i18n:translate="text_no_visible_items_course_summary" style="font-style: italic;" tal:condition="python:not batch">
+#. There are currently no items in the state you have selected.
+#. </p>
+#. Default: "There are currently no items in the state you have selected."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "text_no_visible_items_course_summary"
+msgstr "你所選擇的狀態當前沒有條目"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "text_search_again"
+msgstr "重新搜索"
+
+#. <li i18n:translate="text_select_edit">
+#. Select the
+#. <strong>
+#. edit
+#. </strong>
+#. tab from the management toolbar
+#. </li>
+#. Default: "Select the <strong>edit</strong> tab from the management toolbar"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_select_edit"
+msgstr "點擊<strong>在導航欄中顯示</strong>復選框"
+
+#. <li i18n:translate="text_select_item">
+#. Select the
+#. <strong>
+#. contents
+#. </strong>
+#. tab from the management toolbar
+#. </li>
+#. Default: "Select the <strong>contents</strong> tab from the management toolbar"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_select_item"
+msgstr "從工具欄選擇<strong>文件夾內容</strong>標簽。"
+
+#. Default: "Send us"
+#: eduCommons/skins/eduCommons/footer.pt
+#: eduCommons/skins/eduCommons/index_template.pt
+msgid "text_send_us"
+msgstr "給我們發信"
+
+#. <td colspan="3" i18n:translate="text_total_obj">
+#. Total Objects:
+#. ${total}
+#. </td>
+#. Default: "Total Objects: ${total}"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_total_obj"
+msgstr "全部對象：${total}"
+
+#. Default: "Required"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "title_required"
+msgstr "要求必填"
+
+#. Default: This tool validates your HTML markup to ensure that it adheres to XHTML standards.
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "validates_html_markup"
+msgstr "檢驗HTML標簽確保符合XHTML標準。"
+

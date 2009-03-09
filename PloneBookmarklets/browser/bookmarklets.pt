@@ -1,0 +1,34 @@
+    <tal:block>
+      <tal:variables define="sites view/getSites;
+                             url here/absolute_url;
+                             portal_url here/portal_url;
+                             pageTitle here/Title;
+                             pageDescription here/Description;
+                             encodedTitle python: pageTitle.replace(' ', '+');">
+        
+        
+        <ul i18n:domain="PloneBookmarklets">
+
+          <tal:sites repeat="site sites">
+            <li tal:define="siteName python:site[0];
+                            siteUrl python:site[1].replace('URL', url).replace('ENCODED_TITLE', encodedTitle).replace('DESCR', pageDescription);
+                            siteIcon python:site[2]">
+              <a href=""
+                 title=""
+		 class="link-plain"
+                 tal:attributes="href python:siteUrl;
+                                 title string:$siteName - $pageTitle">
+                <img src=""
+                     alt=""
+                     tal:attributes="alt siteName;
+                                     src string:$siteIcon;" /></a>
+            </li>
+          
+          </tal:sites>
+          
+        </ul>
+        
+      </tal:variables>
+      
+    </tal:block>
+

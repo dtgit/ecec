@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="eduCommons">
+
+<body>
+
+    <div metal:fill-slot="main">
+    <metal:main-macro define-macro="main"
+                      tal:define="kssClassesView context/@@kss_field_decorator_view;
+                                  getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                                  templateId template/getId">
+
+        <h1>Content Reported</h1>
+
+	<p>A request has been sent to the site administrator to review the reported content.</p>
+	<p>Thank you.</p>
+
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+  	<div tal:replace="structure context/@@copyright_byline_view|nothing" />
+
+        <div tal:replace="structure context/@@citation_view|nothing" />
+
+
+    </metal:main-macro>
+    </div>
+
+</body>
+</html>
+

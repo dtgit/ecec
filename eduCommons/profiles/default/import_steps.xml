@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="eduCommons-final" version="20070514-01"
+	       handler="Products.eduCommons.setupHandlers.importFinalSteps"
+	       title="eduCommons Final Steps Setup">
+    <dependency step="plone-final"/>
+  </import-step>
+  <import-step id="eduCommons-content" version="20070514-01"
+	       handler="Products.eduCommons.setupHandlers.importContent"
+	       title="eduCommons Content Setup">
+    <dependency step="eduCommons-final"/>
+  </import-step>
+</import-steps>

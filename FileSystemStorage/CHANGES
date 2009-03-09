@@ -1,0 +1,168 @@
+#######
+CHANGES
+#######
+
+TODO
+####
+
+  * Run unit tests with Zope 2.7 and Plone 2.0
+
+  * Add checksum to be sure files are not corrupted on filesystem
+
+  * Include Czek translation expected from Radim
+
+  * Fix screenshot (deprecated from 2.6)
+
+2.6.2 - 2007/12/07
+##################
+
+  * correct traitment of range header : if one range - specific file stream iterator
+  if multiple range - OFS.image traitment (1680760 sourceforge tracker)
+  Add some unit test to test range header
+
+2.6.1 - 2007/10/29
+##################
+
+  * ZConfig bug that put all config sting in lowercase: we test path in lowercase too (ED)
+
+  * Remove the OSError when moving file into backup
+
+  * Plone 3.0 compatibility (GL)
+
+  * Do not override Content-Disposition HTTP header if already set in VirtualBinary.index_html (zegor)
+
+  * filestream_iterator is not "range proof". Add a new range_filestream_iterator to negociate Range request
+
+2.6.0 RC1 - 2007/06/15
+######################
+
+  * Changed in depth the way we configure FSS with the ZConfig
+    way. Changing the storage and backup path, and the storage
+    strategy TTW is disabled (GL)
+
+  * As a consequence, changing the storage strategy doesn't require to
+    hack config.py any more (GL)
+
+  * As a consequence, each Plone site in a Zope instance can have its
+    own storage strategy (GL)
+
+  * Configuration view and README.txt view in ZMI (GL)
+
+  * Fixed documentation issues (GL)
+
+  * SiteStorageStrategy and SiteStorageStrategy2 didn't work under
+    Win32 (GL)
+
+  * Make FSS compatible with Plone 2.0 : just rewrite some testcases
+
+2.5.6 - 2007/06/15
+##################
+
+  * When renaming a folder containing FSS content, FSSInfo attribute was
+    stolen one each content of the folder. Provides a solution to avoid this
+    problem (CL)
+
+2.5.5 - 2007/06/13
+##################
+
+  * Make FSS works when calling _setUID method on an AT object (CL)
+
+  * Add a strategy mark in the storage in a '.strategy' file such we
+    could forbid strategy changes of storages at Zope startup. (i.e.,
+    using a 'flat' storage strategy in a storage filled using a
+    'directory' strategy)
+
+2.5.4 - 2007/03/13
+##################
+
+  * Fix a bug on Plone 2.5 when moving a folder containing items using
+    FSS storage. Those items were losing their FSS content. (CL)
+
+2.5.3 - 2007/02/12
+##################
+
+  * Don't monkey patch BaseObject __bobo_traverse__ under Plone 2.5, but
+    register ITraversable adapter for this. This change is required as of
+    Archetypes 1.4.1 (see AT HISTORY.txt, search '__bobo_traverse__')
+
+2.5.2 - 2006/10/27
+##################
+
+  * Fix bug on maintenance tab: update files and backup, and update RDF (ED)
+
+  * Fix some renaming bugs (ED)
+
+  * Extend index_html method of VirtualFile and VirtualImage to use a
+    filestream iterator. FSS is now compliant with CacheFu
+
+  * Fix bug in FSSTool:updateFSS - replace restoreBackup method by
+    restoreValueFile
+
+  * Add new strategy: SiteStorageStrategy2
+
+2.5.1 - 2006/07/28
+##################
+
+  * Check existence of backup and storage paths in configlet
+
+  * Fix bug on maintenance tab
+
+2.5 - 2006/07/19
+################
+
+  * Update tests to use all strategies
+
+  * Add storage strategies : FlatStorageStrategy,
+    DirectoryStorageStrategy, \ SiteStorageStrategy
+
+  * Patch BaseObject to make it possible to access images like this
+    mysite/myobj/image or mysite/myobj/image_mini
+
+  * Added a docstring on VirtualData class and subclasses. This should
+    fix http://plone.org/products/atphoto/issues/28 : VirtualImage can
+    be published directly by ATImage
+
+2.5RC1
+######
+
+  * Add a hook to customize RDF files
+
+  * Add script to build filesystem tree from FSS files
+
+  * Add RDF implementation
+
+2.1RC2
+######
+
+  * Remove use of ComputedAttribute to avoid strange errors
+
+  * If file is empty don't create an empty file on filesystem
+
+2.1RC1
+######
+
+  * Add Content-Disposition header in fss_get python script
+
+  * Make FSS compliant with AT 1.3.4 and Plone 2.1
+
+2.0RC3
+######
+
+  * Fix bug on delete action (In previous version, it was impossible
+    to delete non required field value)
+
+2.0RC2
+######
+
+  * Add translations
+
+  * Fix bug in configlet when no files are stored on filesystem.
+
+2.0RC1
+######
+
+  * First public release
+
+-------------
+
+.. $Id: CHANGES 55056 2007-12-07 13:36:11Z clebeaupin $

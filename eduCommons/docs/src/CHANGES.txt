@@ -1,0 +1,311 @@
+========================
+Changes in version 3.1.0
+========================
+
+"Download Course" Additions 
+   Moved "download this course" into a "Reuse Course" portlet. The course downloads now include IMS information. Using a portlet will also allow for additional formats, such as Common Cartridge, to be added in the future.  
+
+Display License and Caption for Embedded Objects 
+   Using the Kupu editor, eduCommons can now display separate licenses and citations for image objects embedded in a page, distinct from the overall page license. 
+
+Captcha integration 
+   We now integrate captcha on the registration page to prevent spambot submissions.
+
+Lingua Plone 2.0 Integration 
+   LinguaPlone 2.0 has been implemented into eduCommons 3.1.0, allowing users to localize content and support multiple languages on a single OpenCourseWare site. 
+
+Add accessibility check 
+   This is intended to help institutions who want to include accessibility check into their workflow. 
+
+Enable Javascript/Page-specific CSS and embed tags by default
+   We have enabled Javascript and page-specific CSS and embed tags by default.
+
+Documentation for Adding Small Widgets 
+   Add eduCommons-specific documentation and examples for adding Plone 3 portlets. 
+
+Add "Remix this course" functionality 
+   This feature is designed to allow courses from MIT OpenCourseWare (pending implementation by MIT OCW) as well as other eduCommons OCWs to be easily imported into OpenOCW (or another eduCommons site if specified, but OpenOCW will be the default). On published eduCommons OCW courses that have been packaged, a "Remix this course" link appears. This allows unauthenticated users to send the entire course to OpenOCW (OpenOCW login credentials must be provided).  
+
+Update "download this course" to improve handling of large courses 
+   "Download this course" is no longer auto-generated when a course is published or changed. Instead, a new "Package course" button appears in the contents view of the course once it has been published. The "Download this course" .zip file now includes IMS information. It now appears in its own portlet, along with the "Remix this course" link.
+
+Other updates
+   Updated eduCommons to exclude new content from showing in the left nav by default (including zip imports).
+   Improved IE 6 and 7 compatibility.
+
+========================
+Changes in version 3.0.2
+========================
+
+Fixed bugs in 3.0.1 migration release
+
+
+========================
+Changes in version 3.0.1
+========================
+
+Added migration support for from eduCommons 2.3.1
+
+
+========================
+Changes in version 3.0.0
+========================
+
+Added full support for Plone 3.0
+   Inline editing
+   Working Copy support
+   Link and reference integrity checking
+   Automatic locking and unlocking
+   Easy collaboration and sharing
+   Versioning, history and reverting content
+   Upgraded visual HTML editor 
+
+Added OpenOCW Functionality
+   Simplified Workflow
+   Refactored Security
+   Eased Production processes
+
+Simplified Course Building
+   Course Builder Widget allows 'one step' production of Division, Course, and templates Course objects (syllabus, etc).
+
+
+========================
+Changes in version 2.3.1
+========================
+
+Added Migration from 2.2.0
+   The migration process has been improved and simplified.
+
+ 
+========================
+Changes in version 2.3.0
+========================
+
+Added i18n Support for Spanish, Dutch, French, and Chinese
+   Translations are now available for the aforementioned languages.
+
+Added Support for MOCSL Tools
+   The Folksemantic AddOn Product allows for seamless interaction with
+   Annorate, Make A Path, and Send2Wiki.
+
+Fixed Metadata Bugs
+   The Citations were presenting incorrect metadata; now pulling in correct
+   metadata per object.
+
+Added Course Wide Instructor Metadata
+   A flag is now available to note if the Instructor of the Course is also the
+   principal creator for objects within the course.
+
+Added MIT CP Import Support
+   Via the IMS Transport Tool, an end user can now import IMS Content Packages.
+   eduCommons will strip the package of it's chrome and import content, navigation,
+   and metadata.
+
+Added Zip File Download for Courses
+   End Users can now get a Zip File download of a course object, stripped of eduCommons
+   chrome and ready for reuse
+
+Extended RSS Feed Support
+   Departments and Courses now have configurable feeds per object, and the ability to turn
+   feeds on and off
+
+Added Recursive Copyright Clearance
+   Folderish Objects may now recrusively clear or revoke copyight
+
+
+========================
+Changes in version 2.2.0
+========================
+
+Front end UI Enhancements
+
+Auto-citation generation (from metadata) displayed inline with documents and included in skinless content. Simplify conformance with Attribution terms of Creative Commons licenses for those who build derivative works.
+
+Social Bookmarking Dropdown. Help users bookmark and later find OERs hosted in eduCommons using popular social bookmarking services.
+
+Integration with MyOCW (pending MyOCW release dates).
+
+Expanded support for IMS Content Packaging, including a transform engine that can translate from popular IMS CP formats to and from eduCommons.
+
+Updated internationalization support, with translation updates for a predetermined set of languages.
+
+Finalized support for content translation using the LinguaPlone product. 
+
+
+========================
+Changes in version 2.1.1
+========================
+
+Updated Internationalization Files
+  Updated internationalization files to reflect the latest eduCommons changes.
+
+Added Support for Inline Translations
+  Integrated the LinguaPlone product with eduCommons, making it now possible 
+  to have multiple translations of content within the same eduCommons instance.
+
+RSS Feeds on front page, and RSS feeds for departments
+  RSS feed icon now appears on the front page of eduCommons, as well as on the 
+  courses listing page. A new RSS feed now appears for departments, which
+  lists the latest published courses in a department.
+
+Added Support for Social Bookmarking Services
+  Added support for bookmarking services, starting with del.icio.us. Support
+  for more to come.
+
+Added a Skinless View for Documents
+  eduCommons now provides a skinless view of documents, making it both possible
+  and easy to reuse content.
+
+==============================
+Changes in version 2.1.0-final
+==============================
+
+A new IMS Transport Engine
+  A refactored IMS Content Packaging engine that provides a more robust import
+  and export functionality. On import eduCommons will identify where required 
+  tags missing in the manifest file, if it is not able to read it directly.
+
+IMS Content Packaging Documentation
+  This version ships with detailed documentation on how to write out an IMS 
+  Content Package that eduCommons can consume. The documentation is provided
+  in raw text, web based, and in a standalone (PDF) file.
+
+A New Content Licensing Engine
+  eduCommons now allows a default content license and a rights holder to be
+  set sitewide. It also includes the ability to license an individual piece 
+  of content, should the need arise to publish content under a license 
+  different to the site wide one.
+
+Copyright Bylines
+  Content is now published with the appropriate copyright byline, including
+  the ability to specify copyright dates, the rights holder, and the license
+  itself. The license includes a hyper-link to the legal terms of the license
+  as well as an icon (if the license includes one).
+
+Creative Commons License Support
+  eduCommons now includes a license selector that integrates with Creative
+  Commons Licenses (www.creativecommons.org), allowing eduCommons to remain
+  flexible with the latest CC offerings.
+
+Support for Other Licenses
+  eduCommons supports other licenses, including the traditional all rights 
+  reserved, and GNU Free Document Licenses, as well as allowing content
+  developers to input their own license.
+
+RDF and machine readable Creative Commons License Support
+  eduCommons will publish by default any metadata for a content object in
+  embedded RDF format. eduCommons will also publish machine readable creative
+  commons licenses, that can be read and processed by search engines.
+
+Content Licensing Product for Plone 2.5
+  The content licensing features in eduCommons are shipped in a standalone product
+  that can also be used in a default Plone 2.5 instance.
+
+Native Support for Plone 2.5
+  This version of eduCommons supports the latest version of Plone (2.5), with some 
+  functionality now taking advantage of the new Zope 3 component architecture.
+
+Improved HTML Validation/Fixing Engine
+  The HTML Validation/Fixer Engine has been updated, and now displays a detailed
+  report of problems within the body of an HTML document, and provides a simple
+  method to fix most problems, and identify remaining ones that need extra
+  attention. This functionality works when a content developer's editor is not
+  set to use the FCKeditor.
+
+
+
+
+==============================
+Changes in version 2.0.0-final
+==============================
+
+Human Readable URLS
+  URLs are human readable, instead of being based on an auto generated id.
+
+Recursive Folder Change State
+  Can change workflow state recursively on content in subfolders.
+
+Native Support for Plone 2.1
+  Integrated eduCommons custom skin files with new Plone 2.1 functionality. 
+  Content objects are now based on ATContentTypes. Substantial changes across 
+  the code base. eduCommons is currently based on Plone-2.1.2 and Zope-2.8.6.
+
+Content Status History on Object Views in Edit Mode
+  The content status history of an object is now available in the view from 
+  a history link at the top of the page while in edit mode.
+
+No Redirect on Front Page
+  Front page no longer redirects to an ECIndex folder, but renders directly.
+
+Removed Forum Support
+  Forum support is being replaced by new social software in the future, which 
+  means that the old OLS code base is no longer being maintained. If you require 
+  forum support it is recommended that you use the excellent zForum 
+  (http://www.zforum.org) plone product until the new software is in place.
+
+Improved IMS Content packaging
+  Workflow status history is now written in the IMS content package instead 
+  of being stored in a binary blob.
+
+eduCommons Custom Skin Support
+  eduCommons can now reskinned in release mode without requiring eduCommons 
+  to be restarted.
+
+Courses Object Removed
+  The courses object has been removed, and departments are now put in the 
+  root of the site. This simplifies the UI and removes confusion over what 
+  the Courses object is/was.
+
+Improved Default Templates
+  Default templates for the front page, FAQ and about pages propagate the 
+  eduCommons site title, making it easier to customize default site text.
+
+Department and Course IDs
+  Departments and Courses now support the display of ID's in front of their 
+  titles. Courses also support the display of the year and semester that the 
+  course was taught in.
+
+==============================
+Changes in version 1.6.1-final
+==============================
+
+eduCommons Document HTML Fixer
+  Implement an HTML engine that can fix HTML mistakes automatically in ecDocuments.
+
+RDF Headers/Metadata
+  Add RDF headers to ECDocuments implementing the RDF/Dublin Core standard.
+
+Support for Plone 2.1.1/Zope 2.8.2
+  Implementing support for the latest Plone (2.1.1) and Zope (2.8.2) code bases.
+
+Support for Default Templates
+  Support for adding default templates for commonly used pages within eduCommons.
+
+
+Review and Revise IMS Export Rights
+  Changes in the UI to only present IMS import/export to administrators and managers. 
+  This is necessary because producers do not have rights on content that is not in the 
+  "In Progress" state, which prevents producers from being able to import/export 
+  content not in the appropriate state. 
+
+
+Zip export (non-ims)
+  Allow a producer administrator or manager to export course content in a zip file format.
+
+Creative Commons metadata header
+  Add a metadata header to ECDocuments for the creative commons license.
+
+Removal of "Courses" link in bread crumb
+  Remove the "Courses" link in the breadcrumb due to the fact that is is confusing to users.
+
+XHTML Validation of an Entire Course
+  Adding the ability to do validation of XHTML across a course, while reporting 
+  errors in a log file.
+
+Add Folders to Course Contents
+  Add folders to course content pages so that objects which externally link to other 
+  objects will retain their links with out having to rewrite them.
+
+Migration from 1.5.2-final
+  Implement the ability to migrate existing 1.5.2-final sites to 1.6.1-final.
+

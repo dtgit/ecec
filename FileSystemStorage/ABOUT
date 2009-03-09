@@ -1,0 +1,4 @@
+FileSystemStorage (FSS) is an Archetypes storage for storing fields
+raw values on the file system. This storage is used to avoid
+unnecessary growth of the ZODB's FileStorage (Data.fs) when using a
+lot of large files.

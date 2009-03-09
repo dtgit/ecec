@@ -1,0 +1,133 @@
+===================================
+Migrating to eduCommons 3.0.2
+===================================
+
+
+Preparation
+-----------
+A few things you should do before beginning the migration:
+
+  1. VERY IMPORTANT: SAVE A BACKUP OF YOUR Data.fs FILE, which is located in the [old instance home]/var directory of your eduCommons site. This file contains all of the content for your site. (This way you will able to restore your file from this Data.fs file if anything goes wrong.)
+
+  2. Using the Zope Management Interface (ZMI), export any customizations you have made in your [old site] --> portal_skins --> custom folder and then delete all files in the custom folder. You can re-import these customizations once you have migrated the site.
+
+  3. Verify that your current instance is eduCommons-2.3.1-final.
+
+
+Migration of eduCommons 2.3.1-final to 3.0.2
+--------------------------------------------------
+
+The migration eduCommons from version 2.3.1-final to version 3.1.1-final
+includes the following:
+
+  1. Pre-migration of Data.fs in version 2.3.1-final
+
+  2. Movement of Data.fs file to a new 3.0.2 instance
+
+  3. Migration of Plone 3.0.4
+
+  4. Migration of the eduCommons 3.1.1-final instance
+
+  5. Final steps
+
+Pre-migration of Data.fs in version 2.3.1-final
+-----------------------------------------------
+
+For this step, you will need to copy the migration source code found in version 3.1.1-final.  The file is located at eduCommons/extras/PreMigrate.py .
+Copy this into [old instance]/Products/eduCommons/Extensions.
+
+Run the migration script by following these steps:
+
+  1. Open your 2.3.1-final eduCommons site in the ZMI. (click educommons Setup, then click Zope Management Interface.)
+
+  2. From the drop down menu, select "External method" and click the Add button.
+
+  3. Enter the following parameters:
+
+     * Id: Pre_Migrate_eduCommons3.0.2
+     * Title: Pre_Migrate_eduCommons3.0.2
+     * Module Name: eduCommons.Migrate
+     * Function Name: pre_migrate_2_3_1_to_3_0_2
+
+  4. Click Add
+
+  5. Click on the Pre_Migrate_eduCommons3.0.2 script you just added
+
+  6. Click the test tab.
+
+  7. Verify that the method ran successfully. (It should give you feedback.)
+
+
+Movement of Data.fs file to a new 3.0.2 instance
+------------------------------------------------------
+
+For the next step you will move the Data.fs file from the old instance to
+the new instance. First of all, install an eduCommons-3.0.2
+instance using the installations instructions found in [new instance home]/eduCommons/docs/. Stop both sites. Then
+copy the Data.fs file from the var directory of the old site to the
+var directory of the new site:
+::
+
+  sudo cp -rvfp [old instance home]/var/Data.fs [new instance home]/var/
+
+
+Migration of Plone
+------------------
+The following steps need to be performed in the ZMI, as eduCommons-3.1.1-final utlizes Plone 3.0.4, instead of 2.5.x:
+
+  1. Open your 3.0.2 eduCommons site in the ZMI. (click educommons setup, then click Zope Management Interface.)
+
+  3. Run portal_migration migration (click the upgrade button on the migrate tab)
+
+
+Migration of the eduCommons 3.0.2 instance
+------------------------------------------------
+Run the migration script included with the 3.1.1-final instance by following these steps:
+
+  1. Copy the migration script found in Products/eduCommons/extras/Migrate.py to [new_instance]/Extensions/
+  2. Open your 3.1.1-final eduCommons site in the ZMI. (click educommons Setup, then click Zope Management Interface.)
+  3. Navigate to the root of the ZMI (click the Root Folder link located in the upper left portion of the page)
+  4. From the drop down menu, select "External method" and click the Add button.
+  5. Enter the following parameters:
+
+     * Id: Migrate_eduCommons3.0.2
+     * Title: Migrate_eduCommons2.0.2
+     * Module Name: Migrate
+     * Function Name: migrate_2_3_1_to_3_0_2
+
+  4. Click Add
+  5. Click on the Migrate_eduCommons3.0.2 script you just added
+  6. Click the test tab.
+  7. Verify that the method ran successfully. (It should give you feedback.)
+
+
+Final Steps
+-----------
+
+  Your site should now be migrated. Navigate to your site in the browser and ensure it has migrated.
+  Based on the nature of the changes from Plone 2.5.x to Plone 3.0.4, if you performed major customizations, you may or may not need to refactor those changes to work properly in a Plone 3 environment.
+
+  Here are some additional steps you may need to follow after migration, depending on how you have customized your site:
+
+  1. Check Course Homepage and About the Professor pages to see if the images render. In past versions of eduCommons, some of these image links may be broken, but rendered due to acquisition. The course folder appears twice in the link (i.e. department/course/course/page).
+
+  2. The Site homepage links to the Courses List, Frequently Asked Questions, and Help will need to be modified as follows:
+
+     * OLD: <a title="List of Courses" href="/Courses_listing/">list of courses</a>.
+     * NEW: <a title="List of Courses" href="/courselist/">list of courses</a>.
+     * OLD: <a title="Frequently Asked Questions" href="/Help/">Frequently Asked Questions</a>
+     * NEW: <a title="Frequently Asked Questions" href="/help/">Frequently Asked Questions</a>
+     * OLD: <a title="Feedback" href="/Feedback/">feedback</a>
+     * NEW: <a title="Feedback" href="/feedback/">feedback</a>
+
+  3. The Site's About page links to the Terms of Use and Privacy Policy will need to be modified as follows:
+
+     * OLD: <a title="Terms of Use" href="../About/terms_of_use">Terms of Use</a>
+     * NEW: <a title="Terms of Use" href="../about/terms_of_use">Terms of Use</a>
+     * OLD: <a title="Privacy Policy" href="../About/privacy_policy">Privacy Policy</a>
+     * NEW: <a title="Privacy Policy" href="../about/privacy_policy">Privacy Policy</a>
+
+  4. The top banner, portal logo, and top nav color setting can be checked and adjusted by managers and administrators via Site Setup --> Left Skin Settings. Any changes made to these settings must be done after having checked the Development Mode box. In order to change the background color in the top nav color, a 1px x 1px transparent gif needs to be loaded first to hide the top nav background image. Be sure to uncheck the Development Mode box after Left Skin changes have been saved to improve site performance.
+
+  5. In order to restore the "Join" link, login to the site as manager and click Site Setup --> Security. Then check the "Enable self-registration" box and click save.
+

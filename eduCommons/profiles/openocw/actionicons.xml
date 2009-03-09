@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<action-icons xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+	      i18n:domain="eduCommons">
+ <action-icon category="controlpanel"
+              action_id="eduCommons"
+              title="eduCommons"
+              priority="0" icon_expr="e.png"
+              i18n:attributes="title"/>
+ <action-icon category="plone"
+              action_id="report_content"
+              title="Report Content"
+              priority="0" icon_expr="report_content_icon.gif"
+              i18n:attributes="title"/>
+</action-icons>

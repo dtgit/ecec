@@ -1,0 +1,107 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+ <browser:page
+    name="imsimport_form"
+    for="*"
+    class=".eventHandlers.eduCommonsImportForm"
+    permission="zope2.View"
+    />
+
+ <browser:page
+    name="rss"
+    for="Products.ContentLicensing.DublinCoreExtensions.interfaces.ILicensable"
+    class=".browser.RSSView"
+    template="../ContentLicensing/browser/rss.pt"
+    permission="zope2.View"
+    />
+
+ <browser:page
+    name="rss_template"
+    for="Products.ContentLicensing.DublinCoreExtensions.interfaces.ILicensable"
+    template="../ContentLicensing/browser/rss_template.pt"
+    permission="zope2.View"
+    />
+
+ <browser:page
+    name="citation_view"
+    for="Products.ContentLicensing.DublinCoreExtensions.interfaces.ILicensable"
+    class=".browser.CopyrightBylineView"
+    template="../ContentLicensing/browser/citation_view.pt"
+    permission="zope2.View"
+    />
+
+ <browser:page
+    name="copyright_byline_view"
+    for="Products.ContentLicensing.DublinCoreExtensions.interfaces.ILicensable"
+    class=".browser.CopyrightBylineView"
+    template="../ContentLicensing/browser/copyright_byline.pt"
+    permission="zope2.View"
+    />
+
+ <browser:page
+    name="metadata_view"
+    for="Products.ContentLicensing.DublinCoreExtensions.interfaces.ILicensable"
+    class=".browser.RDFMetadataView"
+    template="../ContentLicensing/browser/metadata_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:menu
+    id="plone_contentmenu_workflow"
+    title="The 'workflow' menu - allows the user to execute workflow transitions"
+    class=".browser.menu.WorkflowMenu"
+    />
+
+
+    <!-- Folder contents for clear copyright column -->
+    <browser:page
+        for="*"
+        class=".browser.foldercontents.FolderContentsCCView"
+        name="folder_contents"
+        template="../../lib/python/plone/app/content/browser/foldercontents.pt"
+        permission="cmf.ListFolderContents" 
+        />
+
+    <!-- Update KSS View -->
+    <browser:page
+         for="*"
+         class=".browser.foldercontents.FolderContentsCCKSSView"
+         attribute="update_table"
+         name="foldercontents_update_table"
+         permission="cmf.ListFolderContents" />
+
+<!-- Override dashboard creation for new users -->
+  <adapter factory=".browser.dashboard.DefaultDashboard" />
+  
+<!-- Override to ensure parent is translated first -->
+
+  <browser:page 
+    for="Products.LinguaPlone.interfaces.ITranslatable"
+    name="translate"
+    class=".browser.translate.CreateTranslation"
+    permission="cmf.AddPortalContent" />
+
+
+<!--Override manager for LinguaPlone Language Selector -->
+   <browser:viewlet
+     name="plone.app.i18n.locales.languageselector"
+     manager="Products.leftskin.browser.interfaces.IContentTop"
+     class=".browser.selector.TranslatableLanguageSelector"
+     permission="zope2.View"
+     for="Products.LinguaPlone.interfaces.ITranslatable"
+     />
+
+<!--Add logic to Sharing Tab to discern which profile is installed (eduCommons or OpenOCW -->
+
+    <browser:page
+        name="sharing"
+        for="*"
+        class=".browser.sharing.SharingView"
+        permission="cmf.ChangeLocalRoles"
+        />
+        
+
+        
+</configure>

@@ -1,0 +1,20 @@
+Copyright (c) 2003 Infrae. All rights reserved.
+See also LICENSE.txt
+
+Meta::
+
+  Valid for:  ProxyIndex 1.2
+  Author:     Martijn Faassen
+  Email:      faassen@infrae.com
+  CVS:        $Revision: 1.2 $
+
+Installing ProxyIndex
+
+  Installing ProxyIndex is easy; it is just a standard Zope products
+  installation. Drop ProxyIndex into the Products directory of your
+  Zope, restart Zope and you should be done.
+
+  ProxyIndex can be downloaded from:
+
+    http://www.zope.org/Members/infrae/ProxyIndex
+

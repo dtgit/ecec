@@ -1,0 +1,379 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+	   xmlns:browser="http://namespaces.zope.org/browser"
+	   xmlns:xmlrpc="http://namespaces.zope.org/xmlrpc"
+	   xmlns:view="http://namespaces.zope.org/view"
+	   i18n_domain="eduCommons">
+
+  <include package=".templates" />
+
+
+  <browser:page
+     name="order_courseobjs"
+     for="Products.CMFCore.interfaces.IFolderish"
+     class=".foldercontents.OrderContentsView"
+     template="./order_objs.pt"
+     permission="zope2.View"
+     />
+
+
+  <browser:page
+     name="Course_Nav_position"
+     for="*"
+     class=".PositionView"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="rss"
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     class=".RSSView"
+     template="../../ContentLicensing/browser/rss.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="rss"
+     for="Products.eduCommons.interfaces.ICoursesTopic"
+     class=".RSSView"
+     template="../../ContentLicensing/browser/rss.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="rss"
+     for="Products.eduCommons.interfaces.IDivision"
+     class=".RSSView"
+     template="../../ContentLicensing/browser/rss.pt"
+     permission="zope2.View"
+     />
+  
+  <browser:page
+     name="rss"
+     for="Products.eduCommons.interfaces.ICourse"
+     class=".RSSView"
+     template="../../ContentLicensing/browser/rss.pt"
+     permission="zope2.View"
+     />
+  
+  <browser:page
+     name="rss_feeds"
+     for="*"
+     template="rss_questions.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="rss_template"
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     template="../../ContentLicensing/browser/rss_template.pt"
+     permission="zope2.View"
+     />
+
+
+  <browser:page
+     name="rss_template"
+     for="Products.eduCommons.interfaces.ICoursesTopic"
+     template="../../ContentLicensing/browser/rss_template.pt"
+     permission="zope2.View"
+     />
+
+  
+  <browser:page
+     name="rss_template"
+     for="Products.eduCommons.interfaces.IDivision"
+     template="../../ContentLicensing/browser/rss_template.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="rss_template"
+     for="Products.eduCommons.interfaces.ICourse"
+     template="../../ContentLicensing/browser/rss_template.pt"
+     permission="zope2.View"
+     />
+
+
+  <browser:page
+     name="rss_all"
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     class=".RSSView"
+     template="rss_all.pt"
+     permission="zope2.View"
+     />
+  
+  <browser:page
+     name="rss_all_template"
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     template="rss_all_template.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     for="*"
+     class=".summarycontents.SummaryContentsView"
+     name="summary_contents"
+     template="../../../lib/python/plone/app/content/browser/foldercontents.pt"
+     permission="cmf.ListFolderContents"
+     />
+
+  <browser:page
+     for="*"
+     name="search_view"
+     class=".searchview.SearchView"
+     allowed_attributes="generateEmailList copyrightClearedOnObj changeStateEvent notifyDeleteObjectEvent changeNav"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     for="*"
+     name="change_copyright_view"
+     class=".copyrightview.CopyrightView"
+     allowed_attributes="changeCopyright"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     for="*"
+     name="change_accessibility_view"
+     class=".accessibilityview.AccessibilityCompliantView"
+     allowed_attributes="changeAccessibility"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     for="*"
+     name="package_course_view"
+     class=".packagecourseview.PackageCourseView"
+     allowed_attributes="createIMSFile"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     for="*"
+     name="courseexportform"
+     class=".reusecourse.CourseExportForm"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     for="*"
+     name="importPackage"
+     class=".reusecourse.XMLRPC"
+     attribute="importPackage"
+     permission="zope2.View"
+     />
+
+
+  <browser:page
+     for="*"
+     name="retrieveDivisions"
+     class=".reusecourse.XMLRPC"
+     attribute="retrieveDivisions"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="courses_listing"
+     title="Courses Listing"
+     menu="plone_displayviews"
+     for="..interfaces.ICoursesTopic"
+     template="courseslisting.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="profs_listing"
+     title="Courses by Professor"
+     menu="plone_displayviews"
+     for="..interfaces.ICoursesTopic"
+     class=".coursestopic.ProfCourseListView"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="division_courses"
+     for="..interfaces.IDivision"
+     class=".coursestopic.DivisionCourseListView"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="feedback_view"
+     title="Feedback"
+     menu="plone_displayviews"
+     for="*"
+     class=".feedbackform.FeedbackForm"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="report_content"
+     for="*"
+     class=".reportcontentform.ReportContentForm"
+     permission="zope2.View"
+     />
+
+
+  <browser:page
+     name="template_view"
+     for="*"
+     class=".templatechooser.TemplateForm"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="skinless_byline_view"
+     for="Products.ContentLicensing.DublinCoreExtensions.interfaces.ILicensable"
+     class=".CopyrightBylineView"
+     template="skinless_byline_view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="skinless_view"
+     for="*"
+     class=".SkinlessView"
+     template="skinless_view.pt"
+     allowed_attributes="getSkinlessView"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="clear_copyright"
+     for="..interfaces.IClearCopyrightable"
+     class=".ClearCopyrightField"
+     allowed_attributes="getClearedCopyright"
+     template="clear_copyright.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="accessibility_compliant"
+     for="..interfaces.IAccessibilityCompliantable"
+     class=".AccessibilityCompliantField"
+     allowed_attributes="getAccessibilityCompliant"
+     template="accessibility_compliant.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="sorted_course_listing"
+     for="..interfaces.IDivision"
+     class=".SortedCourseListingView"
+     template="sorted_course_listing.pt"
+     allowed_attributes="getSortedCourses"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="sorted_cross_course_listing"
+     for="..interfaces.IDivision"
+     class=".SortedCrossCourseListingView"
+     template="sorted_cross_course_listing.pt"
+     allowed_attributes="getSortedCrossCourses"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="sorted_resource_listing"
+     for="..interfaces.IDivision"
+     class=".SortedResourceListingView"
+     template="sorted_resource_listing.pt"
+     allowed_attributes="getSortedResources"
+     permission="zope2.View"
+     />
+
+  <browser:resourceDirectory
+     name="images"
+     directory="images"
+     />
+
+  <!-- Add the lock icon after the title -->
+
+  <browser:viewletManager
+     name="eduCommons.aftertitle"
+     provides=".interfaces.IAfterTitle"
+     permission="cmf.ManagePortal"
+     class="plone.app.viewletmanager.manager.OrderedViewletManager"
+     />
+
+  <browser:viewlet
+     name="eduCommons.lock"
+     manager=".interfaces.IAfterTitle"
+     permission="cmf.ManagePortal"
+     class=".viewlets.LockViewlet"
+     />
+
+  <!-- Revert back to icons for document actions -->
+
+  <browser:viewlet
+     name="eduCommons.icondocumentactions"
+     manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+     permission="zope2.View"
+     class=".viewlets.IconDocumentActionsViewlet"
+     />
+
+
+  <browser:viewlet
+     name="eduCommons.footer"
+     manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+     template="footer.pt"
+     permission="zope2.View"
+     />
+
+
+  <browser:menu
+     id="plone_contentmenu_templates"
+     title="The 'template' menu - allows the user to apply a template to an object"
+     class=".menu.TemplateMenu"
+     />
+
+  <adapter for="* *"
+	   name="plone.contentmenu.templates"
+	   factory=".menu.TemplatesSubMenuItem"
+	   provides="plone.app.contentmenu.interfaces.IContentMenuItem"
+	   />
+
+  <utility provides="zope.schema.interfaces.IVocabularyFactory"
+  	   component=".templatechooser.templateVocabulary"
+	   name="Template Choices"
+	   />
+
+  <adapter factory=".controlpanel.eduCommonsControlPanelAdapter" />
+
+  <browser:page
+     name="eduCommons-controlpanel"
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     class=".controlpanel.eduCommonsControlPanel"
+     permission="cmf.ManagePortal"
+     />
+
+  <utility
+     provides="zope.schema.interfaces.IVocabularyFactory"
+     component=".reusecourse.remotedivisionsvocab"
+     name="eduCommons.remotedivisionsvocab"
+     />
+
+ 
+    <!-- Local roles managed in the @@sharing view -->
+    <utility
+        name="Producer"
+        factory=".localroles.ProducerRole"
+        />
+        
+    <utility
+        name="Publisher"
+        factory=".localroles.PublisherRole"
+        />
+
+    <utility
+        name="QA"
+        factory=".localroles.QARole"
+        />
+
+    <utility
+        name="Viewer"
+        factory=".localroles.ViewerRole"
+        />
+
+</configure>

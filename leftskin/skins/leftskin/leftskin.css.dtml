@@ -1,0 +1,281 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+ 
+
+#portal-top { 
+}
+
+#portal-header {
+    background: &dtml-portalHeaderBackgroundColor; url(&dtml-portalHeaderBackgroundImage;) repeat-x;
+    color: &dtml-portalHeaderFontColor;;
+}
+
+#portal-header a:link,
+#portal-header a:visited { 
+    color: &dtml-portalHeaderLinkColor;;
+}
+
+#portal-header a:active,
+#portal-header a:hover { 
+    color: &dtml-portalHeaderActiveColor;;
+}
+
+
+#portal-searchbox {
+    margin-top: 0px;
+}
+
+.searchSection label {
+    color: &dtml-portalHeaderLinkColor;;
+}
+
+#portal-logo img { 
+    padding: 0 1em 0 1em;
+}
+
+#portal-siteactions { 
+}
+
+#portal-siteactions li a:link,
+#portal-siteactions li a:visited { 
+    border: none;
+    color: &dtml-portalHeaderLinkColor;
+}
+
+#portal-siteactions li a:hover,
+#portal-siteactions li a:active { 
+    background-color: transparent;
+    color: &dtml-portalHeaderActiveColor;;
+}
+
+
+
+#portal-globalnav {
+    background: &dtml-portalTopNavBackgroundColor; url(&dtml-portalTopNavBackgroundImage;) repeat-x;
+    color: &dtml-portalTopNavFontColor;;
+    padding: 3px 0em 3px 2em;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#portal-globalnav li a:link,
+#portal-globalnav li a:visited { 
+    color: &dtml-portalTopNavLinkColor;;
+    border: none;
+    border-style: none;
+    border-width: 0px;
+    text-transform: lowercase;
+}
+
+
+#portal-globalnav li a:hover,
+#portal-globalnav li a:active,
+#portal-globalnav li.selected a { 
+    background-color: transparent;
+    color: &dtml-portalTopNavActiveColor;;
+    border: none;
+    border-style: none;
+    border-width: 0px;
+}
+
+#portal-content-top { 
+    height: 2em;
+}
+
+
+#portal-personaltools { 
+    background-color: transparent;
+    border-top: none;
+    border-bottom: none;
+}
+
+#portal-breadcrumbs {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+#portal-column-one { 
+    background: &dtml-portalColumnOneBackgroundColor;  url(&dtml-portalColumnOneBackgroundImage;);
+    color: &dtml-portalColumnOneFontColor;;
+}
+
+#portal-column-one a:link, 
+#portal-column-one a:visited { 
+    color: &dtml-portalColumnOneLinkColor;;
+}
+
+#portal-column-one dl.portlet a:active, 
+#portal-colunm-one dl.portlet a:hover {  
+    color: &dtml-portalColumnOneActiveColor;;
+}
+
+#portal-column-one .portletHeader { 
+}
+
+#portal-column-one .portletItemSelected a { 
+    color: &dtml-portalColumnOneActiveColor;;
+}
+
+#portal-column-one dd.portletItem a:hover { 
+    text-decoration: none;
+    color: &dtml-portalColumnOneActiveColor;;
+}
+
+#portal-column-content { 
+}
+
+#portal-column-two { 
+}
+
+#portal-column-two .portletHeader{
+   padding-left: 5px;
+     
+}
+
+#portal-column-content td { 
+    vertical-align: top;
+}
+
+#portal-footer { 
+    background-color: &dtml-portalHeaderBackgroundColor;;
+    color: &dtml-portalHeaderFontColor;;
+    margin: 0em 0em 1em;
+    border-top: 1px white solid;
+    padding: 0em 0em 0em;
+}
+
+#portal-footer a:link,
+#portal-footer a:visited { 
+    color: &dtml-portalHeaderLinkColor;;
+}
+
+#portal-footer a:hover,
+#portal-footer a:active {  
+    text-decoration: none;
+    color: &dtml-portalHeaderActiveColor;;
+}
+
+.portlet { 
+    background-color: transparent;
+    border-style: none;
+}
+
+.portletHeader { 
+    background-color: transparent;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-left: -0.5em;
+    padding: 0.5em 0em;
+}
+
+.portletItem { 
+    border-left: none;
+    border-right: none;
+    padding: 0.25em;
+}
+
+.even { 
+    background-color: transparent;
+}
+
+.portletFooter { 
+    background-color: transparent;
+    border-style: none;
+}
+
+.portalFooter ul { 
+    list-style: none;
+    
+}
+
+.portletFooter ul li { 
+    display: inline;
+}
+
+.navTreeItem a,
+dd.portletItem .navTreeItem a { 
+    border-style: none;
+    background-color: transparent;
+    color: #333;
+}
+
+.navTreeItem a:hover,
+dd.portletItem .navTreeItem a:hover { 
+    border-style: none;
+    background-color: transparent;
+    color: #333;
+}
+
+
+.navTreeCurrentItem  { 
+    background-color: transparent;
+    color: pink;
+    border-style: none;
+    border: none !important;
+ }
+
+li.navTreeCurrentItem { 
+    background-color: transparent;
+    color: red;
+    border-style: none;
+}
+
+li.navTreeCurrentItem a,
+li.navTreeCurrentItem a:hover { 
+    border-style: none;
+    color: red;
+    background-color: transparent;
+}
+
+.image-inline {
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.image-inline-left { 
+    border: 1px solid black;
+    padding: 1px;
+    float: left;
+    margin-right: 10px;
+}
+
+.image-inline-right { 
+    border: 1px solid black;
+    padding: 1px;
+    float: right;
+    margin-left: 10px;
+}
+
+
+#document-toc { 
+    border: 1px solid &dtml-globalBorderColor;;
+}
+
+#document-toc dt.portletHeader { 
+    background-color: &dtml-portalTopNavBackgroundColor;;
+    color: &dtml-portalTopNavFontColor;;
+    margin-left: 0em;
+    padding: 0em;
+}
+
+#document-toc dd.portletItem ol { 
+    list-style-type: none;                                  
+}
+
+#document-toc dd.portletItem ol ol { 
+    list-style-type: decimal;                                  
+}
+
+.portletCalendar dt { 
+    background-color: &dtml-backgroundColor;;
+}
+
+
+/* </dtml-with> */
+
+
+

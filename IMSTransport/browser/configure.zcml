@@ -1,0 +1,43 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+	   xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:five="http://namespaces.zope.org/five"
+           xmlns:i18n="http://namespaces.zope.org/i18n"
+           i18n_domain="IMSTransport">
+
+  <browser:page
+	name="imsimport_form"
+	for="*"
+	class=".imstransportform.ImportForm"
+	permission="zope2.View"
+	/>
+
+  <browser:page
+	name="imsexport_form"
+	for="*"
+	class=".imstransportform.ExportForm"
+	permission="zope2.View"
+	/>
+
+<browser:page
+	name="imschoice_form"
+	for="*"
+	template="imschoice.pt"
+	permission="zope2.View"
+	/>
+
+  <adapter factory=".imstransportform.ImportFormAdapter"
+	   for="Products.ATContentTypes.content.folder.ATFolder"/>
+
+  <adapter factory=".imstransportform.ExportFormAdapter"
+	   for="Products.ATContentTypes.content.folder.ATFolder"/>
+
+  <utility provides="zope.schema.interfaces.IVocabularyFactory"
+           component=".imstransportform.transportVocabulary"
+           name="imsvocab"
+           />
+
+  <five:traversable class="OFS.Application.Application" /> 
+  
+  <five:traversable class="Products.CMFCore.PortalObject.PortalObjectBase" />
+
+</configure>

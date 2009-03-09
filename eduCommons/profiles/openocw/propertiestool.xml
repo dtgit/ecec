@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+  <object name="navtree_properties" meta_type="Plone Property Sheet">
+    <property name="metaTypesNotToList" type="lines">
+      <element value="Division"/>
+      <element value="Course"/>
+    </property>
+  </object>
+ <object name="site_properties" meta_type="Plone Property Sheet">
+  <property name="title">Site wide properties</property>
+  <property name="allowAnonymousViewAbout" type="boolean">True</property>
+  <property name="localTimeFormat" type="string">%m-%d-%Y</property>
+  <property name="localLongTimeFormat"
+     type="string">%m-%d-%Y %I:%M %p %Z</property>
+  <property name="allowRolesToAddKeywords" type="lines">
+   <element value="Contributor"/>
+   <element value="Administrator"/>
+   <element value="Manager"/>
+  </property>
+  <property name="default_page" type="lines"/> 
+  <property name="forbidden_contenttypes" type="lines">
+   <element value="text/x-python"/>
+   <element value="text/x-web-intelligent"/>
+  </property>
+ </object>
+ <object name="educommons_properties" meta_type="Plone Property Sheet">
+   <property name="title">eduCommons properties</property>
+   <property name="division_descriptor" type="string">Divisions</property>
+   <property name="course_descriptor" type="string">Course</property>
+   <property name="reusecourse_instance" type="string">http://openocw.org</property>
+   <property name="workflow_order" type="lines">
+     <element value="private" />
+     <element value="Published" />
+   </property>
+   <property name="oerrecommender_enabled" type="boolean">False</property>
+   <property name="reusecourse_enabled" type="boolean">True</property>
+ </object>
+  <object name="content_licensing_properties" meta_type="Plone Property Sheet">
+    <property name="DefaultSiteLicense" type="lines">
+      <element value="Creative Commons License" />
+      <element value="Attribution 3.0" />
+      <element value="http://creativecommons.org/licenses/by/3.0/" />
+      <element value="http://i.creativecommons.org/l/by/3.0/88x31.png" />
+    </property>
+  </object>
+</object>

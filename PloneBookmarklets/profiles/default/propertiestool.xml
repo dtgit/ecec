@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+  <object name="bookmarklets_properties" meta_type="Plone Property Sheet">
+    <property name="title">Bookmarklets Properties</property>
+    <property name="displayed_sites" type="lines">
+      <element value="delicious" />
+      <element value="digg" />
+      <element value="stumble" />
+      <element value="yahoo" />
+      <element value="google" />
+      <element value="spurl" />
+      <element value="wists" />
+      <element value="simpy" />
+      <element value="newsvine" />
+      <element value="blinklist" />
+      <element value="furl" />
+      <element value="reddit" />
+      <element value="fark" />
+      <element value="blogmarks" />
+      <element value="smarking" />
+      <element value="magnolia" />
+      <element value="ozmozr" />
+    </property>
+    <property name="available_sites" type="lines">
+      <element value="delicious" />
+      <element value="digg" />
+      <element value="stumble" />
+      <element value="yahoo" />
+      <element value="google" />
+      <element value="spurl" />
+      <element value="wists" />
+      <element value="simpy" />
+      <element value="newsvine" />
+      <element value="blinklist" />
+      <element value="furl" />
+      <element value="reddit" />
+      <element value="fark" />
+      <element value="blogmarks" />
+      <element value="smarking" />
+      <element value="magnolia" />
+      <element value="ozmozr" />
+    </property>
+    <property name="delicious" type="lines">
+      <element value="del.icio.us" />
+      <element value="http://del.icio.us/post?url=URL&amp;title=ENCODED_TITLE" />
+      <element value="delicious.gif" />
+    </property>
+    <property name="digg" type="lines">
+      <element value="Digg" />
+      <element value="http://digg.com/submit?phase=2&amp;url=URL&amp;title=ENCODED_TITLE" />
+      <element value="digg.gif" />
+    </property>
+    <property name="stumble" type="lines">
+      <element value="StumbleUpon" />
+      <element value="http://www.stumbleupon.com/submit?url=URL&amp;title=ENCODED_TITLE" />
+      <element value="stumble.gif" />
+    </property>
+    <property name="yahoo" type="lines">
+      <element value="Yahoo" />
+      <element value="http://myweb2.search.yahoo.com/myresults/bookmarklet?u=URL&amp;t=ENCODED_TITLE" />
+      <element value="yahoo.gif" />
+    </property>
+    <property name="google" type="lines">
+      <element value="Google" />
+      <element value="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=URL&amp;title=ENCODED_TITLE" />
+      <element value="google.gif" />
+    </property>
+    <property name="spurl" type="lines">
+      <element value="Spurl" />
+      <element value="http://www.spurl.net/spurl.php?title=ENCODED_TITLE&amp;url=URL" />
+      <element value="spurl.gif" />
+    </property>
+    <property name="wists" type="lines">
+      <element value="Wists" />
+      <element value="http://wists.com/r.php?c=&amp;r=URL&amp;tot;e=ENCODED_TITLE" />
+      <element value="wists.gif" />
+    </property>
+    <property name="simpy" type="lines">
+      <element value="Simpy" />
+      <element value="http://www.simpy.com/simpy/LinkAdd.do?href=URL&amp;title=ENCODED_TITLE" />
+      <element value="simpy.gif" />
+    </property>
+    <property name="newsvine" type="lines">
+      <element value="Newsvine" />
+      <element value="http://www.newsvine.com/_tools/seed&amp;save?u=URL&amp;h=ENCODED_TITLE" />
+      <element value="newsvine.gif" />
+    </property>
+    <property name="blinklist" type="lines">
+      <element value="Blinklist" />
+      <element value="http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;Description=DESCR&amp;Url=URL&amp;Title=ENCODED_TITLE" />
+      <element value="blinklist.gif" />
+    </property>
+    <property name="furl" type="lines">
+      <element value="Furl" />
+      <element value="http://www.furl.net/storeIt.jsp?u=URL&amp;t=ENCODED_TITLE" />
+      <element value="furl.gif" />
+    </property>
+    <property name="reddit" type="lines">
+      <element value="Reddit" />
+      <element value="http://reddit.com/submit?url=URL&amp;title=ENCODED_TITLE" />
+      <element value="reddit.gif" />
+    </property>
+    <property name="fark" type="lines">
+      <element value="Fark" />
+      <element value="http://cgi.fark.com/cgi/fark/edit.pl?new_url=URL&amp;new_comment=ENCODED_TITLE&amp;linktype=" />
+      <element value="fark.gif" />
+    </property>
+    <property name="blogmarks" type="lines">
+      <element value="Blogmarks" />
+      <element value="http://blogmarks.net/my/new.php?mini=1&amp;simple=1&amp;url=URL&amp;title=ENCODED_TITLE" />
+      <element value="blogmarks.gif" />
+    </property>
+    <property name="smarking" type="lines">
+      <element value="Smarking" />
+      <element value="http://smarking.com/editbookmark/?url=URL" />
+      <element value="smarking.gif" />
+    </property>
+    <property name="magnolia" type="lines">
+      <element value="Magnolia" />
+      <element value="http://ma.gnolia.com/bookmarklet/add?url=URL&amp;title=ENCODED_TITLE" />
+      <element value="magnolia.gif" />
+    </property>
+    <property name="ozmozr" type="lines">
+      <element value="Ozmozr" />
+      <element value="http://www.ozmozr.com/submit?u=URL&amp;t=ENCODED_TITLE&amp;c=DESCR" />
+      <element value="ozmozr.gif" />
+    </property>
+  </object>
+</object>

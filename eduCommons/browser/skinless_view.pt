@@ -1,0 +1,73 @@
+<metal:page define-macro="master"><metal:doctype define-slot="doctype"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"></metal:doctype>
+
+<metal:block use-macro="here/global_defines/macros/defines" />
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      tal:attributes="lang language;
+                      xml:lang language">
+
+<head metal:define-macro="html_header">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"
+          tal:define="charset site_properties/default_charset|string:utf-8"
+          tal:attributes="content string:text/html;;charset=${charset}" />
+
+    <title tal:define="portal_title portal_properties/title;
+                       page_title object_title">
+        <tal:pagetitle replace="page_title">
+            Inserts page title
+        </tal:pagetitle>
+    </title>
+
+
+
+    <metal:block metal:define-slot="head_slot" tal:define="lang language;
+                                charset site_properties/default_charset|string:utf-8">
+
+      <metal:cache use-macro="here/global_cache_settings/macros/cacheheaders">
+        Get the global cache headers located in global_cache_settings.
+      </metal:cache>
+
+    </metal:block>
+
+
+
+  </head>
+  <body>
+
+
+
+                    <div
+                       tal:define="text_title view/getSkinlessView;
+                                   text python:text_title[1];
+				   object_title python:text_title[0]">
+
+                      <!-- Page Content Begins Here -->
+              
+                        <h1 tal:content="object_title"> 
+                          Title or id
+                        </h1>
+                    
+                        <p tal:content="here/Description"
+                           tal:condition="here/Description">
+                            Description
+                        </p>
+                    
+                        <div class="stx"
+                             tal:condition="text">
+                            <div tal:replace="structure text" />
+                        </div>
+
+                        <div tal:replace="structure context/@@skinless_byline_view" />
+                
+                        <div tal:replace="structure context/@@citation_view" />
+                
+
+                        <!-- Page Content Ends Here -->
+                    </div>
+
+
+</body>
+</html>
+</metal:page>

@@ -1,0 +1,98 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+
+<div metal:fill-slot="main">
+<metal:main_macro define-macro="main">
+    <metal:body define-macro="body_macro"
+                tal:define="kssClassesView context/@@kss_field_decorator_view;
+                            getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                            templateId template/getId">
+
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+        <h1 tal:content="here/title_or_id" class="documentFirstHeading">
+            Title or id
+        </h1>
+
+        <div class="documentDescription" tal:content="structure here/Description">
+            description
+        </div>
+
+        <div tal:replace="structure provider:plone.abovecontentbody" />
+	
+	<div id="rss_info">
+	  <a href="@@rss_feeds"><img src="rss_icon.gif" /></a>
+	  <a href="@@rss_feeds">RSS Feeds</a>
+	</div>
+
+        <div metal:define-macro="text-field-view"
+             id="parent-fieldname-text" class="stx"
+             tal:define="kss_class python:getKssClasses('text',
+                         templateId=templateId, macro='text-field-view');
+                         text here/getText|nothing"
+             tal:condition="text">
+            <div metal:define-slot="inside" tal:replace="structure text">The body</div>
+        </div>
+
+
+        <metal:listingmacro define-macro="listing">
+        <tal:topiccontents define="topicContents python:here.queryCatalog(batch=False);
+                                   batch topicContents;">
+
+            <tal:listing condition="topicContents">
+            <a style='text-align: right' href="#"
+               tal:condition="nocall: here/asPDF|nothing"
+               tal:attributes="href string:${here_url}/asPDF/atct_topic_pdf_template/atct_topic_pdf"
+               i18n:translate="label_download_as_pdf"
+               i18n:domain="atcontenttypes">
+                Download PDF
+            </a>
+            
+
+	    <!-- Start of report entry -->
+
+	    <div tal:repeat="courses python:view.getCoursesByInstructor(topicContents)" tal:omit-tag="">
+	      <div class="division-listing">
+		<p class="division-title"
+		   tal:content="python:view.getProfName(courses[0])">Professor Name
+		</p>
+		<tal:repeat tal:repeat="course python:courses[1]">
+		  <p tal:define="full_title python:view.getFullCourseTitle(course);
+			         oddrow repeat/course/odd;"
+		     tal:attributes="class python:oddrow and 'course-listing even' or 'course-listing odd'">
+		    <a href=""
+		       tal:attributes="href course/getURL"
+		       tal:content="full_title">Full Course Title</a> 
+		  </p>
+		</tal:repeat>
+              </div>
+	    </div>
+
+	    <!-- end of report entry -->
+
+            </tal:listing>
+
+            <p class="discreet"
+               tal:condition="python: not topicContents and here.listCriteria()"
+               i18n:domain="atcontenttypes"
+               i18n:translate="description_no_items_in_topic">
+                There are currently no results for this search.
+            </p>
+
+        </tal:topiccontents>
+        </metal:listingmacro>
+    </metal:body>
+
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+
+</metal:main_macro>
+
+</div>
+
+</body>
+</html>

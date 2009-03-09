@@ -1,0 +1,85 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:plone="http://namespaces.plone.org/plone"
+   xmlns:browser="http://namespaces.zope.org/browser">
+
+  <plone:portlet
+     name="eduCommons.portlet.SimpleNavPortlet"
+     interface=".simplenavportlet.ISimpleNavPortlet"
+     assignment=".simplenavportlet.Assignment"
+     view_permission="zope2.view"
+     edit_permission="cmf.ManagePortal"
+     renderer=".simplenavportlet.Renderer"
+     addview=".simplenavportlet.AddForm"
+     />
+
+  <plone:portlet
+     name="eduCommons.portlet.CourseInfoPortlet"
+     interface=".courseinfoportlet.ICourseInfoPortlet"
+     assignment=".courseinfoportlet.Assignment"
+     view_permission="zope2.view"
+     edit_permission="cmf.ManagePortal"
+     renderer=".courseinfoportlet.Renderer"
+     addview=".courseinfoportlet.AddForm"
+     />
+
+  <plone:portlet
+     name="eduCommons.portlet.ReuseCourse"
+     interface=".reusecourseportlet.IReuseCoursePortlet"
+     assignment=".reusecourseportlet.Assignment"
+     view_permission="zope2.view"
+     edit_permission="cmf.ManagePortal"
+     renderer=".reusecourseportlet.Renderer"
+     addview=".reusecourseportlet.AddForm"
+     />
+
+  <plone:portlet
+     name="eduCommons.portlet.CourseBuilder"
+     interface=".coursebuilder.ICourseBuilderPortlet"
+     assignment=".coursebuilder.Assignment"
+     view_permission="cmf.ManagePortal"
+     edit_permission="cmf.ManagePortal"
+     renderer=".coursebuilder.Renderer"
+     addview=".coursebuilder.AddForm"
+     />
+
+  <plone:portlet
+     name="eduCommons.portlet.OerRecommenderPortlet"
+     interface=".oerrecommenderportlet.IOerRecommenderPortlet"
+     assignment=".oerrecommenderportlet.Assignment"
+     view_permission="zope2.view"
+     edit_permission="cmf.ManagePortal"
+     renderer=".oerrecommenderportlet.Renderer"
+     addview=".oerrecommenderportlet.AddForm"
+     />
+
+  <plone:portlet
+     name="eduCommons.portlet.MyCoursesPortlet"
+     interface=".mycourses.IMyCoursesPortlet"
+     assignment=".mycourses.Assignment"
+     view_permission="cmf.ManagePortal"
+     edit_permission="cmf.ManagePortal"
+     renderer=".mycourses.Renderer"
+     addview=".mycourses.AddForm"
+     />
+
+  <browser:page
+     name="coursebuilderform"
+     for="*"
+     class=".coursebuilderform.CourseBuilderForm"
+     permission="cmf.AddPortalContent"
+     />
+
+  <utility
+     provides="zope.schema.interfaces.IVocabularyFactory"
+     component=".coursebuilderform.divisionsvocab"
+     name="eduCommons.divisionsvocab"
+     />
+
+  <utility
+     provides="zope.schema.interfaces.IVocabularyFactory"
+     component=".coursebuilderform.coursetemplatevocab"
+     name="eduCommons.coursetemplatevocab"
+     />
+
+</configure>

@@ -1,0 +1,165 @@
+====================================
+LinguaPlone Translation Instructions
+====================================
+
+In the context of Department, Course, and ECObjects, translations must occur in a 'top down'
+manner.  A Department must be translated prior to translating a Course, which must be
+translated prior to any objects in the Course being translated.
+
+By default, LinguaPlone will tag newly created content objects in the default language setting 
+for the instance. Objects that exist in the ZODB prior to LinguaPlone being installed will be 
+'neutral', in terms of their language setting. In order to maintain the correct relationships 
+between languages, existing objects must have their language 'set'. 
+
+To set an existing object's language, click translate into on the management toolbar, and then 
+click manage translations.... This interface will allow you to change the content language 
+setting from neutral to the appropriate setting for your instance.  
+
+
+========================================
+Localization with eduCommons 3.1.1-final
+========================================
+
+Overview
+--------
+If you want to translate eduCommons into your language, here are instructions on how to get 
+started, as well as some guidelines that you should follow when performing a translation. You do
+not need to know anything about programming to create an eduCommons translation. This 
+has been adapted for eduCommons from the `plone translator guidelines 
+<http://plone.org/development/teams/i18n/translators-guidelines>`__. Please see our `eduCommons
+Localization Team page <./educommons-localization-team>`__ for a list of our volunteer translators.
+
+Introduction
+------------
+Since eduCommons is customized from Plone, it has built-in support for internationalization. As of 
+June 2006 Plone has 56 different translations. eduCommons requires some additional 
+translation work, but follows the same process as Plone. Adding an eduCommons translation is much 
+less time consuming because most of the translation work has already been done in Plone.
+
+There are about 400 strings needed for a translation of eduCommons (compared to about 1600 strings 
+for a Plone translation). Some of these are sentences or paragraphs, but the major part are one or 
+two words. These strings are scattered around in Plone, for example in page templates. Other items 
+to translate are widget labels, and workflow states. All those strings are collected in master 
+files. Currently eduCommons contains six .pot files. Each language requires its own .po files that
+corresponds to the strings or message ids declared in the .pot files. The .pot is the blueprint for
+the .po files.
+
+
+Tools
+-----
+When creating the .po files, we strongly recommend using a specialized tool called poEdit 
+(http://www.poedit.net). This makes the translation process very easy. But a normal 
+text editor work fine if you prefer that (both vim and emacs are great for this, and have special 
+modes for PO files). poEdit exists for both Linux and Windows, and Mac OS X.
+
+If you use a plain text editor instead of a dedicated tool, you should make sure you use utf-8 
+as your charset, even if your country usually uses iso-8859-* or similar. The reason for this is 
+that Plone uses a few characters (like the ellipsis) that don't have representations in other 
+charsets.
+
+
+Step-by-step guide
+------------------
+    1. Check if somebody is working on your language already. Even if they do, contact them and 
+    offer to help with testing. There's no way the eduCommons team can know what is a high-quality 
+    translation in a language they don't know, so your input is very valuable to us. We want 
+    good translations, not just a translation. So if you think something is badly done, tell us. 
+    Give polite feedback if something feels wrong with the translation to your language. A 
+    translation can always be made better.
+    
+    2. Be sure that you have used eduCommons enough to grasp the general concepts and how they 
+    interact. eduCommons is an advanced system, so be sure you know enough before you start 
+    translating key concepts like workflow. Check the language specific terms for your language, 
+    or create one if it doesn't exist. This will help you keep consistent translations for your 
+    language.
+    
+    3. Download the files to base your translation on. We recommend that you always use the 
+    English language files as your starting point, both because they are always the most current 
+    ones (other translations will usually lag a bit behind), and because you should try to match 
+    the original text. Translating between similar languages may be tempting (like Danish and 
+    Norwegian), but will usually result in a lower quality translation. Of course, if the only 
+    language you understand is Italian, and you want to provide a Chinese translation, we prefer 
+    this translation compared to not getting one at all :)
+    
+    4. Here is a link to the most recent translation files available for eduCommons (plone.po and 
+    eduCommons.po). Remember, unless there is already an existing translation available, you need 
+    to grab the .pot files.
+ 
+	http://cosl.usu.edu/svndev/eduCommons3/trunk/i18n/
+	
+	Here are links to the latest translations for each of the eduCommons products on the Plone 
+	Collective site (these links may change, so check back for the most accurate information): 
+
+	http://svn.plone.org/svn/collective/ZipFileTransport/branches/cosl-plone3/i18n/ 
+
+	http://svn.plone.org/svn/collective/IMSTransport/branches/cosl-plone3/i18n/ 
+
+	http://svn.plone.org/svn/collective/ContentLicensing/branches/cosl-plone3/i18n/
+
+        http://svn.plone.org/svn/collective/PloneBookmarklets/branches/plone3/i18n/
+    
+    
+    5. Open poEdit or your editor of choice and load the first of the master files. In poEdit 
+    select File --> Open (for existing .po translation files) or File --> New catalog from POT file. 
+    (to create a new translation from a .pot file). Be sure to set the language and language code in 
+    Catalog --> Settings. With poEdit or other editors you will need to save your new translation files 
+    as <product>-<language-code>.po (e.g. for a French translation: plone-fr.po, eduCommons-fr.po, etc). 
+    Have a look at http://www.i18nguy.com for the correct language code.
+
+    6. In poEdit, the first line shows the exact string that you have to translate. Your translation is 
+    entered in the area below the original string. It's easy. This is why we recommend poEdit.
+    
+    7. In other text editors things will look a little different. An example section can look like this:
+
+      |   #. Default: "Export"
+      |	  #: ../skins/eduCommons/Export_form.cpt
+      |	  msgid "Export"
+      |	  msgstr ""
+      |
+      
+      The first line (marked with Default) shows the exact string that you have to translate. 
+      Message attributes in the form ${foo} have to be included in the translated string exactly 
+      as they are. These are variables that will be filled in the rendering process. Do not touch 
+      this.
+    
+      The next lines (marked with :) list which templates inside eduCommons use this string. There 
+      might be several templates re-using the same string, but it is normally in the same context. 
+      Do not touch this.
+    
+      The next to last line (starting with msgid) holds the unique identifier for the string. Do 
+      not touch this.
+    
+      Finally, the last line is where your job starts. Enter the text in your language, be careful 
+      to keep the same casing (where appropriate, some languages have different rules that should 
+      be applied).
+    
+    8. If there is programming code in a string, only translate the string, not the code. For example in, 
+    Default: "${number} items matching your criteria." you would only translate "items matching your 
+    criteria." The code in the first part should be left as it is, so the translation will look like this:  
+    ${number} TRANSLATION.
+
+    9. Keep translating (but take breaks, this isn't done in one sitting - it's repetetive (but 
+    rewarding) work. After you have translated all of plone.pot, you should start on eduCommons.pot. 
+    Don't worry, you have already completed the biggest part.
+    
+    10. If you can, test your files. Get other people from your own country to test. This means having other 
+    people check your file and putting your file in an eduCommons test instance, browsing it in 
+    your language.
+    
+    11. If you are unsure about the best translation of a message, you can set it to fuzzy, so 
+    others can look at these. Setting a message to fuzzy means adding a "#, fuzzy"-line directly 
+    above the line starting with msgid (poEdit has a button for this).
+    
+    12. Since some of the translation files are hosted on the Plone Collective, if you know how SVN
+    works, you can get an account with Plone (Here's how to request write access to the Collective.)
+    and maintain the files in SVN yourself (see next section). If not, no problem, just e-mail your
+    translation to us at eduCommons [at] cosl [dot] usu [dot] edu, and we will add it for you and put it into the
+    eduCommons distribution in the next release. We will also add you to our our `eduCommons
+    Localization Team page. <./educommons-localization-team>`__
+    
+    13. Please check on your translations periodically to keep them updated as new versions are 
+    released. A quick find for "" will reveal any new or missing stings that need to be translated.
+    
+    14. If you have other questions or about contributing a translation to eduCommons please contact
+    us at educommons [at] cosl [dot] usu [dot] edu. Thank you for you help!
+

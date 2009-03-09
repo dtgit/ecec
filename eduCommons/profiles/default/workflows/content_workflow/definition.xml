@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<dc-workflow workflow_id="content_workflow"
+             title="Content Workflow [eduCommons]"
+             state_variable="review_state"
+             initial_state="InProgress">
+ <permission>Access contents information</permission>
+ <permission>Modify portal content</permission>
+ <permission>View</permission>
+ <permission>Add portal content</permission>
+ <permission>Delete objects</permission>
+ <permission>Manage portal</permission>
+ <permission>Review portal content</permission>
+ <permission>View management screens</permission>
+ <state state_id="InProgress" title="Work in progress">
+  <exit-transition transition_id="addComment"/>
+  <exit-transition transition_id="submit"/>
+  <permission-map name="Access contents information"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>Publisher</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Viewer</permission-role>
+  </permission-map>
+  <permission-map name="Add portal content" acquired="True">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+  </permission-map>
+  <permission-map name="Delete objects" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+  </permission-map>
+  <permission-map name="Manage portal" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+  </permission-map>
+  <permission-map name="Review portal content"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Publisher</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>Publisher</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Viewer</permission-role>
+  </permission-map>
+  <permission-map name="View management screens"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="Published" title="Published Content">
+  <exit-transition transition_id="addComment"/>
+  <exit-transition transition_id="manager_rework"/>
+  <permission-map name="Access contents information"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Member</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>Publisher</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Viewer</permission-role>
+   <permission-role>Anonymous</permission-role>
+  </permission-map>
+  <permission-map name="Add portal content" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+  </permission-map>
+  <permission-map name="Delete objects" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Manage portal" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Review portal content"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Publisher</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Anonymous</permission-role>
+   <permission-role>Authenticated</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Member</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>Publisher</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Viewer</permission-role>
+  </permission-map>
+  <permission-map name="View management screens"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="QA" title="Quality Assurance">
+  <exit-transition transition_id="addComment"/>
+  <exit-transition transition_id="release"/>
+  <exit-transition transition_id="reviewer_rework"/>
+  <permission-map name="Access contents information"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>AdministratorManager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>Publisher</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Viewer</permission-role>
+  </permission-map>
+  <permission-map name="Add portal content" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Delete objects" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Manage portal" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>QA</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Review portal content"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Publisher</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>Publisher</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Viewer</permission-role>
+  </permission-map>
+  <permission-map name="View management screens"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="Released" title="Released for publication">
+  <exit-transition transition_id="addComment"/>
+  <exit-transition transition_id="publish"/>
+  <exit-transition transition_id="publisher_retest"/>
+  <exit-transition transition_id="publisher_rework"/>
+  <permission-map name="Access contents information"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>Publisher</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Viewer</permission-role>
+  </permission-map>
+  <permission-map name="Add portal content" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Delete objects" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Manage portal" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Publisher</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Review portal content"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Publisher</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+   <permission-role>Producer</permission-role>
+   <permission-role>Publisher</permission-role>
+   <permission-role>QA</permission-role>
+   <permission-role>Viewer</permission-role>
+  </permission-map>
+  <permission-map name="View management screens"
+                  acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Administrator</permission-role>
+  </permission-map>
+ </state>
+ <transition transition_id="addComment"
+             title="Add a comment" new_state=""
+             trigger="USER" before_script="" after_script="">
+  <action url="" category="workflow">Add a Comment Only</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>Producer</guard-role>
+   <guard-role>QA</guard-role>
+   <guard-role>Publisher</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="manager_rework"
+             title="Manager rejects submission"
+             new_state="InProgress" trigger="USER"
+             before_script="" after_script="">
+  <action url="%(content_url)s/content_reject_form"
+          category="workflow">Rework Published Content</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="publish"
+             title="Reviewer publishes content"
+             new_state="Published" trigger="USER"
+             before_script="" after_script="">
+  <action url="%(content_url)s/content_publish_form"
+          category="workflow">Publish Content</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>Publisher</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="publisher_retest"
+             title="Publisher requests retest"
+             new_state="QA" trigger="USER" before_script=""
+             after_script="">
+  <action url="%(content_url)s/content_reject_form"
+          category="workflow">Retest Content</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>Publisher</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="publisher_rework"
+             title="Publisher rejects submission"
+             new_state="InProgress" trigger="USER"
+             before_script="" after_script="">
+  <action url="%(content_url)s/content_reject_form"
+          category="workflow">Rework Released Content</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>Publisher</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="release"
+             title="Release content for publication"
+             new_state="Released" trigger="USER"
+             before_script="" after_script="">
+  <action url="%(content_url)s/content_submit_form"
+          category="workflow">Release Content for Publication</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>QA</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="resetToInProgress"
+             title="Object state is stale"
+             new_state="InProgress" trigger="USER"
+             before_script="" after_script="">
+  <action url="%(content_url)s/content_submit_form"
+          category="workflow">Reset to In Progress</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>Producer</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="reviewer_rework"
+             title="Reviewer rejects submission"
+             new_state="InProgress" trigger="USER"
+             before_script="" after_script="">
+  <action url="%(content_url)s/content_reject_form"
+          category="workflow">Rework Content</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>QA</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="submit"
+             title="Submit for review" new_state="QA"
+             trigger="USER" before_script="" after_script="">
+  <action url="%(content_url)s/content_submit_form"
+          category="workflow">Submit Content to QA</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>Producer</guard-role>
+  </guard>
+ </transition>
+ <worklist worklist_id="production_queue" title="">
+  <description>Content in production waiting to be submitted to QA.</description>
+  <action url="%(portal_url)s/search?review_state=InProgress"
+          category="global">In Progress</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>Producer</guard-role>
+  </guard>
+  <match name="review_state" values="InProgress"/>
+ </worklist>
+ <worklist worklist_id="publisher_queue" title="">
+  <description>Content that has been released and is waiting to be published.</description>
+  <action url="%(portal_url)s/search?review_state=Released"
+          category="global">Released</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>Publisher</guard-role>
+  </guard>
+  <match name="review_state" values="Released"/>
+ </worklist>
+ <worklist worklist_id="qa_queue" title="">
+  <description>Content currently in QA waiting to be approved.</description>
+  <action url="%(portal_url)s/search?review_state=QA"
+          category="global">QA (%(count)d)</action>
+  <guard>
+   <guard-role>Manager</guard-role>
+   <guard-role>Administrator</guard-role>
+   <guard-role>QA</guard-role>
+  </guard>
+  <match name="review_state" values="QA"/>
+ </worklist>
+ <variable variable_id="action" for_catalog="False"
+           for_status="True" update_always="True">
+  <description>The last transition</description>
+  <default>
+   
+   <expression>transition/getId|nothing</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="actor" for_catalog="False"
+           for_status="True" update_always="True">
+  <description>The ID of the user who performed the last transition</description>
+  <default>
+   
+   <expression>user/getId</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="comments" for_catalog="False"
+           for_status="True" update_always="True">
+  <description>Comments about the last transition</description>
+  <default>
+   
+   <expression>python:state_change.kwargs.get('comment', '')</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="review_history" for_catalog="False"
+           for_status="False" update_always="False">
+  <description>Provides access to workflow history</description>
+  <default>
+   
+   <expression>state_change/getHistory</expression>
+  </default>
+  <guard>
+   <guard-permission>Request review</guard-permission>
+   <guard-permission>Review portal content</guard-permission>
+  </guard>
+ </variable>
+ <variable variable_id="time" for_catalog="False"
+           for_status="True" update_always="True">
+  <description>Time of the last transition</description>
+  <default>
+   
+   <expression>state_change/getDateTime</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+</dc-workflow>

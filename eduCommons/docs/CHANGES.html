@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.5: http://docutils.sourceforge.net/" />
+<title></title>
+<link rel="stylesheet" href="./default.css" type="text/css" />
+</head>
+<body>
+<div class="document">
+
+
+<div class="section" id="changes-in-version-3-1-0">
+<h1>Changes in version 3.1.0</h1>
+<dl class="docutils">
+<dt>&quot;Download Course&quot; Additions</dt>
+<dd>Moved &quot;download this course&quot; into a &quot;Reuse Course&quot; portlet. The course downloads now include IMS information. Using a portlet will also allow for additional formats, such as Common Cartridge, to be added in the future.</dd>
+<dt>Display License and Caption for Embedded Objects</dt>
+<dd>Using the Kupu editor, eduCommons can now display separate licenses and citations for image objects embedded in a page, distinct from the overall page license.</dd>
+<dt>Captcha integration</dt>
+<dd>We now integrate captcha on the registration page to prevent spambot submissions.</dd>
+<dt>Lingua Plone 2.0 Integration</dt>
+<dd>LinguaPlone 2.0 has been implemented into eduCommons 3.1.0, allowing users to localize content and support multiple languages on a single OpenCourseWare site.</dd>
+<dt>Add accessibility check</dt>
+<dd>This is intended to help institutions who want to include accessibility check into their workflow.</dd>
+<dt>Enable Javascript/Page-specific CSS and embed tags by default</dt>
+<dd>We have enabled Javascript and page-specific CSS and embed tags by default.</dd>
+<dt>Documentation for Adding Small Widgets</dt>
+<dd>Add eduCommons-specific documentation and examples for adding Plone 3 portlets.</dd>
+<dt>Add &quot;Remix this course&quot; functionality</dt>
+<dd>This feature is designed to allow courses from MIT OpenCourseWare (pending implementation by MIT OCW) as well as other eduCommons OCWs to be easily imported into OpenOCW (or another eduCommons site if specified, but OpenOCW will be the default). On published eduCommons OCW courses that have been packaged, a &quot;Remix this course&quot; link appears. This allows unauthenticated users to send the entire course to OpenOCW (OpenOCW login credentials must be provided).</dd>
+<dt>Update &quot;download this course&quot; to improve handling of large courses</dt>
+<dd>&quot;Download this course&quot; is no longer auto-generated when a course is published or changed. Instead, a new &quot;Package course&quot; button appears in the contents view of the course once it has been published. The &quot;Download this course&quot; .zip file now includes IMS information. It now appears in its own portlet, along with the &quot;Remix this course&quot; link.</dd>
+<dt>Other updates</dt>
+<dd>Updated eduCommons to exclude new content from showing in the left nav by default (including zip imports).
+Improved IE 6 and 7 compatibility.</dd>
+</dl>
+</div>
+<div class="section" id="changes-in-version-3-0-2">
+<h1>Changes in version 3.0.2</h1>
+<p>Fixed bugs in 3.0.1 migration release</p>
+</div>
+<div class="section" id="changes-in-version-3-0-1">
+<h1>Changes in version 3.0.1</h1>
+<p>Added migration support for from eduCommons 2.3.1</p>
+</div>
+<div class="section" id="changes-in-version-3-0-0">
+<h1>Changes in version 3.0.0</h1>
+<dl class="docutils">
+<dt>Added full support for Plone 3.0</dt>
+<dd>Inline editing
+Working Copy support
+Link and reference integrity checking
+Automatic locking and unlocking
+Easy collaboration and sharing
+Versioning, history and reverting content
+Upgraded visual HTML editor</dd>
+<dt>Added OpenOCW Functionality</dt>
+<dd>Simplified Workflow
+Refactored Security
+Eased Production processes</dd>
+<dt>Simplified Course Building</dt>
+<dd>Course Builder Widget allows 'one step' production of Division, Course, and templates Course objects (syllabus, etc).</dd>
+</dl>
+</div>
+<div class="section" id="changes-in-version-2-3-1">
+<h1>Changes in version 2.3.1</h1>
+<dl class="docutils">
+<dt>Added Migration from 2.2.0</dt>
+<dd>The migration process has been improved and simplified.</dd>
+</dl>
+</div>
+<div class="section" id="changes-in-version-2-3-0">
+<h1>Changes in version 2.3.0</h1>
+<dl class="docutils">
+<dt>Added i18n Support for Spanish, Dutch, French, and Chinese</dt>
+<dd>Translations are now available for the aforementioned languages.</dd>
+<dt>Added Support for MOCSL Tools</dt>
+<dd>The Folksemantic AddOn Product allows for seamless interaction with
+Annorate, Make A Path, and Send2Wiki.</dd>
+<dt>Fixed Metadata Bugs</dt>
+<dd>The Citations were presenting incorrect metadata; now pulling in correct
+metadata per object.</dd>
+<dt>Added Course Wide Instructor Metadata</dt>
+<dd>A flag is now available to note if the Instructor of the Course is also the
+principal creator for objects within the course.</dd>
+<dt>Added MIT CP Import Support</dt>
+<dd>Via the IMS Transport Tool, an end user can now import IMS Content Packages.
+eduCommons will strip the package of it's chrome and import content, navigation,
+and metadata.</dd>
+<dt>Added Zip File Download for Courses</dt>
+<dd>End Users can now get a Zip File download of a course object, stripped of eduCommons
+chrome and ready for reuse</dd>
+<dt>Extended RSS Feed Support</dt>
+<dd>Departments and Courses now have configurable feeds per object, and the ability to turn
+feeds on and off</dd>
+<dt>Added Recursive Copyright Clearance</dt>
+<dd>Folderish Objects may now recrusively clear or revoke copyight</dd>
+</dl>
+</div>
+<div class="section" id="changes-in-version-2-2-0">
+<h1>Changes in version 2.2.0</h1>
+<p>Front end UI Enhancements</p>
+<p>Auto-citation generation (from metadata) displayed inline with documents and included in skinless content. Simplify conformance with Attribution terms of Creative Commons licenses for those who build derivative works.</p>
+<p>Social Bookmarking Dropdown. Help users bookmark and later find OERs hosted in eduCommons using popular social bookmarking services.</p>
+<p>Integration with MyOCW (pending MyOCW release dates).</p>
+<p>Expanded support for IMS Content Packaging, including a transform engine that can translate from popular IMS CP formats to and from eduCommons.</p>
+<p>Updated internationalization support, with translation updates for a predetermined set of languages.</p>
+<p>Finalized support for content translation using the LinguaPlone product.</p>
+</div>
+<div class="section" id="changes-in-version-2-1-1">
+<h1>Changes in version 2.1.1</h1>
+<dl class="docutils">
+<dt>Updated Internationalization Files</dt>
+<dd>Updated internationalization files to reflect the latest eduCommons changes.</dd>
+<dt>Added Support for Inline Translations</dt>
+<dd>Integrated the LinguaPlone product with eduCommons, making it now possible
+to have multiple translations of content within the same eduCommons instance.</dd>
+<dt>RSS Feeds on front page, and RSS feeds for departments</dt>
+<dd>RSS feed icon now appears on the front page of eduCommons, as well as on the
+courses listing page. A new RSS feed now appears for departments, which
+lists the latest published courses in a department.</dd>
+<dt>Added Support for Social Bookmarking Services</dt>
+<dd>Added support for bookmarking services, starting with del.icio.us. Support
+for more to come.</dd>
+<dt>Added a Skinless View for Documents</dt>
+<dd>eduCommons now provides a skinless view of documents, making it both possible
+and easy to reuse content.</dd>
+</dl>
+</div>
+<div class="section" id="changes-in-version-2-1-0-final">
+<h1>Changes in version 2.1.0-final</h1>
+<dl class="docutils">
+<dt>A new IMS Transport Engine</dt>
+<dd>A refactored IMS Content Packaging engine that provides a more robust import
+and export functionality. On import eduCommons will identify where required
+tags missing in the manifest file, if it is not able to read it directly.</dd>
+<dt>IMS Content Packaging Documentation</dt>
+<dd>This version ships with detailed documentation on how to write out an IMS
+Content Package that eduCommons can consume. The documentation is provided
+in raw text, web based, and in a standalone (PDF) file.</dd>
+<dt>A New Content Licensing Engine</dt>
+<dd>eduCommons now allows a default content license and a rights holder to be
+set sitewide. It also includes the ability to license an individual piece
+of content, should the need arise to publish content under a license
+different to the site wide one.</dd>
+<dt>Copyright Bylines</dt>
+<dd>Content is now published with the appropriate copyright byline, including
+the ability to specify copyright dates, the rights holder, and the license
+itself. The license includes a hyper-link to the legal terms of the license
+as well as an icon (if the license includes one).</dd>
+<dt>Creative Commons License Support</dt>
+<dd>eduCommons now includes a license selector that integrates with Creative
+Commons Licenses (www.creativecommons.org), allowing eduCommons to remain
+flexible with the latest CC offerings.</dd>
+<dt>Support for Other Licenses</dt>
+<dd>eduCommons supports other licenses, including the traditional all rights
+reserved, and GNU Free Document Licenses, as well as allowing content
+developers to input their own license.</dd>
+<dt>RDF and machine readable Creative Commons License Support</dt>
+<dd>eduCommons will publish by default any metadata for a content object in
+embedded RDF format. eduCommons will also publish machine readable creative
+commons licenses, that can be read and processed by search engines.</dd>
+<dt>Content Licensing Product for Plone 2.5</dt>
+<dd>The content licensing features in eduCommons are shipped in a standalone product
+that can also be used in a default Plone 2.5 instance.</dd>
+<dt>Native Support for Plone 2.5</dt>
+<dd>This version of eduCommons supports the latest version of Plone (2.5), with some
+functionality now taking advantage of the new Zope 3 component architecture.</dd>
+<dt>Improved HTML Validation/Fixing Engine</dt>
+<dd>The HTML Validation/Fixer Engine has been updated, and now displays a detailed
+report of problems within the body of an HTML document, and provides a simple
+method to fix most problems, and identify remaining ones that need extra
+attention. This functionality works when a content developer's editor is not
+set to use the FCKeditor.</dd>
+</dl>
+</div>
+<div class="section" id="changes-in-version-2-0-0-final">
+<h1>Changes in version 2.0.0-final</h1>
+<dl class="docutils">
+<dt>Human Readable URLS</dt>
+<dd>URLs are human readable, instead of being based on an auto generated id.</dd>
+<dt>Recursive Folder Change State</dt>
+<dd>Can change workflow state recursively on content in subfolders.</dd>
+<dt>Native Support for Plone 2.1</dt>
+<dd>Integrated eduCommons custom skin files with new Plone 2.1 functionality.
+Content objects are now based on ATContentTypes. Substantial changes across
+the code base. eduCommons is currently based on Plone-2.1.2 and Zope-2.8.6.</dd>
+<dt>Content Status History on Object Views in Edit Mode</dt>
+<dd>The content status history of an object is now available in the view from
+a history link at the top of the page while in edit mode.</dd>
+<dt>No Redirect on Front Page</dt>
+<dd>Front page no longer redirects to an ECIndex folder, but renders directly.</dd>
+<dt>Removed Forum Support</dt>
+<dd>Forum support is being replaced by new social software in the future, which
+means that the old OLS code base is no longer being maintained. If you require
+forum support it is recommended that you use the excellent zForum
+(<a class="reference external" href="http://www.zforum.org">http://www.zforum.org</a>) plone product until the new software is in place.</dd>
+<dt>Improved IMS Content packaging</dt>
+<dd>Workflow status history is now written in the IMS content package instead
+of being stored in a binary blob.</dd>
+<dt>eduCommons Custom Skin Support</dt>
+<dd>eduCommons can now reskinned in release mode without requiring eduCommons
+to be restarted.</dd>
+<dt>Courses Object Removed</dt>
+<dd>The courses object has been removed, and departments are now put in the
+root of the site. This simplifies the UI and removes confusion over what
+the Courses object is/was.</dd>
+<dt>Improved Default Templates</dt>
+<dd>Default templates for the front page, FAQ and about pages propagate the
+eduCommons site title, making it easier to customize default site text.</dd>
+<dt>Department and Course IDs</dt>
+<dd>Departments and Courses now support the display of ID's in front of their
+titles. Courses also support the display of the year and semester that the
+course was taught in.</dd>
+</dl>
+</div>
+<div class="section" id="changes-in-version-1-6-1-final">
+<h1>Changes in version 1.6.1-final</h1>
+<dl class="docutils">
+<dt>eduCommons Document HTML Fixer</dt>
+<dd>Implement an HTML engine that can fix HTML mistakes automatically in ecDocuments.</dd>
+<dt>RDF Headers/Metadata</dt>
+<dd>Add RDF headers to ECDocuments implementing the RDF/Dublin Core standard.</dd>
+<dt>Support for Plone 2.1.1/Zope 2.8.2</dt>
+<dd>Implementing support for the latest Plone (2.1.1) and Zope (2.8.2) code bases.</dd>
+<dt>Support for Default Templates</dt>
+<dd>Support for adding default templates for commonly used pages within eduCommons.</dd>
+<dt>Review and Revise IMS Export Rights</dt>
+<dd>Changes in the UI to only present IMS import/export to administrators and managers.
+This is necessary because producers do not have rights on content that is not in the
+&quot;In Progress&quot; state, which prevents producers from being able to import/export
+content not in the appropriate state.</dd>
+<dt>Zip export (non-ims)</dt>
+<dd>Allow a producer administrator or manager to export course content in a zip file format.</dd>
+<dt>Creative Commons metadata header</dt>
+<dd>Add a metadata header to ECDocuments for the creative commons license.</dd>
+<dt>Removal of &quot;Courses&quot; link in bread crumb</dt>
+<dd>Remove the &quot;Courses&quot; link in the breadcrumb due to the fact that is is confusing to users.</dd>
+<dt>XHTML Validation of an Entire Course</dt>
+<dd>Adding the ability to do validation of XHTML across a course, while reporting
+errors in a log file.</dd>
+<dt>Add Folders to Course Contents</dt>
+<dd>Add folders to course content pages so that objects which externally link to other
+objects will retain their links with out having to rewrite them.</dd>
+<dt>Migration from 1.5.2-final</dt>
+<dd>Implement the ability to migrate existing 1.5.2-final sites to 1.6.1-final.</dd>
+</dl>
+</div>
+</div>
+<div class="footer">
+<hr class="footer" />
+<a class="reference external" href="CHANGES.txt">View document source</a>.
+Generated on: 2008-04-09 18:43 UTC.
+Generated by <a class="reference external" href="http://docutils.sourceforge.net/">Docutils</a> from <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> source.
+
+</div>
+</body>
+</html>

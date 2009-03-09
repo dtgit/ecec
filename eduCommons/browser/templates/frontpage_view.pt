@@ -1,0 +1,89 @@
+<tal:block tal:define="portal_title python:here.portal_url.getProperty('title')">
+<table cellpadding="0" cellspacing="0" summary="eduCommons Home Page Layout">
+  <tbody>
+    <tr id="opentext" valign="top">
+      <td id="opentext-a">
+        <h2 tal:content="portal_title">eduCommons</h2>
+        <p><span tal:replace="portal_title" /> is a free and open educational resource for faculty, 
+	  students, and self-learners throughout the world. </p>
+        <div>We hope you find eduCommons valuable whether you're:</div>
+	  <ul>
+	    <li>a student looking for some extra help</li>
+	    <li>a faculty member trying to prepare a new course</li>
+	    <li>or someone interested in learning more about a subject that interests you.</li>
+	  </ul>
+        <p><span tal:replace="portal_title" /> does not grant credits or degrees, and does not provide 
+	  access to faculty. <span tal:replace="portal_title" /> gives you open access to the materials 
+	  used in a variety of courses.</p>
+      </td>
+      <td id="opentext-b">  
+        <h2>Welcome!</h2>
+	<ul>
+	  <li>If you're wondering where to start, try the list of departments on the left 
+	    of this page, or go to the full <a href="./courselist" 
+					       title="List of Courses">list of courses</a>.</li>
+	  <li>We've also provided answers to several questions about eduCommons in our 
+	    <a href="./help" 
+	       title="Frequently Asked Questions">Frequently Asked Questions</a>.</li>
+	  <li>Once you've had a chance to look around, we would love to hear your 
+	    <a href="./feedback" title="Feedback">feedback</a>.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table cellpadding="0" cellspacing="0" summary="User Testimonials" id="testimonial">
+  <tbody>
+    <tr id="testimonial">
+      <td id="testimonial-a" valign="top">
+        <h2>What's New</h2>
+	<ul id="testimonial-a">
+	  <li>Learn more about keeping up to date via 
+	    <a href="./courselist/@@rss_feeds"><img src="rss_icon.gif" alt="RSS" /></a>.
+	  </li>
+	  <li>
+	    Look for the <a href=""
+			    tal:attributes="href string:${here/portal_url}/front-page/presentation_view">presentation mode icon</a>
+	                 <a href=""
+			    tal:attributes="href string:${here/portal_url}/front-page/presentation_view"><img src="s5_icon.jpg" alt="Presentation Mode" /></a> 
+	    in the upper right which allows you to view content as slides.
+	  </li>
+	  <li>
+	    We've also added many more new features for those who are adding new 
+	    content to eduCommons sites.
+	  </li>
+	</ul>
+      </td>
+      <td id="testimonial-b" valign="top">
+        <h2>Content</h2>
+	<ul>
+	  <li>
+	    Use the <a href=""
+		       tal:attributes="href string:${here/portal_url}/front-page/skinless_view">Content View icon</a>
+	            <a href=""
+		       tal:attributes="href string:${here/portal_url}/front-page/skinless_view"><img src="document_icon.gif" alt="Content View" /></a> 
+	    to view or download a plain version of a page. This 
+	    feature makes it easy to reuse the content elsewhere, but be sure to check with
+	    the requirements of the copyright license listed at the bottom of the page.
+	  </li>
+	</ul>	
+      </td>
+      <td id="testimonial-c" valign="top">
+        <h2>About eduCommons</h2>
+	<ul>
+	  <li>
+	    You can find out more about the software hosting this site by visiting the
+	    <a href="http://cosl.usu.edu/projects/educommons"
+	       class="link-plain">eduCommons project page</a>. 
+	  </li>
+	  <li>
+	    You can also read additional 
+	    <a href="http://cosl.usu.edu/projects/educommons/documentation"
+	       class="link-plain">documentation</a>
+	    about eduCommons.
+	</ul>
+      </td>      
+    </tr>
+  </tbody>
+</table>
+</tal:block>

@@ -1,0 +1,746 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Educommons\n"
+"POT-Creation-Date: 2006-12-11 21:57+0000\n"
+"PO-Revision-Date: 2007-03-20 09:11+0100\n"
+"Last-Translator: olivier Turlier <o.turlier@gmail.com>\n"
+"Language-Team: French <o.turlier@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+
+msgid "About OCW"
+msgstr "A propos d'OCW"
+
+## Translations for worflow state
+msgid "Add a Comment Only"
+msgstr "Ajouter un commentaire seulement"
+
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/search.pt
+msgid "Advanced Search"
+msgstr ""
+
+msgid "All XHTML issues have been resolved. Press &#39;save&#39; to keep the changes."
+msgstr "Tous les problèmes XHTML on été résolus. Appuyez &#39;save&#39; pour enregistrer les changements"
+
+msgid "An eduCommons course."
+msgstr "Un cours eduCommons"
+
+msgid "An eduCommons department."
+msgstr "Un département eduCommons"
+
+msgid "An eduCommons file."
+msgstr "Un fichier eduCommons"
+
+msgid "An eduCommons folder."
+msgstr "Un dossier eduCommons"
+
+# eduCommons object type information
+msgid "An eduCommons image."
+msgstr "Une image eduCommons"
+
+msgid "An eduCommons link."
+msgstr "Un lien eduCommons"
+
+msgid "An eduCommons page."
+msgstr "Une page eduCommons"
+
+msgid "Are you sure you want to delete the selected items?"
+msgstr "Êtes-vous sûr de vouloir supprimer les items sélectionnés ?"
+
+## Translation for eduCommons buttons
+msgid "Clear Copyright"
+msgstr "Copyright clarifié"
+
+msgid "Copyright revoked"
+msgstr "Copyright révoqué"
+
+msgid "Course"
+msgstr "Cours"
+
+msgid "Courses"
+msgstr "Cours"
+
+msgid "Department"
+msgstr "Département"
+
+msgid "Document"
+msgstr "Document"
+
+msgid "Error contacting server.  Please try again."
+msgstr "Erreur lors du contact du serveur. Essayez encore svp."
+
+msgid "Export"
+msgstr "Export"
+
+msgid "External Link"
+msgstr "Lien externe"
+
+msgid "FCKeditor configuration"
+msgstr "Configuration de l'éditeur FCKeditor"
+
+msgid "Feedback"
+msgstr ""
+
+msgid "File"
+msgstr "Fichier"
+
+msgid "HTML has been updated, but may still contain errors. Press &#39;save&#39; to keep the changes."
+msgstr "Le code HTML a été mis à jour, mais peut encore contenir des erreurs. Appuyez &#39;save&#39;  pour enregistrer les changements."
+
+msgid "HTML has been updated. Press &#39;save&#39; to keep the changes."
+msgstr "Le code HTML a été mis à jour. Appuyer &#39;save&#39; pour enregistrer les changements."
+
+msgid "Help"
+msgstr "Aide"
+
+msgid "Image"
+msgstr "Image"
+
+msgid "Import"
+msgstr "Import"
+
+msgid "Import/Export"
+msgstr "Import/Export"
+
+msgid "InProgress"
+msgstr "En progrès"
+
+msgid "Item(s) added to navigation."
+msgstr "Item(s) ajouté à la navigation"
+
+msgid "Item(s) copyright revoked."
+msgstr "Item(s) copyright retiré"
+
+msgid "Item(s) removed from navigation."
+msgstr "Item(s) retiré de la navigation"
+
+msgid "Logs"
+msgstr "Logs"
+
+msgid "Metadata"
+msgstr "Métadonée"
+
+msgid "Navigation Added"
+msgstr "Navigation ajoutée"
+
+msgid "Navigation Removed"
+msgstr "Navigation enlevée"
+
+msgid "OLS Discussion Group Administration"
+msgstr "Administration du groupe de discussion OLS."
+
+msgid "Order"
+msgstr "Commande"
+
+msgid "Personal Preferences"
+msgstr "Préférences personnelles"
+
+msgid "Please correct the following messages:"
+msgstr "Corrigez svp les messages suivants :"
+
+msgid "Please select one or more items to clear copyright."
+msgstr "Sélectionnez un item ou plus pour clarifier le copyright."
+
+msgid "Please select one or more items to remove from navigation."
+msgstr "Sélectionnez svp un item ou plus à retirer de la navigation."
+
+msgid "Please select one or more items to revoke copyright."
+msgstr "Sélectionnez un item ou plus pour révoquer le copyright."
+
+#. Default: "Plone Powered"
+#: ../skins/eduCommons/index_template.pt
+msgid "Plone Powered"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr ""
+
+msgid "Publish Content"
+msgstr "Publier le contenu"
+
+msgid "Publish Course"
+msgstr "Publier le cours"
+
+msgid "Publish Department"
+msgstr "Publier le département"
+
+msgid "Published Content"
+msgstr "Contenu publié"
+
+msgid "Quality Assurance"
+msgstr "Assurance qualité"
+
+msgid "Release Content for Publication"
+msgstr "Délivrer le contenu pour publication"
+
+msgid "Release Course for Publication"
+msgstr "Délivrer le cours pour publication"
+
+msgid "Release Department for Publication"
+msgstr "Délivrer le département pour publication"
+
+msgid "Released"
+msgstr "Délivré"
+
+msgid "Released for Publication"
+msgstr "Délivré pour publication"
+
+#. Default: "Relevance"
+#: ../skins/eduCommons/search.pt
+msgid "Relevance"
+msgstr ""
+
+msgid "Remove From Navigation"
+msgstr "Enlevez de la navigation"
+
+msgid "Retest Content"
+msgstr "Retestez le contenu"
+
+msgid "Retest Department"
+msgstr "Retestez le département"
+
+msgid "Retest Released Course"
+msgstr "Retestez le cours délivré"
+
+msgid "Revoke Copyright"
+msgstr "Révoquez le copyright"
+
+msgid "Rework Content"
+msgstr "Retravailler le contenu"
+
+msgid "Rework Course"
+msgstr "Retravailler le cours"
+
+msgid "Rework Department"
+msgstr "Retravailler le département"
+
+msgid "Rework Published Content"
+msgstr "Retravailler le contenu publié"
+
+msgid "Rework Published Course"
+msgstr "Retravailler le cours publié"
+
+msgid "Rework Published Department"
+msgstr "Retravailler le département publié"
+
+msgid "Rework Released Content"
+msgstr "Retravailler le contenu délivré"
+
+msgid "Rework Released Course"
+msgstr "Retravailler le cours délivré"
+
+msgid "Rework Released Department"
+msgstr "Retravailler le département délivré"
+
+msgid "Show In Navigation"
+msgstr "Montrer dans la navigation"
+
+msgid "Site Settings"
+msgstr "Configurations du site"
+
+msgid "Submit Content to QA"
+msgstr "Soumettre le contenu à l'AQ"
+
+msgid "Submit Course for QA"
+msgstr "Soumettre le cours pour l'AQ"
+
+msgid "Submit Department to QA"
+msgstr "Soumettre le département à l'AQ"
+
+msgid "Terms of Use"
+msgstr ""
+
+msgid "Tools"
+msgstr "Outils"
+
+msgid "Unable to fix XHTML errors.  Please update html and try again."
+msgstr "Impossible de réparer les erreurs du code XHTML. Mettez le code à jour et essayez encore svp."
+
+msgid "Warning: The following objects have not cleared copyright:"
+msgstr "Attention : les objets suivants n'ont pas un copyright clair :"
+
+msgid "Work in progress"
+msgstr "Travail en progrès"
+
+#. Default: "${number} items matching your criteria."
+#: ../skins/eduCommons/search.pt
+msgid "batch_x_items_matching_your_criteria"
+msgstr ""
+
+msgid "could not be added to navigation"
+msgstr "Ne peut pas être ajouté à la navigation"
+
+msgid "could not be copyright revoked."
+msgstr "Ne peut pas avoir de révocation de copyright."
+
+msgid "could not be removed from navigation."
+msgstr "Ne peut pas être enlevé de la navigation."
+
+#. Default: "This search form enables you to find content on the site by specifying one or more search terms. <br/> Remember that you can use the quick search anytime, it's normally good enough, this search form is just if you want to be more specific."
+#: ../skins/eduCommons/search_form.pt
+msgid "description_advanced_search"
+msgstr ""
+
+#. Default: "Configuration area for eduCommons and add-on Products."
+#: ../skins/eduCommons/plone_control_panel.pt
+msgid "description_control_panel"
+msgstr ""
+
+#. Default: "No results were found."
+#: ../skins/eduCommons/search.pt
+msgid "description_no_results_found"
+msgstr ""
+
+#. Default: "This folder has no visible items. To add content, press the add button, or paste content from another location."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "description_no_visible_items_add_paste"
+msgstr ""
+
+#. Default: "Note: Some or all of your PAS user source plugins do not allow listing of users, so you may not see the users defined by those plugins unless doing a specific search."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "description_pas_users_listing"
+msgstr ""
+
+#. Default: "Click the user's name to see and change the details of a specific user. Click the envelope icon to send a mail to the user. You can also edit the e-mail addresses, and add/remove users."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "description_user_management"
+msgstr ""
+
+#. Default: "This area allows you to set your preferences."
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "description_user_panel"
+msgstr ""
+
+msgid "eduCommons Setup"
+msgstr "Configurations eduCommons"
+
+msgid "eduCommons Skin Settings"
+msgstr ""
+
+#. Default: "Up one level"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "go_to_parent_url"
+msgstr ""
+
+msgid "have already been added to navigation."
+msgstr "A déjà été ajouté à la navigation."
+
+msgid "have already been removed from navigation."
+msgstr "A déjà été enlevé de la navigation."
+
+msgid "have already revoked copyright."
+msgstr "Le copyright a déjà été révoqué."
+
+#. Default: "Actions"
+#: ../skins/eduCommons/global_contentviews.pt
+msgid "heading_actions"
+msgstr ""
+
+#. Default: "Advanced search for content"
+#: ../skins/eduCommons/search_form.pt
+msgid "heading_advanced_search"
+msgstr ""
+
+#. Default: "eduCommons Setup"
+#: ../skins/eduCommons/plone_control_panel.pt
+msgid "heading_control_panel"
+msgstr ""
+
+#. Default: "Search results"
+#: ../skins/eduCommons/search.pt
+msgid "heading_search_results"
+msgstr ""
+
+#. Default: "My Preferences"
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "heading_user_panel"
+msgstr ""
+
+#. Default: "Users Overview"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "heading_users_overview"
+msgstr ""
+
+#. Default: "Views"
+#: ../skins/eduCommons/global_contentviews.pt
+msgid "heading_views"
+msgstr ""
+
+#. Default: "Return items matching this description. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_description"
+msgstr ""
+
+#. Default: "Return items taught be a particular instructor."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_instructor"
+msgstr ""
+
+#. Default: "Return items of a specific type."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_item_type"
+msgstr ""
+
+#. Default: "Return items added since you were last logged on, the last week, etc."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_new_items_since"
+msgstr ""
+
+#. Default: "As a reviewer, you may search for items based on their review state. If you wish to constrain results to items in certain states, select them from this list."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_review_status"
+msgstr ""
+
+#. Default: "For a simple text search, enter your search term here. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>. The text in this field will be matched with items' contents, title and description."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_text"
+msgstr ""
+
+#. Default: "Return items matching this title."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_title"
+msgstr ""
+
+#. Default: "Add Item"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "label_add_new_item"
+msgstr ""
+
+#. Default: "Add New User"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_add_new_user"
+msgstr ""
+
+#. Default: "Any Instructor"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_any_instructor"
+msgstr ""
+
+#. Default: "Apply Changes"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_apply_changes"
+msgstr ""
+
+#. Default: "Valid CSS"
+#: ../skins/eduCommons/footer.pt
+msgid "label_css"
+msgstr ""
+
+#. Default: "Description"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_description"
+msgstr ""
+
+#. Default: "Flags: - Cleared Copyright"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "label_flags"
+msgstr ""
+
+#. Default: "Get Email List"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_get_email_list"
+msgstr ""
+
+#. Default: "History"
+#: ../skins/eduCommons/review_history.pt
+msgid "label_history"
+msgstr ""
+
+#. Default: "Instructor"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_instructor"
+msgstr ""
+
+#. Default: "Item Type"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_item_type"
+msgstr ""
+
+#. Default: "New Items Since"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_new_items_since"
+msgstr ""
+
+#. Default: "No Preference Panels available."
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "label_no_panels_available"
+msgstr ""
+
+#. Default: "effective"
+#: ../skins/eduCommons/review_history.pt
+msgid "label_publishing_effective"
+msgstr ""
+
+#. Default: "Review Status"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_review_status"
+msgstr ""
+
+#. Default: "RSS feed of these search results"
+#: ../skins/eduCommons/search.pt
+msgid "label_rss_feed"
+msgstr ""
+
+#. Default: "Search"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_search"
+msgstr ""
+
+#. Default: "Search Text"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_search_text"
+msgstr ""
+
+#. Default: "Section 508"
+#: ../skins/eduCommons/footer.pt
+msgid "label_section_508"
+msgstr ""
+
+#. Default: "Select all items"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "label_select_all_items"
+msgstr ""
+
+#. Default: "Show all"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_showall"
+msgstr ""
+
+#. Default: "Skip to content."
+#: ../skins/eduCommons/index_template.pt
+msgid "label_skiptocontent"
+msgstr ""
+
+#. Default: "State"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "label_state"
+msgstr ""
+
+#. Default: "Title"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_title"
+msgstr ""
+
+#. Default: "Select All/None"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_toggle"
+msgstr ""
+
+#. Default: "Up to Site Setup"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_up_to_plone_setup"
+msgstr ""
+
+#. Default: "User Search"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_user_search"
+msgstr ""
+
+#. Default: "Users"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_users"
+msgstr ""
+
+#. Default: "WCAG"
+#: ../skins/eduCommons/footer.pt
+msgid "label_wcag"
+msgstr ""
+
+#. Default: "Valid XHTML"
+#: ../skins/eduCommons/footer.pt
+msgid "label_xhtml"
+msgstr ""
+
+#. Default: "Last log-in"
+#: ../skins/eduCommons/search_form.pt
+msgid "last_login"
+msgstr ""
+
+#. Default: "Search Terms"
+#: ../skins/eduCommons/search_form.pt
+msgid "legend_search_terms"
+msgstr ""
+
+#. Default: "Action"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_action"
+msgstr ""
+
+#. Default: "Comment"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_comment"
+msgstr ""
+
+#. Default: "Date and Time"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_date_and_time"
+msgstr ""
+
+#. Default: "E-mail Address"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_email_address"
+msgstr ""
+
+#. Default: "Flags"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_flags"
+msgstr ""
+
+#. Default: "Modified"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_modified"
+msgstr ""
+
+#. Default: "Performed by"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_performed_by"
+msgstr ""
+
+#. Default: "Remove user"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_remove_user"
+msgstr ""
+
+#. Default: "Reset Password"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_reset_password"
+msgstr ""
+
+#. Default: "Roles"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_roles"
+msgstr ""
+
+#. Default: "Size"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_size"
+msgstr ""
+
+#. Default: "State"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_status"
+msgstr ""
+
+#. Default: "Title"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_title"
+msgstr ""
+
+#. Default: "Type"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_type"
+msgstr ""
+
+#. Default: "User name"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_user_name"
+msgstr ""
+
+#. Default: "No comments."
+#: ../skins/eduCommons/review_history.pt
+msgid "no_comments"
+msgstr ""
+
+#. Default: "Did you not find what you were looking for? Try the ${advanced_search} for more precise search options."
+#: ../skins/eduCommons/search.pt
+msgid "search_results_advanced"
+msgstr ""
+
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/search.pt
+msgid "search_results_advanced_link"
+msgstr ""
+
+#. Default: "Review History"
+#: ../skins/eduCommons/review_history.pt
+msgid "summary_review_history"
+msgstr ""
+
+#. Default: "Enter a username to search for"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_no_user_searchstring"
+msgstr ""
+
+#. Default: "Enter a username to search for, or click 'Show All'"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_no_user_searchstring_largesite"
+msgstr ""
+
+#. Default: "No matches"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_nomatches"
+msgstr ""
+
+#. Default: "Ever"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_ever"
+msgstr ""
+
+#. Default: "Last month"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_last_month"
+msgstr ""
+
+#. Default: "Last week"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_last_week"
+msgstr ""
+
+#. Default: "Yesterday"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_yesterday"
+msgstr ""
+
+#. Default: "Add new items inside this item"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "title_add_new_items_inside_item"
+msgstr ""
+
+#. Default: "This Plone site was built with valid CSS."
+#: ../skins/eduCommons/footer.pt
+msgid "title_built_with_css"
+msgstr ""
+
+#: ../skins/eduCommons/footer.pt
+msgid "title_built_with_plone"
+msgstr ""
+
+#. Default: "RSS feed of these search results"
+#: ../skins/eduCommons/search.pt
+msgid "title_rss_feed"
+msgstr ""
+
+#. Default: "This Plone site conforms to the US Government Section 508 Accessibility Guidelines."
+#: ../skins/eduCommons/footer.pt
+msgid "title_section_508"
+msgstr ""
+
+#. Default: "Send a mail to this user"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "title_send_mail_to_user"
+msgstr ""
+
+#. Default: "This Plone site is valid XHTML."
+#: ../skins/eduCommons/footer.pt
+msgid "title_valid_xhtml"
+msgstr ""
+
+#. Default: "This Plone site conforms to the W3C-WAI Web Content Accessibility Guidelines."
+#: ../skins/eduCommons/footer.pt
+msgid "title_wcag_conformance"
+msgstr ""
+
+#. Default: "Note that roles listed here apply directly to a user. They do not reflect additional roles users may have due to group memberships."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "user_role_note"
+msgstr ""
+

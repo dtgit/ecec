@@ -1,0 +1,13 @@
+[security]
+View=0:Manager
+
+[default]
+title=FSS Management
+
+[validators]
+validators=
+validators..cancel=
+
+[actions]
+action.success=traverse_to:string:fss_management_edit
+action.failure=traverse_to:string:fss_management_form

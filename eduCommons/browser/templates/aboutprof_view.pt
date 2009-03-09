@@ -1,0 +1,29 @@
+<div id="about">
+<table id="aboutTable"
+       border="0" 
+       cellspacing="0"
+       cellpadding="0" 
+       summary="Information about Professor"
+       i18n:translate="summary table_about_prof;">
+ <tbody>
+  <tr>
+   <td id="aboutPhoto">
+     <!-- Use eduCommons insert link functionality to create this link -->        
+     <img alt="Professor Image" title="Professor Image" width="275" height="275" border="0" 
+          src=""
+          tal:attributes="src string:${here/portal_url}/eduCommonsDivision.gif"/>
+   </td>
+   <td id="aboutInfo">
+     <h3>Professor X, Ph.D.</h3>
+     <p>Department Head / Professor</p>
+     <p>Department Name<br /> 
+     Institution Name</p>
+  
+     <p>Additional notes about Professor X.</p>
+
+   </td>
+  </tr>
+ </tbody>
+</table>
+
+</div>

@@ -1,0 +1,9 @@
+[default]
+title = Add RDF files
+
+[validators]
+validators = 
+
+[actions]
+action.success = redirect_to:string:fss_maintenance_form
+action.failure = redirect_to:string:fss_maintenance_form

@@ -1,0 +1,92 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+	   xmlns:browser="http://namespaces.zope.org/browser"
+	   i18n_domain="eduCommons">
+
+
+  <browser:page
+     name="division_view"
+     for="...interfaces.IDivision"
+     class="..coursestopic.DivisionPageView"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="course_view"
+     for="...interfaces.ICourse"
+     class="..coursestopic.CoursePageView"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="aboutprof_view"
+     for="*"
+     template="aboutprof_view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="frontpage_view"
+     for="*"
+     template="frontpage_view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="abouttext_view"
+     for="*"
+     template="abouttext_view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="accessibilityguidelines_view"
+     for="*"
+     template="accessibilityguidelines_view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="faq_view"
+     for="*"
+     template="faq_view.pt"
+     permission="zope2.View"
+     />
+
+
+  <browser:page
+     name="privacypolicy_view"
+     for="*"
+     template="privacypolicy_view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="schedule_view"
+     for="*"
+     template="schedule_view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="syllabus_view"
+     for="*"
+     template="syllabus_view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="tou_view"
+     for="*"
+     template="tou_view.pt"
+     permission="zope2.View"
+     />
+
+
+  <browser:page
+     name="feedback_view"
+     for="*"
+     template="feedback_view.pt"
+     permission="zope2.View"
+     />
+
+</configure>

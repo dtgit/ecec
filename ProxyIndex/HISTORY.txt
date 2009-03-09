@@ -1,0 +1,40 @@
+Copyright (c) 2003, 2004 Infrae. All rights reserved.
+See also LICENSE.txt
+$Revision: 1.4 $
+
+ProxyIndex changes
+  1.2.1 (unreleased)
+ 
+      - Fixed deprecation warning in Zope 2.10
+
+      - Tests now use (and require) ZopeTestCase
+        instead of depending on CMF.
+
+  1.2
+
+    Bugs Fixed
+
+      - Zope 2.7 is supported now.
+
+      - Fixed compatibility problem with python2.3:
+        ProxyIndex.RecordStyle did not raise an AttributeError
+        but a KeyError in __getattr__, preventing class attribute
+        lookup with python2.3.
+
+  1.1.2
+
+    Bugs Fixed
+
+      - items method used for sort_on added.
+
+  1.1.1
+   
+    Features added
+
+      - Release documentation updates, making it fit the Infrae scheme.
+
+  1.1
+ 
+    Initial public release of ProxyIndex
+
+

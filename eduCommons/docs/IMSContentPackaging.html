@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.5: http://docutils.sourceforge.net/" />
+<title></title>
+<link rel="stylesheet" href="./default.css" type="text/css" />
+</head>
+<body>
+<div class="document">
+
+
+<div class="section" id="ims-content-packaging-and-educommons-3-1-1-final">
+<h1>IMS Content Packaging and eduCommons 3.1.1-final</h1>
+<p>This document details how to write IMS Content packages that are compatible with
+eduCommons 3.1.1-final.</p>
+<p>eduCommons uses version 1.2 of the IMS Content Packaging Specification. XML Schemas
+for the specification can be found at <a class="reference external" href="http://imsglobal.org/xsd/imscp_v1p2.xsd">http://imsglobal.org/xsd/imscp_v1p2.xsd</a> and
+<a class="reference external" href="http://imsglobal.org/xsd/imsmd_v1p2p4.xsd">http://imsglobal.org/xsd/imsmd_v1p2p4.xsd</a>.</p>
+</div>
+<div class="section" id="using-xml-schemas-and-a-validating-xml-editor">
+<h1>Using XML Schemas and a Validating XML Editor</h1>
+<p>In the process of writing software that exports eduCommons supported IMS Content
+Packages, it is highly recommended to use a validating XML editor and associated
+schema files to check manifests for validity. eduCommons in some circumstances
+will expect import manifests to meet validity standards, and the chances of
+creating content packages that will work with eduCommons will be greatly increased.
+eduCommons provides XML schema files on export for this purpose.</p>
+<p>An XML schema file for eduCommons specific metadata can be found both online
+(<a class="reference external" href="http://cosl.usu.edu/xsd/eduCommonsv1.1.xsd">http://cosl.usu.edu/xsd/eduCommonsv1.1.xsd</a>) and in eduCommons IMS Content
+Packages.</p>
+<p>To use the IMS Content Package XML schemas along with the eduCommons schema, make
+sure your manifest specifies these packages and the relevant XML schema informtation
+in the header. Below is an example of attributes which you may want to set on the
+<em>manifest</em> tag.</p>
+<pre class="literal-block">
+xmlns=&quot;http://www.imsglobal.org/xsd/imscp_v1p1&quot;
+xmlns:eduCommons=&quot;http://cosl.usu.edu/xsd/eduCommonsv1.1&quot;
+xmlns:imsmd=&quot;http://www.imsglobal.org/xsd/imsmd_v1p2&quot;
+xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+xsi:schemaLocation=&quot;http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p2.xsd
+                    http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p4.xsd
+                    http://cosl.usu.edu/xsd/eduCommonsv1.2 eduCommonsv1.2.xsd&quot;&gt;
+</pre>
+</div>
+<div class="section" id="specifying-and-using-educommons-namespaces">
+<h1>Specifying and Using eduCommons Namespaces</h1>
+<p>The IMS CP specification allows content packages to be extended using custom
+metadata fields. eduCommons takes advantage of this to pass information that
+does not fit into the LOM metadata format. Using the eduCommons extensions
+requires the use of the eduCommons namespace in typical XML style.</p>
+<p>eduCommons can read values from colon prefixed tags, or by using an <em>xmlns</em>
+attribute on the top level eduCommons tag as shown below. Although both methods
+are acceptable, the latter is preferred due to the fact that it makes the
+corresponding XML more readable. Examples in the rest of the document will
+be given in this format.</p>
+<pre class="literal-block">
+&lt;manifest xmlns=&quot;....
+          xmlns:eduCommons=&quot;http://cosl.usu.edu/xsd/eduCommonsv1.2&quot;
+          ...
+          &gt;
+
+    ...
+
+    &lt;eduCommons:eduCommons&gt;
+        &lt;eduComons:objectType&gt;
+            Course
+        &lt;/eduCommons:objectType&gt;
+    &lt;/eduCommons:eduCommons&gt;
+
+    ...
+ &lt;/manifest&gt;
+</pre>
+<pre class="literal-block">
+&lt;eduCommons xmlns=&quot;http://cosl.usu.edu/xsd/eduCommonsv1.2&quot;&gt;
+    &lt;objectType&gt;
+        Course
+    &lt;/objectType&gt;
+&lt;/eduCommons&gt;
+</pre>
+</div>
+<div class="section" id="how-to-make-items-appear-in-the-left-hand-navigation">
+<h1>How to Make Items Appear in the Left Hand Navigation</h1>
+<p>eduCommons will add links to objects in the left hand navigation of a course
+view through the use of the <em>organizations</em> section in an IMS content package.
+Becuase IMS CP standards support multiple organizations within a manifest,
+eduCommons will use the default organization if it is specified. If no default
+is specified eduCommons will read from the first <em>organization</em> tag listed
+in the organizations section.</p>
+<p>eduCommons gets its left hand navigation information from the <em>isVisible</em> attribute
+on items. If this attribute is present and set to true, eduCommons will mark
+this object as displayable in the left hand navigation. eduCommons will order
+left hand navigation items based on the ordering of <em>item</em> tags within the
+organization section.</p>
+<p>An example of how to write an organizations section that eduCommons can read is
+given below. Notice how the default organization section is set, and how unique
+identifiers are used to link the item to the resource in the resources section.</p>
+<p>The IMS CP specification requires that any id value use be unique to the manifest,
+otherwise anything can be used.</p>
+<pre class="literal-block">
+&lt;oganizations default=&quot;ORG1234&quot;&gt;
+    &lt;organization identifier=&quot;ORG1234&quot;&gt;
+        &lt;item identifier=&quot;ITM1234&quot; identifierref=&quot;RES1234&quot; isVisible=&quot;true&quot;&gt;
+            &lt;title&gt;
+                Hello World
+            &lt;/title&gt;
+        &lt;/item&gt;
+        ...
+    &lt;/organization&gt;
+&lt;/organizations&gt;
+&lt;resources&gt;
+    &lt;resource identifier=&quot;RES1234&quot;&gt;
+       ...
+    &lt;/resource&gt;
+    ...
+&lt;/resources&gt;
+</pre>
+</div>
+<div class="section" id="setting-metadata-on-educommons-enabled-ims-content-packages">
+<h1>Setting Metadata on eduCommons Enabled IMS Content Packages</h1>
+<p>eduCommons stores metadata for every content object entered into its repository.
+In order to write a content package that eduCommons can process, it is necessary
+to include a metadata section for every resource specified in the manifest.</p>
+<p>It is also important to note that eduCommons currently will not read top level
+metadata sections, nor will it support nested manifests within IMS Content
+Packages. Support for nested manifests, and non eduCommons content packages
+are currently listed as future eduCommons features.</p>
+<p>An example of how to lay out your manifest section to be eduCommons friendly is
+given below.</p>
+<pre class="literal-block">
+&lt;manifest&gt;
+    &lt;organizations&gt;
+        &lt;organization&gt;
+        &lt;/organization&gt;
+    &lt;/organizations&gt;
+    &lt;metadata&gt;
+        ... any metadata specified here is ignored by eduCommons ...
+    &lt;/metadata&gt;
+    &lt;resources&gt;
+        &lt;resource&gt;
+            &lt;metadata&gt;
+               ... metadata specified here is used to apply metadata
+                   to content objects ...
+            &lt;/metadata&gt;
+            &lt;file href=&quot; ... used by eduCommons to name the content object
+                             and find it within the package ...&quot;/&gt;
+        &lt;/resource&gt;
+        ...
+    &lt;/resources&gt;
+    &lt;manifest&gt;
+        ... nested manifests are not currently supported by eduCommons,
+            but may be at a future date ...
+    &lt;/manifest&gt;
+&lt;/manifest&gt;
+</pre>
+</div>
+<div class="section" id="the-educommons-course-object">
+<h1>The eduCommons Course Object</h1>
+<p>The eduCommons course object is different to other content objects in that
+it has extra requirements. eduCommons represents courses as both a document
+and a container for content objects. This means in an IMS Manifest it will
+appear as a content object that is connected to an HTML file (used to
+render the front course page) and is also a folder which contains  all content
+related to the course. It appears in the manifest as both.</p>
+<p>Courses also have additional metadata associated with them in the eduCommons
+specific metadata section. This extra metadata is specified in a further section
+below.</p>
+<p>Each manifest should specify a course object as the initial resource.</p>
+</div>
+<div class="section" id="lom-metadata-fields-read-by-educommons-on-import">
+<h1>LOM Metadata Fields Read By eduCommons on Import</h1>
+<p>eduCommons uses Dublin Core fields to store metadata internally. In order to
+be able to support IEEE LOM metadata standards in IMS Content Packages, some
+mapping between metadata standards must be done. Not all LOM metadata fields
+are supported, and although eduCommons may populate some of these extra fields
+on output, it only supports reading data from the following fields:</p>
+<div class="section" id="general">
+<h2>1. General</h2>
+<div class="section" id="title">
+<h3>1.2 Title</h3>
+<p>eduCommons uses this field to set the title on an object. This field is
+required.</p>
+</div>
+<div class="section" id="language">
+<h3>1.3 Language</h3>
+<p>eduCommons uses the language setting to set the language of the content object
+and its metadata. eduCommons does not support setting language values on metadata
+or individual metadata fields. All LOM language attributes in &quot;langstring&quot; nodes
+are ignored by eduCommons. This field is optional, but recommended.</p>
+</div>
+<div class="section" id="description">
+<h3>1.4 Description</h3>
+<p>eduCommons sets descriptions on content objects using this field. This field is
+optional, but recommended.</p>
+</div>
+<div class="section" id="keyword">
+<h3>1.5 Keyword</h3>
+<p>eduCommons supports the use of keywords for search purposes over content. It
+uses this LOM field. This field is optional.</p>
+</div>
+</div>
+<div class="section" id="lifecycle">
+<h2>2. Lifecycle</h2>
+<div class="section" id="contribute">
+<h3>2.3 Contribute</h3>
+<p>eduCommons supports a number of fields based on the LOM Contribute node.</p>
+<p>When the role in a contribute node is set to &quot;creator&quot;, eduCommons will
+set the eduCommons creator field to the name value in the VCARD of this
+section. When the role is set to &quot;creator&quot; it will also use the date field
+to set the creation date on the eduCommons content object.</p>
+<p>eduCommons will set its contributors field with the names listed in any other
+LOM based contribute nodes. The roles defined in additional LOM based contribute
+nodes are not read or stored by eduCommons.</p>
+<p>eduCommons also supports a number of eduCommons specific contribute nodes
+which are detailed in the next section.</p>
+</div>
+</div>
+<div class="section" id="other">
+<h2>Other</h2>
+<p>eduCommons may support a larger number of LOM fields in the future. The current
+supported set is likely to be expanded. However, attempts will be made to remain
+compatible with the above listed fields.</p>
+</div>
+</div>
+<div class="section" id="lom-based-educommons-metadata-fields">
+<h1>LOM Based eduCommons Metadata Fields</h1>
+<div class="section" id="the-rights-holder-field">
+<h2>The <em>rights holder</em> field</h2>
+<p>eduCommons supports setting a rights holder for every content object. However, it
+also supports setting content to use a site wide default, making it possible to
+set a default rights holder over the whole eduComomns site. To use the site wide
+default setting, use &quot;(site default)&quot; as the rights holder name.</p>
+<p>eduCommons will read an write the rights holder information in a <em>contribute</em>
+section in the LOM metadata section of an IMS content package. The <em>source</em>
+tag in this contribute section is set to &quot;eduCommonsv1.1&quot; signifying that this
+role is defined by eduCommons and is not a standard LOM role. An example of how
+the rights holder is given below. The date field can be set to a publication or
+creation date. It does not matter, as eduCommons does not use the date field in
+this section.</p>
+<pre class="literal-block">
+&lt;contribute&gt;
+    &lt;role&gt;
+        &lt;source&gt;
+            &lt;langstring xml:lang=&quot;en&quot;&gt;
+                eduCommonsv1.2
+            &lt;/langstring&gt;
+        &lt;/source&gt;
+        &lt;value&gt;
+            &lt;langstring xml:lang=&quot;en&quot;&gt;
+                rights holder
+            &lt;/langstring&gt;
+        &lt;/value&gt;
+    &lt;/role&gt;
+    &lt;centity&gt;
+        &lt;vcard&gt;
+            BEGIN:VCARD
+            FN: John Smith
+            END:VCARD
+        &lt;/vcard&gt;
+    &lt;/centity&gt;
+    &lt;date&gt;
+        &lt;datetime&gt;
+            2006-08-07 15:59:23
+        &lt;/datetime&gt;
+    &lt;/date&gt;
+&lt;/contribute&gt;
+</pre>
+<dl class="docutils">
+<dt>Note</dt>
+<dd>The VCARD Section In The Xml File Should Be Left Aligned, With No Whitespace In
+Order To Comply With VCARD Standards.</dd>
+</dl>
+</div>
+<div class="section" id="the-instructor-and-instructoremail-fields">
+<h2>The <em>Instructor</em> and <em>InstructorEmail</em> fields</h2>
+<p>The instructor field is also encoded in a LOM contribute node, similar to the
+rights holder field above. Things to note here are that eduCommons will read both
+the <em>FN:</em> and <em>EMAIL;INTERNET:</em> fields out of the VCARD, and use them to set
+the <em>Instructor</em> and <em>InstructorEmail</em> settings accordingly.</p>
+<pre class="literal-block">
+&lt;contribute&gt;
+    &lt;role&gt;
+        &lt;source&gt;
+            eduCommonsv1.2
+        &lt;/source&gt;
+        &lt;value&gt;
+            instructor
+        &lt;/value&gt;
+    &lt;/role&gt;
+    &lt;centity&gt;
+        &lt;vcard&gt;
+            BEGIN:VCARD
+            FN: John Smith
+            EMAIL;INTERNET: johnsmith&#64;somewhere.com
+            END:VCARD
+        &lt;/vcard&gt;
+    &lt;/centity&gt;
+    &lt;date&gt;
+        &lt;datetime&gt;
+            2006-08-07 15:59:23
+        &lt;/datetime&gt;
+    &lt;/date&gt;
+&lt;/contribute&gt;
+</pre>
+<dl class="docutils">
+<dt>Note</dt>
+<dd>The VCARD Section In The Xml File Should Be Left Aligned, With No Whitespace In
+Order To Comply With VCARD Standards.</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="educommons-specific-metadata">
+<h1>eduCommons Specific Metadata</h1>
+<p>This section details eduCommons metadata that does not appear within the LOM
+metadata section. Instead it appears in a section following the LOM metadata as
+follows.</p>
+<pre class="literal-block">
+&lt;metadata&gt;
+    &lt;lom xmlns=&quot;http://www.imsglobal.org/xsd/imsmd_v1p2&quot;&gt;
+        &lt;general&gt;
+        &lt;/general&gt;
+        &lt;lifecycle&gt;
+        &lt;/lifecycle&gt;
+        ...
+    &lt;/lom&gt;
+    &lt;eduCommons xmlns=&quot;http://cosl.usu.edu/xsd/eduCommonsv1.2&quot;&gt;
+       &lt;objectType&gt;
+       &lt;/objectType&gt;
+       ...
+    &lt;/eduCommons&gt;
+&lt;/metadata&gt;
+</pre>
+<p>The following section describes the tags supported by eduCommons in detail.</p>
+</div>
+<div class="section" id="educommons-metadata-tags">
+<h1>eduCommons Metadata Tags</h1>
+<div class="section" id="the-objecttype-tag">
+<h2>The <em>objectType</em> tag</h2>
+<p>The <em>objectType</em> tag is used to signify what type of content object eduCommons
+should create for the given resource. Possible values are Course, Document,
+File, Image, or Link. This field is required. HTML or plain text resources
+should use the document setting. Images should use the image setting. All other
+resources should use the File setting, unless they are an external link. If
+a resource is in HTML format and represents a course home page, use the Course
+setting and make sure the resource appears first in the manifest resources
+section.</p>
+<pre class="literal-block">
+&lt;objectType&gt;
+    Course
+&lt;/objectType&gt;
+</pre>
+</div>
+<div class="section" id="the-copyright-tag">
+<h2>The <em>copyright</em> tag</h2>
+<p>The <em>copyright</em> tag is used by eduCommons to license content objects. It also uses
+the field to render copyright bylines for objects. The field should specify both
+the copyright and the date. e. g. &quot;Copyright 2006&quot;. This field is optional. If
+it is not included, the site default copyright string will be used instead.</p>
+<pre class="literal-block">
+&lt;copyright&gt;
+    Copyright 2006
+&lt;/copyright&gt;
+</pre>
+</div>
+<div class="section" id="the-license-tag">
+<h2>The <em>license</em> tag</h2>
+<p>The license tag is used to assign a copyright license to a content object. It
+is also used to render a copyright byline for an object.</p>
+<p>The license field supports four parameters:</p>
+<ul class="simple">
+<li>License Cateogory</li>
+<li>License Name</li>
+<li>License URL</li>
+<li>License Icon URL</li>
+</ul>
+<p>The category field appears as an attribute in the <em>license</em> tag, and must be
+set to one of the following:</p>
+<ul class="simple">
+<li>(site default)</li>
+<li>All Rights Reserved</li>
+<li>GNU Free Document License</li>
+<li>Creative Commons License</li>
+<li>Other</li>
+</ul>
+<p>The category field is also used as a label by eduCommons to allow a user to
+select a copyright license for a content object. It is a required field.</p>
+<p>The <em>licenseName</em> tag is used to identify the name of the license. This name
+will be used in the copyright byline, and should slot into the following sentence:
+This resource is licensed under a ____________. This is an optional field only
+if &quot;(site default)&quot; is chosen. Otherwise it must be specified.</p>
+<p>The <em>licenseUrl</em> tag is used to specify a public web site where the legal definition
+of the license is displayed. It allows the license name in the copyright byline to
+be linked directly to the definition. It is optional.</p>
+<p>The <em>licenseIconUrl</em> tag is used to specify a public icon image that represents
+the content license. This field is optional, and likely not to be included, unless
+the license includes a representative icon. An example where you would want
+to include this field would be to specify a creative commons icon along with
+the license.</p>
+<p>Below is an example of how the license field would be encoded within the eduCommons
+metadata.</p>
+<pre class="literal-block">
+&lt;license category=&quot;Creative Commons License&quot;&gt;
+    &lt;licenseName&gt;
+        Attribution 2.5
+    &lt;/licenseName&gt;
+    &lt;licenseUrl&gt;
+        http://creativecommons.org
+    &lt;/licenseUrl&gt;
+    &lt;licenseIconUrl&gt;
+        http://creativecommons.org
+    &lt;/licenseIconUrl&gt;
+&lt;/license&gt;
+</pre>
+</div>
+<div class="section" id="the-clearedcopyright-tag">
+<h2>The <em>clearedCopyright</em> tag</h2>
+<p>The <em>clearedCoypright</em> field is used by eduCommons to keep track of whether or not
+a content object has been cleared for publication in an open content environment.
+It can be set to either &quot;true&quot; or &quot;false&quot;. This field is optional, and is set to
+&quot;false&quot; by default.</p>
+<pre class="literal-block">
+&lt;clearedCopyright&gt;
+    true
+&lt;/clearedCopyright&gt;
+</pre>
+</div>
+</div>
+<div class="section" id="course-related-metadata">
+<h1>Course related metadata</h1>
+<p>The following metadata is only applicable when the <em>objectType</em> field is set
+to Course. It contains metadata that is specific to course objects.</p>
+<div class="section" id="the-courseid-tag">
+<h2>The <em>courseId</em> tag</h2>
+<p>The <em>courseId</em> tag is used to identify the course catalog number at an institution.
+It is used by eduComomns to render a full title of a course. Although this tag not
+required, is highly recommended.</p>
+<pre class="literal-block">
+&lt;courseId&gt;
+    INST7000
+&lt;/courseId&gt;
+</pre>
+</div>
+<div class="section" id="the-term-tag">
+<h2>The <em>term</em> tag</h2>
+<p>The <em>term</em> tag is used by eduCommons to specify which term, or semester the course
+was taught in. It is used by eduCommons to render a full title of a course. Although
+this tag is not required, it is highly recommended.</p>
+<pre class="literal-block">
+&lt;term&gt;
+    Fall 2005
+&lt;/term&gt;
+</pre>
+</div>
+<div class="section" id="the-displayinstructoremail-tag">
+<h2>The <em>displayInstructorEmail</em> tag</h2>
+<p>The <em>displayInstructorEmail</em> tag is used to specify whether or not an Instructor's
+Email address should be published or not. It can be set to &quot;true&quot; or &quot;false&quot;.
+This tag is optional and defaults to &quot;false&quot;.</p>
+<pre class="literal-block">
+&lt;displayInstructorEmail&gt;
+    false
+&lt;/displayInstructorEmail&gt;
+</pre>
+</div>
+</div>
+<div class="section" id="example-ims-content-packages">
+<h1>Example IMS Content Packages</h1>
+<p>You can create example IMS packages by building content in eduCommons and then
+use the IMS export functionality to export them. This feature can be useful
+in figuring out how to write compatible packages.</p>
+</div>
+</div>
+<div class="footer">
+<hr class="footer" />
+<a class="reference external" href="IMSContentPackaging.txt">View document source</a>.
+Generated on: 2008-04-09 18:43 UTC.
+Generated by <a class="reference external" href="http://docutils.sourceforge.net/">Docutils</a> from <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> source.
+
+</div>
+</body>
+</html>

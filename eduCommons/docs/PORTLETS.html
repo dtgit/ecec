@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.5: http://docutils.sourceforge.net/" />
+<title></title>
+<link rel="stylesheet" href="./default.css" type="text/css" />
+</head>
+<body>
+<div class="document">
+
+
+<div class="section" id="adding-portlets-to-educommons">
+<h1>Adding Portlets To eduCommons</h1>
+<p>A portlet is a user-interface component that can be &quot;plugged-in&quot; to the architecture of Plone, the framework upon which eduCommons is based. There are several portlets that are natively available when you install eduCommons: the Course Info portlet that appears in the right navigation is an example, the Course Builder portlet is another. This tutorial will explain how portlets can be added and removed and how you can create your own portlet from scratch.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#adding-and-removing-existing-portlets">Adding and Removing Existing Portlets</a></li>
+<li><a class="reference internal" href="#creating-your-own-portlet">Creating Your Own Portlet</a>.</li>
+<li><a class="reference internal" href="#customizing-portlets">Customizing Portlets</a>.</li>
+<li><a class="reference internal" href="#oerrecommender-portlet">OerRecommender Portlet</a>.</li>
+<li><a class="reference internal" href="#coursebuilder-portlet">CourseBuilder Portlet</a>.</li>
+<li><a class="reference internal" href="#courseinfo-portlet">CourseInfo Portlet</a>.</li>
+<li><a class="reference internal" href="#additional-resources">Additional Resources</a>.</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<span id="adding-and-removing-existing-portlets"></span><h1>Adding and Removing Existing Portlets</h1>
+<p>If a portlet already exists that you either want to remove or add, follow these steps.</p>
+<ul class="simple">
+<li>navigate to the site as an administrator.</li>
+<li>click on the <em>manage portlets</em> link.</li>
+</ul>
+<p>The <em>manage portlets</em> page allows you to add and remove portlets.</p>
+<ul class="simple">
+<li>To add a portlet click on the <em>Add portlet...</em> drop down menu and select the portlet to add.</li>
+<li>To delete a portlet click on the small red <em>x</em> next to the portlet to remove.</li>
+</ul>
+<p>You can also change the order that the portlets appear by using the small blue arrows next to the porlets.</p>
+</div>
+<div class="section" id="id2">
+<span id="creating-your-own-portlet"></span><h1>Creating Your Own Portlet</h1>
+<p>One of the simplest ways to create a portlet is to use the ZopeSkel tool to create a skeleton product that you can then modify for your own purposes. The Plone site has an <a class="reference external" href="http://plone.org/documentation/how-to/use-paster/">excellent article describing how to install and use the ZopeSkel tool</a>. Once you have ZopeSkel installed you can create a new portlet package using the plone3_portlet template.</p>
+<pre class="literal-block">
+paster create -t plone3_portlet
+</pre>
+<p>Enter the information, as prompted, for the portlet you are creating. To select the defaults, just press enter.</p>
+<pre class="literal-block">
+Enter project name: SamplePortletProject
+Variables:
+  egg:      SamplePortletProject
+  package:  sampleportletproject
+  project:  SamplePortletProject
+Enter namespace_package (Namespace package (like plone)) ['collective']: sample_portlet_project
+Enter namespace_package2 (Nested namespace package (like app)) ['portlet']:
+Enter package (The package contained namespace package (like example)) ['example']:
+Enter zope2product (Are you creating a Zope 2 Product?) [True]:
+Enter version (Version) ['0.1']:
+Enter description (One-line description of the package) ['']: This is a sample portlet product
+Enter long_description (Multi-line description (in reST)) ['']:
+Enter author (Author name) ['Plone Foundation']:
+Enter author_email (Author email) ['plone-developers&#64;lists.sourceforge.net']:
+Enter keywords (Space-separated keywords/tags) ['']:
+Enter url (URL of homepage) ['http://plone.org']:
+Enter license_name (License name) ['GPL']:
+Enter zip_safe (True/False: if the package can be distributed as a .zip file) [False]:
+Enter portlet_name (Portlet name (human readable)) ['Example portlet']: Sample Portlet
+Enter portlet_type_name (Portlet type name (should not contain spaces)) ['ExamplePortlet']: SamplePortlet
+</pre>
+<p>A portlet package will be created in the folder where you ran the script. Follow the directions in the Plone article to install the new portlet package using easy_install. Another option is to tell the paster script to create a Plone 2 product and then copy this product into the Products directory of your plone instance (the Plone 2 product is buried down a few levels in the package). In either case, after you restart your Plone instance and navigate to the <em>Add-on Products</em> page of your Plone site you will see the new product listed. After installing the product into your Plone site you will be able to manage it as you do the other portlets in your site.</p>
+</div>
+<div class="section" id="id3">
+<span id="customizing-portlets"></span><h1>Customizing Portlets</h1>
+<p>If you look at the code, generated in the last section, you will see that this new product is relatively simple. It contains a configure.zcml file, a template file, a python file, a profile folder, and a tests folder. Often the only places that will need to be changed to customize the portlet will be the template file and the renderer within the python file. Here are some examples of portlets that do just that:</p>
+<div class="section" id="id4">
+<span id="oerrecommender-portlet"></span><h2>OerRecommender Portlet</h2>
+<p>This is the <a class="reference external" href="http://cosl.usu.edu/svndev/eduCommons3/tags/3.1.0-final/portlet/oerrecommender.pt">oerrecommender.pt</a> template file for the oerrecommender. The file consists of a script tag that retrieves a series of recommendations from oerrecommender.org.</p>
+<pre class="literal-block">
+&lt;div id=&quot;recommendations&quot;&gt;
+  &lt;script language=&quot;JavaScript&quot;
+          tal:define=&quot;url here/absolute_url&quot;
+          tal:attributes=&quot;src string:http://www.oerrecommender.org/recommendations.pjs?educommons=true&amp;u=${url}&amp;title=true;&quot;
+          type=&quot;text/javascript&quot;&gt;
+  &lt;/script&gt;
+&lt;/div&gt;
+</pre>
+<p>Here is the renderer for the <a class="reference external" href="http://cosl.usu.edu/svndev/eduCommons3/tags/3.1.0-final/portlet/oerrecommenderportlet.py">oerrecommenderportlet.py</a> file.</p>
+<pre class="literal-block">
+class Renderer(base.Renderer):
+    &quot;&quot;&quot; Render the OER Portlet &quot;&quot;&quot;
+    render = ViewPageTemplateFile('oerrecommender.pt')
+
+    def __init__(self, context, request, view, manager, data):
+        super(Renderer, self).__init__(context, request, view, manager, data)
+        self.props = self.context.portal_properties.educommons_properties
+
+    &#64;property
+    def available(self):
+        return self.props.oerrecommender_enabled
+</pre>
+<p>You'll notice that the renderer is where we define which page template to use when rendering the template. This file also contains a property that allows the portlet to be conditionally displayed based on whether the oerrecommender is enabled.</p>
+</div>
+<div class="section" id="id5">
+<span id="coursebuilder-portlet"></span><h2>CourseBuilder Portlet</h2>
+<p>The Course Builder tool allows users to quickly create a course with its associated files and departments.  In this <a class="reference external" href="http://cosl.usu.edu/svndev/eduCommons3/tags/3.1.0-final/portlet/coursebuilder.pt">coursebuilder.pt</a> template file you can see the portlet displaying a link to the Course Builder form (the '&#64;&#64;' symbol signifies that the resource is a view).</p>
+<pre class="literal-block">
+&lt;dl class=&quot;portlet portletCourseBuilder&quot;
+    i18n:domain=&quot;eduCommons&quot;&gt;
+
+  &lt;dt class=&quot;portletHeader&quot;
+      i18n:translate=&quot;box_course_builder&quot;&gt;
+    Course Builder
+  &lt;/dt&gt;
+
+  &lt;dd class=&quot;portletItem even&quot;&gt;
+    &lt;a href=&quot;&quot;
+         i18n:translate=&quot;text_build_course&quot;
+         tal:attributes=&quot;href string:${here/portal_url}/&#64;&#64;coursebuilderform&quot;&gt;Build a Course&lt;/a&gt;
+  &lt;/dd&gt;
+
+&lt;/dl&gt;
+</pre>
+</div>
+<div class="section" id="courseinfo-portlet">
+<span id="courseinfo-example"></span><h2>CourseInfo Portlet</h2>
+<p>The CourseInfo portlet displays course statistics for the objects within each course. Methods are defined with the python file that are then used with the template file. For example, the renderer for the portlet in the <a class="reference external" href="http://cosl.usu.edu/svndev/eduCommons3/tags/3.1.0-final/portlet/courseinfoportlet.py">courseinfoportlet.py</a> file contains several methods</p>
+<pre class="literal-block">
+...
+def statePercent(self, state=''):
+  &quot;&quot;&quot; return the percent value for a given state &quot;&quot;&quot;
+
+  if 0 == self.total:
+    return '0%'
+  else:
+    width = float(self.stateCounts[state])/float(self.total) * 100.0
+    return '%d%%' %int(width)
+...
+</pre>
+<p>that are then used in the <a class="reference external" href="http://cosl.usu.edu/svndev/eduCommons3/tags/3.1.0-final/portlet/courseinfo.pt">courseinfo.pt</a> template file.</p>
+<pre class="literal-block">
+...
+    &lt;img alt=&quot;barchart&quot; class=&quot;statecolumnimage&quot;
+                 tal:attributes=&quot;width python:view.statePercent(item);
+                 src string:bargraphic.gif&quot; /&gt;
+...
+</pre>
+</div>
+</div>
+<div class="section" id="id6">
+<span id="additional-resources"></span><h1>Additional Resources</h1>
+<p>There are some great resources to help you in customizing existing portlets and for adding functionality to portlets that you've created using the ZopeSkel product.</p>
+<p>If you would like to do some quick and dirty customization through-the-web you'll probably want to <a class="reference external" href="http://plone.org/documentation/tutorial/customization-for-developers/tutorial-all-pages">use the portal_view_customizations tool</a> in the ZMI. It's similar to portal_skins but for view, viewlets, and portlets.</p>
+<p>Martin Aspeli has a whole tutorial on customizing a plone site which includes a section on <a class="reference external" href="http://plone.org/documentation/tutorial/customization-for-developers/portlet-renderers">customizing portlet renderers</a>.</p>
+<p>The Plone site also has a tutorial that shows how to <a class="reference external" href="http://plone.org/documentation/how-to/override-the-portlets-in-plone-3.0/?searchterm=add%20new%20portlet">override existing portlets</a>.</p>
+</div>
+</div>
+<div class="footer">
+<hr class="footer" />
+<a class="reference external" href="PORTLETS.txt">View document source</a>.
+Generated on: 2008-04-09 18:43 UTC.
+Generated by <a class="reference external" href="http://docutils.sourceforge.net/">Docutils</a> from <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> source.
+
+</div>
+</body>
+</html>

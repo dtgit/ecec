@@ -1,0 +1,744 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plone-ja\n"
+"POT-Creation-Date: 2006-12-11 21:57+0000\n"
+"PO-Revision-Date: 2007-05-10 03:25+0900\n"
+"Last-Translator: Haruo Takemura <takemura@acm.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: ja\n"
+"Language-Name: Japanese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+
+msgid "About OCW"
+msgstr "OCWについて"
+
+## Translations for worflow state
+msgid "Add a Comment Only"
+msgstr "コメントのみ追加"
+
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/search.pt
+msgid "Advanced Search"
+msgstr "高度な検索"
+
+msgid "All XHTML issues have been resolved. Press &#39;save&#39; to keep the changes."
+msgstr "XHTMLに関する問題はすべて解決されました。. &#39;保存&#39; をクリックして変更を保存します。"
+
+msgid "An eduCommons course."
+msgstr "eduCommonsコース"
+
+msgid "An eduCommons department."
+msgstr "eduCommons部局"
+
+msgid "An eduCommons file."
+msgstr "eduCommonsファイル"
+
+msgid "An eduCommons folder."
+msgstr "eduCommonsフォルダ"
+
+# eduCommons object type information
+msgid "An eduCommons image."
+msgstr "eduCommons画像"
+
+msgid "An eduCommons link."
+msgstr "eduCommonsリンク"
+
+msgid "An eduCommons page."
+msgstr "eduCommonsページ"
+
+msgid "Are you sure you want to delete the selected items?"
+msgstr "選択された項目を本当に削除しますか？"
+
+## Translation for eduCommons buttons
+msgid "Clear Copyright"
+msgstr "著作権処理済"
+
+msgid "Copyright revoked"
+msgstr "著作権処理を取り消す"
+
+msgid "Course"
+msgstr "コース"
+
+msgid "Courses"
+msgstr "コース"
+
+msgid "Department"
+msgstr "部局"
+
+msgid "Document"
+msgstr "文書"
+
+msgid "Error contacting server.  Please try again."
+msgstr "サーバーに接続できません。再度接続してみてください。"
+
+msgid "Export"
+msgstr "エクスポート"
+
+msgid "External Link"
+msgstr "外部リンク"
+
+msgid "FCKeditor configuration"
+msgstr "FCKエディタ設定"
+
+msgid "Feedback"
+msgstr "フィードバック"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "HTML has been updated, but may still contain errors. Press &#39;save&#39; to keep the changes."
+msgstr "HTMLが更新されましたが、エラーが含まれている可能性がありまます。&#39;保存&#39; をクリックして変更を保存します。"
+
+msgid "HTML has been updated. Press &#39;save&#39; to keep the changes."
+msgstr "HTMLが更新されました。&#39;保存&#39; をクリックして変更を保存します。"
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "Image"
+msgstr "画像"
+
+msgid "Import"
+msgstr "インポート"
+
+msgid "Import/Export"
+msgstr "インポート／エクスポート"
+
+msgid "InProgress"
+msgstr "作業中"
+
+msgid "Item(s) added to navigation."
+msgstr "ナビゲーションにアイテムが追加されました。"
+
+msgid "Item(s) copyright revoked."
+msgstr "アイテムの著作権が取り消されました。"
+
+msgid "Item(s) removed from navigation."
+msgstr "アイテムがナビゲーションから削除されました"
+
+msgid "Logs"
+msgstr "ログ"
+
+msgid "Metadata"
+msgstr "メタデータ"
+
+msgid "Navigation Added"
+msgstr "ナビゲーション追加"
+
+msgid "Navigation Removed"
+msgstr "ナビゲーション削除"
+
+msgid "OLS Discussion Group Administration"
+msgstr "OLS ディスカッション　グループの管理"
+
+msgid "Order"
+msgstr "順序"
+
+msgid "Personal Preferences"
+msgstr "個人設定"
+
+msgid "Please correct the following messages:"
+msgstr "以下のメッセージを修正してください："
+
+msgid "Please select one or more items to clear copyright."
+msgstr "著作権処理するアイテムをひとつ以上選択してください。"
+
+msgid "Please select one or more items to remove from navigation."
+msgstr "ナビゲーションから削除するアイテムをひとつ以上選択してください。"
+
+msgid "Please select one or more items to revoke copyright."
+msgstr "著作権処理を取り消すアイテムをひとつ以上選択してください。"
+
+#. Default: "Plone Powered"
+#: ../skins/eduCommons/index_template.pt
+msgid "Plone Powered"
+msgstr "Ploneを使用"
+
+msgid "Privacy Policy"
+msgstr "プライバシーポリシー"
+
+msgid "Publish Content"
+msgstr "コンテンツを公開"
+
+msgid "Publish Course"
+msgstr "コースを公開"
+
+msgid "Publish Department"
+msgstr "部局を公開"
+
+msgid "Published Content"
+msgstr "公開されたコンテンツ"
+
+msgid "Quality Assurance"
+msgstr "品質保証"
+
+msgid "Release Content for Publication"
+msgstr "公開のためにコンテンツをリリース"
+
+msgid "Release Course for Publication"
+msgstr "公開のためにコースをリリース"
+
+msgid "Release Department for Publication"
+msgstr "公開のために部局をリリース"
+
+msgid "Released"
+msgstr "リリース済み"
+
+msgid "Released for Publication"
+msgstr "公開のためにリリース済"
+
+#. Default: "Relevance"
+#: ../skins/eduCommons/search.pt
+msgid "Relevance"
+msgstr "適正"
+
+msgid "Remove From Navigation"
+msgstr "ナビゲーションから削除"
+
+msgid "Retest Content"
+msgstr "コンテンツの再テスト"
+
+msgid "Retest Department"
+msgstr "部局の再テスト"
+
+msgid "Retest Released Course"
+msgstr "公開されたコースの再テスト"
+
+msgid "Revoke Copyright"
+msgstr "著作権処理を取り消し"
+
+msgid "Rework Content"
+msgstr "コンテンツの再作業"
+
+msgid "Rework Course"
+msgstr "コースの再作業"
+
+msgid "Rework Department"
+msgstr "部局の再作業"
+
+msgid "Rework Published Content"
+msgstr "公開されたコンテンツの再作業"
+
+msgid "Rework Published Course"
+msgstr "公開されたコースの再作業"
+
+msgid "Rework Published Department"
+msgstr "公開された部局の再作業"
+
+msgid "Rework Released Content"
+msgstr "リリースされたコンテンツの再作業"
+
+msgid "Rework Released Course"
+msgstr "リリースされたコースの再作業"
+
+msgid "Rework Released Department"
+msgstr "リリースされた部局の再作業"
+
+msgid "Show In Navigation"
+msgstr "ナビゲーションに表示"
+
+msgid "Site Settings"
+msgstr "サイト設定"
+
+msgid "Submit Content to QA"
+msgstr "コンテンツをQAに提出"
+
+msgid "Submit Course for QA"
+msgstr "コースをQAに提出"
+
+msgid "Submit Department to QA"
+msgstr "部局をQAに提出"
+
+msgid "Terms of Use"
+msgstr "利用条件"
+
+msgid "Tools"
+msgstr "ツール"
+
+msgid "Unable to fix XHTML errors.  Please update html and try again."
+msgstr "XHTMLエラーを修復できませんでした。ｈｔｍｌを修正して再度実行してください。"
+
+msgid "Warning: The following objects have not cleared copyright:"
+msgstr "警告：以下のオブジェクトは著作権処理が終了していません。"
+
+msgid "Work in progress"
+msgstr "作業中"
+
+#. Default: "${number} items matching your criteria."
+#: ../skins/eduCommons/search.pt
+msgid "batch_x_items_matching_your_criteria"
+msgstr "${number} 個のアイテムが条件に適合します。"
+
+msgid "could not be added to navigation"
+msgstr "ナビゲーションに追加できませんでした。"
+
+msgid "could not be copyright revoked."
+msgstr "著作権状態を変更できませんでした。"
+
+msgid "could not be removed from navigation."
+msgstr "ナビゲーションから削除できませんでした"
+
+#. Default: "This search form enables you to find content on the site by specifying one or more search terms. <br/> Remember that you can use the quick search anytime, it's normally good enough, this search form is just if you want to be more specific."
+#: ../skins/eduCommons/search_form.pt
+msgid "description_advanced_search"
+msgstr "この検索フォームで、ひとつ以上の検索語を指定して、このサイトのコンテンツを検索できます。<br/>クイックサーチはいつでも実行でき、ほとんどの場合、満足できる結果が得られます。より厳密な検索を行いたいときは、このフォームを利用してください。"
+
+#. Default: "Configuration area for eduCommons and add-on Products."
+#: ../skins/eduCommons/plone_control_panel.pt
+msgid "description_control_panel"
+msgstr "eduCommons　とアドオンプロダクツの設定エリア"
+
+#. Default: "No results were found."
+#: ../skins/eduCommons/search.pt
+msgid "description_no_results_found"
+msgstr "何も見つかりませんでした。"
+
+#. Default: "This folder has no visible items. To add content, press the add button, or paste content from another location."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "description_no_visible_items_add_paste"
+msgstr "フォルダーには表示可能なアイテムはありません。コンテンツを追加するには追加ボタンを押すか別の場所からのコンテンツを貼り付けます。"
+
+#. Default: "Note: Some or all of your PAS user source plugins do not allow listing of users, so you may not see the users defined by those plugins unless doing a specific search."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "description_pas_users_listing"
+msgstr "注意：　いくつか、あるいはすべての、あなたが利用するPASユーザーソースプラグインは、ユーザーリスティングを許可していません。したがって、これらのプラグインで定義されたユーザは、明示的に検索しない限り表示されない場合があります。"
+
+#. Default: "Click the user's name to see and change the details of a specific user. Click the envelope icon to send a mail to the user. You can also edit the e-mail addresses, and add/remove users."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "description_user_management"
+msgstr "特定のユーザーの設定の確認と変更には、対象ユーザー名をクリックします。メールを送信するには封筒のアイコンをクリックします。電子メールアドレスの編集とユーザーの追加／削除もできます。"
+
+#. Default: "This area allows you to set your preferences."
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "description_user_panel"
+msgstr "このエリアで、個人設定ができます。"
+
+msgid "eduCommons Setup"
+msgstr "eduCommons設定"
+
+msgid "eduCommons Skin Settings"
+msgstr "eduCommonsスキンの設定"
+
+#. Default: "Up one level"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "go_to_parent_url"
+msgstr "ひとつ上に移動"
+
+msgid "have already been added to navigation."
+msgstr "すでにナビゲーションに追加されています。"
+
+msgid "have already been removed from navigation."
+msgstr "すでにナビゲーションから削除されています。"
+
+msgid "have already revoked copyright."
+msgstr "すでに著作権処理済状態は取り消されています。"
+
+#. Default: "Actions"
+#: ../skins/eduCommons/global_contentviews.pt
+msgid "heading_actions"
+msgstr "アクション"
+
+#. Default: "Advanced search for content"
+#: ../skins/eduCommons/search_form.pt
+msgid "heading_advanced_search"
+msgstr "コンテンツの高度な検索"
+
+#. Default: "eduCommons Setup"
+#: ../skins/eduCommons/plone_control_panel.pt
+msgid "heading_control_panel"
+msgstr "eduCommons設定"
+
+#. Default: "Search results"
+#: ../skins/eduCommons/search.pt
+msgid "heading_search_results"
+msgstr "検索結果"
+
+#. Default: "My Preferences"
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "heading_user_panel"
+msgstr "個人設定"
+
+#. Default: "Users Overview"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "heading_users_overview"
+msgstr "ユーザーの概要"
+
+#. Default: "Views"
+#: ../skins/eduCommons/global_contentviews.pt
+msgid "heading_views"
+msgstr "表示"
+
+#. Default: "Return items matching this description. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_description"
+msgstr "この記述に適合するアイテムを表示します。複数の語を<strong>AND</strong> と <strong>OR</strong>で結合して検索できます。"
+
+#. Default: "Return items taught be a particular instructor."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_instructor"
+msgstr "指定する講師が教えているアイテムを表示します。"
+
+#. Default: "Return items of a specific type."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_item_type"
+msgstr "指定するタイプのアイテムを表示します。"
+
+#. Default: "Return items added since you were last logged on, the last week, etc."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_new_items_since"
+msgstr "最後にログインした日時以降や、先週追加されたアイテムを表示します。"
+
+#. Default: "As a reviewer, you may search for items based on their review state. If you wish to constrain results to items in certain states, select them from this list."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_review_status"
+msgstr "審査者として、審査状況に応じたアイテムを表示します。特定の状態のアイテムを検索するにはリストから選択してください。"
+
+#. Default: "For a simple text search, enter your search term here. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>. The text in this field will be matched with items' contents, title and description."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_text"
+msgstr "簡単なテキストサーチです。検索語を入力してください。複数の語を<strong>AND</strong> と <strong>OR</strong>.で結合して検索できます。このフィールドのテキストはh、コンテンツ、タイトル、説明のテキストから検索されます。"
+
+#. Default: "Return items matching this title."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_title"
+msgstr "このタイトルに適合するタイトルを表示します。"
+
+#. Default: "Add Item"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "label_add_new_item"
+msgstr "アイテムの追加"
+
+#. Default: "Add New User"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_add_new_user"
+msgstr "ユーザの新規登録"
+
+#. Default: "Any Instructor"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_any_instructor"
+msgstr "講師を指定しない"
+
+#. Default: "Apply Changes"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_apply_changes"
+msgstr "変更を適用"
+
+#. Default: "Valid CSS"
+#: ../skins/eduCommons/footer.pt
+msgid "label_css"
+msgstr "正しいCSS"
+
+#. Default: "Description"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_description"
+msgstr "説明"
+
+#. Default: "Flags: - Cleared Copyright"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "label_flags"
+msgstr "フラグ:　-　著作権処理済"
+
+#. Default: "Get Email List"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_get_email_list"
+msgstr "電子メールリストを得る"
+
+#. Default: "History"
+#: ../skins/eduCommons/review_history.pt
+msgid "label_history"
+msgstr "履歴"
+
+#. Default: "Instructor"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_instructor"
+msgstr "講師"
+
+#. Default: "Item Type"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_item_type"
+msgstr "アイテムタイプ"
+
+#. Default: "New Items Since"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_new_items_since"
+msgstr "これ以降に追加されたアイテム"
+
+#. Default: "No Preference Panels available."
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "label_no_panels_available"
+msgstr "利用可能な設定パネルはありません。"
+
+#. Default: "effective"
+#: ../skins/eduCommons/review_history.pt
+msgid "label_publishing_effective"
+msgstr "有効"
+
+#. Default: "Review Status"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_review_status"
+msgstr "レビュー状態"
+
+#. Default: "RSS feed of these search results"
+#: ../skins/eduCommons/search.pt
+msgid "label_rss_feed"
+msgstr "検索結果のRSSフィード"
+
+#. Default: "Search"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_search"
+msgstr "検索"
+
+#. Default: "Search Text"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_search_text"
+msgstr "検索テキスト"
+
+#. Default: "Section 508"
+#: ../skins/eduCommons/footer.pt
+msgid "label_section_508"
+msgstr "セクション508"
+
+#. Default: "Select all items"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "label_select_all_items"
+msgstr "すべてのアイテムを選択"
+
+#. Default: "Show all"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_showall"
+msgstr "すべて表示"
+
+#. Default: "Skip to content."
+#: ../skins/eduCommons/index_template.pt
+msgid "label_skiptocontent"
+msgstr "コンテンツへ移動"
+
+#. Default: "State"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "label_state"
+msgstr "状態"
+
+#. Default: "Title"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_title"
+msgstr "タイトル"
+
+#. Default: "Select All/None"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_toggle"
+msgstr "すべて選択／選択解除"
+
+#. Default: "Up to Site Setup"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_up_to_plone_setup"
+msgstr "サイト設定へ移動"
+
+#. Default: "User Search"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_user_search"
+msgstr "ユーザー検索"
+
+#. Default: "Users"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "label_users"
+msgstr "ユーザー"
+
+#. Default: "WCAG"
+#: ../skins/eduCommons/footer.pt
+msgid "label_wcag"
+msgstr "WCAG"
+
+#. Default: "Valid XHTML"
+#: ../skins/eduCommons/footer.pt
+msgid "label_xhtml"
+msgstr "有効なXHTML"
+
+#. Default: "Last log-in"
+#: ../skins/eduCommons/search_form.pt
+msgid "last_login"
+msgstr "前回ログイン"
+
+#. Default: "Search Terms"
+#: ../skins/eduCommons/search_form.pt
+msgid "legend_search_terms"
+msgstr "用語をサーチ"
+
+#. Default: "Action"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_action"
+msgstr "アクション"
+
+#. Default: "Comment"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_comment"
+msgstr "コメント"
+
+#. Default: "Date and Time"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_date_and_time"
+msgstr "日時"
+
+#. Default: "E-mail Address"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_email_address"
+msgstr "メールアドレス"
+
+#. Default: "Flags"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_flags"
+msgstr "フラグ"
+
+#. Default: "Modified"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_modified"
+msgstr "変更済み"
+
+#. Default: "Performed by"
+#: ../skins/eduCommons/review_history.pt
+msgid "listingheader_performed_by"
+msgstr "Performed by"
+
+#. Default: "Remove user"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_remove_user"
+msgstr "ユーザー削除"
+
+#. Default: "Reset Password"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_reset_password"
+msgstr "パスワードをリセット"
+
+#. Default: "Roles"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_roles"
+msgstr "役割"
+
+#. Default: "Size"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_size"
+msgstr "サイズ"
+
+#. Default: "State"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_status"
+msgstr "状態"
+
+#. Default: "Title"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_title"
+msgstr "タイトル"
+
+#. Default: "Type"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "listingheader_type"
+msgstr "タイプ"
+
+#. Default: "User name"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "listingheader_user_name"
+msgstr "ユーザー名"
+
+#. Default: "No comments."
+#: ../skins/eduCommons/review_history.pt
+msgid "no_comments"
+msgstr "コメントなし"
+
+#. Default: "Did you not find what you were looking for? Try the ${advanced_search} for more precise search options."
+#: ../skins/eduCommons/search.pt
+msgid "search_results_advanced"
+msgstr "探したい結果が得られましたか？より詳細な検索には${advanced_search}を利用します。"
+
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/search.pt
+msgid "search_results_advanced_link"
+msgstr "高度な検索"
+
+#. Default: "Review History"
+#: ../skins/eduCommons/review_history.pt
+msgid "summary_review_history"
+msgstr "レビュー履歴"
+
+#. Default: "Enter a username to search for"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_no_user_searchstring"
+msgstr "検索するユーザー名を入力してください。"
+
+#. Default: "Enter a username to search for, or click 'Show All'"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_no_user_searchstring_largesite"
+msgstr "検索するユーザー名を入力するか、すべて表示をクリックしてください。"
+
+#. Default: "No matches"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "text_nomatches"
+msgstr "適合しませんでした。"
+
+#. Default: "Ever"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_ever"
+msgstr "ずっと"
+
+#. Default: "Last month"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_last_month"
+msgstr "先月"
+
+#. Default: "Last week"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_last_week"
+msgstr "先週"
+
+#. Default: "Yesterday"
+#: ../skins/eduCommons/search_form.pt
+msgid "time_yesterday"
+msgstr "昨日"
+
+#. Default: "Add new items inside this item"
+#: ../skins/eduCommons/global_contentmenu.pt
+msgid "title_add_new_items_inside_item"
+msgstr "個のアイテムの中に新しいアイテムを追加"
+
+#. Default: "This Plone site was built with valid CSS."
+#: ../skins/eduCommons/footer.pt
+msgid "title_built_with_css"
+msgstr "このPloneサイトは正しいCSSを利用して構成されています。"
+
+#: ../skins/eduCommons/footer.pt
+msgid "title_built_with_plone"
+msgstr "Ploneを使用"
+
+#. Default: "RSS feed of these search results"
+#: ../skins/eduCommons/search.pt
+msgid "title_rss_feed"
+msgstr "これらの検索結果のRSSフィード"
+
+#. Default: "This Plone site conforms to the US Government Section 508 Accessibility Guidelines."
+#: ../skins/eduCommons/footer.pt
+msgid "title_section_508"
+msgstr "このPloneサイトは合衆国政府セクション508アクセスビリティガイドラインに適合しています。"
+
+#. Default: "Send a mail to this user"
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "title_send_mail_to_user"
+msgstr "このユーザーにメールを送る"
+
+#. Default: "This Plone site is valid XHTML."
+#: ../skins/eduCommons/footer.pt
+msgid "title_valid_xhtml"
+msgstr "このPloneサイトは正しいXHTMLを使用しています。"
+
+#. Default: "This Plone site conforms to the W3C-WAI Web Content Accessibility Guidelines."
+#: ../skins/eduCommons/footer.pt
+msgid "title_wcag_conformance"
+msgstr "このPloneサイトはW3C-WAIウェブアクセシビリティガイドラインに適合しています。"
+
+#. Default: "Note that roles listed here apply directly to a user. They do not reflect additional roles users may have due to group memberships."
+#: ../skins/eduCommons/prefs_users_overview.cpt
+msgid "user_role_note"
+msgstr "ここに表示されている役割がユーザに適用されます。グループメンバーシップで与えられている追加の役割は、ここでは表示されていません。"
+

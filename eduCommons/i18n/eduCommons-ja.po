@@ -1,0 +1,1362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eduCommons\n"
+"POT-Creation-Date: 2008-02-22 23:27+0000\n"
+"PO-Revision-Date: 2007-05-10 03:20+0900\n"
+"Last-Translator: Haruo Takemura <takemura@acm.org>\n"
+"Language-Team: OSAKA-U <takemura@cmc.osaka-u.ac.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: ja\n"
+"Language-Name: Japanese\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: eduCommons\n"
+
+#. Default: "Accessible"
+#: change_accessibility.cpt
+msgid "Accessible"
+msgstr ""
+
+#. Default: "Apply Template"
+#: ../skins/eduCommons/TemplateMacros.pt
+msgid "Apply Template"
+msgstr "テンプレート適用"
+
+#: eduCommons/skins/eduCommons/portlet_navigation.pt
+msgid "Available Departments"
+msgstr "学部・研究科リスト"
+
+#. Default: "Cancel"
+#: ../skins/eduCommons/Export_form.cpt
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Cancel"
+msgstr "取り消し"
+
+#. Default: "Choose"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Choose"
+msgstr "選択"
+
+#. Default: "Close"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Close"
+msgstr "閉じる"
+
+#. Default: "Confirm"
+#: ../skins/eduCommons/content_status_confirm.cpt
+msgid "Confirm"
+msgstr "確認"
+
+#: eduCommons/skins/eduCommons/portlet_navigation.pt
+msgid "Course Contents"
+msgstr "講義コンテンツ"
+
+#. Default: "Course Discussion Summary"
+#: ../skins/eduCommons/Department_listing.pt
+msgid "Course Discussion Summary"
+msgstr "講義の概要"
+
+#. Default: "Courses Listing"
+#: eduCommons/skins/eduCommons/Department_listing.pt
+msgid "Courses Listing"
+msgstr "講義リスト"
+
+#. Default: "Export"
+#: ../skins/eduCommons/Export_form.cpt
+msgid "Export"
+msgstr "エクスポート"
+
+#. Default: "Fix Course Html"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Fix Course Html"
+msgstr "講義のHTML修正"
+
+#. Default: "Fix HTML"
+#: ../skins/eduCommons/TemplateMacros.pt
+msgid "Fix HTML"
+msgstr "HTML修正"
+
+#. Default: "Image of Document Actions"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "Image of Document Actions"
+msgstr "ドキュメントアクションの画像"
+
+#. Default: Import and Export objects using IMS standards.
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "ImportExport_standards"
+msgstr "IMS標準のオブジェクトのインポート／エクスポート"
+
+#. Default: "InProgress"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "InProgress"
+msgstr "作業中"
+
+#. Default: "Insert"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "Insert"
+msgstr "挿入"
+
+#. Default: "Insert Link"
+#: ../skins/eduCommons/JavascriptMacros.pt
+msgid "Insert Link"
+msgstr "リンクを挿入"
+
+#: eduCommons/skins/eduCommons/folder_delete.cpy:42
+msgid "Item(s) deleted."
+msgstr "アイテムが削除されました。"
+
+#. Default: "Not Accessible"
+#: change_accessibility.cpt
+msgid "Not Accessible"
+msgstr ""
+
+#. Default: "Published"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "Published"
+msgstr "出版済"
+
+#. Default: "QA"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "QA"
+msgstr "QA"
+
+#. Default: "Released"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "Released"
+msgstr "リリース済"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "Search Again"
+msgstr "再検索"
+
+#. Default: "Upload"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "Upload"
+msgstr "アップロード"
+
+#. Default: "Validate"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "Validate"
+msgstr "認証"
+
+#. Default: "Are your sure that you want to enable LinguaPlone?"
+#: ..skins/ECLinguaPlone/prefs_language.pt
+msgid "alert_enable_linguaplone"
+msgstr "確認：LinaguaPloneを本当に有効に設定しますか？"
+
+#. Default: "barchart"
+#: eduCommons/skins/eduCommons/portlet_coursesummary.pt
+msgid "barchart"
+msgstr "棒グラフ"
+
+#. <h5 i18n:translate="box_summary" tal:content="summaryName">
+#. Course Summary
+#. </h5>
+#. Default: "Course Summary"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "box_summary"
+msgstr "コース概要"
+
+#. Default: Course Tools
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "course_tools"
+msgstr "コースツール"
+
+#. Default: "Items should meet minimum accessibility requirements before publication. Please evaluate the content against the ${descr-accessibility-link}, and set the flag accordingly."
+#: change_accessibility.cpt
+msgid "description_accessibility_process"
+msgstr ""
+
+#. Default: "Items should be copyright cleared before publication.  This form allows for bulk copyright clearance, as well as bulk copyright revocation.To recursively change the copyright status, be sure to check the include folder items checkbox on the form below."
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "description_copyright_process"
+msgstr "アイテムは公開前に著作権処理がなされなければなりません。このフォームは一括での著作権設定の変更を可能とします。サブフォルダを含めて繰り返して著作権設定を変更するには、以下のフォームの「フォルダ内のアイテムを含める」チェックボックスをチェックしてください。"
+
+#. Default: "Adjust the colors and images of your eduCommons instance. You will need to <strong>clear your browser's cache</strong> in order to see the updated changes."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_custom_skinning"
+msgstr "このeduCommonsインスタンスの色と画像を調整します。変更を確認するためには、ブラウザの <strong>キャッシュをクリア</strong> する必要があります。"
+
+#. Default: "eduCommons-wide settings."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "description_eduCommons_setup"
+msgstr "eduCommons全体に関する設定"
+
+#. Default: "Warning: this feature is in an experimental state. As such, this feature should not be enabled for and has not been tested in production sites."
+#: ../skins/ECLinguaPlone/prefs_languages.pt
+msgid "description_experimental_linguaplone"
+msgstr "警告：この機能は実験段階のものです。したがって、実際にサイトではこの機能はテストされていませんし、機能を利用可能にすべきではありません。"
+
+#. Default: "The zip file will contain only the content of each object in eduCommons. To export the entire course including metadata, use the IMS tool found in the tools tab above."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_IMS"
+msgstr "zip ファイルは、eduCommons のオブジェクトのみを含みます。メタデータを含んだ完全なコースをエクスポートするためには、上のツールバーにあるIMSツールを利用してください。"
+
+#. Default: "All files in the course will be exported in .zip file format."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_allContent"
+msgstr "コース中のすべてのファイルが.ziipフォーマットでエクスポートされます。"
+
+#. Default: "The following files will be exported in .zip file format."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "description_export_followingFiles"
+msgstr "以下のファイルがzipフォーマットでエクスポートされます。"
+
+#. Default: "To leave feedback, please ${mailto_link}."
+#: ../skins/eduCommons/feedback_form.cpt
+msgid "description_feedback"
+msgstr "フィードバックは, ${mailto_link}　までお願いします。"
+
+#. Default: "This form will import content from files contained in a .zip file, and will either create new objects, or overwrite objects that contain the same original filename and path. You must have editing rights for objects in order for them to be updated."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file"
+msgstr "このフォームはzip形式に含まれたファイルからコンテンツをインポートします。その結果新しいオブジェクトが作成されるか、同じファイル名とパスをを持つファイルが上書きされます。上書き更新を行うためにはオブジェクトに対しての編集権が必要です"
+
+#. Default: "Add the relevant details of the file to be added in the form below, select the file with the 'Browse' button, and press 'Upload'."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file1"
+msgstr "以下のフォームに追加されるファイルに関する詳細を入力してください。ファイルを「参照」ボタンで選択して「アップロード」ボタンを押してください。"
+
+#. Default: "If you want to import a full course with metadata using an IMS content package, please use the IMS tool found in the tools tab of the course."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file2"
+msgstr "IMSコンテンツパッケージを利用したメタデータを含む完全なコースをインポートするためには、コースのツールタブに含まれるIMSツールを利用してください。"
+
+#. Default: "Add the relevant details of the file to be added in the form below, select the file with the 'Browse' button, and press 'Upload'."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "description_import_file3"
+msgstr "以下のフォームに追加されるファイルに関する詳細を入力してください。ファイルを「参照」ボタンで選択して「アップロード」ボタンを押してください。"
+
+#. Default: "The url will be placed in the current document as a hyperlink."
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "description_insert_ext_link"
+msgstr "このURLがハイパーリンクとして現在のドキュメントに挿入されます。"
+
+#. Default: "Selected items will be placed in the current document as hyperlinks."
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "description_insert_link"
+msgstr "選択されたアイテムがハイパーリンクとしてこの文書に挿入されます。"
+
+#. <span class="discreet" i18n:domain="eduCommons" i18n:translate="description_last_updated">
+#. Last Updated
+#. </span>
+#. Default: "Last Updated"
+#: ../skins/eduCommons/search.pt
+msgid "description_last_updated"
+msgstr "最終更新日時"
+
+#. Default: "Currently there are no items available to display."
+#: ../skins/eduCommons/Department_listing.pt
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "description_no_items"
+msgstr "現在表示可能なアイテムはありません。"
+
+#. <em i18n:translate="description_no_items_in_department">
+#. Currently there are no available courses in this department.
+#. </em>
+#. Default: "Currently there are no available courses in this department."
+#: ../skins/eduCommons/Department_listing.pt
+msgid "description_no_items_in_department"
+msgstr "現在、この部局には利用可能なコースはありません。"
+
+#. <p i18n:translate="description_no_items_in_nav">
+#. You have not selected any items to be displayed in the left hand navigation for this course.
+#. </p>
+#. Default: "You have not selected any items to be displayed in the left hand navigation for this course."
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "description_no_items_in_nav"
+msgstr "このコースでは左側のナビゲーションに表示されるアイテムがなにも選択されていません。"
+
+#. Default: "Currently there are no Log Files for this Course."
+#: ../skins/eduCommons/Logfile_contents.pt
+msgid "description_no_logs_in_course"
+msgstr "現在このコースにはログファイルはありません。"
+
+#. <td colspan="6" i18n:domain="eduCommons" i18n:translate="description_no_permissions_contents">
+#. <strong>
+#. *
+#. </strong>
+#. You do not have permission to perform actions on multiple objects.  To Change State or Add a Comment individually, click on an object.
+#. </td>
+#. Default: "<strong>*</strong> You do not have permission to perform actions on multiple objects. To Change State or Add a Comment individually, click on an object."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "description_no_permissions_contents"
+msgstr "<strong>*</strong> 複数のオブジェクトに対して処理を実行する権限がありません。個別に状態を変更したりコメントを追加するには、オブジェクトをクリックします。"
+
+#. Default: In order to translate the content your were viewing, you must first translate the parent object
+msgid "description_parent_not_translated"
+msgstr "現在表示中のコンテンツを翻訳するためには、親オブジェクトを先に翻訳しなければなりません。"
+
+#. Default: "An item's state (also called its review state) determines at what point in the publication process the item is in."
+#: eduCommons/skins/eduCommons/content_status_history.cpt
+msgid "description_publishing_process"
+msgstr "アイテムの状態（審査状態）はアイテムが公開プロセスのどの状態にあるかをあらわします。"
+
+#. Default: "Use the following image maps to facilitate the customization process. Mousing over a customizable area on the image map will change the cursor to a hand. Hover the mouse over an area for a tool tip. Click the area to move you to the customizable field below."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_skinning_maps"
+msgstr "カスタマイズ機能を利用するには、以下のイメージマップを利用します。カスタマイズできるエリアにマウスを動かすとカーソルが手の形に変わります。ツールチップのエリアにマウスを動かして、クリックすることでカスタマイズ可能なフィールドに移動できます。"
+
+#. Default: "Web safe colors should be utilized in order to ensure that the broadest audience views your site as you intend. Click to view a ${link}"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "description_web_safe"
+msgstr "サイトが、多くの利用者に、意図されたように表示されるためには、ウェブセーフな配色を利用しなければなりません。リンクを確認するためにはクリックします ${link}"
+
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "external_link_required"
+msgstr "外部リンクが必要"
+
+#. Default: "Unless otherwise stated, content on this site is licensed under a"
+#: ../browser/frontpage_copyright_byline.pt
+msgid "front_license_text"
+msgstr "特段の指定がない限り、このサイトのコンテンツのライセンスは次によります。"
+
+#. Default: "Up one level"
+#: ../skins/eduCommons/Logfile_contents.pt
+msgid "go_to_parent_url"
+msgstr "ひとつ上のレベルへ"
+
+#. Default: "Courses Listing"
+#: ../skins/eduCommons/Courses_listing.pt
+msgid "header_courses"
+msgstr "コースリスト"
+
+#. Default: "How to I start using RSS feeds?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_how_rss"
+msgstr "RSSフィードを利用するには？"
+
+#. Default: "How do I get a news reader?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_reader_rss"
+msgstr "ニュースリーダを入手するには"
+
+#. Default: "<span tal:replace=\"portal_title\"/> OCW RSS Feeds"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_rss"
+msgstr "<span tal:replace=\"portal_title\"/> OCW RSS Feeds"
+
+#. Default: "Available Feeds"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_rss_available"
+msgstr "利用可能なフィード"
+
+#. Default: "What is RSS?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_whatis_rss"
+msgstr "RSSとは何ですか？"
+
+#. Default: "Why use RSS?"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "header_why_rss"
+msgstr "なぜRSSを使うか"
+
+#. Default: Export Content
+#. ../skins/eduCommons/Export_form.cpt
+msgid "heading_ExportContent"
+msgstr "コンテンツのエクスポート"
+
+#. Default: Import Content
+#. ../skins/eduCommons/Import_form.cpt
+msgid "heading_ImportContent"
+msgstr "コンテンツのインポート"
+
+#. Default: "Items should meet minimum accessibility requirements before publication. Please evaluate the content against the ${descr-accessibility-link}, and set the flag accordingly"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "heading_accessibility_process"
+msgstr ""
+
+#. Default: "Copyright process"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "heading_copyright_process"
+msgstr "著作権処理"
+
+#. <span i18n:domain="eduCommons" i18n:translate="heading_course_summary">
+#. Course Summary
+#. </span>
+#. Default: "Course Summary"
+#: ../skins/eduCommons/summary_contents.pt
+msgid "heading_course_summary"
+msgstr "コースサマリ"
+
+#. Default: "eduCommons Skin Settings"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "heading_custom_skinning"
+msgstr "eduCommonsスキンのカスタマイズ"
+
+#. <h2 i18n:domain="eduCommons" i18n:translate="heading_eduCommons_prefs">
+#. eduCommons Member Preferences
+#. </h2>
+#. Default: "eduCommons Member Preferences"
+#: ../skins/eduCommons/plone_memberprefs_panel.pt
+msgid "heading_eduCommons_prefs"
+msgstr "eduCommons メンバー設定"
+
+#. Default: "Feedback"
+#: ../skins/eduCommons/feedback_form.cpt
+msgid "heading_feedback"
+msgstr "フィードバック"
+
+#. Default: "Insert External Link"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "heading_insert_ext_link"
+msgstr "外部リンクの挿入"
+
+#. Default: "Insert Link"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "heading_insert_link"
+msgstr "リンクの挿入"
+
+#. Default: "Select Content"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "heading_select_content"
+msgstr "コンテンツの選択"
+
+#. Default: "Site Settings"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "heading_site_settings"
+msgstr "サイト設定"
+
+#. Default: Selecting 'Validate Only' will check documents for XHTML errors and list the errors in the log file.  Selecting 'Validate and Repair' will validate documents, attempt to fix errors, and report the results in the log file.
+#. ../skins/eduCommons/Import_form.cpt
+msgid "help_XHTML"
+msgstr "「検証のみ」を選択すると、ドキュメントのXHTMLエラーがチェックされ、ログファイルにエラーが記録されます。「検証と修復」を選択するとドキュメントを検証し、エラーの修復を試み、結果をログファイルに記録します。"
+
+#. Default: "A description which will be given to each file in the ZIP Archive."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "help__import_description"
+msgstr "ZIPアーカイブ中のファイルに添付されるファイルに関する説明"
+
+#. Default: "Select the ZIP archive file to be uploaded by clicking the 'Browse' button."
+#: ../skins/eduCommons/Import_form.cpt
+msgid "help__zip_file"
+msgstr "参照ボタンを押して、アップロードされるZIPアーカイブを選択します。"
+
+#. Default: "If checked, eduCommons will attempt to change the accessibility status of all content in any selected folders and their subfolders."
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "help_accessibility_include_contained_objects"
+msgstr ""
+
+#. Default: "Choose to set the accessibility flag, or revoke accessibility"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "help_accessibility_status"
+msgstr ""
+
+#. Default: "Set the accessibility flag if your content meets the criteria outlined ${link_accessibilty}."
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "help_accessibilitycompliant"
+msgstr ""
+
+#. Default: "Users with one of the roles selected here are allowed to add keywords to the site."
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_allowRolesToAddKeywords"
+msgstr "ここで選択された役割を持つ利用者が、サイトにキーワードを追加することを許可されます。"
+
+#. Default: "Enter the text displayed below."
+#. ../skins/eduCommons/join_form.cpt
+msgid "help_captcha"
+msgstr ""
+
+#. widget=BooleanWidget(label='Cleared Copyright',
+#. label_msgid='label_clearedCopyright',
+#. description_msgid='help_clearedCopyright',
+#. description="Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violations.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violation."
+#: ../content/ec_object.py
+msgid "help_clearedCopyright"
+msgstr "コンテンツオブジェクトが作者からライセンスされ、著作権侵害がなければ、著作権処理済を設定します。"
+
+#. Default: "The color of the links in the 'content' window. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_content_link"
+msgstr "コンテンツウィンドウ内のリンクの色。#666666のような16進数で入力します。"
+
+#. Default: "Copyright notice which appears in the bottom footer of every page."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_copyright_notice"
+msgstr "すべてのページのフッター内に表示される著作権表示です。"
+
+#. Default: "Choose to clear copyright, or revoke copyright for the item(s) selected above."
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "help_copyright_status"
+msgstr "上部で選択されたアイテムの著作権を処理済とするかやり直すかを選択します。"
+
+#. widget=StringWidget(label='Course ID',
+#. label_msgid='label_courseID',
+#. description='Enter the Course ID.',
+#. description_msgid='help_courseid',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter the Course ID"
+#. ../content/ec_object.py
+msgid "help_courseid"
+msgstr "コースIDを入力します。"
+
+#. Default: "Specify the default language setting for newly created items."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_default_language"
+msgstr "新しく作成するオブジェクトのデフォルト言語を指定します。"
+
+#. Default: "The name of the file downloaded to your local machine."
+#: ../skins/eduCommons/Export_form.cpt
+msgid "help_exportfilename"
+msgstr "ローカルPCにダウンロードされるファイル名"
+
+#. Default: "If checked, eduCommons will attempt to change the copyright status of all content in any selected folders and their subfolders. <br/>"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "help_include_contained_objects"
+msgstr "選択すると、eduCommonsは選択されたすべてのフォルダ内のコンテンツとサブフォルダの著作権の状態の変更を試みます。ｌ"
+
+#. Default: "The label for the primary folderish object. In a default instance, this will be 'Available Departments'."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_inst_obj"
+msgstr "プライマリフォルダオブジェクトのラベル。デフォルトでは、これは「利用可能な部局」になります。"
+
+#. Default: "The label for the sub-object. In a default instance, this will be 'Course Contents'."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_inst_subobj"
+msgstr "サブオブジェクトに対するラベル。デフォルトでは「コースコンテンツ」となります。"
+
+#. Default: "eduCommmons utilizes the Institution Name in the Portal entry page."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_institution_name"
+msgstr "eduCommonsは、ポータルエントリーページに機関名を表示ひます。"
+
+#. Default: "The abbreviated Institution Name."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_institution_short_name"
+msgstr "機関名の省略形"
+
+#. Default: "The background image for the Left Hand Column. Select the file to be added by clicking the 'Browse' button. This image should be 150px wide by 10px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_leftnav_bg"
+msgstr "左側のカラムの背景イメージ。参照ボタンをクリックしてファイルを選択します。イメージはデフォルトのレイアウトに適合するには幅150px　高さ10pxの大きさでなければなりません。"
+
+#. Default: "The color of the links and text in the left hand navigation. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_leftnavcolor"
+msgstr "左側のナビゲーションツールのリンクとテキストの色。16進数で入力します（例：#666666）。"
+
+#. Default: "The default number of items that will be produced from an RSS feed. Individual object feeds can be modified via the syndication tab on the object."
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_max_items"
+msgstr "RSSフィードで生成されるアイテムのデフォルトの数。それぞれのオブジェクトのフィードは、オブジェクトのSyndicationタブで設定できます。"
+
+#. widget=BooleanWidget(label='Metadata Entered',
+#. label_msgid='label_metadataEntered',
+#. description_msgid='help_metadataEntered',
+#. description="Set metadata entered if all metadata for this content object has been entered.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set metadata entered if all metadata for this content object has been entered."
+#: ../content/ec_object.py
+msgid "help_metadataEntered"
+msgstr "このコンテンツのオブジェクトのメタデータがすべて入力されたときにメタデータ入力済みを設定します。"
+
+#. Default: "Controls the font color of normal text and all headers. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_opentext_color"
+msgstr "通常のテキストとヘッダーの色を設定します。16進数で入力します｛例：#666666）。"
+
+#. Default: "The top banner of your eduCommons instance. Select the file to be added by clicking the 'Browse' button. This image should be 2000px wide by 63px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_banner"
+msgstr "このeduCommonsインスタンスのトップバナー。参照ボタンでファイルを選択します。デフォルトの設定に適合するバナーの大きさは幅2000px高さ63pxです。"
+
+#. Default: "The portal description is available in syndicated content and elsewhere. Keep it brief."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_description"
+msgstr "RSSなどに含まれるポータルの説明、簡潔に記載します。"
+
+#. Default: "The favicon for your portal. There are many ${link} for creating favicons. Save your image as favicon.ico."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_favicon"
+msgstr "このポータルのfaviconを指定します。faviconの作成に関するリンク ${link}はいろいろあります。faviconとして利用するイメージを favicon.icoとしてセーブします。"
+
+#. Default: "eduCommons generates e-mail using this address as the e-mail return address."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_from_address"
+msgstr "eduCommonsはこのメールアドレスを返信先アドレスとしてメールを生成します。"
+
+#. Default: "eduCommmons generates e-mail using this name as the e-mail sender."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_from_name"
+msgstr "eduCommonsはこのメールアドレスを送信者のアドレスとしてメールを生成します。"
+
+#. Default: "The top banner of your eduCommons instance portal entrance. Select the file to be added by clicking the 'Browse' button. This image should be 781px wide by 203px high to fit within the default layout."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_indexbanner"
+msgstr "このeduCommons インスタンスのトップバナーです。参照をクリックしてファイルを選択します。デフォルトのレイアウトに適合する画像サイズは幅781px高さ203ｐｘです。"
+
+#. Default: "The background color of the Index page. This will automatically adjust the background colors of the testimonial blocks as well."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_indexbgcolor"
+msgstr "インデックスページの背景色です。testimonialブロックの背景色も自動的に調整されます。"
+
+#. Default: "The clickable logo in the top banner. Select the file to be added by clicking the 'Browse' button. This image should be 360px wide by 65px high to fit within the default layout. The logo will be rendered 'on top of' the Portal Banner."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_portal_logo"
+msgstr "トップバナー中のクリックできるロゴ。参照をクリックしてファイルを選択します。デフォルトレイアウトに適合するロゴサイズは幅360px高さ65ｐｘです。ロゴはポータルバナーの上に重ねて表示されます。"
+
+#. Default: "The title of your eduCommons portal."
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "help_portal_title"
+msgstr "このeduCommonsポータルのタイトル"
+
+#. <div class="formHelp" i18n:translate="help_search_creator">
+#. Return items created by a particular person.
+#. </div>
+#. Default: "Return items created by a particular person."
+#: ../skins/eduCommons/search_form.pt
+msgid "help_search_creator"
+msgstr "特定の人よって作成されたリターンアイテム"
+
+#. Default: "Controls the 'selected' top navigation element and portlet title backgrounds. This should be the same color as your Left Navigation Background. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_secondary_color"
+msgstr "選択されたトップナビゲーションエレメントとポータルタイトルの背景色。左側のナビゲーションツールの背景色と同色とします。16進数で入力します（例:#666666)"
+
+#. Default: "Controls the 'selected' top navigation element and portlet title backgrounds. This should be the same color as your Left Navigation Background. This should be a hexadecimal code (#666666, for example)"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_secondary_logo"
+msgstr "選択されたトップナビゲーションエレメントとポータルタイトルの背景色。左側のナビゲーションツールの背景色と同色とします。16進数で入力します（例:#666666)"
+
+#. widget=StringWidget(label='Semester',
+#. label_msgid='label_semester',
+#. description='Enter the semester in which the course was taught, i.e. Fall 2005',
+#. description_msgid='help_semester',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter the semester in which the course was taught, i.e. Fall 2005"
+#. ../content/ec_object.py
+msgid "help_semester"
+msgstr "コースが開講される学期を入力します。例2005年2学期"
+
+#. widget=BooleanWidget(label='Show in Navigation',
+#. label_msgid='label_showInNavigation',
+#. description_msgid='help_showInNavigation',
+#. description="Set show in navigation to make content object visible in the left hand navigation.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set show in navigation to make content object visible in the left hand navigation."
+#: ../content/ec_object.py
+msgid "help_showInNavigation"
+msgstr "左側のナビゲーションツールにこのオブジェクトを表示するには表示を設定します。"
+
+#. Default: "Controls the font color of the front page testimonials. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_testimonial_color"
+msgstr "フロントページのtestimonialsのフロントカラーを設定します。16進数で入力します(例:#666666)"
+
+#. widget=RichWidget(macro='rich_extended',
+#. label='Home Page HTML',
+#. label_msgid='label_text',
+#. description='Enter HTML to be displayed for this object.',
+#. description_msgid='help_text',
+#. i18n_domain='eduCommons')),
+#. Default: "Enter HTML to be displayed for this object."
+#. ../content/ec_object.py
+msgid "help_text"
+msgstr "このオブジェクトとして表示されるHTMLを入力します。"
+
+#. Default: "You may customize the background of the top navigation elements (home, courses, help, about OCW) by uploading a background image. Alternately, you may change the color instead, via the Top Navigation Color option below. For non-tiling images, the size should be 2000px wide by 28px high."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_top_navigation_background_image"
+msgstr "トップナビゲーションエレメント（ホーム、コース、ヘルプ、OCWについて）の背景色のカスタマイズが背景イメージのアップロードでできます。下の項目のトップナビジェーションカラーオプションを利用して変更することもできます。タイリング表示されないイメージの場合、サイズは幅2000px高さ28pxとしてください。"
+
+#. Default: "The background color of the Top Navigation. If both a Top Navigation Background Color and Top Navigation Background Image are set, the Top Navigation Background will display. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_topnav_color"
+msgstr "トップナビゲーションの背景画像色。トップナビゲーションの背景画像と背景色の両方が設定された場合、背景画像が表示されます。ここは(#666666）のように16進数で入力します。"
+
+#. Default: "The color of the links in the Top Navigation. This should be a hexadecimal code (#666666, for example)."
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "help_topnav_link_color"
+msgstr "トップナビゲーションのリンク色。16進数で入力します（例:#666666)"
+
+#. Default: HTML Validation
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "html_validation_link"
+msgstr "HTMLの検証"
+
+#. Default: "XHTML Validation"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_XHTMLHeader"
+msgstr "XHTML検証"
+
+#. Default: "Zip File"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label__zip_file"
+msgstr "Zipファイル"
+
+#. Default: "Accessibility Status"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_accessibility_status"
+msgstr ""
+
+#. Default: "Accessible"
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "label_accessibilitycompliant"
+msgstr ""
+
+#. Default: "Accessible"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_accessible"
+msgstr ""
+
+#. Default: "Roles allowed to add keywords"
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_allowRolesToAddKeywords"
+msgstr "キーワードを追加することを許可された役割"
+
+#. <option i18n:translate="label_any_creator" value="">
+#. Any Creator
+#. </option>
+#. Default: "Any Creator"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_any_creator"
+msgstr "作成者指定無し"
+
+#. Default: "Captcha"
+#. ../skins/eduCommons/join_form.cpt
+msgid "label_captcha"
+msgstr ""
+
+#. Default: "Validate and Repair"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_checkAndCleanHtml"
+msgstr "検証と修復"
+
+#. Default: "Validate Only"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_checkHtml"
+msgstr "検証のみ"
+
+#. Default: "Choose Language"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_choose_language"
+msgstr "言語を選択"
+
+#. Default: "Clear Copyright"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_clear_copyright"
+msgstr "著作権処理済"
+
+#. widget=BooleanWidget(label='Cleared Copyright',
+#. label_msgid='label_clearedCopyright',
+#. description_msgid='help_clearedCopyright',
+#. description="Set cleared copyright if content object has been correctly licensed from the author, and is free from copyright violations.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Cleared Copyright."
+#: ../content/ec_object.py
+msgid "label_clearedCopyright"
+msgstr "著作権処理済"
+
+#. Default: "Content Type"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_content_type"
+msgstr "コンテンツタイプ"
+
+#. Default: "Copyright Notice"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_copyright_notice"
+msgstr "著作権表示"
+
+#. Default: "Copyright Status"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_copyright_status"
+msgstr "著作権の状態"
+
+#. widget=StringWidget(label='Course ID',
+#. label_msgid='label_courseID',
+#. description='Enter the Course ID.',
+#. description_msgid='help_courseid',
+#. i18n_domain='eduCommons')),
+#. Default: "Course ID"
+#. ../content/ec_object.py
+msgid "label_courseID"
+msgstr "コースID"
+
+#. <label for="title" i18n:translate="label_creator">
+#. Creator
+#. </label>
+#. Default: "Creator"
+#: ../skins/eduCommons/search_form.pt
+msgid "label_creator"
+msgstr "作成者"
+
+#. Default: "Default Language"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_default_language"
+msgstr "デフォルト言語"
+
+#. Default: "Export Filename (zipfile)"
+#: ../skins/eduCommons/Export_form.cpt
+msgid "label_exporttitle"
+msgstr "エクスポートファイル名(Zipファイル）"
+
+#. Default: "Open in new window?"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_external_link_new_window"
+msgstr "新しいウィンドウで表示しますか？"
+
+#. Default: "Link URL"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_external_link_url"
+msgstr "リンク先URL"
+
+#. Default: "Institution Object Label"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_inst_obj"
+msgstr "機関オブジェクトラベル"
+
+#. Default: "Institution Sub Object Label"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_inst_subobj"
+msgstr "機関サブオブジェクトラベル"
+
+#. Default: "Institution Name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_institution_name"
+msgstr "機関名称"
+
+#. Default: "Institution Short Name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_institution_short_name"
+msgstr "機関略称"
+
+#. Default: "Left Navigation Background"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_leftnav_bg"
+msgstr "左ナビゲーション背景"
+
+#. Default: "Left Navigation Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_leftnavcolor"
+msgstr "左ナビゲーションリンク色"
+
+#. Default: "Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_link_color"
+msgstr "リンク色"
+
+#. Default: "Link Title"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_link_title"
+msgstr "リンクタイトル"
+
+#. Default: "Default RSS Feeds"
+#: ../skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_max_items"
+msgstr "デフォルトのRSSフィード"
+
+#. widget=BooleanWidget(label='Metadata Entered',
+#. label_msgid='label_metadataEntered',
+#. description_msgid='help_metadataEntered',
+#. description="Set metadata entered if all metadata for this content object has been entered.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Metadata Entered"
+#: ../content/ec_object.py
+msgid "label_metadataEntered"
+msgstr "メタデータ入力済"
+
+#. Default: "None"
+#: ../skins/eduCommons/Import_form.cpt
+msgid "label_noXHTML"
+msgstr "None"
+
+#. Default: "Not Accessible"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "label_not_accessible"
+msgstr ""
+
+#. Default: "Page Text and Header Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_opentext_color"
+msgstr "ページテキストおよびヘッダーの色"
+
+#. Default: "Portal Banner"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_banner"
+msgstr "ポータルバナー"
+
+#. Default: "Portal description"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_description"
+msgstr "ポータルの説明"
+
+#. Default: "Portal Favicon"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_favicon"
+msgstr "ポータルのFavicon"
+
+#. Default: "Portal 'From' address"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_from_address"
+msgstr "ポータル差出人アドレス"
+
+#. Default: "Portal 'From' name"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_from_name"
+msgstr "ポータル差出人名"
+
+#. Default: "Portal Front Page banner"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_indexbanner"
+msgstr "ポータルフロントページバナー"
+
+#. Default: "Portal Front Page Background Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_indexbgcolor"
+msgstr "ポータルフロントページ背景色"
+
+#. Default: "Portal Logo"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_portal_logo"
+msgstr "ポータルロゴ"
+
+#. Default: "Portal title"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_portal_title"
+msgstr "ポータルタイトル"
+
+#. Default: "(Required)"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_required"
+msgstr "（必須）"
+
+#. Default: "Revoke Copyright"
+#: ../skins/eduCommons/copyright_clear.cpt
+msgid "label_revoke_copyright"
+msgstr "著作権処理をやり直す"
+
+#. Default: "Save"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_save"
+msgstr "保存"
+
+#. Default: "Search Text"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "label_search_text"
+msgstr "テキスト検索"
+
+#. Default: "Secondary Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_secondary_color"
+msgstr "セカンダリカラー"
+
+#. widget=StringWidget(label='Semester',
+#. label_msgid='label_semester',
+#. description='Enter the semester in which the course was taught, i.e. Fall 2005',
+#. description_msgid='help_semester',
+#. i18n_domain='eduCommons')),
+#. Default: "Semester"
+#. ../content/ec_object.py
+msgid "label_semester"
+msgstr "学期"
+
+#. widget=BooleanWidget(label='Show in Navigation',
+#. label_msgid='label_showInNavigation',
+#. description_msgid='help_showInNavigation',
+#. description="Set show in navigation to make content object visible in the left hand navigation.",
+#. i18n_domain='eduCommons',
+#. )),
+#. Default: "Set show in navigation to make content object visible in the left hand navigation."
+#: ../content/ec_object.py
+msgid "label_showInNavigation"
+msgstr "コンテンツオブジェクトを左ナビゲーションに表示するには表示を設定"
+
+#. Default: "Portal Front Page Testimonial Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_testimonial_color"
+msgstr "フロントページの推薦欄のl色"
+
+#. widget=RichWidget(macro='rich_extended',
+#. label='Home Page HTML',
+#. label_msgid='label_text',
+#. description='Enter HTML to be displayed for this object.',
+#. description_msgid='help_text',
+#. i18n_domain='eduCommons')),
+#. Default: "Home Page HTML"
+#. ../content/ec_object.py
+msgid "label_text"
+msgstr "ホームページのHTML"
+
+#. Default: "Top Navigation Background Image"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_top_navigation_background_image"
+msgstr "トップナビゲーション背景画像"
+
+#. Default: "Top Navigation Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_topnav_color"
+msgstr "トップナビゲーションの色"
+
+#. Default: "Top Navigation Link Color"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "label_topnav_link_color"
+msgstr "トップナビゲーションリンク色"
+
+#. Default: "Up to Site Setup"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "label_up_to_eduCommons_setup"
+msgstr "サイト設定に戻る"
+
+#. Default: Upload Contents (optional)
+#. ../skins/eduCommons/rich_extended.pt
+msgid "label_upload_contents_optional"
+msgstr "コンテンツのアップロード（オプション）"
+
+#. Default: "eduCommons Details"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "legend_eduCommons_details"
+msgstr "eduCommonsの詳細"
+
+#. Default: "Html Validation"
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "legend_html_validation"
+msgstr "HTMLの検証"
+
+#. Default: "Search"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "legend_insert_link"
+msgstr "検索"
+
+#. Default: "Basic Skin Settings"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "legend_skin_settings"
+msgstr "基本スキン設定"
+
+#. Default: "IMS Import/Export"
+#: ../skins/eduCommons/Course_Tools.pt
+msgid "link_IMSImportExport"
+msgstr "IMSインポート／エキスポート"
+
+#. Default: "accessibility guidelines"
+#. ../skins/eduCommons/change_accessibility.cpt
+msgid "link_accessibility_guidelines"
+msgstr ""
+
+#. Default: "here"
+#. ../skins/eduCommons/accessibility_compliant.cpt
+msgid "link_accessibilitycompliant"
+msgstr ""
+
+#. Default: "[audio]"
+#. ../skins/eduCommons/join_form.cpt
+msgid "link_captcha_audio"
+msgstr ""
+
+#. Default: "Courses in all departments"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "link_rss_all_courses"
+msgstr "すべての学部･学科のコース"
+
+#. Default: "RSS Feeds"
+#: ../skins/eduCommons/Courses_listing.pt
+msgid "link_rss_feeds"
+msgstr "RSSフィード"
+
+#. Default: "list"
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "link_rss_list"
+msgstr "リスト"
+
+#. <a href="" i18n:attributes="title link_title_advanced_search;" i18n:translate="text_advanced_search" tal:attributes="href string:${here/absolute_url}/olssearch" title="Advanced Search">
+#. Default: "Advanced Search"
+#: ../skins/eduCommons/global_searchbox.pt
+msgid "link_title_advanced_search"
+msgstr "高度な検索"
+
+#. <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" i18n:attributes="title link_title_cc_license" i18n:translate="text_cc_license" title="Creative Commons License">
+#. Default: "Creative Commons License"
+#: ../skins/eduCommons/footer.pt
+#: ../skins/eduCommons/index_template.pt
+msgid "link_title_cc_license"
+msgstr "クリエイティブ・コモンズ　ライセンス"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "link_title_search_again"
+msgstr "再検索"
+
+#. <a href="#top" i18n:attributes="title link_title_top;" i18n:translate="text_discussion_top" title="Return to Top">
+#. Default: "Return to Top"
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "link_title_top"
+msgstr "トップに戻る"
+
+#. Default: "Favicon Tutorials"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_title_tutorial"
+msgstr "Favicon チュートリアル"
+
+#. Default: "Web Safe Color Palette"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_title_web_safe"
+msgstr "ウェブ安全色パレット"
+
+#. Default: "tutorials"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_tutorial"
+msgstr "チュートリアル"
+
+#. Default: "web safe color palette"
+#: ../skins/eduCommons/prefs_reskin_form.cpt
+msgid "link_web_safe"
+msgstr "ウェブ安全色パレット"
+
+#. Default: "Creator"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "listingheader_creator"
+msgstr "作成者"
+
+#. Default: "All"
+#: ../skins/eduCommons/ECDocument_search_form.cpt
+msgid "option_all"
+msgstr "全て"
+
+#. Default: "In general, the first thing you need is something called a news reader. This is a piece of software that checks RSS feeds and lets you read any new articles that have been added to them. There are many different versions, some of which are accessed using a browser, and some of which are downloadable applications. Browser-based news readers let you catch up with your RSS feed subscriptions from any computer, whereas downloadable applications let you store them on your main computer, in the same way that you either download your e-mail, or keep it on a web-based service."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss1"
+msgstr "一般に、最初に必要とされるものはニュースリーダと呼ばれるものです。これは、RSSフィードをチェックし新しく追加された記事を読むことを可能にするソフトウェアです。いろいろな種類のソフトウェアがあります。ブラウザを利用してアクセスするものや、ダウンロードできる独立したアプリケーションなどです。ブラウザを利用するニュースリーダは、どのコンピュータからでも購読しているRSSフィードの更新を確認できます。ダウンロードする独立アプリケーションはRSSフィードをアプリケーションが実行されるコンピュータに蓄積します。メールを読むのにWebメールを用いるか、クライアントアプリケーションを用いるかの違いと同じです。"
+
+#. Default: "Once you have chosen a news reader, all you have to do is to decide what content you want to receive in your news reader, by finding and subscribing to the relevant RSS feeds. For example, if you would like the latest courses added to ${portal_title} OCW, simply visit the Course List page or this page and you will notice an orange RSS button."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss2"
+msgstr "ニュースリーダーを決定したならば、あとは希望するRSSフィードを探して購読することで、どのコンテンツをニュースリーダで受け取るかを決定するだけです。たとえば、${portal_title} OCWにもっとも最近に追加されたコースを受け取るには、コースリストのページかこのページにあるオレンジ色のRSSボタンを探します。"
+
+#. Default: "If you click on the button you can subscribe to the feed in various ways, including by dragging the URL of the RSS feed into your news reader or by cutting and pasting the same URL into a new feed in your news reader. Most sites that offer RSS feeds use a similar orange RSS button, but some may just have a normal web link to the feed."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss3"
+msgstr "このボタンをクリックすると、様々な方法でフィードを購読できます。たとえば、RSSフィードのURLをニュースリーダにドラッグする、おなじURLをカットアンドペーストでニュースリーダーにコピーするなどです。RSSフィードを提供するほとんどのサイトは同じようなオレンジのボタンを利用していますが、フィードへの単なるWebリンクを提供しているサイトもあります。"
+
+#. Default: "Some browsers, including Firefox and Safari, automatically check for RSS feeds for you when you visit a Web site, and display an icon when they find one. This can make subscribing to RSS feeds much easier. For more details on these, please check their Web sites."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_how_rss4"
+msgstr "FireFoxやFafariなどのブラウザは、Webサイトを開く度に自動的にRSSフィードをチェックし、フィードが見つかればアイコンが表示されます。この場合、RSSフィードの購読は大変簡単です。詳しくは、これらのブラウザのサイトで調べてください。"
+
+#. Default: "There is a range of different news readers available and new versions are appearing all the time."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss1"
+msgstr "様々なニュースリーダがありますが、いつも新しいものが出現します。"
+
+#. Default: "Different news readers work on different operating systems, so you will need to choose one that will work with your computer."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss2"
+msgstr "それぞれのニュースリーダは、稼動するオペレーティングシステムOSが決まっています。自分のコンピュータで動くニュースリーダーを選択してください。"
+
+#. Default: "Here is one ${rss_list} of available readers from Google."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_reader_rss3"
+msgstr "ここには、${rss_list}Google が提供しているリーダーがあります。"
+
+#. Default: "Receive notification of new ${portal_title} OCW courses on your desktop, or add them to your blog or website."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_rss_info"
+msgstr "${portal_title} OCW の新しいコースについてのお知らせをデスクトップに受け取ったり、あなたのブログやウェブサイトに追加できます。"
+
+#. Default: "RSS stands for Really Simple Syndication. RSS is a time-saving way for you to receive news and information updates (often called \"RSS feeds\", \"news feeds\" or simply \"feeds\") from your favorite Web sites and blogs."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_whatis_rss1"
+msgstr "RSSとはRelly Simple Syndication(ほんとに簡単な情報配信）を意味します。RSSはお気に入りのウェブやブログ上のニュースやコンテンツの更新について調べる時間を節約するよい方法でRSSフィード、ニュースフィード、単にフィードなどと呼ばれています。"
+
+#. Default: "Typically RSS feeds consist of headlines and short summaries of new articles, blog entries or search results, though some Web sites and blogs offer the full text of articles or blog entrees as feeds."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_whatis_rss2"
+msgstr "RSSは一般的に新しい記事、ブログの記事、サーチ結果などについての見出しと簡単な説明で出来ています。フィードに記事の本文を入れているウェブサイトやブログも一部にあります。"
+
+#. Default: "By using RSS you can stay on top of the news and information you need without using your e-mail system and without repeatedly checking multiple Web sites to see if they have been updated. RSS simplifies the way you stay informed and helps you take control of overloaded email inboxes."
+#: ../skins/eduCommons/rss_feeds.pt
+msgid "section_why_rss1"
+msgstr "RSSを利用すること、電子メールを利用したり、頻繁にいくつものWebサイトの更新状態をチェックしたりすることなく、常に最新のニュースと情報を手に入れることが出来ます。RSSを用いることで、常に最新の情報を入手し、しかも電子メールへの頼りすぎを解消するのに役に立ちます。"
+
+#. Default: "InProg:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_InProg"
+msgstr "作業中"
+
+#. Default: "Pub:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_Pub"
+msgstr "Pub:"
+
+#. Default: "QA:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_QA"
+msgstr "QA:"
+
+#. Default: "Rel:"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_Rel"
+msgstr "Rel:"
+
+#. <p i18n:translate="text_add_nav_item">
+#. To allow an item within a Course to display in the left hand navigation:
+#. </p>
+#. Default: "To allow an item within a Course to display in the left hand navigation:"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_add_nav_item"
+msgstr "コース内のアイテムを左ナビゲーションに表示します。"
+
+#. <a href="" i18n:attributes="title link_title_advanced_search;" i18n:translate="text_advanced_search" tal:attributes="href string:${here/absolute_url}/olssearch" title="Advanced Search">
+#. Advanced Search
+#. </a>
+#. Default: "Advanced"
+#: ../skins/eduCommons/global_searchbox.pt
+msgid "text_advanced_search"
+msgstr "高度な検索"
+
+#. <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" i18n:attributes="title link_title_cc_license" i18n:translate="text_cc_license" title="Creative Commons License">
+#. Creative Commons License
+#. </a>
+#. Default: "Creative Commons License"
+#: ../skins/eduCommons/footer.pt
+#: ../skins/eduCommons/index_template.pt
+msgid "text_cc_license"
+msgstr "クリエイティブ・コモンズ　ライセンス"
+
+#. <li i18n:translate="text_check_showinnav">
+#. Check the
+#. <strong>
+#. Show In Navigation
+#. </strong>
+#. checkbox for the item, and save your changes
+#. </li>
+#. Default: "Check the <strong>Show In Navigation</strong> checkbox for the item, and save your changes"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_check_showinnav"
+msgstr "<strong>ナビゲーションに表示</strong>チェックボックスをクリックし、変更を保存します。"
+
+#. <li i18n:translate="text_click_title">
+#. Click the
+#. <strong>
+#. title
+#. </strong>
+#. of the object you would like to be displayed in the left hand navigation
+#. </li>
+#. Default: "Click the <strong>title</strong> of the object you would like to be displayed in the left hand navigation"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_click_title"
+msgstr "左ナビゲーションに表示したいオブジェクトの<strong>タイトル</strong>をクリックします。"
+
+#. Default: "Moving content through the workflow without first clearing the copyright <strong>may subject you or your organization to legal risk</strong> ! Are you sure you want to continue?"
+#: ../skins/eduCommons/content_status_confirm.cpt
+msgid "text_confirm_without_copyright"
+msgstr "著作権をクリアせずにコンテンツを移動すると、 <strong>あなたやあなたの所属機関が法的な危険が生じる</strong> 可能性があります! 本当に続けますか?\""
+
+#. <a href="#top" i18n:attributes="title link_title_top;" i18n:translate="text_discussion_top" title="Return to Top">
+#. Return to Top
+#. </a>
+#. Default: "Return to Top"
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_discussion_top"
+msgstr "トップページに戻ります。"
+
+#. Default: "Navigate to that item within the course"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav1"
+msgstr "コース内のそのアイテムに移動します。"
+
+#. Default: "Select the metadata tab from the management toolbar"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav2"
+msgstr "管理ツールバーからメタデータタブを選択します。"
+
+#. Default: "Uncheck the <em>Exclude from navigation</em> checkbox and save your changes"
+#: eduCommons/skins/eduCommons/Course_Navigation.pt
+msgid "text_help_select_nav3"
+msgstr "<em>ナビゲーションに表示しない</em> チェックボックスをクリアして、変更を保存してください。"
+
+#. Default: "Validate all html within the current course."
+#: ../skins/eduCommons/HtmlValidationForm.cpt
+msgid "text_html_validation"
+msgstr "現在のコース中のすべてのHTMLを検証する。"
+
+#. Default: "Your search did not return any results."
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "text_insert_link_noresults"
+msgstr "検索しましたが何も見つかりませんでした。"
+
+#. <p i18n:translate="text_no_departments" tal:condition="not: coursesContents">
+#. No departments are currently online.
+#. </p>
+#. Default: "No departments are currently online."
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_no_departments"
+msgstr "表示できる部局はありません。"
+
+#. i18n:translate="text_no_published_courses">
+#. Default: "No Courses have been published for this department."
+#: ../skins/eduCommons/CoursesListingMacros.pt
+msgid "text_no_published_courses"
+msgstr "この部局には公開されたコースはありません。"
+
+#. <p i18n:domain="eduCommons" i18n:translate="text_no_visible_items_course_summary" style="font-style: italic;" tal:condition="python:not batch">
+#. There are currently no items in the state you have selected.
+#. </p>
+#. Default: "There are currently no items in the state you have selected."
+#: ../skins/eduCommons/summary_contents.pt
+msgid "text_no_visible_items_course_summary"
+msgstr "あなたが選択した状態にはアイテムは存在しません。"
+
+#. Default: "Search Again"
+#: ../skins/eduCommons/ECDocument_searchresults_form.cpt
+msgid "text_search_again"
+msgstr "再検索"
+
+#. <li i18n:translate="text_select_edit">
+#. Select the
+#. <strong>
+#. edit
+#. </strong>
+#. tab from the management toolbar
+#. </li>
+#. Default: "Select the <strong>edit</strong> tab from the management toolbar"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_select_edit"
+msgstr "管理ツールバーから <strong>編集</strong> タブを選択します。"
+
+#. <li i18n:translate="text_select_item">
+#. Select the
+#. <strong>
+#. contents
+#. </strong>
+#. tab from the management toolbar
+#. </li>
+#. Default: "Select the <strong>contents</strong> tab from the management toolbar"
+#: ../skins/eduCommons/Course_Navigation.pt
+msgid "text_select_item"
+msgstr "管理ツールバーから <strong>コンテンツ</strong> タブを選択します。"
+
+#. Default: "Send us"
+#: eduCommons/skins/eduCommons/footer.pt
+#: eduCommons/skins/eduCommons/index_template.pt
+msgid "text_send_us"
+msgstr "送信"
+
+#. <td colspan="3" i18n:translate="text_total_obj">
+#. Total Objects:
+#. ${total}
+#. </td>
+#. Default: "Total Objects: ${total}"
+#: ../skins/eduCommons/portlet_coursesummary.pt
+msgid "text_total_obj"
+msgstr "オブジェクトの合計: ${total}"
+
+#. Default: "Required"
+#: eduCommons/skins/eduCommons/eduCommonsSetup_form.cpt
+msgid "title_required"
+msgstr "必要"
+
+#. Default: This tool validates your HTML markup to ensure that it adheres to XHTML standards.
+#. ../skins/eduCommons/Course_Tools.pt
+msgid "validates_html_markup"
+msgstr "このツールは、作成したHTMLがXHTML標準に適合するように修正します。"
+

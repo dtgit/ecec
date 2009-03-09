@@ -1,0 +1,50 @@
+<div class="documentByLine"
+     style="text-align: right; margin-top: 2em; border-top: 1px solid #999;"
+     tal:define="bylineInfo view/getLicenseByline;
+                 copyright python:bylineInfo[0];
+                 alert_msg python:here.translate('alert_cite_resource',default='Cite Resource:');
+                 citation_info view/getCitationInfo;
+                 holder python:bylineInfo[1];
+                 license_name python:bylineInfo[2];
+                 license_url python:bylineInfo[3];
+                 license_button python:bylineInfo[4];"
+     i18n:domain="ContentLicensing">
+
+  <div>Citation: <span tal:content="citation_info">Citation Info</span></div>
+  <div tal:condition="copyright" tal:replace="string:${copyright}, " />
+  <div tal:condition="holder" tal:replace="string:${holder}. " />
+  <div tal:condition="license_name" tal:omit-tag="">
+    
+    <div tal:condition="python:license_name != 'All Rights Reserved'" tal:omit-tag="" i18n:translate="license_text">
+      This work is licensed under a 
+    </div>
+
+    <a tal:condition="license_url"
+       tal:attributes="href license_url;
+                       title license_name;
+                       alt license_name"
+       tal:content="string:${license_name}.">Creative Commons License.</a>
+
+    <div tal:condition="python:not license_url and license_name"
+         tal:replace="string:${license_name}.">
+      All Rights Reserved.
+    </div>
+
+
+    <a tal:condition="python:license_url and license_button"
+       tal:attributes="href license_url;
+                       title license_name;
+                       alt license_name">
+    <img tal:condition="license_button"
+         style="vertical-align: text-top; margin-top: 3px; padding-left: 5px"
+         tal:attributes="src license_button;
+                         alt license_name;" /></a>
+    <img tal:condition="python:license_button and not license_url"
+         style="vertical-align: text-top; margin-top: 3px; padding-left: 5px"
+         tal:attributes="src license_button;
+                         alt license_name;" />
+
+  </div>
+
+
+</div>

@@ -1,0 +1,780 @@
+<tal:block tal:define="portal_title python:here.portal_url.getProperty('title')">
+<p class="discreet">
+  <a id="TOP" name="TOP"></a>This document provides the help for the 
+  <tal:block tal:replace="here/title">eduCommons</tal:block> OpenCourseWare 
+  site in the form of a list of frequently asked questions and answers. If you 
+  have other questions about this site please use the 
+  <a href="../feedback" title="Feedback">feedback</a> form.
+</p>
+
+<h2 tal:content="string:About ${portal_title} OCW">About eduCommons</h2>
+<ol>
+<li><h3><a id="q1" name="q1"></a> What is <tal:block tal:replace="portal_title">eduCommons</tal:block> OpenCourseWare?</h3>
+
+<p>The idea behind <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is to make <tal:block tal:replace="portal_title">eduCommons</tal:block> course materials that are used
+in the teaching of undergraduate and graduate subjects available on the
+Web, free of charge, to any user anywhere in the world. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW will
+advance technology-enhanced education at <tal:block tal:replace="portal_title">eduCommons</tal:block>, and will serve as a model
+for university dissemination of knowledge in the Internet age. This
+venture continues the tradition at <tal:block tal:replace="portal_title">eduCommons</tal:block>, and in American higher
+education, of open dissemination of educational materials, philosophy,
+and modes of thought, and will help lead to fundamental changes in the
+way colleges and universities utilize the Web as a vehicle for
+education.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q2" name="q2"></a> Why is <tal:block tal:replace="portal_title">eduCommons</tal:block> doing this?</h3>
+
+<p>Because technology makes it possible for us to increase the reach of
+educational opportunity, we have a moral obligation to do so. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW
+supports <tal:block tal:replace="portal_title">eduCommons</tal:block>'s mission to serve the public through learning, discovery,
+and engagement, and is true to <tal:block tal:replace="portal_title">eduCommons</tal:block>'s guiding principle that academics
+come first. As <tal:block tal:replace="portal_title">eduCommons</tal:block> enters the 21st century, services like
+OpenCourseWare enable it to more fully accomplish its land grant
+mission. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW contributes to the "shared intellectual commons" in
+academia, which fosters collaboration across <tal:block tal:replace="portal_title">eduCommons</tal:block> and among other
+scholars across disciplines and around the world.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q3" name="q3"></a> How does <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW differ from other types of Web-based education, including distance learning?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW differs from other <tal:block tal:replace="portal_title">eduCommons</tal:block> Web-based education offerings in that it
+is free and open, does not provide university credit, and grants no
+access to university faculty. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is not a distance-learning
+initiative. Distance learning involves the active exchange of
+information between faculty and students, with the goal of obtaining
+some form of a credential. Increasingly, distance learning is also
+limited to those willing and able to pay for materials or course
+delivery. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is not meant to replace degree-granting higher
+education or for-credit courses. Rather, the goal is to provide the
+content that supports an education.</p>
+
+<p>Many individual faculty members at <tal:block tal:replace="portal_title">eduCommons</tal:block> and other universities
+already use the Web extensively to make standard course materials
+available to their students. Some colleges and universities now require
+a Web site for every class. But, to a large extent, these Web sites are
+designed for, and access is only provided to, the students enrolled at
+these institutions. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is an unprecedented effort of a much
+broader magnitude, as the goal is to provide the course materials free
+and open to the world.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q4" name="q4"></a> What are the long-term goals of the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW initiative?</h3>
+
+<p>We expect <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW to grow to encompass the course materials of all
+faculty who are willing to participate. Over time, the goal is for most
+of the courses offered at <tal:block tal:replace="portal_title">eduCommons</tal:block> to be represented in the collection.
+Another goal of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is to catalyze the development of groups or
+communities around the course materials. Individuals participating in
+these informal groups will coach, mentor, and support each other in
+their learning, adding significant value to the materials themselves.
+Finally, we strongly desire to extend the reach and impact of the
+"opencourseware" concept.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q5" name="q5"></a> Will <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW always be free and openly available to anyone in the world?</h3>
+
+<p>We are committed to <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW remaining a free and openly available
+publication of the course materials that support the dynamic classroom
+interactions of a <tal:block tal:replace="portal_title">eduCommons</tal:block> education. Even as we continue to grow and
+evolve, the materials will always remain free and open to all. Along
+with this commitment to remaining free and open, <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is also
+committed to the idea that <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is not a distance-learning, or a
+degree-granting, initiative, and that there will not be a registration
+process required for users to view course materials now or in the
+future. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is working hard to publish all of the <tal:block tal:replace="portal_title">eduCommons</tal:block> faculty's
+course materials who wish to participate.</p>
+
+<p><a href="#TOP">Top</a></p>
+</ol>
+
+<h2 tal:content="string:Using ${portal_title} OCW Materials">Using eduCommons OCW Materials</h2>
+<ol>
+
+<li><h3><a id="q6" name="q6"></a> Do I need to register to use <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course materials?</h3>
+
+<p>Because <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is not a distance-learning, or a degree-granting,
+initiative, there is no registration process required for users to view
+course materials. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is a publication of the course materials that
+support the dynamic classroom interactions of an <tal:block tal:replace="portal_title">eduCommons</tal:block> education. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW
+is available on the Web, free of charge, to any user anywhere in the
+world.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q7" name="q7"></a> Where are the course materials?</h3>
+
+<p>To find what courses are available at this time, view the&nbsp;<a href="../courselist">complete course list</a>.
+Once you have accessed a particular course site, the left-hand
+navigation bar of each course homepage will detail what materials are
+available for that individual course.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q8" name="q8"></a> How do I find what courses are available?</h3>
+
+<p>You can, utilize the Search function that can be found in the right-hand corner of every page on the
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW site. You can search for specific text, such as certain academic
+discipline area, across all courses or within just one course. Or to
+perform a detailed search, use our&nbsp;<a href="search_form">Advanced Search</a>.</p>
+
+
+<p>Or, to see what courses are available is to click on&nbsp;<a href="../courselist">Courses</a>&nbsp;in the top navigation bar on every page of the
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW
+Web site. This will allow you to view the list of courses available at this time.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q9" name="q9"></a> How can I use <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course materials?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW can be considered a large-scale, Web-based publication of the
+course materials that support an <tal:block tal:replace="portal_title">eduCommons</tal:block> education. Educators are
+encouraged to utilize the materials for curriculum development,
+students can augment their current learning by making use of the
+materials offered, and self-learners are encouraged to draw upon the
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW for self-study or supplementary use. Course materials offered
+on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site may be used within 
+the license associated with the content, course or overall <tal:block tal:replace="portal_title">eduCommons</tal:block> site as applicable.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q10" name="q10"></a> What are the prerequisites to use <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW materials?</h3>
+
+<p>Because <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is not a distance-learning, or a degree-granting,
+initiative, there is no registration process required for users to view
+course materials. There are also no prerequisites for users who utilize
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course materials in their own learning. However, each course
+site indicates the prerequisites and corequisites that are required of
+<tal:block tal:replace="portal_title">eduCommons</tal:block> students.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q11" name="q11"></a> Does <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW offer discounts on textbooks or software applications utilized in the course materials?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW does not sell, offer vendor discounts for, or represent any
+vendor who may sell the software, books, or other materials that users
+of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW may require to understand the course materials offered on
+the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q12" name="q12"></a> How do I get a copy of the course pack for a particular <tal:block tal:replace="portal_title">eduCommons</tal:block> course?</h3>
+
+<p>The course-pack materials that accompany most <tal:block tal:replace="portal_title">eduCommons</tal:block> courses often contain
+proprietary information and copyrighted materials that <tal:block tal:replace="portal_title">eduCommons</tal:block> Faculty only
+use in their classroom interactions with <tal:block tal:replace="portal_title">eduCommons</tal:block> students. These materials
+are not available, nor will they be in the future, to <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW users.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q13" name="q13"></a> I have seen (or I am/represent) an
+individual, organization, or institution that offers to teach <tal:block tal:replace="portal_title">eduCommons</tal:block>
+courses or tutor students based on <tal:block tal:replace="portal_title">eduCommons</tal:block> materials. Does <tal:block tal:replace="portal_title">eduCommons</tal:block> approve or
+recognize such individuals or organizations?</h3>
+
+<p>No, <tal:block tal:replace="portal_title">eduCommons</tal:block> has no relationship with, grants no special permission to, and
+does not approve, endorse, or certify any organizations, teachers,
+tutors, or other service providers who use educational materials
+available on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site in connection with their services.
+Except for students admitted to <tal:block tal:replace="portal_title">eduCommons</tal:block>, <tal:block tal:replace="portal_title">eduCommons</tal:block>
+does not authorize the granting of any kind of degree, certificate, or
+other recognition for participation in or completion of any course of
+study based on or using published <tal:block tal:replace="portal_title">eduCommons</tal:block> course materials.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q14" name="q14"></a> Can I/my organization state on our Web site or in our literature that we make use of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course materials?</h3>
+
+<p>To reference <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW you must comply with the terms of the license associated with <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW and/or the specific course materials. Typically you must you must give credit to <tal:block tal:replace="portal_title">eduCommons</tal:block> and the faculty author of
+the course materials anytime you use <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW materials. For your convenience, each <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW page includes a citation appropriate for the page at the bottom of the content. However, any
+reference to <tal:block tal:replace="portal_title">eduCommons</tal:block> (including the <tal:block tal:replace="portal_title">eduCommons</tal:block> name in any of its forms or <tal:block tal:replace="portal_title">eduCommons</tal:block>
+seals or logos) that deliberately or inadvertently claims, suggests, or
+in <tal:block tal:replace="portal_title">eduCommons</tal:block>'s sole judgment gives the appearance or impression of a
+relationship with or endorsement by <tal:block tal:replace="portal_title">eduCommons</tal:block>, is prohibited.</p>
+
+<p>[See also <a href="#q19">Intellectual Property</a>]</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q15" name="q15"></a> Can I link to the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site from my Web site?</h3>
+<p>Links to <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW or to courses or pages within the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site are
+permitted so long as the use of the materials associated with the link
+is permitted under the terms of the license associated with the course materials or particlar content. Typically course materials are licensed under a <a href="http://creativecommons.org/licenses/by/2.5/" title="Creative Commons License">Creative 
+Commons Attribution license 2.5</a>, however individual course materials may have a separate license. Please check the bottom of the page to view the applicable license for any particular item. For your convenience, each <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW page includes a citation appropriate for the page at the bottom of the content. </p>
+
+<p>In addition to meeting the terms of the license, links to <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW are permitted as long as the link is freely accessible (e.g., no restrictions
+or fee for access); and there is no claim, appearance, or implication
+of an affiliation with or endorsement by <tal:block tal:replace="portal_title">eduCommons</tal:block>. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW cannot guarantee
+the persistence of any specific link other than those to the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW homepage.</p>
+
+<p>[See also <a href="#q19">Intellectual Property</a>]</p>
+
+<p><a href="#TOP">Top</a></p>
+
+</ol>
+
+<h2>Content</h2>
+<ol>
+
+<li><h3><a id="q16" name="q16"></a> Why is there such variation in the breadth and depth of content presented on individual <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course Web sites?</h3>
+
+<p>Each <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course Web site is developed individually with the
+participating faculty and instructors. It includes as much of the <tal:block tal:replace="portal_title">eduCommons</tal:block>
+faculty member's course materials as is available in a digital format,
+or can be cost-effectively prepared; and is free of Intellectual
+Property and copyright restrictions. <tal:block tal:replace="portal_title">eduCommons</tal:block> faculty and instructors
+participate only voluntarily, and publish only as much content as they
+are comfortable having on a Web site that is freely accessible
+worldwide.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q17" name="q17"></a> Why do some <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course sites lack solutions to assignments, quizzes, and exams?</h3>
+<p>In some cases, solutions to homework assignments, quizzes, and exams
+are only discussed and presented in the classroom, and not made
+available in print or electronic format to the <tal:block tal:replace="portal_title">eduCommons</tal:block> students--or to the
+worldwide community of visitors to the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site. In other
+cases, the instructors plan to re-use in their <tal:block tal:replace="portal_title">eduCommons</tal:block> classroom the
+assignments, quizzes, and exams, and so they do not wish to widely
+publish their solutions.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q18" name="q18"></a> Why doesn't every <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course offer video lectures?</h3>
+<p>Although video lectures are useful for students, there are many reasons
+that <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW does not include video lectures in every course. First is
+the issue of bandwidth. We are very much focused on making <tal:block tal:replace="portal_title">eduCommons</tal:block>'s
+courses materials as accessible as possible to users all over the
+world, including the developing world. If we were to start depending on
+the video component as THE key element of every <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course, we
+would be excluding a large portion of the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW audience who are
+not using high-speed Internet  connections. They would never be able to
+download the videos and we are very sensitive to that fact.</p>
+
+<p>Another key concern about video is cost. The technology for
+compressing and storing video becomes more and more affordable by the
+day, but it is still not affordable, or feasible from a production
+standpoint, for us to be compressing 20 video lectures for all of our
+courses. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW does not have that kind of storage capacity, at this
+time.</p>
+
+<p>A key <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW audience is educators, and for them, we are hoping
+that by providing the syllabus, reading lists and lecture notes, we are
+offering a chance for them to jumpstart their own pedagogy and improve
+the way they teach their chosen discipline. While video lectures are
+very easy for people with fast Internet connections to watch, they do
+not really fulfill the mission of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+</ol>
+
+<h2>Intellectual Property</h2>
+<ol>
+
+<li><h3><a id="q19" name="q19"></a> Who owns the intellectual property published on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site?</h3>
+
+<p>Prior to making any course materials publicly available, the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW
+team has reviewed all material extensively to determine the correct
+ownership of the material and obtain the appropriate licenses to make
+the material openly available on the Web. We will promptly remove any
+material that is determined to be infringing on the rights of others [See also <a href="#q24">What do I do if I believe a portion of 
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW material infringes my copyright?</a>].</p>
+
+<p>The intellectual property policies created for <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW are clear and
+consistent with other policies for scholarly materials used in
+education. Faculty retain ownership of most materials prepared for <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW. 
+<tal:block tal:replace="portal_title">eduCommons</tal:block> retains ownership only when significant use has been made of
+the Institute's resources. If student course work is placed on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW 
+site, then copyright in the work remains with the student.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q20" name="q20"></a> What are the Terms of Use for <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW users?</h3>
+
+<p>See the <a href="../about/terms_of_use">Terms of Use</a> for more information.</p>
+
+
+<p>If you would like to use <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course materials, but you are unsure whether your intended
+use qualifies as non-commercial use, please contact us using the <a href="../feedback">feedback</a> page.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+<li><h3><a id="q21" name="q21"></a>What are the Terms of Use for the discussion software?</h3>
+
+<p>See the <a href="../about/terms_of_use">Terms of Use</a> for more information.</p>
+
+
+<li><h3><a id="q22" name="q22"></a> How does <tal:block tal:replace="portal_title">eduCommons</tal:block> define non-commercial use?</h3>
+
+<p>A commercial use would involve the assessment of a direct or indirect
+fee for use of the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW materials, or any derivation or modification
+of the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW material, or any other commercial exploitation of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW 
+materials. All uses, reuse, and distribution of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW material,
+including works derived from <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW material, must be attributed to
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW and to the original authors where identified on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW
+materials you distribute. If you would like to use <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course
+materials, but you are unsure whether your intended use qualifies as
+non-commercial use, please contact us using the <a href="../feedback">feedback</a> link at the top of the page.
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q23" name="q23"></a> How do I properly cite my reuse of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW materials?</h3>
+
+<p>To reuse or repost materials from <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW, confirm that the license allows for the use you intend. If the license permits reuse, you must give proper
+attribution to the original <tal:block tal:replace="portal_title">eduCommons</tal:block> faculty author(s).</p>
+
+<p>For your convenience, at the bottom of each page, we provide a citation in APA format, a copyright statement and a license for that page.</p>
+
+<p>Or you may chose to cite the resource in the following manner: "This material was created by or adapted from material created by <tal:block tal:replace="portal_title">eduCommons</tal:block> faculty member, (Name),
+(Title), (Year). Copyright &copy; (Year), (Faculty Member's Name)."</p>
+
+<blockquote>As an example, the citation for "Understanding Online Interaction"
+taught by Utah State University Professor David Wiley would read, "This material was
+created or adapted from material created by Utah State University faculty member David
+Wiley, Associate Professor. Copyright &copy; 2004, David Wiley."</blockquote>
+
+
+<p>If you want to use the course materials on your Web site, and the materials are licensed using a Creative Commons license, you must also
+include a copy of the Creative Commons license, or
+clear and reasonable link to its URL (for example, <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" target="_blank">http://creativecommons.org/licenses/by-nc-sa/2.5/</a>), with every copy of the  materials or the derivative work(s) you create from it.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q24" name="q24"></a> How can I contribute my own educational materials to <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW?</h3>
+
+<p>The intent of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is that our Web site should reflect the course
+materials for what is being taught at <tal:block tal:replace="portal_title">eduCommons</tal:block>. The reason for this policy
+is that the materials presented on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW site are authored by
+members of the <tal:block tal:replace="portal_title">eduCommons</tal:block> Faculty, and thus, our faculty will take final
+responsibility for these materials. It would be difficult for <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW
+to guarantee the accuracy and originality of materials we received from
+outside sources. However, we encourage other universities to create
+their own "opencourseware" in which materials from their courses would
+be posted online and openly shared with the world. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is eager to
+link to other universities or institutions that have similar goals.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+<li><h3><a id="q25" name="q25"></a> What do I do if I believe a portion of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW material infringes my copyright?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW, prior to making any <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW materials publicly available, has
+reviewed all material extensively to determine the correct ownership of
+the material and obtain the appropriate licenses to make the material
+available on <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW will promptly remove any material that is
+determined to be infringing on the rights of others. If you believe
+that a portion of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW material infringes on your copyright, please contact us using the <a href="../feedback">feedback</a> page.</p>
+
+<p>To file the notification, you must be either the copyright
+owner of the work or an individual authorized to act on behalf of the
+copyright owner. Your notification must include:
+</p>
+
+<ol>
+
+<li>Identification of the copyrighted work, or, in the case of multiple
+works at the same location, a representative list of such works at that
+site.</li>
+
+<li>Identification of the material that is claimed to be infringing or
+to be the subject of infringing activity. You must include sufficient
+information, such as a specific URL or other specific identification,
+for us to locate the material.</li>
+
+<li>Information for us to be able to contact the claimant (e.g., email address, phone number).</li>
+
+<li>A statement that the claimant believes that the use of the material
+has not been authorized by the copyright owner or an authorized agent.</li>
+
+<li>A statement that the information in the notification is accurate
+and that the claimant is, or is authorized to act on behalf of, the
+copyright owner.</li>
+
+</ol>
+
+<p>If you do not include an electronic signature with
+your claim, you may be asked to send or fax a follow-up copy with a
+signature.</p>
+
+<p><a href="#TOP">Top</a></p>
+</ol>
+
+<h2 tal:content="string:${portal_title} Faculty">eduCommons Faculty</h2>
+<ol>
+
+<li><h3><a id="q26" name="q26"></a> Are <tal:block tal:replace="portal_title">eduCommons</tal:block> faculty required to participate in <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW?</h3>
+
+<p>Participation of <tal:block tal:replace="portal_title">eduCommons</tal:block> faculty in <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is completely voluntary.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q27" name="q27"></a> How do I contact a specific member of the <tal:block tal:replace="portal_title">eduCommons</tal:block> Faculty?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is intended as a publication of <tal:block tal:replace="portal_title">eduCommons</tal:block> course materials on the
+Web, and not as an interactive experience with <tal:block tal:replace="portal_title">eduCommons</tal:block> faculty. It provides
+the content of, but is not a substitute for, an <tal:block tal:replace="portal_title">eduCommons</tal:block> education. The most
+fundamental cornerstone of the learning process at <tal:block tal:replace="portal_title">eduCommons</tal:block> is the
+interaction between faculty and students in the classroom, and among
+students themselves on campus. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW does not offer visitors to the
+Web site the opportunity for direct contact with <tal:block tal:replace="portal_title">eduCommons</tal:block> faculty, though individual 
+portal faculty may choose to list their contact information. Inquiries related to specific course materials will be forwarded 
+to the <tal:block tal:replace="portal_title">eduCommons</tal:block>
+faculty member associated with that course for their consideration.
+However, due to the tremendous volume of email inquiries received, it
+is unlikely he or she will answer all emails.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q28" name="q28"></a> Will inquiries to <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW be answered?</h3>
+
+<p>Yes inquiries will be answered. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW encourages users to provide <a href="../feedback">feedback</a> on the site and the
+published course materials. The comments and constructive criticism of
+users will help the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW staff improve the site and published course materials as we continue to evolve.</p>
+
+<p><a href="#TOP">Top</a></p>
+</ol>
+
+<h2>Translations</h2>
+<ol>
+
+<li><h3><a id="q29" name="q29"></a> Can I translate the course materials in <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW?</h3>
+
+<p>You may translate course materials in <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW if permitted by the license of the course materials you wish to translate. <tal:block tal:replace="portal_title">eduCommons</tal:block> asks that any <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW materials translated into other
+languages from the original language must be accompanied by the proper attribution of the original materials and include the following disclaimer:</p>
+
+<blockquote>"These <tal:block tal:replace="portal_title">eduCommons</tal:block> OpenCourseWare course materials have
+been translated into [YOUR LANGUAGE] by [YOUR INSTITUTION] and <tal:block tal:replace="portal_title">eduCommons</tal:block> 
+OpenCourseWare makes no representations or warranties of any kind
+concerning the materials, express or implied, including, without
+limitation, warranties of merchantability, fitness for a particular
+purpose, non-infringement, or the absence of errors, whether or not
+discoverable. <tal:block tal:replace="portal_title">eduCommons</tal:block> OpenCourseWare bears no responsibility for any
+inaccuracies in translation. Any inaccuracies or other defects
+contained in this material, due to inaccuracies in language
+translation, are the sole responsibility of [YOUR INSTITUTION] and not
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OpenCourseWare."</blockquote>
+
+ [See Also <a href="#q23">How do I properly cite my reuse of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW materials</a>] 
+ 
+<p><a href="#TOP">Top</a></p>
+</ol>
+
+<h2>Usability</h2>
+<ol>
+
+<li><h3><a id="q30" name="q30"></a> What are the technical requirements for viewing <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course materials?</h3>
+
+<p>The majority of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course sites work in modern Web browsers on both the Macintosh and
+Windows platforms. Although higher-speed connections are preferable,
+slower connections, such as modems, should allow users to view most
+materials on the sites (however, downloading or accessing materials may take
+somewhat longer). <!--<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW has tested the course sites with Netscape
+version 4.75 and Internet Explorer version 5.5 browsers.--></p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q31" name="q31"></a> What is metadata and why is it important to <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW?</h3>
+
+<p>Metadata is, literally, "data about data." Metadata can be better
+understood as information that describes other information. For
+example, this Web page of FAQs for <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW has an author, a title, a
+date of creation, and a unique Internet address; this information
+constitutes the metadata about this page. Metadata enables
+sophisticated, powerful, and accurate searches across <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course
+materials.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q32" name="q32"></a> How do I change the font-size on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site?</h3>
+
+<p>The fonts and style of the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site have been specifically
+selected to meet certain design and accessibility standards. The <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW 
+Team has tested the site and these standards across a wide variety
+of browsers and platform. However, some users may still find that their
+browser configurations continue to display the text too small. You can
+change the displayed font size using your browser's View menu. In
+Netscape 7, there is a "VIEW - Text-Zoom" selection (try 120%). In
+Netscape 4.x, there is a "VIEW - Increase Font" selection. In Internet
+Explorer, you can select "VIEW - Text-Size - Larger or Largest." We
+hope this helps you to more comfortably view the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW course
+materials.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q33" name="q33"></a> Will the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site be compliant with W3C standards and accessibility requirements?</h3>
+
+<p>All course materials published on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW site are checked to see if they are
+valid XHTML and meet Section 508 and WAI-AA guidelines as part of the
+authoring process. We require all images to contain ALT attributes and
+all links to contain TITLE tags.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+<li><h3><a id="q33a" name="q33a"></a> How can I ensure my content is accessible?</h3>
+
+<p>While there is no automated way to ensure that a piece of content is entirely accessible, you can review and implement, as needed, the <a href="./accessibility-guidelines">accessibility guidelines</a>.
+
+<p><a href="#TOP">Top</a></p>
+
+
+
+<li><h3><a id="q34" name="q34"></a> Why does this PDF not open correctly in copy of Adobe Acrobat Reader?</h3>
+
+<p>A small percentage of the PDF documents offered on the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site
+may be compatible only with newer versions of Adobe Acrobat Reader. If you would like
+to view such a file, we recommend downloading the latest version of the Acrobat Reader 
+from the Adobe Web site at&nbsp;<a href="http://www.adobe.com/support/downloads/main.html" target="_blank">http://www.adobe.com/support/downloads/main.html</a>.</p>
+
+<p><a href="#TOP">Top</a></p>
+</ol>
+
+<h2>Privacy and Data Collection</h2>
+<ol>
+
+<li><h3><a id="q35" name="q35"></a> What information does <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW collect from visitors to the Web site?</h3>
+
+<p>The information we learn from visitors helps us improve the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW
+site, and assists our foundation sponsors in evaluation of usage,
+access, and impact of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW on the worldwide educational community.
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW collects the following information from visitors:</p>
+
+
+<ul>
+
+<li>
+<div><em>Information You Provide</em>: We receive and store any
+information you enter on our Web site or give us in any other way. You
+provide most such information when you submit feedback on the site,
+contact us by email, or agree to participate in a visitor survey. This
+information may include your name and email address, your academic
+status, your institution, your geographic region, how you are using <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW, 
+and what you think of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW. In all cases, any information you
+provide is strictly optional and voluntary and you may choose to use
+the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW site without ever providing this information. If you
+voluntarily provide your email address or other contact information, we
+will not share personal information with anyone without first
+requesting your explicit permission to do so.</div>
+</li>
+
+<li>
+<div><em>Automatic Information</em>: We receive and store certain types
+of information whenever you interact with the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site.
+Examples of the information we collect and analyze include the Internet
+protocol (IP) address used to connect your computer to the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW
+site; computer and connection information such as browser type and
+version, operating system, and platform, and; content you viewed or
+searched for during your visit to <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW. During some visits we may
+use software tools to measure and collect session information,
+including page response times, download errors, and length of visits to
+certain pages. However, none of this information is personally
+identifiable or linked back to you individually.</div>
+</li>
+
+</ul>
+
+<p>[See Also <a href="../about/privacy_policy">Privacy Policy</a>]</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q36" name="q36"></a> What are "cookies," and does <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW make use of cookies on its Web site?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW uses "cookies" in a limited way. Cookies are alphanumeric
+identifiers that this Web site transfers to your computer's hard drive
+through your Web browser to enable our systems to recognize your
+browser when you make return trips to the site. This allows us to track
+your use of the site (anonymously), and to analyze patterns in site
+use, such as repeat visits, length of visits, and breadth of content
+used, for example). Cookies also allow us to conduct periodic, online,
+voluntary user surveys where we can gain more insight into what type of
+people are actually using the site, how they are using the site, and
+what the educational impact of the site is on these users.</p>
+
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW's use of cookies is designed to be unobtrusive, and we do
+not collect personally identifiable information through their use.
+However, if you do not wish to accept cookies, the "Help" portion of
+the toolbar on most Web browsers will tell you how to prevent your
+browser from accepting new cookies, how to have the browser notify you
+when you receive a new cookie, or how to disable cookies altogether.
+Disabling cookies will in no way affect your access to content on the
+<tal:block tal:replace="portal_title">eduCommons</tal:block> OCW site. If you leave cookies enabled on your Web browser, you may
+be asked to complete a brief questionnaire that will help us gain a
+better understanding of the use and impact of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW.</p>
+
+<p>[See Also <a href="../about/privacy_policy">Privacy Policy</a>]</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q37" name="q37"></a> Does <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW share the information it receives?</h3>
+
+<p>Information about our site visitors is an important part of
+understanding and extending the impact of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW in the worldwide
+academic community. Individual personally identifiable information
+about users (name, email address, etc) will not be made available to
+third parties except as outlined below, nor will it ever be used for
+commercial purposes. We share user information only as described below.</p>
+
+<ul>
+
+<li>
+<div><em>Agents</em>: We employ companies and individuals to perform
+functions on our behalf. Examples include compiling and categorizing
+user feedback, analyzing survey data or data about your use of the
+site, and providing customer support. These agents have access to user
+information needed to perform their functions, for example, but may not
+use this information for any other purposes. These agents are bound by
+non-disclosure agreements.</div>
+</li>
+
+<li>
+<div><em><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Sponsors</em>: We work closely with philanthropic
+organizations that provide the funding that makes <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW possible.
+These sponsors are interested in evaluating access, use, and impact of
+the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site in order to determine if <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is achieving its
+objectives. We will provide information on a regular basis to these
+sponsors for evaluation purposes. We will not share any personally
+identifiable information such as name or email address unless you have
+given us explicit permission to do so.</div>
+</li>
+
+<li>
+<div><em>Institutions interested in the "opencourseware movement":</em>
+Part of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW's mission as an organization is to encourage other
+educational institutions to openly share their course materials with
+the world, as <tal:block tal:replace="portal_title">eduCommons</tal:block> is doing. In order to accomplish this objective, we
+are committed to sharing what we learn in public forums, at educational
+conferences, and with other educational institutions. This may include
+aggregate data about usage of the site, feedback we have received, and
+the impact of <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW on people throughout the world. However, in no
+case will we share any personally identifiable information, such as
+name or email address, unless you have given us explicit permission to
+do so.</div>
+</li>
+
+</ul>
+
+<p>[See Also <a href="../about/privacy_policy">Privacy Policy</a>]</p>
+
+<p><a href="#TOP">Top</a></p>
+</ol>
+
+<h2>Technology</h2>
+<ol>
+
+<li><h3><a id="q38" name="q38"></a> What technology is used to publish the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Web site?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW runs on the open source <a href="http://cosl.usu.edu/projects/educommons/">eduCommons</a>
+software. The current technical solution has been in use since January
+2005 with a small technical team managing all aspects of
+this infrastructure at the Center for Open and Sustainable Learning (<a href="http://cosl.usu.edu/">http://cosl.usu.edu/</a>) at Utah State University.</p>
+
+<p>The planning tools used by the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW team to assist faculty in
+publishing their course materials include a portion of the workflow in
+eduCommons, and several checklists and documents. For creating and
+managing content, we use several desktop tools (file conversion tools)
+as well as eduCommons, that together fully support our publishing
+process. Our content delivery infrastructure includes a production
+cluster and a content staging cluster.</p>
+
+<p>For more information on eduCommons, please contact The Center for Open and Sustainable Learning (<a href="http://cosl.usu.edu/">http://cosl.usu.edu/</a>).</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q39" name="q39"></a> Is <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW an open source project?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is firmly committed to open systems and will share its approach
+and the open source eduCommons software with those who may want to
+launch similar efforts. eduCommons has a dedicated team of developers focused on extending the platform, features and functions to
+meet <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW and other institution's needs.</p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q40" name="q40"></a> What is RSS?</h3>
+
+<p>RSS (Really Simple Syndication) and an aggregator allow you to 
+subscribe to discussion forums, blogs and other websites in order to receive timely, 
+organized updates of posts, news, and other information you care about.</p>
+
+<p><a href="#TOP">Top</a></p>
+</ol>
+
+<h2>Other Questions</h2>
+<ol>
+
+<li><h3><a id="q41" name="q41"></a> How can I support <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW with a financial donation?</h3>
+
+<p>It is particularly generous of you to offer a financial contribution to
+support <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW. This is a wonderful endorsement of what we hope to
+achieve. If you wish to make such a donation, please make your check
+payable to "<tal:block tal:replace="portal_title">eduCommons</tal:block>" and enclose a note indicating that the contribution is
+for the <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW Fund. You can mail your check to:<br />
+
+&lt;YourUniveristy&gt;<br />
+
+&lt;Street Address&gt;<br />
+
+&lt;City, State, Zip&gt;<br /></p>
+
+<p><a href="#TOP">Top</a></p>
+
+
+<li><h3><a id="q42" name="q42"></a> How do I apply for admission to <tal:block tal:replace="portal_title">eduCommons</tal:block> as a student?</h3>
+
+<p><tal:block tal:replace="portal_title">eduCommons</tal:block> OCW is not a degree-granting or certificate-granting program. <tal:block tal:replace="portal_title">eduCommons</tal:block> OCW 
+course materials are available for free on the Web for the use of
+educators and self-learners. Those interested in applying to be
+full-time students at <tal:block tal:replace="portal_title">eduCommons</tal:block> are encouraged to contact the Admissions
+Office:<br />
+
+Office of Admissions<br />
+
+&lt;YourUniveristy&gt;<br />
+
+&lt;Street Address&gt;<br />
+
+&lt;City, State, Zip&gt;<br />
+
+&lt;Phone: 999-999-9999&gt;<br />
+
+<a href="#" target="_blank">http://www.yoursitehere.com/admissions/</a></p>
+
+<p><a href="#TOP">Top</a></p>
+
+</ol>
+
+
+<hr />
+
+This material was created or adapted from material created by MIT OCW, Copyright &copy; 2005 MIT in accordance with the <a href="http://ocw.mit.edu/OcwWeb/Global/terms-of-use.htm">MIT OCW Terms of Use, http://ocw.mit.edu/OcwWeb/Global/terms-of-use.htm</a>.
+</tal:block>

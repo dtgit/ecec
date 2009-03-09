@@ -1,0 +1,33 @@
+# Gettext Message File for FileSystemStorage.
+# Cyrille Lebeaupin <cyrille.lebeaupin@ingeniweb.com>, 2005
+msgid ""
+msgstr ""
+"Project-Id-Version: FileSystemStorage\n"
+"POT-Creation-Date: 2005-04-06 09:05+0100\n"
+"PO-Revision-Date: 2005-04-06 17:25+0100\n"
+"Last-Translator: Cyrille Lebeaupin <cyrille.lebeaupin@ingeniweb.com>\n"
+"Language-Team: Cyrille Lebeaupin <cyrille.lebeaupin@ingeniweb.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-code: en\n"
+"Language-name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+"X-Is-Fallback-For:\n"
+
+msgid "message_backups_removed"
+msgstr "Backups have been removed."
+
+msgid "message_filesystem_storage_updated"
+msgstr "Filesystem storage have been updated."
+
+msgid "message_paths_not_exist"
+msgstr "Paths don't exist on filesystem."
+
+msgid "message_properties_saved"
+msgstr "Your changes have been saved."
+
+msgid "message_rdf_updated"
+msgstr "RDF files have been updated."

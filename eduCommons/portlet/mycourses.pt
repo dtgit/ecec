@@ -1,0 +1,22 @@
+<dl class="portlet"
+    i18n:domain="eduCommons">
+
+  <dt class="portletHeader"
+      i18n:translate="box_my_courses">
+    My Courses
+  </dt>
+
+  <tal:block tal:repeat="course view/getMyCourses">
+    <dd class="portletItem"
+	tal:define="oddrow repeat/course/odd;
+		    courseURL course/getURL;
+		    courseTitle course/Title;"
+	tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+      <a href=""
+	 tal:attributes="href courseURL"
+	 tal:content="courseTitle">Course Name</a>
+    </dd>
+  </tal:block>
+
+</dl>
+

@@ -1,0 +1,114 @@
+# ###################################################
+# FileSystemStorage configuration for a Zope instance
+# ###################################################
+# Copyright (C) 2007 Ingeniweb
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; see the file COPYING. If not, write to the
+# Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+# $Id: plone-filesystemstorage.conf.in 52733 2007-10-30 21:59:03Z encolpe $
+#
+# ===========================================================
+#
+# Please do not change this file since this is the default
+# configuration file and this file is used in the unit tests. Follow
+# the instructions in README.txt to override the default settings
+# found in this file.
+#
+# These are the default instance wide values all Plone instances will
+# use unless their setting is overriden by a <plone-site ...>
+# subsection for individual Plone sites.
+#
+# Note that all environment variables are available here to your
+# convenience. These must be prefixed with "$$" (as $$HOME,
+# $$ZOPE_HOME, $$INSTANCE_HOME, $$CLIENT_HOME, ...)
+#
+# Refreshing FSS through the ZMI may or may not take into account the
+# settings changed here. Restarting Zope will always reload this
+# configuration file (unless it has errors).
+#
+# ===========================================================
+#
+# Give the absolute path where your files will be stored in the
+# `storage-path` value. This path **must** be created, and the user
+# that runs the Zope process (see `effective-user` in `zope.conf`)
+# **must** have the read + write + delete permissions in this
+# path. See your operating system documentation.
+#
+# Examples:
+# storage-path /home/zope/instance/fss_files
+# storage-path C:\zope\instance\fss_files
+#
+# Default: $$INSTANCE_HOME/var/fss_storage
+
+# storage-path $$INSTANCE_HOME/var/fss_files
+
+# ===========================================================
+#
+# Give the absolute path where deleted files of deleted content will
+# go (Undo support) in the `backup-path` value. The same rules as the
+# ones for the `path` value apply here (existence, read/write/delete
+# permissions). In addition, `path` and `backup-path` must be
+# different.
+#
+# Examples:
+# backup-path /home/zope/instance/fss_backup
+# packup-path C:\zope\instance\fss_backup
+#
+# Default: $$INSTANCE_HOME/var/fss_backup
+
+# backup-path $$INSTANCE_HOME/var/fss_backup
+
+# ===========================================================
+#
+# Give your preferred global storage strategy in the storage-strategy`
+# value. The following values are available:
+#
+# * `flat`: see "Flat storage strategy" in README.txt.
+# * `directory` : see "Directory storage strategy" in README.txt.
+# * `site1`: see "Site storage strategy 1" in README.txt
+# * `site2`: see "Site storage strategy 2" in README.txt
+
+# Examples:
+# storage-strategy directory
+#
+# Default: flat
+
+# storage-strategy flat
+
+# ===========================================================
+#
+# <site /my/plone>
+
+  # The optional settings here override the global FSS configuration
+  # in the above section for the Plone site in the `/my/plone` Zope
+  # path. You may add ass many <site ...> sections as needed.
+
+  # `storage-path` for this site
+  
+  # Example: storage-path $$INSTANCE_HOME/var/my_plone/fss
+
+  # `backup-path` for this site
+
+  # Example: backup-path $$INSTANCE_HOME/var/my_plone/fss_backup
+
+  # Override above described `storage-strategy`.
+
+  # Example: storage-strategy site1
+
+# </site>
+
+# <site /other/plone>
+  # ...
+# </site>

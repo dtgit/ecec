@@ -1,0 +1,24 @@
+===========
+Preferences
+===========
+
+Test the preferences adapater
+
+Get some imports.
+
+    >>> from Products.PloneBookmarklets.browser.controlpanel import IbookmarkletsControlPanel
+    >>> from Products.CMFPlone.interfaces import IPloneSiteRoot
+    >>> from Products.CMFCore.interfaces import IPropertiesTool
+    >>> from zope.component import getAdapter, getUtility
+
+Now let's get the adapter, and test some values:
+
+    >>> ad = getAdapter(self.portal, IbookmarkletsControlPanel)
+    >>> props = getUtility(IPropertiesTool)
+    >>> pbm_props = props.bookmarklets_properties	
+
+Check the default displayed sites:
+
+   >>> len(ad.displayed_sites) == len(pbm_props.getProperty('available_sites'))
+   True
+    

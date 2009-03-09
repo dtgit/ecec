@@ -1,0 +1,71 @@
+<h2>Course Description</h2>
+<p>Paragraph about Course</p>
+
+<h2>Course Objectives</h2>
+<ul>
+  <li>Objective 1</li>
+  <li>Objective 2</li>
+  <li>Objective 3</li>
+  <li>Objective 4</li>
+  <li>Objective etc.</li>
+  <li>Objective etc.</li>
+</ul>
+
+<h2>Prerequisites</h2>
+
+<p><em>Class One</em></p>
+<p>Description of Class One</p>
+
+<p><em>Class Two</em></p>
+<p>Description of Class Two</p>
+
+<h2>Required Textbook</h2> 
+<p><em>Book Title.</em> Edition (Author(s), Year, Publisher), Year.</p>
+
+<h2> Other Reading</h2> 
+<ul>
+  <li>Reading One</li>
+  <li>Reading Two</li>
+  <li>Reading Three</li>
+</ul>
+
+
+<h2>Grading</h2>
+<table class="documentTable" cellpadding="0" cellspacing="0" width="50%" summary="grading scale">
+  <thead>
+    <tr>
+      <td width="50%">Component</td>
+      <td width="50%">Percentage</td>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>&nbsp;</td>
+      <td>100%</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr class="even">
+      <td>Problem Sets</td>
+      <td>20%</td>
+    </tr>
+    <tr class="odd">
+      <td>Written Report/Oral Presentation of Special Project</td>
+      <td>15%</td>
+    </tr>
+    <tr class="even">
+      <td>Examination 1</td>
+      <td>20%</td>
+    </tr>
+    <tr class="odd">
+      <td>Examination 2</td>
+      <td>20%</td>
+    </tr>
+    <tr class="even">
+      <td>Final Examination</td>
+      <td>25%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="instruction">The table above includes sample data.  Edit the table as befits the class being worked on.</p>
